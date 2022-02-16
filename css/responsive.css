@@ -1,0 +1,47 @@
+@media (max-width:768px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 480px) {
+    .wrapper-cover {
+        position: relative;
+        display: block;
+        height: 550px;
+    }
+    .layout-cover img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .box-logo img {
+        width: 100px;
+    }
+    .layout-why .why,
+    .layout-correct .correct,
+    .layout-edit-success .edit-success,
+    .layout-from-vote .form-vote {
+        margin: 0;
+        padding: 30px 0;
+        font-size: 30px;
+        line-height: 40px;
+        color: #fff;
+        text-align: center;
+        background-color: #0032eb;
+    }
+    .wrapper-cover {
+        height: auto;
+    }
+    .wrapper-sumary {
+        height: 500px;
+    }
+    .banner-cover {
+        height: 500px;
+    }
+    .box-logo {
+        top: 75px;
+    }
+    .box-head ul li {
+        font-size: 30px;
+    }
+}

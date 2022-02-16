@@ -1,0 +1,436 @@
+.wrapper-cover {
+    position: relative;
+}
+
+.layout-cover {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.box-banner-home {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.box-banner-home a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-logo img {
+    width: 10%;
+}
+
+.bg-blur {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.box-logo {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    z-index: 999;
+    margin: 0 auto;
+}
+
+.box-head {
+    overflow: hidden;
+}
+
+.box-head ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.box-head ul li {
+    display: block;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.count-member,
+.target {
+    color: #01e400;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.layout-cover .banner-cover img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.box-view {
+    margin: 35px 0 30px;
+    position: relative;
+    text-align: center;
+}
+
+.box-view ul li {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.box-view li,
+.box-view li a {
+    display: inline-block;
+    color: #c2c2c2;
+}
+
+.box-view li::after {
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 12px;
+    background-color: #c1c1c1;
+    bottom: 4px;
+    margin-left: 16px;
+}
+
+.box-view img {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+.box-view img {
+    width: 24px;
+    height: 24px;
+}
+
+.box-view li:last-child::after {
+    width: 0;
+}
+
+.wrapper-sumary {
+    position: relative;
+    display: block;
+    height: 854px;
+}
+
+.layout-sumary {
+    position: relative;
+    overflow: hidden;
+}
+
+.layout-sumary .banner-cover img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card__share {
+    float: right;
+    position: absolute;
+    right: 50px;
+    bottom: -25px;
+    z-index: 999;
+}
+
+.card__social {
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    width: 135px;
+    transform: translateZ(0);
+    transform: translateX(0px);
+    transition: transform 0.35s ease;
+}
+
+.card__social--active {
+    visibility: visible;
+    transform: translateZ(0);
+    transform: translateX(-48px);
+    transition: transform 0.35s ease;
+}
+
+.share-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    outline: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.share-icon .share {
+    background-image: url(../images/share.svg);
+}
+
+.card__social li {
+    display: inline-block;
+}
+
+.card__social li {
+    display: inline-block;
+}
+
+.card__social li a img {
+    width: 40px;
+    height: 40px;
+}
+
+.card__social li a img:hover {
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+
+.card__share a {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    outline: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.card__share .share-icon img {
+    width: 30px;
+    height: 30px;
+    margin: 9px 8px;
+}
+
+.btn-vote {
+    color: #fff;
+    background-color: #0032eb;
+}
+
+.wrapper-why,
+.wrapper-correct,
+.wrapper-edit-success,
+.wrapper-from-vote {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper-correct,
+.wrapper-lawyer {
+    background-color: #0032eb;
+}
+
+.layout-why,
+.layout-correct,
+.layout-edit-success,
+.layout-from-vote {
+    position: relative;
+}
+
+.layout-card-why {
+    background-color: #fff;
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.layout-why .why,
+.layout-correct .correct,
+.layout-edit-success .edit-success,
+.layout-from-vote .form-vote {
+    margin: 0;
+    padding: 50px 0;
+    font-size: 60px;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    background-color: #0032eb;
+}
+
+.layout-edit-success .edit-success {
+    background-color: #fff;
+    color: #0032eb;
+}
+
+.card-why {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 56.25%;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-why a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.card-why a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-card-why p {
+    color: #0032eb;
+    font-size: 25px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box-img-correct {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 56.25%;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.box-img-correct a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.box-img-correct a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-read,
+.btn-share {
+    background-color: #0032eb;
+    color: #fff;
+    width: 200px;
+    height: 70px;
+    display: block;
+    margin: 0 auto 50px;
+    font-size: 25px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form-vote-sunmit {
+    margin: 25px 0;
+    overflow: hidden;
+}
+
+.form-vote-sunmit label {
+    display: block;
+}
+
+.form-vote-sunmit .col-sm-6 {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.form-vote-sunmit .col-sm-6 input {
+    width: 90%;
+}
+
+.btn-submit {
+    background-color: #01e400;
+    color: #fff;
+    width: 200px;
+    height: 70px;
+    display: block;
+    margin: 0 auto 50px;
+    font-size: 25px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+}
+
+.control-btn {
+    margin: 25px 0;
+    position: relative;
+    display: block;
+}
+
+.layout-box-lawyer {
+    margin: 50px 0;
+}
+
+.box-lawyer {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.box-lawyer a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name-lawyer {
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
