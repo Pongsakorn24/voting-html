@@ -33,15 +33,32 @@
         height: auto;
     }
     .wrapper-sumary {
-        height: 500px;
+        height: 400px;
     }
     .banner-cover {
-        height: 500px;
+        height: 400px;
     }
     .box-logo {
-        top: 75px;
+        top: 25px;
     }
     .box-head ul li {
         font-size: 30px;
+    }
+    .caution {
+        margin: 12px;
+        font-size: 12px;
+    }
+    .box-title-issue h1 {
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    .box-title-issue label {
+        text-align: 12px;
+        color: #c1c1c1;
+        font-weight: 400;
+    }
+    .box-img-correct {
+        height: 250px;
     }
 }
