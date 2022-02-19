@@ -13,11 +13,20 @@ body {
 }
 
 .box-banner-home {
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
     position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.box-banner-home a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .box-banner-home a img {
@@ -46,7 +55,7 @@ body {
 
 .box-logo {
     position: absolute;
-    top: 150px;
+    top: 55px;
     right: 0;
     left: 0;
     text-align: center;
@@ -71,7 +80,7 @@ body {
 .box-head ul li {
     display: block;
     color: #fff;
-    font-size: 40px;
+    font-size: 55px;
     text-align: center;
 }
 
@@ -134,7 +143,11 @@ body {
 .wrapper-sumary {
     position: relative;
     display: block;
-    height: 854px;
+    height: 600px;
+}
+
+.banner-cover {
+    height: 600px;
 }
 
 .layout-sumary {
@@ -235,7 +248,7 @@ body {
 
 .wrapper-why,
 .wrapper-correct,
-.wrapper-edit-success,
+.slide-success,
 .wrapper-from-vote {
     display: block;
     position: relative;
@@ -274,8 +287,12 @@ body {
 }
 
 .layout-edit-success .edit-success {
-    background-color: #fff;
-    color: #0032eb;
+    background-color: #0032eb;
+    color: #fff;
+}
+
+.box-card-why {
+    margin: 50px 0;
 }
 
 .card-why {
@@ -285,7 +302,6 @@ body {
     padding-top: 56.25%;
     margin-bottom: 15px;
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .card-why a {
@@ -303,35 +319,39 @@ body {
 }
 
 .box-card-why p {
-    color: #0032eb;
-    font-size: 25px;
-    text-align: center;
+    color: #000;
+    font-size: 20px;
+    text-align: left;
     display: -webkit-box;
     /* -webkit-line-clamp: 2; */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 50px;
+    margin: 0 25px;
+}
+
+.box-card-why h3 {
+    text-align: center;
+    font-weight: bold;
 }
 
 .box-img-correct {
     position: relative;
     width: 100%;
-    height: 450px;
-    /* padding-top: 100%; */
-    margin-bottom: 25px;
     overflow: hidden;
+    padding-top: 56.25%;
     border-radius: 10px;
+    margin: 25px 0;
 }
 
-
-/* 
 .box-img-correct a {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-} */
+}
 
 .box-img-correct a img {
     width: 100%;
@@ -343,8 +363,8 @@ body {
 .btn-share {
     background-color: #0032eb;
     color: #fff;
-    width: 200px;
-    height: 70px;
+    width: 40%;
+    height: 50px;
     display: block;
     margin: 0 auto 50px;
     font-size: 25px;
@@ -380,7 +400,7 @@ input[type=submit]:hover {
 }
 
 .form-vote-sunmit {
-    margin: 25px 0;
+    margin: 25px 0 0;
     overflow: hidden;
 }
 
@@ -388,7 +408,8 @@ input[type=submit]:hover {
     display: block;
 }
 
-.form-vote-sunmit .col-sm-6 {
+
+/* .form-vote-sunmit .col-sm-6 {
     margin: 0;
     padding-left: 0;
     padding-right: 0;
@@ -396,15 +417,15 @@ input[type=submit]:hover {
 
 .form-vote-sunmit .col-sm-6 input {
     width: 90%;
-}
+} */
 
 .btn-submit {
     background-color: #01e400;
     color: #fff;
-    width: 200px;
-    height: 70px;
+    width: 40%;
+    height: 50px;
     display: block;
-    margin: 0 auto 50px;
+    margin: 0 auto 25px;
     font-size: 25px;
     border: transparent;
     border-radius: 10px;
@@ -412,9 +433,12 @@ input[type=submit]:hover {
 }
 
 .control-btn {
-    margin: 25px 0;
+    margin: 0 0 25px;
     position: relative;
     display: block;
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 25px;
 }
 
 .layout-box-lawyer {
@@ -448,6 +472,7 @@ input[type=submit]:hover {
     font-size: 20px;
     text-align: center;
     position: relative;
+    margin: 12px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
 }
 
@@ -456,17 +481,18 @@ input[type=submit]:hover {
 }
 
 .box-title-issue h1 {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 50px;
+    line-height: 65px;
     font-weight: bold;
-    margin: 0;
+    margin: 0 0 10px;
 }
 
-.box-title-issue label {
-    text-align: 22px;
+.box-title-issue label,
+.photo-bum {
+    font-size: 22px;
     color: #c1c1c1;
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .box-title-issue label strong {
@@ -489,8 +515,183 @@ input[type=submit]:hover {
     padding: 20px 0;
 }
 
+.box-detail p {
+    font-size: 22px;
+    line-height: 30px;
+}
+
 .hot-issue img {
     position: relative;
     height: 14px;
     top: -3px;
+}
+
+.error,
+.text-red {
+    color: #dc3545;
+    font-size: 16px;
+}
+
+.error,
+.remark {
+    font-weight: 400;
+    margin: 5px auto 0;
+    font-size: 14px;
+}
+
+.slide-success {
+    padding-left: 0;
+}
+
+.slide-success .slick-next,
+.slide-success .slick-prev {
+    display: none;
+}
+
+.layout-box-lawyer label {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.nopaddingright {
+    padding-right: 0;
+}
+
+.nopaddingleft {
+    padding-left: 0;
+}
+
+.box-photo-comment {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+.img-comment img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-comment {
+    display: block;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.wrapper-photo {
+    margin: 25px 0 50px;
+}
+
+.photo-bum {
+    margin-bottom: 15px;
+}
+
+.box-progress {
+    width: 100%;
+    background-color: #ededed;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.box-progress .progress {
+    background-color: #01e400;
+    border-radius: 10px;
+}
+
+.layout-progress {
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+}
+
+.layout-progress span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.modal-addform .modal-dialog {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    margin: 1.75rem auto;
+    min-height: calc(100% - 3.5rem);
+}
+
+.modal-addform .modal-header,
+.modal-addform .modal-footer {
+    border-top: transparent;
+    padding: 15px;
+    border-bottom: transparent;
+}
+
+.modal-addform .modal-body {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.modal-addform .btn-want {
+    display: block;
+    width: 200px;
+    height: 70px;
+    font-size: 22px;
+    line-height: 35px;
+    background-color: #0032eb;
+    color: #fff;
+    border: transparent;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+input[type=checkbox] {
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.photo-show {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    border-radius: 10px;
+}
+
+.photo-show a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.photo-show a img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.box-seeall {
+    display: block;
+}
+
+.box-seeall .see-all {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    margin: 25px 0 0;
 }

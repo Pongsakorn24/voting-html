@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;500;700&display=swap" rel="stylesheet">
+    <title>ลงชื่อสนับสนุน</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/gobal.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="slick/slick.js"></script>
+    <link rel="stylesheet" href="aos/aos.css">
+    <script src="aos/aos.js"></script>
+</head>
+<header>
+    <div class="header-2nd">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a class="navbar-brand"></a>
+                    <div class="box-logo-header">
+                        <h1>ประเด็นประเทศไทย</h1>
+                        <!-- <a class="navbar-brand"></a>
+                        <a><img src="images/logo.jpg" alt=""></a> -->
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/">เสนอประเด็น
+                        </a></li>
+                        <li><a href="/">สนับสนุนค่าโฆษณาให้โครงการนี้</a></li>
+                        <!-- <li><a href="/user/profile">โปรไฟล์</a></li>
+                        <li><a href="/user/all-salepage">เซลเพจ</a></li>
+                        <li><a href="/register">สมัครสมาชิก</a></li>
+                        <li><a href="/login">เข้าสู่ระบบ</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+
+    <article>
+        <section>
+            <div class="box-title-issue">
+                <label for="" class="hot-issue">ประเด็น
+                    <img  src="images/fire.png" alt="">
+                </label>
+                <h1> เราจะทนอยู่ในประเทศที่ไม่มีอนาคตได้อย่างไร ?</h1>
+                <label for="">ร่วมส่งข้อเรียกร้องนี้ให้ถึง <strong>นายกรัฐมนตรี</strong> </label>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper-cover">
+                <div class="layout-cover">
+                    <div class="box-banner-home">
+                        <a href="">
+                            <img src="images/cover.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <!-- <div class="card__share">
+                        <div class="card__social">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/line.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a id="share" class="share-toggle share-icon" href="#">
+                            <img src="images/share-g.png" alt="">
+                        </a>
+                    </div> -->
+
+                </div>
+            </div>
+            <!-- <div class="box-view">
+                <ul>
+                    <li>
+                        <img src="images/view-g.png" alt="">100
+                    </li>
+                    
+                    <li>
+                        <img src="images/share-gg.png" alt="">1890
+                    </li>
+                    <li>
+                        <img src="images/user-g.png" alt="">1890
+                    </li>
+                </ul>
+            </div> -->
+        </section>
+        <section>
+            <div class="wrapper-form-vote">
+                <div class="layout-from-vote">
+                    <h2 class="form-vote">เราต้องการ <br> เสียงของคุณ <br> มาสร้างอนาคตไทย</h2>
+                    <div class="container">
+                        <form action="/action_page.php" class="form-vote-sunmit">
+                            <div class="form-group">
+                                <label for="fname">เขียนที่
+                            <span class="text-red">*</span>
+                        </label>
+                                <input type="text" id="fname" name="firstname" placeholder="">
+                                <div class="remark">(กรุณาระบุสถานที่กรอกข้อมูล เช่น ชื่อจังหวัด)</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">เลขประจำตัวประชาชน<span class="text-red">*</span></label>
+                                <input type="text" id="lname" name="lastname" placeholder="">
+                                <div class="remark">(กรุณาระบุสถานที่กรอกข้อมูล เช่น ชื่อจังหวัด)</div>
+
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-sm-3">
+                                    <label for="country">คำนำหน้า<span class="text-red">*</span></label>
+                                    <select id="country" name="country">
+                                     <option value="australia">นาย</option>
+                                    <option value="canada">นาง</option>
+                                    <option value="usa">นางสาว</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="lname">ชื่อ<span class="text-red">*</span></label>
+                                        <input type="text" id="lname" name="lastname" placeholder="">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="lname">นามสกุล<span class="text-red">*</span></label>
+                                        <input type="text" id="lname" name="lastname" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div _ngcontent-yyb-c89="" class="remark">(ชื่อและนามสกุลต้องกรอกเป็นภาษาไทยเท่านั้น ไม่ต้องมีคำนำหน้า)</div>
+                            </div>
+                            <div class="form-group">
+                                <div class="ng-untouched ng-pristine ng-invalid">
+                                    <div class="row"><label>วันเกิด
+                                            <span class="text-red">*</span>
+                                        </label>
+                                        <div class="col-md-4">
+
+                                            <select formcontrolname="calDateSelect" name="calDateSelect" id="calDateSelect" class="form-control ng-untouched ng-pristine ng-invalid">
+                                            <option value="0" disabled="" selected=""> วัน </option>
+                                            <option value="1"> 1 </option>
+                                            <option value="2"> 2 </option>
+                                            <option value="3"> 3 </option>
+                                            <option value="4"> 4 </option>
+                                            <option value="5"> 5 </option>
+                                            <option value="6"> 6 </option>
+                                            <option value="7"> 7 </option>
+                                            <option value="8"> 8 </option>
+                                            <option value="9"> 9 </option>
+                                            <option value="10"> 10 </option>
+                                            <option value="11"> 11 </option>
+                                            <option value="12"> 12 </option>
+                                            <option value="13"> 13 </option>
+                                            <option value="14"> 14 </option>
+                                            <option value="15"> 15 </option>
+                                            <option value="16"> 16 </option>
+                                            <option value="17"> 17 </option>
+                                            <option value="18"> 18 </option>
+                                            <option value="19"> 19 </option>
+                                            <option value="20"> 20 </option>
+                                            <option value="21"> 21 </option>
+                                            <option value="22"> 22 </option>
+                                            <option value="23"> 23 </option>
+                                            <option value="24"> 24 </option>
+                                            <option value="25"> 25 </option>
+                                            <option value="26"> 26 </option>
+                                            <option value="27"> 27 </option>
+                                            <option value="28"> 28 </option>
+                                            <option value="29"> 29 </option>
+                                            <option value="30"> 30 </option>
+                                            <option value="31"> 31 </option><!----></select></div>
+                                        <div class="col-md-4">
+                                            <label></label>
+                                            <select formcontrolname="calMonthSelect" name="calMonthSelect" id="calMonthSelect" class="form-control ng-untouched ng-pristine ng-invalid">
+                                            <option value="0" disabled="" selected=""> เดือน </option>
+                                            <option value="1"> มกราคม </option>
+                                            <option value="2"> กุมภาพันธ์ </option>
+                                            <option value="3"> มีนาคม </option>
+                                            <option value="4"> เมษายน </option>
+                                            <option value="5"> พฤษภาคม </option>
+                                            <option value="6"> มิถุนายน </option>
+                                            <option value="7"> กรกฎาคม </option>
+                                            <option value="8"> สิงหาคม </option>
+                                            <option value="9"> กันยายน </option>
+                                            <option value="10"> ตุลาคม </option>
+                                            <option value="11"> พฤศจิกายน </option>
+                                            <option value="12"> ธันวาคม </option><!----></select></div>
+                                        <div class="col-md-4">
+                                            <label></label>
+                                            <select formcontrolname="calYearSelect" name="calYearSelect" id="calYearSelect" class="form-control ng-untouched ng-pristine ng-invalid">
+                                        <option value="0" disabled="" selected=""> ปี </option>
+                                        <option value="2005">2548</option>
+                                        <option value="2004">2547</option>
+                                        <option value="2003">2546</option>
+                                        <option value="2002">2545</option>
+                                        <option value="2001">2544</option>
+                                        <option value="2000">2543</option>
+                                        <option value="1999">2542</option>
+                                        <option value="1998">2541</option>
+                                        <option value="1997">2540</option>
+                                        <option value="1996">2539</option>
+                                        <option value="1995">2538</option>
+                                        <option value="1994">2537</option>
+                                        <option value="1993">2536</option>
+                                        <option value="1992">2535</option>
+                                        <option value="1991">2534</option>
+                                        <option value="1990">2533</option>
+                                        <option value="1989">2532</option>
+                                        <option value="1988">2531</option>
+                                        <option value="1987">2530</option>
+                                        <option value="1986">2529</option>
+                                        <option value="1985">2528</option>
+                                        <option value="1984">2527</option>
+                                        <option value="1983">2526</option>
+                                        <option value="1982">2525</option>
+                                        <option value="1981">2524</option>
+                                        <option value="1980">2523</option>
+                                        <option value="1979">2522</option>
+                                        <option value="1978">2521</option>
+                                        <option value="1977">2520</option>
+                                        <option value="1976">2519</option>
+                                        <option value="1975">2518</option>
+                                        <option value="1974">2517</option>
+                                        <option value="1973">2516</option>
+                                        <option value="1972">2515</option>
+                                        <option value="1971">2514</option>
+                                        <option value="1970">2513</option>
+                                        <option value="1969">2512</option>
+                                        <option value="1968">2511</option>
+                                        <option value="1967">2510</option>
+                                        <option value="1966">2509</option>
+                                        <option value="1965">2508</option>
+                                        <option value="1964">2507</option>
+                                        <option value="1963">2506</option>
+                                        <option value="1962">2505</option>
+                                        <option value="1961">2504</option>
+                                        <option value="1960">2503</option>
+                                        <option value="1959">2502</option>
+                                        <option value="1958">2501</option>
+                                        <option value="1957">2500</option>
+                                        <option value="1956">2499</option>
+                                        <option value="1955">2498</option>
+                                        <option value="1954">2497</option>
+                                        <option value="1953">2496</option>
+                                        <option value="1952">2495</option>
+                                        <option value="1951">2494</option>
+                                        <option value="1950">2493</option>
+                                        <option value="1949">2492</option>
+                                        <option value="1948">2491</option>
+                                        <option value="1947">2490</option>
+                                        <option value="1946">2489</option>
+                                        <option value="1945">2488</option>
+                                        <option value="1944">2487</option>
+                                        <option value="1943">2486</option>
+                                        <option value="1942">2485</option>
+                                        <option value="1941">2484</option>
+                                        <option value="1940">2483</option>
+                                        <option value="1939">2482</option>
+                                        <option value="1938">2481</option>
+                                        <option value="1937">2480</option>
+                                        <option value="1936">2479</option>
+                                        <option value="1935">2478</option>
+                                        <option value="1934">2477</option>
+                                        <option value="1933">2476</option>
+                                        <option value="1932">2475</option>
+                                        <option value="1931">2474</option>
+                                        <option value="1930">2473</option>
+                                        <option value="1929">2472</option>
+                                        <option value="1928">2471</option>
+                                        <option value="1927">2470</option>
+                                        <option value="1926">2469</option>
+                                        <option value="1925">2468</option>
+                                        <option value="1924">2467</option>
+                                        <option value="1923">2466</option>
+                                        <option value="1922">2465</option>
+                                        <!----></select></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-12">
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                            <div class="remark">(ผู้มีสิทธิ์เข้าชื่อเสนอกฎหมายต้องเป็นผู้มีสิทธิ์เลือกตั้ง อายุ 18 ปีบริบูรณ์ขึ้นไป) </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="lname">อีเมล<span class="text-red">*</span></label>
+                                        <input type="text" id="lname" name="lastname" placeholder="">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="lname">เบอร์โทร<span class="text-red">*</span></label>
+                                        <input type="text" id="lname" name="lastname" placeholder="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row form-group">
+                                <input type="checkbox" formcontrolname="isUnderstandConfirmed" name="isUnderstandConfirmed" id="isUnderstandConfirmed" class="ng-untouched ng-pristine ng-invalid"> ข้าพเจ้ายินยอมลงชื่อ
+
+                                <div class="col-12">
+                                    <label style="cursor: pointer; margin-bottom: 10px;">
+                                        <span  class="text-red">*</span></label></div>
+                            </div>
+
+                        </form>
+                        <div class="control-btn">
+                            <button class="btn-submit">ส่งแบบฟอร์ม</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+</body>
+
+
+</html>

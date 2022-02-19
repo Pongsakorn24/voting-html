@@ -54,11 +54,114 @@
         font-weight: bold;
     }
     .box-title-issue label {
-        text-align: 12px;
+        font-size: 12px;
         color: #c1c1c1;
         font-weight: 400;
     }
     .box-img-correct {
         height: 250px;
+    }
+    .slide-success .slick-arrow,
+    .slide-success .slick-arrow {
+        display: none !important;
+    }
+    .slide-success .slide-arrow,
+    .slide-success .slide-arrow {
+        width: 40px;
+        height: 40px;
+        border: transparent;
+        border-radius: 100%;
+        overflow: hidden;
+        text-indent: 900px;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-color: transparent;
+        position: absolute;
+        top: 40%;
+    }
+    .slide-success .slick-prev {
+        background-image: url(../images/previous.png);
+        background-position: center center;
+        left: 0;
+    }
+    .slide-success .slick-next {
+        background-image: url(../images/next.png);
+        background-position: center center;
+        right: 0;
+    }
+    .wrapper-edit-success .col-sm-6,
+    .wrapper-why .container,
+    .wrapper-edit-success .container,
+    .wrapper-form-vote .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .box-card-why p {
+        padding: 0 15px;
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 40px;
+        color: #000;
+    }
+    .layout-box-lawyer {
+        margin-bottom: 150px;
+    }
+    .layout-box-lawyer label {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .img-comment {
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .box-detail p {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 15px;
+    }
+    .btn-read,
+    .btn-share,
+    .btn-submit {
+        height: 50px;
+        font-size: 20px;
+    }
+    .btn-submit,
+    .btn-read {
+        width: 90%;
+    }
+    .layout-progress {
+        padding: 15px;
+    }
+    .layout-progress span {
+        font-size: 18px;
+    }
+    .modal-addform .modal-dialog {
+        width: 90%;
+    }
+    .modal-addform .modal-body {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .box-card-why {
+        margin: 0 0;
+    }
+    /* .box-img-correct {
+        border-radius: 0;
+    } */
+    .wrapper-box-img .container {
+        margin: 0;
+    }
+    .control-btn {
+        width: 100%;
+    }
+    .form-vote-sunmit {
+        margin: 15px;
+    }
+    .photo-show,
+    .wrapper-box-img {
+        margin: 0 15px;
+    }
+    .layout-from-vote p {
+        margin: 0 15px;
     }
 }
