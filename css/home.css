@@ -445,9 +445,9 @@ input[type=submit]:hover {
     margin: 0 0 25px;
     position: relative;
     display: block;
-    width: 65%;
     margin: 0 auto;
     padding-bottom: 25px;
+    text-align: center;
 }
 
 .layout-box-lawyer {
