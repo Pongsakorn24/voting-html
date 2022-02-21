@@ -13,15 +13,24 @@ body {
 }
 
 .box-banner-home {
+    border-radius: 10px;
+}
+
+.box-banner-home2 {
+    border-radius: 0;
+}
+
+.box-banner-home,
+.box-banner-home2 {
     position: relative;
     width: 100%;
     overflow: hidden;
     padding-top: 56.25%;
-    border-radius: 10px;
     margin-bottom: 25px;
 }
 
-.box-banner-home a {
+.box-banner-home a,
+.box-banner-home2 a {
     position: absolute;
     top: 0;
     right: 0;
@@ -29,7 +38,8 @@ body {
     bottom: 0;
 }
 
-.box-banner-home a img {
+.box-banner-home a img,
+.box-banner-home2 a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -480,7 +490,12 @@ input[type=submit]:hover {
     margin: 20px 18px;
 }
 
-.box-title-issue h1 {
+.box-title-issue2 {
+    margin: 20px 18px;
+}
+
+.box-title-issue h1,
+.box-title-issue2 h1 {
     font-size: 50px;
     line-height: 65px;
     font-weight: bold;
@@ -488,6 +503,7 @@ input[type=submit]:hover {
 }
 
 .box-title-issue label,
+.box-title-issue2 label,
 .photo-bum {
     font-size: 22px;
     color: #c1c1c1;
@@ -495,7 +511,8 @@ input[type=submit]:hover {
     font-weight: 400;
 }
 
-.box-title-issue label strong {
+.box-title-issue label strong,
+.box-title-issue2 label strong {
     font-weight: 700;
 }
 
@@ -619,10 +636,11 @@ input[type=submit]:hover {
     font-weight: bold;
 }
 
-.modal-addform .modal-dialog {
+.modal-addform .modal-dialog,
+.modal-confirm .modal-dialog {
     display: flex;
     align-items: center;
-    width: 500px;
+    width: 600px;
     margin: 1.75rem auto;
     min-height: calc(100% - 3.5rem);
 }
@@ -640,16 +658,20 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-.modal-addform .btn-want {
-    display: block;
+.modal-addform .modal-footer {
+    text-align: center;
+}
+
+.modal-addform .btn-agree,
+.modal-addform .btn-notagree {
     width: 200px;
-    height: 70px;
+    height: 50px;
     font-size: 22px;
     line-height: 35px;
     background-color: #0032eb;
     color: #fff;
     border: transparent;
-    margin: 0 auto;
+    margin: 0 15px;
     border-radius: 10px;
 }
 
@@ -695,4 +717,70 @@ input[type=checkbox] {
     color: #000;
     text-align: center;
     margin: 25px 0 0;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.content p.openingsentence {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.content .container {
+    width: 960px;
+}
+
+.email-consent {
+    display: block;
+    margin: 0 15px 10px !important;
+}
+
+.img-example {
+    display: block;
+    text-align: center;
+}
+
+.btn-agree,
+.btn-notagree {
+    background-color: #01e400;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    margin: 0 10px 25px;
+    font-size: 22px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+}
+
+.btn-agree {
+    background-color: #fff;
+    border: 2px solid #01e400;
+    color: #01e400;
+}
+
+.modal-confirm .modal-footer {
+    padding: 15px;
+    text-align: center;
+    border-top: transparent;
+}
+
+.img-example {
+    display: block;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.modal-confirm .modal-body {
+    text-align: center;
+}
+
+.img-example a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

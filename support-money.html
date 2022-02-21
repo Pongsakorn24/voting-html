@@ -540,59 +540,61 @@
                 </div>
                 <div class="modal-body">
 
-                    คุณต้องการให้ประเด็นนี้มีผลในการเปลี่ยนแปลงในทางกฎหมายหรือไม่
+                    คุณยินยอมให้การลงชื่อครั้งนี้มีผลทางกฎหมายเพื่อให้เกิดการเปลี่ยนแปลง
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn-want" data-dismiss="modal">ต้องการ</button>
-
+                    <div class="modal-footer">
+                        <button type="button" class="btn-agree" data-dismiss="modal">ต้องการ</button>
+                        <button type="button" class="btn-notagree" data-dismiss="modal">ต้องการ</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<script>
+    $(document).ready(function($) {
 
-    <script>
-        $(document).ready(function($) {
-
-            $('.card__share > a').on('click', function(e) {
-                e.preventDefault() // prevent default action - hash doesn't appear in url
-                $(this).parent().find('div').toggleClass('card__social--active');
-                $(this).toggleClass('share-expanded');
-            });
-
+        $('.card__share > a').on('click', function(e) {
+            e.preventDefault() // prevent default action - hash doesn't appear in url
+            $(this).parent().find('div').toggleClass('card__social--active');
+            $(this).toggleClass('share-expanded');
         });
-    </script>
-    <script>
-        $('.slide-success').slick({
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            autoplaySpeed: 2000,
-            focusOnSelect: true,
-            responsive: [{
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    focusOnSelect: false,
-                    autoplay: true
+
+    });
+</script>
+<script>
+    $('.slide-success').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+        focusOnSelect: true,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                focusOnSelect: false,
+                autoplay: true
+            }
+        }]
+    });
+</script>
+<script src="fancybox/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
+<script>
+    $(document).ready(function() {
+        $('[data-fancybox="images"]').fancybox({
+            afterLoad: function(instance, current) {
+                var pixelRatio = window.devicePixelRatio || 1;
+
+                if (pixelRatio > 1.5) {
+                    current.width = current.width / pixelRatio;
+                    current.height = current.height / pixelRatio;
                 }
-            }]
+            }
         });
-    </script>
-    <script src="fancybox/jquery.fancybox.min.js"></script>
-    <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
-    <script>
-        $(document).ready(function() {
-            $('[data-fancybox="images"]').fancybox({
-                afterLoad: function(instance, current) {
-                    var pixelRatio = window.devicePixelRatio || 1;
-
-                    if (pixelRatio > 1.5) {
-                        current.width = current.width / pixelRatio;
-                        current.height = current.height / pixelRatio;
-                    }
-                }
-            });
-        });
-    </script>
+    });
+</script>
 
 </html>
