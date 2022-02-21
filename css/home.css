@@ -744,7 +744,9 @@ input[type=checkbox] {
 }
 
 .btn-agree,
-.btn-notagree {
+.btn-notagree,
+.btn-confirm,
+.btn-download {
     background-color: #01e400;
     color: #fff;
     width: 200px;
@@ -756,7 +758,8 @@ input[type=checkbox] {
     box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
 }
 
-.btn-agree {
+.btn-agree,
+.btn-download {
     background-color: #fff;
     border: 2px solid #01e400;
     color: #01e400;
