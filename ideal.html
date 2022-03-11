@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;500;700&display=swap" rel="stylesheet">
+    <title>หน้าแรก</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="slick/slick.js"></script>
+</head>
+<header>
+    <div class="header-2nd">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a class="navbar-brand"></a>
+                    <div class="box-logo-header">
+                        <h1>LOGO</h1>
+                        <!-- <a class="navbar-brand"></a>
+                        <a><img src="images/logo.jpg" alt=""></a> -->
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/">หน้าแรก
+                        </a></li>
+                        <li>
+                            <a href="/"></a>
+                        </li>
+                        <!-- <li><a href="/user/profile">โปรไฟล์</a></li>
+                        <li><a href="/user/all-salepage">เซลเพจ</a></li>
+                        <li><a href="/register">สมัครสมาชิก</a></li>
+                        <li><a href="/login">เข้าสู่ระบบ</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<style>
+    body {
+        font-family: 'Prompt', sans-serif;
+    }
+    
+    .header-2nd .box-logo-header {
+        padding: 21px 0;
+        position: absolute;
+        overflow: hidden;
+        color: #fff;
+    }
+    
+    .header-2nd .box-logo-header h1 {
+        margin: 0;
+        font-size: 25px;
+    }
+    
+    .header-2nd .box-logo-header img {
+        /* width: 100%; */
+        height: 42px;
+        position: relative;
+        display: block;
+    }
+    
+    .name-logo {
+        display: inline-block;
+    }
+    
+    .header-2nd {
+        background-color: #846d81;
+        position: relative;
+        z-index: 999;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+    }
+    
+    .header-2nd .navbar-default {
+        background-color: #846d81;
+        border-color: #e7e7e7;
+        position: fixed;
+    }
+    
+    .header-2nd .navbar-default .navbar-nav>li>a {
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .header-2nd .navbar-nav>li>a {
+        margin: 0;
+        padding: 25px 15px;
+    }
+    
+    .header-2nd .navbar-nav>li>a:hover {
+        border-bottom: 4px solid #fff;
+    }
+    
+    .navbar-right li:nth-child(4):after {
+        content: '';
+        height: 35px;
+        width: 1px;
+        background-color: #ffffff;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+    }
+    
+    .header-2nd .navbar-brand {
+        float: left;
+        padding: 0;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    /* .collapse.in {
+    display: block;
+} */
+    
+    .header-2nd .navbar {
+        border-radius: 0px;
+        position: relative;
+        min-height: 50px;
+        margin-bottom: 0;
+        border: 0px solid transparent;
+    }
+    
+    .header-2nd .navbar-right .box-registor {
+        padding: 15px 0;
+        display: inline-block;
+    }
+    
+    .header-2nd .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+    
+    .footer_mb {
+        display: none;
+    }
+    
+    .wrapper-footer {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        background-color: #846d81;
+    }
+    
+    .layout-footer {
+        padding: 25px 0;
+    }
+    
+    .wrapper-footer span {
+        position: relative;
+        color: #fff;
+    }
+    
+    @media (max-width:768px) {}
+    
+    @media (max-width: 767px) {
+        .footer_mb {
+            display: block;
+        }
+        .footer_mb {
+            position: fixed;
+            bottom: 0px;
+            z-index: 9999;
+            width: 100%;
+            height: 4.5rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+        }
+        .footer_mb a {
+            color: white !important;
+        }
+        .footer_mb {
+            position: fixed;
+            bottom: 0px;
+            z-index: 9999;
+            width: 100%;
+            height: 70px;
+        }
+        .footer_mb img {
+            width: auto;
+            height: 22px;
+            margin: 25px auto;
+        }
+        .row .col-xs-3 {
+            width: 25%;
+            margin-left: auto;
+            left: auto;
+            right: auto;
+        }
+        .footer_mb .container {
+            padding-right: 30px;
+            padding-left: 30px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .open-vote {
+            display: block;
+            background-color: #0032eb;
+            color: #fff;
+            border-radius: 10px;
+            width: 80%;
+            height: 50px;
+            font-size: 20px;
+            border: transparent;
+            margin: 10px auto;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .header-2nd .box-logo-header {
+            padding: 16px 18px;
+        }
+        .header-2nd .box-logo-header h1 {
+            font-size: 18px;
+        }
+    }
+</style>
+<style>
+    body {
+        font-family: 'Prompt', sans-serif;
+    }
+    
+    .wrapper-cover,
+    .box-img-substance {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+    
+    .box-img-substance {
+        overflow: hidden;
+    }
+    
+    .wrapper-cover .box-cover a,
+    .box-img-substance a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .wrapper-cover a img,
+    .box-img-substance a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .wrapper-quote h1,
+    .wrapper-product h1,
+    .wrapper-reccommended h1,
+    .wrapper-detail-product {
+        text-align: center;
+        font-weight: bold;
+        margin: 50px 0;
+    }
+    
+    .wrapper-reccommended h1 {
+        color: #fff;
+    }
+    
+    .box-detail-substance label {
+        background-color: #a483bc;
+        font-weight: 200;
+        font-size: 14px;
+        padding: 5px;
+    }
+    
+    .box-detail-substance h2 {
+        font-size: 45px;
+        line-height: 60px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1;
+    }
+    
+    .box-detail-substance ol {
+        display: block;
+        margin-bottom: 25px;
+        padding: 0 0 0 15px;
+    }
+    
+    .box-detail-substance ol li {
+        margin: 0 0 10px;
+    }
+    
+    .box-sub {
+        display: block;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin: 100px 0;
+    }
+    
+    .view-more {
+        width: 150px;
+        height: 50px;
+        border: 2px solid #333;
+        font-size: 16px;
+        background-color: transparent;
+    }
+    
+    .box-card-new,
+    .box-card-product {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .box-card-product .card-img-product {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
+    .box-card-new .card-img-new a,
+    .box-card-new .box-detail span,
+    .box-card-product .card-img-product a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .box-card-product .card-img-product a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .box-card-product span {
+        font-size: 16px;
+        line-height: 24px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+    
+    .slide-product .slick-prev,
+    .slide-substance .slick-prev {
+        background-image: url(../images/ic-back.png);
+        background-position: center center;
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        margin-right: 75px;
+    }
+    
+    .slide-product .slick-next,
+    .slide-substance .slick-next {
+        background-image: url(../images/ic-next.png);
+        background-position: center center;
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+    }
+    
+    .slide-product .slick-prev,
+    .slide-product .slick-next,
+    .slide-substance .slick-prev,
+    .slide-substance .slick-next {
+        width: 75px;
+        height: 50px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: auto 30px;
+        border: none;
+        overflow: hidden;
+        text-indent: 900px;
+        background-position: center;
+    }
+    
+    .box-card-product {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .layout-search-all {
+        margin: 50px 0;
+    }
+    
+    .wrapper-reccommended {
+        background-color: #e1e1e1;
+        display: block;
+        overflow: hidden;
+    }
+    
+    .layout-recommended {
+        margin: 50px 0;
+    }
+    
+    .box-reccommended ul {
+        display: block;
+        overflow: hidden;
+        padding: 0 0 0 0;
+    }
+    
+    .box-reccommended ul li {
+        display: inline-block;
+        width: 19%;
+        list-style-type: none;
+    }
+    
+    .box-reccommended ul li img {
+        width: 25px;
+        height: 25px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+    }
+    
+    .box-reccommended ul li label {
+        display: block !important;
+        text-align: center;
+    }
+    
+    .box-user span {
+        position: absolute;
+        color: #fff;
+        bottom: 0;
+        left: 0;
+        font-size: 25px;
+        width: 25%;
+        height: 70px;
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+    
+    .box-user img {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        margin: 0 auto;
+    }
+    
+    .wrapper-detail-product p {
+        font-size: 16px;
+        font-weight: normal;
+        margin: 20px 0;
+        text-align: left;
+    }
+    
+    .card__share {
+        float: right;
+        position: absolute;
+        right: 100px;
+        bottom: -25px;
+        z-index: 999;
+    }
+    
+    .card__social {
+        position: absolute;
+        top: 0;
+        right: 0;
+        visibility: hidden;
+        width: 135px;
+        transform: translateZ(0);
+        transform: translateX(0px);
+        transition: transform 0.35s ease;
+    }
+    
+    .card__social--active {
+        visibility: visible;
+        transform: translateZ(0);
+        transform: translateX(-48px);
+        transition: transform 0.35s ease;
+    }
+    
+    .share-icon {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        outline: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    }
+    
+    .share-icon .share {
+        background-image: url(../images/share.svg);
+    }
+    
+    .card__social li {
+        display: inline-block;
+    }
+    
+    .card__social li {
+        display: inline-block;
+    }
+    
+    .card__social li a img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .card__social li a img:hover {
+        transform: scale(1.2);
+        transition: 0.6s;
+    }
+    
+    .card__share a {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        outline: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    }
+    
+    .card__share .share-icon img {
+        width: 30px;
+        height: 30px;
+        margin: 9px 8px;
+    }
+    
+    @media (max-width:991px) {}
+    
+    @media (max-width:768px) {}
+    
+    @media (max-width: 767px) {
+        .box-sub {
+            display: block;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            margin: 50px 0;
+        }
+        .box-detail-substance {
+            width: 100% !important;
+            padding: 0 15px;
+        }
+        .box-user span {
+            width: 55%;
+            height: 50px;
+            padding: 5px;
+            font-size: 18px;
+        }
+        .box-user img {
+            width: 35px;
+            height: 35px;
+        }
+        .box-detail-substance h2 {
+            font-size: 30px;
+            line-height: 42px;
+        }
+        .box-reccommended ul li {
+            width: 100%;
+        }
+        .wrapper-detail-product img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card__share {
+            float: right;
+            position: absolute;
+            right: 25px;
+            bottom: -25px;
+            z-index: 999;
+        }
+    }
+    
+    @media (max-width: 480px) {}
+</style>
+
+
+<body>
+
+    <article>
+        <section>
+            <div class="wrapper-cover">
+                <div class="layout-cover">
+                    <div class="box-cover">
+                        <a href="">
+                            <img src="images/photo4.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="card__share">
+                        <div class="card__social">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/line.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a id="share" class="share-toggle share-icon" href="#">
+                            <img src="images/share-g.png" alt="">
+                        </a>
+                    </div>
+                    <div class="box-user">
+                        <span>
+                            <img src="images/doctor.png" alt="">
+                            ชื่อ นามสกุล</span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper-quote">
+                <h1>สารสกัดทุกชนิด</h1>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper-substance">
+                <div class="layout-substance">
+                    <div class="box-sub">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="box-img-substance">
+                                    <a href="">
+                                        <img src="images/photo1.jpeg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="box-detail-substance" style="width: 80%;">
+                                    <label for=" ">สารสำคัญ</label>
+                                    <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                    </ol>
+                                    <button class="view-more ">อ่านเพิ่มเติม</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-substance">
+                        <div class="box-sub ">
+                            <div class="row ">
+                                <div class="col-sm-6 ">
+                                    <div class="box-detail-substance " style="width: 80%; float: right; ">
+                                        <label for=" ">สารออกฤทธิ์เสริม</label>
+                                        <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                        <ol>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        </ol>
+                                        <button class="view-more ">อ่านเพิ่มเติม</button>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <div class="box-img-substance ">
+                                        <a href="">
+                                            <img src="images/photo1.jpeg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-sub ">
+                            <div class="row ">
+                                <div class="col-sm-6 ">
+                                    <div class="box-detail-substance " style="width: 80%; float: right; ">
+                                        <label for=" ">สารออกฤทธิ์เสริม</label>
+                                        <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                        <ol>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        </ol>
+                                        <button class="view-more ">อ่านเพิ่มเติม</button>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <div class="box-img-substance ">
+                                        <a href="">
+                                            <img src="images/photo1.jpeg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-substance">
+                        <div class="box-sub">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="box-img-substance">
+                                        <a href="">
+                                            <img src="images/photo1.jpeg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="box-detail-substance" style="width: 80%;">
+                                        <label for="">สารออกฤทธิ์ลด</label>
+                                        <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                        <ol>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        </ol>
+                                        <button class="view-more">อ่านเพิ่มเติม</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-sub">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="box-img-substance">
+                                        <a href="">
+                                            <img src="images/photo1.jpeg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="box-detail-substance" style="width: 80%;">
+                                        <label for="">สารออกฤทธิ์ลด</label>
+                                        <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                        <ol>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        </ol>
+                                        <button class="view-more">อ่านเพิ่มเติม</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper-detail-product">
+                <div class="layout-detail-product">
+                    <h1>รายละเอียด</h1>
+                    <div class="container">
+                        <img src="images/photo3.jpeg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper-product">
+                <div class="layout-product">
+                    <h1>สินค้าเปรียบเทียบ</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="box-card-product">
+                                    <div class="card-img-product">
+                                        <a href="">
+                                            <img src="images/photo2.jpeg" alt="">
+                                        </a>
+                                    </div>
+                                    <span>serum</span>
+                                    <label for="">999.00</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 col-xs-6">
+                                <div class="row">
+                                    <div class="slide-product">
+                                        <div class="col-sm-4">
+                                            <div class="box-card-product">
+                                                <div class="card-img-product">
+                                                    <a href="">
+                                                        <img src="images/photo2.jpeg" alt="">
+                                                    </a>
+                                                </div>
+                                                <span>serum</span>
+                                                <label for="">999.00</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="box-card-product">
+                                                <div class="card-img-product">
+                                                    <a href="">
+                                                        <img src="images/photo2.jpeg" alt="">
+                                                    </a>
+                                                </div>
+                                                <span>serum</span>
+                                                <label for="">999.00</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="box-card-product">
+                                                <div class="card-img-product">
+                                                    <a href="">
+                                                        <img src="images/photo2.jpeg" alt="">
+                                                    </a>
+                                                </div>
+                                                <span>serum</span>
+                                                <label for="">999.00</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <div class="box-card-product">
+                                                <div class="card-img-product">
+                                                    <a href="">
+                                                        <img src="images/photo2.jpeg" alt="">
+                                                    </a>
+                                                </div>
+                                                <span>serum</span>
+                                                <label for="">999.00</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="box-card-product">
+                                                <div class="card-img-product">
+                                                    <a href="">
+                                                        <img src="images/photo2.jpeg" alt="">
+                                                    </a>
+                                                </div>
+                                                <span>serum</span>
+                                                <label for="">999.00</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper-reccommended">
+                <div class="layout-recommended">
+                    <h1>ความสำคัญ</h1>
+
+                    <div class="container">
+                        <div class="box-reccommended">
+                            <ul>
+                                <li>
+                                    <img src="images/like.png" alt="">
+                                    <label>เหมาะกับใคร</label>
+                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
+                                         aliquid maiores provident alias enim dolor aut similique quod tempore 
+                                         sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
+                                         mollitia.</span>
+                                </li>
+                                <li>
+                                    <img src="images/like.png" alt="">
+                                    <label>ข้อควรระวังเรื่องอะไร</label>
+                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
+                                        aliquid maiores provident alias enim dolor aut similique quod tempore 
+                                        sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
+                                        mollitia.</span>
+                                </li>
+                                <li>
+                                    <img src="images/like.png" alt="">
+                                    <label>ระยะเวลาที่เห็นผล</label>
+                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
+                                        aliquid maiores provident alias enim dolor aut similique quod tempore 
+                                        sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
+                                        mollitia.</span>
+                                </li>
+                                <li>
+                                    <img src="images/like.png" alt="">
+                                    <label>ปริมาณที่ต้องใช้</label>
+                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
+                                        aliquid maiores provident alias enim dolor aut similique quod tempore 
+                                        sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
+                                        mollitia.</span>
+                                </li>
+                                <li>
+                                    <img src="images/like.png" alt="">
+                                    <label>สิ่งที่ต้องทดแทน</label>
+                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
+                                        aliquid maiores provident alias enim dolor aut similique quod tempore 
+                                        sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
+                                        mollitia.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <div class="wrapper-footer">
+            <div class="layout-footer">
+                <div class="container">
+                    <span> © 2020 Copyright</span>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function($) {
+
+        $('.card__share > a').on('click', function(e) {
+            e.preventDefault() // prevent default action - hash doesn't appear in url
+            $(this).parent().find('div').toggleClass('card__social--active');
+            $(this).toggleClass('share-expanded');
+        });
+
+    });
+</script>
+
+<script src="fancybox/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
+<script>
+    $(document).ready(function() {
+        $('[data-fancybox="images"]').fancybox({
+            afterLoad: function(instance, current) {
+                var pixelRatio = window.devicePixelRatio || 1;
+
+                if (pixelRatio > 1.5) {
+                    current.width = current.width / pixelRatio;
+                    current.height = current.height / pixelRatio;
+                }
+            }
+        });
+    });
+</script>
+
+<script>
+    $('.slide-substance').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+    });
+</script>
+<script>
+    $('.slide-product').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                focusOnSelect: false,
+                autoplay: true
+            }
+        }]
+    });
+</script>
+
+</html>
