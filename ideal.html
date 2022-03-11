@@ -268,6 +268,7 @@
     
     .box-detail-substance label {
         background-color: #a483bc;
+        color: #fff;
         font-weight: 400;
         font-size: 24px;
         padding: 5px;
@@ -324,6 +325,7 @@
         padding-top: 100%;
         overflow: hidden;
         margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
     }
     
     .box-card-new .card-img-new a,
@@ -356,7 +358,7 @@
     
     .slide-product .slick-prev,
     .slide-substance .slick-prev {
-        background-image: url(../images/ic-back.png);
+        background-image: url(images/ic-back.png);
         background-position: center center;
         position: absolute;
         cursor: pointer;
@@ -368,7 +370,7 @@
     
     .slide-product .slick-next,
     .slide-substance .slick-next {
-        background-image: url(../images/ic-next.png);
+        background-image: url(images/ic-next.png);
         background-position: center center;
         position: absolute;
         cursor: pointer;
@@ -403,7 +405,7 @@
     }
     
     .wrapper-reccommended {
-        background-color: #e1e1e1;
+        background-color: #c5b4d1;
         display: block;
         overflow: hidden;
     }
@@ -427,6 +429,8 @@
         display: inline-block;
         width: 19%;
         list-style-type: none;
+        text-align: center;
+        padding: 0 15px;
     }
     
     .box-reccommended .box-detail-rec img {
@@ -439,9 +443,11 @@
         top: 0;
     }
     
-    .box-reccommended .box-detail-rec label {
+    .box-reccommended .box-detail-rec label,
+    .box-reccommended .box-detail-rec span {
         display: block !important;
         text-align: center;
+        color: #fff;
     }
     
     .box-user span {
@@ -449,22 +455,22 @@
         color: #fff;
         bottom: 0;
         left: 0;
-        font-size: 22px;
-        width: 25%;
-        height: 100px;
-        padding: 20px 0 20px 150px;
+        font-size: 30px;
+        width: 35%;
+        height: 150px;
+        padding: 35px 0 20px 175px;
         text-align: left;
         background-color: rgb(0, 0, 0, 0.5);
     }
     
     .box-user img {
         display: inline-block;
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
         border-radius: 100%;
         position: absolute;
-        left: 55px;
-        bottom: 14px;
+        left: 35px;
+        bottom: 25px;
     }
     
     .box-user ul {
@@ -596,7 +602,11 @@
     .wrapper-ref label {
         display: block;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 30px;
+        padding: 16px 20px;
+        background-color: #a483bc;
+        color: #fff;
+        height: 70px;
     }
     
     .wrapper-ref {
@@ -606,6 +616,12 @@
     
     .layout-ref {
         padding: 50px 0;
+    }
+    
+    .wrapper-ref span {
+        display: block;
+        font-size: 16px;
+        line-height: 28px;
     }
     
     .wrapper-detail-product img {
@@ -618,6 +634,14 @@
     
     .nopaddinglet {
         padding-left: 0;
+    }
+    
+    .box-detail-substance {
+        margin: 0 0 50px;
+    }
+    
+    .box-img-big img {
+        width: 100%;
     }
     
     @media (max-width:991px) {}
@@ -638,7 +662,7 @@
             width: 100%;
             position: relative;
             overflow: hidden;
-            margin: 25px 0 50px;
+            margin: 0 0 0;
         }
         .box-sub .box-detail-substance {
             width: 100% !important;
@@ -685,6 +709,49 @@
             margin-left: 0;
             margin-right: 0;
         }
+        .slide-substance .slick-prev {
+            background-image: url(../images/ic-back.png);
+            background-position: center center;
+            position: absolute;
+            cursor: pointer;
+            top: 105px;
+            bottom: 0;
+            left: 10px;
+            z-index: 10;
+            margin-right: 75px;
+        }
+        .slide-product .slick-next,
+        .slide-substance .slick-next {
+            background-image: url(../images/ic-next.png);
+            background-position: center center;
+            position: absolute;
+            cursor: pointer;
+            top: 105px;
+            bottom: 0;
+            right: 10px;
+            z-index: 10;
+        }
+        .slide-substance .slick-prev,
+        .slide-substance .slick-next {
+            width: 35px;
+            height: 35px;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            border-radius: 100%;
+            background-size: auto 12px;
+            border: none;
+            overflow: hidden;
+            text-indent: 900px;
+            background-position: center;
+        }
+        .box-reccommended ul {
+            padding: 0 0 0 0;
+        }
+        .wrapper-detail-product iframe {
+            width: 100%;
+            overflow: hidden;
+            object-fit: cover;
+        }
     }
     
     @media (max-width: 480px) {}
@@ -698,7 +765,7 @@
                 <div class="layout-cover">
                     <div class="box-cover">
                         <a href="">
-                            <img src="images/photo4.jpeg" alt="">
+                            <img src="images/cover.jpg" alt="">
                         </a>
                     </div>
                     <div class="card__share">
@@ -742,7 +809,20 @@
             <div class="wrapper-substance">
                 <div class="layout-substance">
                     <div class="box-sub">
-                        <div class="row">
+                        <div class="container">
+                            <div class="box-img-substance">
+                                <a href="">
+                                    <img src="images//extract.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="box-detail-substance " style="width: 80%;">
+                                <label for=" ">สารออกฤทธิ์เสริม</label>
+                                <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id! Est.</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
                             <div class="col-sm-6">
                                 <div class="box-img-substance">
                                     <a href="">
@@ -757,37 +837,132 @@
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id! Est.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="box-sub ">
                         <div class="container">
-                            <div class="slide-substance">
-                                <div class="col-sm-6  ">
-                                    <div class="box-img-substance ">
-                                        <a href="">
-                                            <img src="images/photo1.jpeg" alt="">
-                                        </a>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="slide-substance">
+                                        <div class="boxall">
+                                            <div class="box-img-substance ">
+                                                <a href="">
+                                                    <img src="images/red.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="box-detail-substance ">
+                                                <label for=" ">สารออกฤทธิ์เสริม</label>
+                                                <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
+                                                    Est.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="boxall">
+                                            <div class="box-img-substance ">
+                                                <a href="">
+                                                    <img src="images/red.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="box-detail-substance ">
+                                                <label for=" ">สารออกฤทธิ์เสริม</label>
+                                                <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
+                                                    Est.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="boxall">
+                                            <div class="box-img-substance ">
+                                                <a href="">
+                                                    <img src="images/red.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="box-detail-substance ">
+                                                <label for=" ">สารออกฤทธิ์เสริม</label>
+                                                <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
+                                                    Est.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="box-detail-substance ">
-                                        <label for=" ">สารออกฤทธิ์เสริม</label>
-                                        <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id! Est.</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 ">
-                                    <div class="box-img-substance ">
-                                        <a href="">
-                                            <img src="images/photo1.jpeg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="box-detail-substance ">
-                                        <label for=" ">สารออกฤทธิ์ลด</label>
-                                        <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id! Est.</p>
-                                    </div>
-                                </div>
-                            </div>
 
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="slide-substance">
+                                        <div class="boxall">
+                                            <div class="box-img-substance ">
+                                                <a href="">
+                                                    <img src="images/black.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="box-detail-substance ">
+                                                <label for=" ">สารออกฤทธิ์ลด</label>
+                                                <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
+                                                    Est.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="boxall">
+                                            <div class="box-img-substance ">
+                                                <a href="">
+                                                    <img src="images/black.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="box-detail-substance ">
+                                                <label for=" ">สารออกฤทธิ์ลด</label>
+                                                <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
+                                                    Est.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="boxall">
+                                            <div class="box-img-substance ">
+                                                <a href="">
+                                                    <img src="images/black.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="box-detail-substance ">
+                                                <label for=" ">สารออกฤทธิ์ลด</label>
+                                                <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
+                                                    Est.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- <div class="slide-substance">
+                                    <div class="col-sm-6  ">
+                                        <div class="box-img-substance ">
+                                            <a href="">
+                                                <img src="images/photo1.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="box-detail-substance ">
+                                            <label for=" ">สารออกฤทธิ์เสริม</label>
+                                            <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id! Est.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 ">
+                                        <div class="box-img-substance ">
+                                            <a href="">
+                                                <img src="images/photo1.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="box-detail-substance ">
+                                            <label for=" ">สารออกฤทธิ์ลด</label>
+                                            <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id! Est.</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
                         </div>
                     </div>
 
@@ -850,20 +1025,33 @@
                 <div class="layout-detail-product">
                     <h1>รายละเอียด</h1>
                     <div class="container">
-                        <img src="images/photo3.jpeg" alt="">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum,
-                            dolor sit amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum, dolor sit
-                            amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi?
-                        </p>
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/lnOCqNcLklc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum,
-                            dolor sit amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum, dolor sit
-                            amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi?
-                        </p>
-                        <img src="images/photo5.jpg" alt="">
+                        <div class="box-img-big">
+                            <img src="images/coverdetails.jpg" alt="">
+                        </div>
 
+                        <p>Caroteniod สวัสดีคะทุกคน วันนี้จะมารู้ลึกเกี่ยวกับพืชมหัศจรรย์ ที่เป็นที่พูดถึงกันในยุโรปและอเมริกา ซึ่งจะต้องบอกเลยว่ามีสารที่สำคัญมากมายในเรื่องของผิวพรรณและสุขภาพ ที่นำมาใช้ในทางการแพทย์และเสริมความงามและเป็นส่วนผสมหลักของอาหารเสริมหลายชนิด
+                            นั่นก็คือมะเขือเทศสีขาว (Crystal tomato) แต่มะเขือเทศสีขาวที่ดีที่สุดจะมีรูปร่างที่ไม่เหมือนมะเขือเทศทั่วไปและไม่สามารถปลูกได้ในพื้นที่อื่น แต่ปลูกได้ในพื้นที่เล็กๆของประเทศอิสราเอล โดยไม่มีการตัดต่อพันธุกรรม เราไปดูกันว่าทำไมถึงได้รับสมญานามว่าเป็นราชินีแห่งวงการผิวพรรณ
+                            จากการที่เรารู้จักกับพี่คนหนึ่งซึ่งเขาศึกษาในเรื่องของวิทยาศาสตร์ชะลอวัย ซึ่งเราเองอยู่ในงานด้านสายสุขภาพเหมือนกันได้เล่าถึงความมหัศจรรย์ของพืชชนิดนี้ ทำให้เราสนใจมากเพราะมีคุณประโยชน์ในทางการแพทย์ด้วย เราจึงตั้งใจที่จะทำกระทู้นี้ขึ้นมา
+                            เพื่อเป็นประโยชน์ให้กับทุกคนไม่มากก็น้อยค่ะ (เคยเห็นแต่มะเขือเทศสีขาวลูกเล็กๆ ที่พ่อเคยปลูกที่บ้าน 555 แต่ไม่ใช่ลูกเล็กแบบนั้นนะคะทุกคน มะเขือเทศสีขาวที่พูดถึงเขามีลักษณะเฉพาะ ลูกจะใหญ่ๆ ตามภาพประกอบเลยคะ) มะเขือเทศสีขาว (Crystal
+                            tomato)
+                        </p>
+                        <img src="images/p2.png" alt="">
+                        <p>มี ไลโคปีน เป็นสารในกลุ่มแคโรทีนอยด์ที่ละลายได้ดีในไขมัน ทำให้พืชหรือผลไม้มีสีแดง เหลือง ส้ม หรือขาว พบมากในมะเขือเทศ.....แต่ในมะเขือเทศสีขาวจะมีลักษณะเฉพาะคือ มี Colorless Caroteniod ไม่มีสี ซึ่งเป็นสารสำคัญที่ทำให้มะเขือเทศเป็นสีขาวนั่นเองคะ
+                            จากการศึกษามาในหลายงานวิจัย พบว่าไลโคปีนเป็นสารต้านอนุมูลอิสระ ที่มีฤทธิ์ต้านอนุมูลอิสระแรงที่สุดในกลุ่มแคโรทีนอยด์ โดยมีประสิทธิภาพในการต่อต้านอนุมูลอิสระสูงกว่าเบต้าแคโรทีน (b-carotene) 2 เท่า นอกจากนี้ยังมีประสิทธิภาพในการต่อต้านอนุมูลอิสระสูงกว่าแอลฟา
+                            โทโคฟีรอล (a-tocopherol) 10 เท่า ซึ่งไลโคปีนจะช่วยปกป้องผิวจากการถูกทำร้ายด้วยรังสียูวีในแสงแดด ลดความรุนแรงที่เกิดจากอาการผิวไหม้จากแสงแดด และช่วยชะลอผิวไม่ให้แก่ก่อนวัย โดยการศึกษาวิจัยทางคลินิก พบว่า</p>
+                        <p>(ด้านผิวพรรณ)</p>
+                        <p>-มะเขือเทศขาว มีสารธรรมชาติ คือ สารแคโรทีนอยด์ไม่มีสี (Colorless Carotenoids) ซึ่งเป็นแคโรทีนอยด์ตั้งต้นในกระบวนการชีวะสังเคราะห์ของแคโรทีนอยด์อื่นๆโดยทำหน้าที่ดูดซับแสงในช่วงรังสีอัลตราไวโอเลต หรือ ยูวี (UV radiation)ที่ไม่สามารถมองเห็นได้ด้วยตาเปล่า
+                            ด้วยประการนี้จึงมีคุณสมบัติเฉพาะตัวและมีประสิทธิภาพสูงในการช่วยดูดซับรังสียูวี (UV radiation)จากแสงแดดเช่น รังสียูวีเอ (UVA) และ รังสียูวีบี (UVB)ช่วยยับยั้งการสร้างเม็ดสีเมลานินใหม่ ลดจำนวนเซลล์เม็ดสีเมลานินที่มีอยู่รวมทั้งช่วยลดรอยฝ้า
+                            กระ จุดด่างดำ และรอยแผลเป็นจากสิวจึงช่วยให้ผิวดูสว่างกระจ่างใส ช่วยปรับสีผิวให้สว่างสม่ำเสมอกระจ่างใสทั่วเรือนร่าง -ในมะเขือเทศขาว มีสารไฟโตอีน (Phytoene) และ ไฟโตฟลูอีน (Phytofluene)ในปริมาณมากกว่าในมะเขือเทศทั่วไปเป็นสารต้านอนุมูลอิสระที่ช่วยเพิ่มประสิทธิภาพการดูดซับรังสียูวีปกป้องผิวจากแสงแดด
+                            และ ช่วยลดการอักเสบของผิวและพบว่า Colorless Carotenoids มีในชั้นผิวเราถึง 38% หากใครมีสารนี้ในผิวมาก มันก็จะทำให้ผิวขาวใสมากแต่ถ้าใครมีน้อยก็จะทำให้ผิวดูคล้ำนั่นเองคะ</p>
+                        <img src="images/p1.png" alt="">
+                        <p>(ด้านการแพทย์)</p>
+                        <p>-แคโรทีนอยด์มีฤทธิ์ต้านอนุมูลอิสระสูง ช่วยลดความเสี่ยงการเกิดโรคมะเร็ง โดยเฉพาะโรคมะเร็งต่อมลูกหมาก ช่วยลดการแพร่กระจายของเซลล์มะเร็งและช่วยลดปริมาณการสร้างเส้นเลือดใหม่ที่ก้อนเนื้อมะเร็ง แต่อย่างไรก็ตาม ร่างกายมนุษย์ไม่สามารถสร้างไลโคปีนได้นะคะ
+                            จึงต้องรับประทานเข้าไปเท่านั้น โดยพบว่า การรับประทานไลโคปีน 10 มิลลิกรัม เป็นระยะเวลา 12 สัปดาห์ ทำให้ระดับไลโคปีนในเลือดเพิ่มสูงขึ้น และช่วยเพิ่มระดับแคโรทีนอยด์ในผิวหนัง ซึ่งช่วยปกป้องผิวจากแสงแดด และช่วยต่อต้านอนุมูลอิสระที่ถูกสร้างขึ้นหลังจากผิวได้รับแสงแดด
+                            โดยการรับประทานผักผลไม้ที่เป็นแหล่งของไลโคปีน อย่างเช่น มะเขือเทศ ควรนำมะเขือเทศมาทำให้สุกก่อนรับประทาน เพราะมะเขือเทศที่ผ่านความร้อนแล้วจะทำให้โครงสร้างของไลโคปีนเปลี่ยนจาก Trans isomers เป็น Cis isomers ทำให้ร่างกายสามารถดูดซึมไลโคปีนได้ดีกว่ารับประทานแบบสดๆ
+                            ไลโคปีนจากมะเขือเทศ จึงเปรียบเสมือนการเสริมสร้างเกราะปกป้องผิวจากแสงแดด ให้ผิวสวยกระจ่างใส มีสุขภาพที่ดีจากภายใน นอกจากนี้ ควรดื่มน้ำให้ได้วันละ 6-8 แก้ว เพื่อเติมความชุ่มชื้นให้ผิว พักผ่อนให้เพียงพอ รวมทั้งหลีกเลี่ยงปัจจัยทำร้ายผิวจากภายนอก
+                            ซึ่งได้แก่ แสงแดด มลภาวะต่างๆ แอลกอฮอล์ และ บุหรี่ ผิวพรรณของเราก็จะคงความสวยงามและอ่อนเยาว์อยู่กับเราได้ยาวนานขึ้นคะ</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jcrvC7T__F8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -876,44 +1064,29 @@
                     <div class="container">
                         <div class="box-reccommended">
                             <div class="box-detail-rec">
-                                <img src="images/like.png" alt="">
+                                <img src="images/like-w.png" alt="">
                                 <label>เหมาะกับ</label>
-                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-                                     aliquid maiores provident alias enim dolor aut similique quod tempore 
-                                     sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
-                                     mollitia.</span>
+                                <span>ผู้หญิงเอเชีย ผิวคล้ำ ที่มีปัญฆาผิวแห้ง แตกกร้าน</span>
                             </div>
                             <div class="box-detail-rec">
-                                <img src="images/like.png" alt="">
+                                <img src="images/exclamation-mark-w.png" alt="">
                                 <label>ข้อพึ่งระวัง</label>
-                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-                                     aliquid maiores provident alias enim dolor aut similique quod tempore 
-                                     sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
-                                     mollitia.</span>
+                                <span> ต้องรับประทานน้ำให้มาก เนื่องจากมีผลขอการผลิตน้ำลาย</span>
                             </div>
                             <div class="box-detail-rec">
-                                <img src="images/sand-clock.png" alt="">
+                                <img src="images/sand-clock-w.png" alt="">
                                 <label>ระยะเห็นผล</label>
-                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-                                     aliquid maiores provident alias enim dolor aut similique quod tempore 
-                                     sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
-                                     mollitia.</span>
+                                <span>ในระยะผลัดผิว 28 วัน</span>
                             </div>
                             <div class="box-detail-rec">
-                                <img src="images/testing-tube.png" alt="">
+                                <img src="images/testing-tube-w.png" alt="">
                                 <label>ปริมาณเห็นผล</label>
-                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-                                     aliquid maiores provident alias enim dolor aut similique quod tempore 
-                                     sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
-                                     mollitia.</span>
+                                <span>ใช้ต่อเนื่อง 0.1 กรัม ต่อเนื่องเป็นเวลา 28 วัน</span>
                             </div>
                             <div class="box-detail-rec">
-                                <img src="images/two-hearts.png" alt="">
+                                <img src="images/two-hearts-w.png" alt="">
                                 <label>สารทดแทน</label>
-                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-                                     aliquid maiores provident alias enim dolor aut similique quod tempore 
-                                     sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
-                                     mollitia.</span>
+                                <span>มะม่วงสีฟ้าจากเกาะบอร์เนียว มาเลเซีย</span>
                             </div>
 
                         </div>
@@ -931,10 +1104,11 @@
                                 <div class="box-card-product">
                                     <div class="card-img-product">
                                         <a href="">
-                                            <img src="images/photo2.jpeg" alt="">
+                                            <img src="images/pp1.jpg" alt="">
                                         </a>
                                     </div>
                                     <span>serum</span>
+                                    <p>สารออกฤทธิ์ 2%</p>
                                     <label for="">999.00</label>
                                 </div>
                             </div>
@@ -945,33 +1119,36 @@
                                             <div class="box-card-product">
                                                 <div class="card-img-product">
                                                     <a href="">
-                                                        <img src="images/photo2.jpeg" alt="">
+                                                        <img src="images/pp2.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <span>serum</span>
-                                                <label for="">999.00</label>
+                                                <p>สารออกฤทธิ์ 1%</p>
+                                                <label for="">1,200.00</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="box-card-product">
                                                 <div class="card-img-product">
                                                     <a href="">
-                                                        <img src="images/photo2.jpeg" alt="">
+                                                        <img src="images/pp3.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <span>serum</span>
-                                                <label for="">999.00</label>
+                                                <p>สารออกฤทธิ์ 1%</p>
+                                                <label for="">1,000.00</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="box-card-product">
                                                 <div class="card-img-product">
                                                     <a href="">
-                                                        <img src="images/photo2.jpeg" alt="">
+                                                        <img src="images/pp4.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <span>serum</span>
-                                                <label for="">999.00</label>
+                                                <p>สารออกฤทธิ์ 3%</p>
+                                                <label for="">7,500.00</label>
                                             </div>
                                         </div>
 
@@ -979,10 +1156,11 @@
                                             <div class="box-card-product">
                                                 <div class="card-img-product">
                                                     <a href="">
-                                                        <img src="images/photo2.jpeg" alt="">
+                                                        <img src="images/pp1.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <span>serum</span>
+                                                <p>สารออกฤทธิ์ 2%</p>
                                                 <label for="">999.00</label>
                                             </div>
                                         </div>
@@ -990,10 +1168,11 @@
                                             <div class="box-card-product">
                                                 <div class="card-img-product">
                                                     <a href="">
-                                                        <img src="images/photo2.jpeg" alt="">
+                                                        <img src="images/pp2.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <span>serum</span>
+                                                <p>สารออกฤทธิ์ 2%</p>
                                                 <label for="">999.00</label>
                                             </div>
                                         </div>
@@ -1012,8 +1191,14 @@
                     <div class="container">
                         <label for="">อ้างอิง</label>
                         <span> 
-                            <a href="">www.testweb.com</a>
+                            <a href="">www.testweb.com</a> จากแพทย์...
                             </span>
+                        <span> 
+                                <a href="">www.testweb.com</a> จากแพทย์...
+                                </span>
+                        <span> 
+                                    <a href="">www.testweb.com</a> จากแพทย์...
+                                    </span>
                     </div>
                 </div>
             </div>
@@ -1062,7 +1247,7 @@
 
 <script>
     $('.slide-substance').slick({
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 2000,
