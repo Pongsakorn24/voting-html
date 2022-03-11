@@ -72,20 +72,20 @@
     }
     
     .header-2nd {
-        background-color: #846d81;
+        background-color: #e1e1e1;
         position: relative;
         z-index: 999;
         box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
     }
     
     .header-2nd .navbar-default {
-        background-color: #846d81;
+        background-color: #e1e1e1;
         border-color: #e7e7e7;
         position: fixed;
     }
     
     .header-2nd .navbar-default .navbar-nav>li>a {
-        color: #fff;
+        color: #846d81;
         font-size: 18px;
     }
     
@@ -145,7 +145,7 @@
         width: 100%;
         height: 70px;
         text-align: center;
-        background-color: #846d81;
+        background-color: #e1e1e1;
     }
     
     .layout-footer {
@@ -154,7 +154,7 @@
     
     .wrapper-footer span {
         position: relative;
-        color: #fff;
+        color: #846d81;
     }
     
     @media (max-width:768px) {}
@@ -268,13 +268,13 @@
     
     .box-detail-substance label {
         background-color: #a483bc;
-        font-weight: 200;
-        font-size: 14px;
+        font-weight: 400;
+        font-size: 24px;
         padding: 5px;
     }
     
     .box-detail-substance h2 {
-        font-size: 45px;
+        font-size: 35px;
         line-height: 60px;
         display: -webkit-box;
         -webkit-line-clamp: 2;
@@ -299,7 +299,7 @@
         width: 100%;
         position: relative;
         overflow: hidden;
-        margin: 100px 0;
+        margin: 50px 0;
     }
     
     .view-more {
@@ -412,19 +412,24 @@
         margin: 50px 0;
     }
     
-    .box-reccommended ul {
+    .box-reccommended {
         display: block;
         overflow: hidden;
         padding: 0 0 0 0;
     }
     
-    .box-reccommended ul li {
+    .box-reccommended ul {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .box-reccommended .box-detail-rec {
         display: inline-block;
         width: 19%;
         list-style-type: none;
     }
     
-    .box-reccommended ul li img {
+    .box-reccommended .box-detail-rec img {
         width: 25px;
         height: 25px;
         display: block;
@@ -434,7 +439,7 @@
         top: 0;
     }
     
-    .box-reccommended ul li label {
+    .box-reccommended .box-detail-rec label {
         display: block !important;
         text-align: center;
     }
@@ -444,20 +449,30 @@
         color: #fff;
         bottom: 0;
         left: 0;
-        font-size: 25px;
+        font-size: 22px;
         width: 25%;
-        height: 70px;
-        padding: 10px;
-        text-align: center;
+        height: 100px;
+        padding: 20px 0 20px 150px;
+        text-align: left;
         background-color: rgb(0, 0, 0, 0.5);
     }
     
     .box-user img {
         display: inline-block;
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         border-radius: 100%;
-        margin: 0 auto;
+        position: absolute;
+        left: 55px;
+        bottom: 14px;
+    }
+    
+    .box-user ul {
+        padding: 0 0 0 0;
+    }
+    
+    .box-user ul li {
+        list-style-type: none;
     }
     
     .wrapper-detail-product p {
@@ -546,38 +561,105 @@
         margin: 9px 8px;
     }
     
+    .box-reccommended .slick-dots ul {
+        display: block;
+    }
+    
+    .box-reccommended .slick-dots li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .box-reccommended .slick-dots button {
+        background-color: #fff;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        overflow: hidden;
+        text-indent: 1000px;
+        border: 0;
+    }
+    
+    .box-reccommended .slick-dots .slick-active button {
+        background-color: #a483bc;
+    }
+    
+    .box-reccommended .slick-arrow {
+        display: none !important;
+    }
+    
+    .box-reccommended .slick-prev,
+    .box-reccommended .slick-next {
+        display: none !important;
+    }
+    
+    .wrapper-ref label {
+        display: block;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    
+    .wrapper-ref {
+        display: block;
+        overflow: hidden;
+    }
+    
+    .layout-ref {
+        padding: 50px 0;
+    }
+    
+    .wrapper-detail-product img {
+        width: 50%;
+    }
+    
+    .nopaddingright {
+        padding-right: 0;
+    }
+    
+    .nopaddinglet {
+        padding-left: 0;
+    }
+    
     @media (max-width:991px) {}
     
     @media (max-width:768px) {}
     
     @media (max-width: 767px) {
+        .wrapper-quote h1,
+        .wrapper-product h1,
+        .wrapper-reccommended h1,
+        .wrapper-detail-product {
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 0;
+        }
         .box-sub {
             display: block;
             width: 100%;
             position: relative;
             overflow: hidden;
-            margin: 50px 0;
+            margin: 25px 0 50px;
         }
-        .box-detail-substance {
+        .box-sub .box-detail-substance {
             width: 100% !important;
             padding: 0 15px;
+            margin: 0 0 50px;
         }
         .box-user span {
             width: 55%;
             height: 50px;
-            padding: 5px;
-            font-size: 18px;
+            padding: 5px 0 5px 70px;
+            font-size: 13px;
         }
         .box-user img {
             width: 35px;
             height: 35px;
+            left: 20px;
+            bottom: 7px;
         }
         .box-detail-substance h2 {
             font-size: 30px;
             line-height: 42px;
-        }
-        .box-reccommended ul li {
-            width: 100%;
         }
         .wrapper-detail-product img {
             width: 100%;
@@ -591,11 +673,22 @@
             bottom: -25px;
             z-index: 999;
         }
+        .layout-recommended {
+            margin: 25px 0;
+        }
+        .box-sub .col-sm-6,
+        .box-sub .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .box-sub .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
     
     @media (max-width: 480px) {}
 </style>
-
 
 <body>
 
@@ -630,7 +723,11 @@
                     <div class="box-user">
                         <span>
                             <img src="images/doctor.png" alt="">
-                            ชื่อ นามสกุล</span>
+                            <ul>
+                                <li>ชื่อ นามสกุล</li>
+                                <li>แพทย์</li>
+                            </ul>
+                        </span>
 
                     </div>
                 </div>
@@ -638,7 +735,7 @@
         </section>
         <section>
             <div class="wrapper-quote">
-                <h1>สารสกัดทุกชนิด</h1>
+                <h1>สารออกฤทธิ์</h1>
             </div>
         </section>
         <section>
@@ -654,37 +751,27 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="box-detail-substance" style="width: 80%;">
-                                    <label for=" ">สารสำคัญ</label>
+                                <div class="box-detail-substance " style="width: 80%;">
+                                    <label for=" ">สารออกฤทธิ์เสริม</label>
                                     <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                    </ol>
-                                    <button class="view-more ">อ่านเพิ่มเติม</button>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id! Est.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="slide-substance">
-                        <div class="box-sub ">
-                            <div class="row ">
-                                <div class="col-sm-6 ">
-                                    <div class="box-detail-substance " style="width: 80%; float: right; ">
+                    <div class="box-sub ">
+                        <div class="container">
+                            <div class="slide-substance">
+                                <div class="col-sm-6  ">
+                                    <div class="box-img-substance ">
+                                        <a href="">
+                                            <img src="images/photo1.jpeg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="box-detail-substance ">
                                         <label for=" ">สารออกฤทธิ์เสริม</label>
                                         <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
-                                        <ol>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                        </ol>
-                                        <button class="view-more ">อ่านเพิ่มเติม</button>
-
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id! Est.</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 ">
@@ -693,93 +780,69 @@
                                             <img src="images/photo1.jpeg" alt="">
                                         </a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-sub ">
-                            <div class="row ">
-                                <div class="col-sm-6 ">
-                                    <div class="box-detail-substance " style="width: 80%; float: right; ">
-                                        <label for=" ">สารออกฤทธิ์เสริม</label>
+                                    <div class="box-detail-substance ">
+                                        <label for=" ">สารออกฤทธิ์ลด</label>
                                         <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
-                                        <ol>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                        </ol>
-                                        <button class="view-more ">อ่านเพิ่มเติม</button>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 ">
-                                    <div class="box-img-substance ">
-                                        <a href="">
-                                            <img src="images/photo1.jpeg" alt="">
-                                        </a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id! Est.</p>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="slide-substance">
-                        <div class="box-sub">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="box-img-substance">
-                                        <a href="">
-                                            <img src="images/photo1.jpeg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="box-detail-substance" style="width: 80%;">
-                                        <label for="">สารออกฤทธิ์ลด</label>
-                                        <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
-                                        <ol>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                        </ol>
-                                        <button class="view-more">อ่านเพิ่มเติม</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-sub">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="box-img-substance">
-                                        <a href="">
-                                            <img src="images/photo1.jpeg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="box-detail-substance" style="width: 80%;">
-                                        <label for="">สารออกฤทธิ์ลด</label>
-                                        <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
-                                        <ol>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                        </ol>
-                                        <button class="view-more">อ่านเพิ่มเติม</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
 
                 </div>
+                <!-- <div class="slide-substance">
+                        <div class="box-sub">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="box-img-substance">
+                                        <a href="">
+                                            <img src="images/photo1.jpeg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="box-detail-substance" style="width: 80%;">
+                                        <label for="">สารออกฤทธิ์ลด</label>
+                                        <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id! Est.</p>
+                                        <button class="view-more">อ่านเพิ่มเติม</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-sub">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="box-img-substance">
+                                        <a href="">
+                                            <img src="images/photo1.jpeg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="box-detail-substance" style="width: 80%;">
+                                        <label for="">สารออกฤทธิ์ลด</label>
+                                        <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
+                                        <ol>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        </ol>
+                                        <button class="view-more">อ่านเพิ่มเติม</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+            </div>
             </div>
         </section>
         <section>
@@ -793,6 +856,67 @@
                             amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi?
                         </p>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/lnOCqNcLklc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi? Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Sunt exercitationem excepturi, eaque, hic fugiat accusantium sapiente possimus earum corporis ut atque rerum fugit quis porro, vel aspernatur optio rem modi?
+                        </p>
+                        <img src="images/photo5.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper-reccommended">
+                <div class="layout-recommended">
+                    <h1>ความสำคัญ</h1>
+
+                    <div class="container">
+                        <div class="box-reccommended">
+                            <div class="box-detail-rec">
+                                <img src="images/like.png" alt="">
+                                <label>เหมาะกับ</label>
+                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
+                                     aliquid maiores provident alias enim dolor aut similique quod tempore 
+                                     sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
+                                     mollitia.</span>
+                            </div>
+                            <div class="box-detail-rec">
+                                <img src="images/like.png" alt="">
+                                <label>ข้อพึ่งระวัง</label>
+                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
+                                     aliquid maiores provident alias enim dolor aut similique quod tempore 
+                                     sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
+                                     mollitia.</span>
+                            </div>
+                            <div class="box-detail-rec">
+                                <img src="images/sand-clock.png" alt="">
+                                <label>ระยะเห็นผล</label>
+                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
+                                     aliquid maiores provident alias enim dolor aut similique quod tempore 
+                                     sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
+                                     mollitia.</span>
+                            </div>
+                            <div class="box-detail-rec">
+                                <img src="images/testing-tube.png" alt="">
+                                <label>ปริมาณเห็นผล</label>
+                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
+                                     aliquid maiores provident alias enim dolor aut similique quod tempore 
+                                     sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
+                                     mollitia.</span>
+                            </div>
+                            <div class="box-detail-rec">
+                                <img src="images/two-hearts.png" alt="">
+                                <label>สารทดแทน</label>
+                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
+                                     aliquid maiores provident alias enim dolor aut similique quod tempore 
+                                     sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
+                                     mollitia.</span>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -881,56 +1005,15 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="wrapper-reccommended">
-                <div class="layout-recommended">
-                    <h1>ความสำคัญ</h1>
 
+        <section>
+            <div class="wrapper-ref">
+                <div class="layout-ref">
                     <div class="container">
-                        <div class="box-reccommended">
-                            <ul>
-                                <li>
-                                    <img src="images/like.png" alt="">
-                                    <label>เหมาะกับใคร</label>
-                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-                                         aliquid maiores provident alias enim dolor aut similique quod tempore 
-                                         sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
-                                         mollitia.</span>
-                                </li>
-                                <li>
-                                    <img src="images/like.png" alt="">
-                                    <label>ข้อควรระวังเรื่องอะไร</label>
-                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-                                        aliquid maiores provident alias enim dolor aut similique quod tempore 
-                                        sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
-                                        mollitia.</span>
-                                </li>
-                                <li>
-                                    <img src="images/like.png" alt="">
-                                    <label>ระยะเวลาที่เห็นผล</label>
-                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-                                        aliquid maiores provident alias enim dolor aut similique quod tempore 
-                                        sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
-                                        mollitia.</span>
-                                </li>
-                                <li>
-                                    <img src="images/like.png" alt="">
-                                    <label>ปริมาณที่ต้องใช้</label>
-                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-                                        aliquid maiores provident alias enim dolor aut similique quod tempore 
-                                        sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
-                                        mollitia.</span>
-                                </li>
-                                <li>
-                                    <img src="images/like.png" alt="">
-                                    <label>สิ่งที่ต้องทดแทน</label>
-                                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-                                        aliquid maiores provident alias enim dolor aut similique quod tempore 
-                                        sunt voluptatum eveniet porro tenetur neque impedit expedita velit? Asperiores, 
-                                        mollitia.</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <label for="">อ้างอิง</label>
+                        <span> 
+                            <a href="">www.testweb.com</a>
+                            </span>
                     </div>
                 </div>
             </div>
@@ -979,10 +1062,37 @@
 
 <script>
     $('.slide-substance').slick({
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                focusOnSelect: false,
+                autoplay: true
+            }
+        }]
+    });
+</script>
+<script>
+    $('.box-reccommended').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: true,
+        autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                focusOnSelect: false,
+                autoplay: true
+            }
+        }]
     });
 </script>
 <script>
