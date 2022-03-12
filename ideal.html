@@ -21,7 +21,9 @@
                 <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     <a class="navbar-brand"></a>
                     <div class="box-logo-header">
-                        <h1>LOGO</h1>
+                        <a href="">
+                            <img src="images/idealreccommend.png" alt="">
+                        </a>
                         <!-- <a class="navbar-brand"></a>
                         <a><img src="images/logo.jpg" alt=""></a> -->
                     </div>
@@ -49,7 +51,7 @@
     }
     
     .header-2nd .box-logo-header {
-        padding: 21px 0;
+        padding: 14px 0;
         position: absolute;
         overflow: hidden;
         color: #fff;
@@ -210,11 +212,17 @@
             border: transparent;
             margin: 10px auto;
         }
+        .wrapper-detail-product p {
+            font-size: 16px;
+            font-weight: normal;
+            margin: 20px 100px;
+            text-align: left;
+        }
     }
     
     @media (max-width: 480px) {
         .header-2nd .box-logo-header {
-            padding: 16px 18px;
+            padding: 5px 10px;
         }
         .header-2nd .box-logo-header h1 {
             font-size: 18px;
@@ -256,10 +264,31 @@
     .wrapper-quote h1,
     .wrapper-product h1,
     .wrapper-reccommended h1,
-    .wrapper-detail-product {
+    .wrapper-detail-product h1 {
         text-align: center;
         font-weight: bold;
         margin: 50px 0;
+        color: #7f3f97;
+    }
+    
+    .wrapper-quote h1 {
+        margin: 50px 0 0;
+    }
+    
+    .wrapper-quote span,
+    .wrapper-quote label {
+        display: block;
+        text-align: center;
+        color: #4f4353;
+        font-weight: bold;
+    }
+    
+    .wrapper-quote span {
+        font-size: 50px;
+    }
+    
+    .wrapper-quote label {
+        font-size: 20;
     }
     
     .wrapper-reccommended h1 {
@@ -283,7 +312,11 @@
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1;
+        color: #4f4353;
     }
+    /* .box-detail-substance p {
+    color: #7f3f97;
+} */
     
     .box-detail-substance ol {
         display: block;
@@ -460,7 +493,7 @@
         height: 150px;
         padding: 35px 0 20px 175px;
         text-align: left;
-        background-color: rgb(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.5);
     }
     
     .box-user img {
@@ -624,8 +657,14 @@
         line-height: 28px;
     }
     
+    .wrapper-detail-product {
+        text-align: center;
+    }
+    
     .wrapper-detail-product img {
         width: 50%;
+        display: block;
+        margin: 0 auto;
     }
     
     .nopaddingright {
@@ -644,6 +683,17 @@
         width: 100%;
     }
     
+    .wrapper-product .note {
+        font-size: 12px;
+        position: relative;
+        top: -32px;
+        text-align: center;
+    }
+    
+    .layout-detail-product {
+        margin: 0 0 50px;
+    }
+    
     @media (max-width:991px) {}
     
     @media (max-width:768px) {}
@@ -655,7 +705,6 @@
         .wrapper-detail-product {
             text-align: center;
             font-weight: bold;
-            margin: 20px 0;
         }
         .box-sub {
             display: block;
@@ -710,7 +759,7 @@
             margin-right: 0;
         }
         .slide-substance .slick-prev {
-            background-image: url(../images/ic-back.png);
+            background-image: url(images/ic-back.png);
             background-position: center center;
             position: absolute;
             cursor: pointer;
@@ -722,7 +771,7 @@
         }
         .slide-product .slick-next,
         .slide-substance .slick-next {
-            background-image: url(../images/ic-next.png);
+            background-image: url(images/ic-next.png);
             background-position: center center;
             position: absolute;
             cursor: pointer;
@@ -753,7 +802,10 @@
             object-fit: cover;
         }
         .wrapper-detail-product p {
-            margin: 20px 0;
+            margin: 20px 0px;
+        }
+        .wrapper-quote span {
+            font-size: 30px;
         }
     }
     
@@ -795,7 +847,7 @@
                             <img src="images/doctor.png" alt="">
                             <ul>
                                 <li>ชื่อ นามสกุล</li>
-                                <li>แพทย์</li>
+                                <li>ผู้แนะนำ</li>
                             </ul>
                         </span>
 
@@ -806,6 +858,8 @@
         <section>
             <div class="wrapper-quote">
                 <h1>สารออกฤทธิ์</h1>
+                <span>white tomato extract</span>
+                <label for="">สารสกัดจากธรรมชาติ </label>
             </div>
         </section>
         <section>
@@ -815,11 +869,11 @@
                         <div class="container">
                             <div class="box-img-substance">
                                 <a href="">
-                                    <img src="images/extract.jpg" alt="">
+                                    <img src="images//extract.jpg" alt="">
                                 </a>
                             </div>
                             <div class="box-detail-substance " style="width: 80%;">
-                                <label for=" ">สารออกฤทธิ์หลัก</label>
+                                <label for=" ">ฤทธิ์ทางชีวภาพ</label>
                                 <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id! Est.</p>
                             </div>
@@ -854,7 +908,7 @@
                                                 </a>
                                             </div>
                                             <div class="box-detail-substance ">
-                                                <label for=" ">สารออกฤทธิ์เสริม</label>
+                                                <label for=" ">ปัจจัยเสริม</label>
                                                 <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
                                                     Est.
@@ -868,7 +922,7 @@
                                                 </a>
                                             </div>
                                             <div class="box-detail-substance ">
-                                                <label for=" ">สารออกฤทธิ์เสริม</label>
+                                                <label for=" ">ปัจจัยเสริม</label>
                                                 <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
                                                     Est.
@@ -882,7 +936,7 @@
                                                 </a>
                                             </div>
                                             <div class="box-detail-substance ">
-                                                <label for=" ">สารออกฤทธิ์เสริม</label>
+                                                <label for=" ">ปัจจัยเสริม</label>
                                                 <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
                                                     Est.
@@ -901,7 +955,7 @@
                                                 </a>
                                             </div>
                                             <div class="box-detail-substance ">
-                                                <label for=" ">สารออกฤทธิ์ลด</label>
+                                                <label for=" ">ปัจจัยเสื่อม</label>
                                                 <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
                                                     Est.
@@ -915,7 +969,7 @@
                                                 </a>
                                             </div>
                                             <div class="box-detail-substance ">
-                                                <label for=" ">สารออกฤทธิ์ลด</label>
+                                                <label for=" ">ปัจจัยเสื่อม</label>
                                                 <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
                                                     Est.
@@ -929,7 +983,7 @@
                                                 </a>
                                             </div>
                                             <div class="box-detail-substance ">
-                                                <label for=" ">สารออกฤทธิ์ลด</label>
+                                                <label for=" ">ปัจจัยเสื่อม</label>
                                                 <h2>สารสกัดเซรั่ม 16 ชนิด มีผลทำให้ลดรอยสิว รอยแดง </h2>
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem odit, deserunt, sint, quisquam quasi quae ipsum quis animi eaque facere adipisci repellat ducimus? Reiciendis natus itaque provident id!
                                                     Est.
@@ -1026,7 +1080,7 @@
         <section>
             <div class="wrapper-detail-product">
                 <div class="layout-detail-product">
-                    <h1>รายละเอียด</h1>
+                    <h1>งานวิจัยที่เกี่ยวข้อง</h1>
                     <div class="container">
                         <div class="box-img-big">
                             <img src="images/coverdetails.jpg" alt="">
@@ -1062,24 +1116,14 @@
         <section>
             <div class="wrapper-reccommended">
                 <div class="layout-recommended">
-                    <h1>ความสำคัญ</h1>
+                    <h1>คำแนะนำ</h1>
 
                     <div class="container">
                         <div class="box-reccommended">
                             <div class="box-detail-rec">
                                 <img src="images/like-w.png" alt="">
-                                <label>เหมาะกับ</label>
+                                <label>เหมาะกับใคร</label>
                                 <span>ผู้หญิงเอเชีย ผิวคล้ำ ที่มีปัญฆาผิวแห้ง แตกกร้าน</span>
-                            </div>
-                            <div class="box-detail-rec">
-                                <img src="images/exclamation-mark-w.png" alt="">
-                                <label>ข้อพึ่งระวัง</label>
-                                <span> ต้องรับประทานน้ำให้มาก เนื่องจากมีผลขอการผลิตน้ำลาย</span>
-                            </div>
-                            <div class="box-detail-rec">
-                                <img src="images/sand-clock-w.png" alt="">
-                                <label>ระยะเห็นผล</label>
-                                <span>ในระยะผลัดผิว 28 วัน</span>
                             </div>
                             <div class="box-detail-rec">
                                 <img src="images/testing-tube-w.png" alt="">
@@ -1087,10 +1131,21 @@
                                 <span>ใช้ต่อเนื่อง 0.1 กรัม ต่อเนื่องเป็นเวลา 28 วัน</span>
                             </div>
                             <div class="box-detail-rec">
+                                <img src="images/sand-clock-w.png" alt="">
+                                <label>ระยะเห็นผล</label>
+                                <span>ในระยะผลัดผิว 28 วัน</span>
+                            </div>
+                            <div class="box-detail-rec">
                                 <img src="images/two-hearts-w.png" alt="">
                                 <label>สารทดแทน</label>
                                 <span>มะม่วงสีฟ้าจากเกาะบอร์เนียว มาเลเซีย</span>
                             </div>
+                            <div class="box-detail-rec">
+                                <img src="images/exclamation-mark-w.png" alt="">
+                                <label>ข้อพึ่งระวัง</label>
+                                <span> ต้องรับประทานน้ำให้มาก เนื่องจากมีผลขอการผลิตน้ำลาย</span>
+                            </div>
+
 
                         </div>
                     </div>
@@ -1100,7 +1155,7 @@
         <section>
             <div class="wrapper-product">
                 <div class="layout-product">
-                    <h1>สินค้าเปรียบเทียบ</h1>
+                    <h1>ผลิตภัณฑ์จากทั่วโลก</h1>
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-3 col-xs-6">
@@ -1180,10 +1235,13 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
+                        <p class="note">หมายเหตุ ทั้งหมดนี้มิใช่ผลิตภัณฑ์ที่ได้รับความเห็นชอบจากผู้เชี่ยวชาญ หากคุณสนใจโปรดขอคำแนะนำก่อนตัดสินใจ​</p>
                     </div>
+
                 </div>
             </div>
         </section>
