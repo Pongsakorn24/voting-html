@@ -787,3 +787,27 @@ input[type=checkbox] {
     height: 100%;
     object-fit: cover;
 }
+
+.wrapper-form-vote .complete img,
+.wrapper-form-vote .incomplete img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+}
+
+.wrapper-form-vote .complete,
+.wrapper-form-vote .incomplete {
+    display: block;
+    font-size: 26px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.wrapper-form-vote .complete {
+    color: #4CAF50;
+}
+
+.wrapper-form-vote .incomplete {
+    color: #ff0000;
+}
