@@ -213,13 +213,14 @@
         margin: 0 5px 25px;
         font-size: 18px;
     }
-    .wrapper-form-vote .complete img,
-    .wrapper-form-vote .incomplete img {
+    .modal-warn .complete img,
+    .modal-warn .incomplete img {
         width: 50px;
         height: 50px;
     }
-    .wrapper-form-vote .complete,
-    .wrapper-form-vote .incomplete {
-        font-size: 22px;
+    .modal-warn .complete,
+    .modal-warn .incomplete {
+        margin: 0;
+        font-size: 21px;
     }
 }
