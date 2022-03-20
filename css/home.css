@@ -1,5 +1,6 @@
 body {
     font-family: 'Prompt', sans-serif;
+    background-color: #393E46;
 }
 
 .wrapper-cover {
@@ -90,14 +91,14 @@ body {
 .box-head ul li {
     display: block;
     color: #fff;
-    font-size: 55px;
+    font-size: 50px;
     text-align: center;
 }
 
 .count-member,
 .target {
-    color: #01e400;
-    font-size: 50px;
+    color: #FFD369;
+    font-size: 65px;
     font-weight: bold;
 }
 
@@ -266,7 +267,7 @@ body {
 
 .wrapper-correct,
 .wrapper-lawyer {
-    background-color: #0032eb;
+    background-color: #222831;
 }
 
 .layout-why,
@@ -290,14 +291,14 @@ body {
     padding: 50px 0;
     font-size: 60px;
     line-height: 70px;
-    color: #fff;
+    color: #393E46;
     text-align: center;
-    background-color: #0032eb;
+    background-color: #FFD369;
 }
 
 .layout-edit-success .edit-success {
-    background-color: #0032eb;
-    color: #fff;
+    background-color: #FFD369;
+    color: #393E46;
 }
 
 .box-card-why {
@@ -328,7 +329,7 @@ body {
 }
 
 .box-card-why p {
-    color: #000;
+    color: #fff;
     font-size: 20px;
     text-align: left;
     display: -webkit-box;
@@ -343,6 +344,7 @@ body {
 .box-card-why h3 {
     text-align: center;
     font-weight: bold;
+    color: #fff;
 }
 
 .box-img-correct {
@@ -370,8 +372,8 @@ body {
 
 .btn-read,
 .btn-share {
-    background-color: #0032eb;
-    color: #fff;
+    background-color: #FFD369;
+    color: #393E46;
     width: 40%;
     height: 50px;
     display: block;
@@ -415,6 +417,11 @@ input[type=submit]:hover {
 
 .form-vote-sunmit label {
     display: block;
+    color: #fff;
+}
+
+.control-btn p {
+    color: #fff;
 }
 
 
@@ -429,8 +436,8 @@ input[type=submit]:hover {
 } */
 
 .btn-submit {
-    background-color: #01e400;
-    color: #fff;
+    background-color: #FFD369;
+    color: #393E46;
     width: 40%;
     height: 50px;
     display: block;
@@ -478,11 +485,14 @@ input[type=submit]:hover {
 }
 
 .caution {
+    background-color: #EEEEEE;
+    color: #393E46;
     padding: 25px;
     font-size: 20px;
     text-align: center;
     position: relative;
     margin: 12px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
 }
 
@@ -500,13 +510,14 @@ input[type=submit]:hover {
     line-height: 65px;
     font-weight: bold;
     margin: 0 0 10px;
+    color: #FFD369;
 }
 
 .box-title-issue label,
 .box-title-issue2 label,
 .photo-bum {
     font-size: 22px;
-    color: #c1c1c1;
+    color: #fff;
     margin: 0;
     font-weight: 400;
 }
@@ -536,6 +547,7 @@ input[type=submit]:hover {
     font-size: 22px;
     line-height: 30px;
     margin: 0 150px;
+    color: #fff;
 }
 
 .hot-issue img {
@@ -555,6 +567,7 @@ input[type=submit]:hover {
     font-weight: 400;
     margin: 5px auto 0;
     font-size: 14px;
+    color: #fff;
 }
 
 .slide-success {
@@ -620,11 +633,12 @@ input[type=submit]:hover {
 }
 
 .box-progress .progress {
-    background-color: #01e400;
+    background-color: #FFD369;
     border-radius: 10px;
 }
 
 .layout-progress {
+    background-color: #EEEEEE;
     padding: 25px;
     border-radius: 20px;
     margin-bottom: 25px;
@@ -634,6 +648,7 @@ input[type=submit]:hover {
 .layout-progress span {
     font-size: 22px;
     font-weight: bold;
+    color: #393E46;
 }
 
 .modal-addform .modal-dialog,
@@ -714,7 +729,7 @@ input[type=checkbox] {
     position: relative;
     overflow: hidden;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     text-align: center;
     margin: 25px 0 0;
 }
@@ -736,6 +751,7 @@ input[type=checkbox] {
 .email-consent {
     display: block;
     margin: 0 15px 10px !important;
+    color: #fff;
 }
 
 .img-example {
@@ -747,8 +763,8 @@ input[type=checkbox] {
 .btn-notagree,
 .btn-confirm,
 .btn-download {
-    background-color: #01e400;
-    color: #fff;
+    background-color: #FFD369;
+    color: #393E46;
     width: 200px;
     height: 50px;
     margin: 0 10px 25px;
@@ -760,9 +776,9 @@ input[type=checkbox] {
 
 .btn-agree,
 .btn-download {
-    background-color: #fff;
-    border: 2px solid #01e400;
-    color: #01e400;
+    background-color: #EEEEEE;
+    border: 2px solid #EEEEEE;
+    color: #393E46;
 }
 
 .modal-confirm .modal-footer {

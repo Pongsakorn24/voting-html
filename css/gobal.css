@@ -12,6 +12,7 @@ body {
 .header-2nd .box-logo-header h1 {
     margin: 0;
     font-size: 25px;
+    color: #FFD369;
 }
 
 .header-2nd .box-logo-header img {
@@ -26,14 +27,14 @@ body {
 }
 
 .header-2nd {
-    background-color: #0032eb;
+    background-color: #222831;
     position: relative;
     z-index: 999;
     box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
 }
 
 .header-2nd .navbar-default {
-    background-color: #0032eb;
+    background-color: #222831;
     border-color: #e7e7e7;
     position: fixed;
 }
@@ -139,7 +140,7 @@ body {
     }
     .open-vote {
         display: block;
-        background-color: #0032eb;
+        background-color: #222831;
         color: #fff;
         border-radius: 10px;
         width: 80%;
