@@ -16,15 +16,15 @@
 
 </head>
 <header>
-    <div class="header-2nd">
+    <div class="header-th">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     <a class="navbar-brand"></a>
                     <div class="box-logo-header">
-                        <h1>พรรคสร้างอนาคตไทย</h1>
-                        <!-- <a class="navbar-brand"></a>
-                        <a><img src="images/logo.jpg" alt=""></a> -->
+                        <!-- <h1>พรรคสร้างอนาคตไทย</h1> -->
+                        <a class="navbar-brand"></a>
+                        <a><img src="images/site_logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -51,20 +51,20 @@
         font-family: 'Prompt', sans-serif;
     }
     
-    .header-2nd .box-logo-header {
-        padding: 11px 0;
+    .header-th .box-logo-header {
+        padding: 20px 0;
         position: absolute;
         overflow: hidden;
         color: #fff;
     }
     
-    .header-2nd .box-logo-header h1 {
+    .header-th .box-logo-header h1 {
         margin: 0;
         font-size: 25px;
         color: #fff;
     }
     
-    .header-2nd .box-logo-header img {
+    .header-th .box-logo-header img {
         /* width: 100%; */
         height: 42px;
         position: relative;
@@ -75,30 +75,31 @@
         display: inline-block;
     }
     
-    .header-2nd {
-        background-color: #3D58A2;
+    .header-th {
+        height: 90px;
+        background-color: #fff;
         position: relative;
         z-index: 999;
         box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
     }
     
-    .header-2nd .navbar-default {
-        background-color: #3D58A2;
+    .header-th .navbar-default {
+        background-color: #fff;
         border-color: #e7e7e7;
         position: fixed;
     }
     
-    .header-2nd .navbar-default .navbar-nav>li>a {
+    .header-th .navbar-default .navbar-nav>li>a {
         color: #fff;
         font-size: 18px;
     }
     
-    .header-2nd .navbar-nav>li>a {
+    .header-th .navbar-nav>li>a {
         margin: 0;
         padding: 25px 15px;
     }
     
-    .header-2nd .navbar-nav>li>a:hover {
+    .header-th .navbar-nav>li>a:hover {
         border-bottom: 4px solid #fff;
     }
     
@@ -112,7 +113,7 @@
         bottom: 20px;
     }
     
-    .header-2nd .navbar-brand {
+    .header-th .navbar-brand {
         float: left;
         padding: 0;
         font-size: 18px;
@@ -122,7 +123,7 @@
     display: block;
 } */
     
-    .header-2nd .navbar {
+    .header-th .navbar {
         border-radius: 0px;
         position: relative;
         min-height: 50px;
@@ -130,12 +131,12 @@
         border: 0px solid transparent;
     }
     
-    .header-2nd .navbar-right .box-registor {
+    .header-th .navbar-right .box-registor {
         padding: 15px 0;
         display: inline-block;
     }
     
-    .header-2nd .navbar-default .navbar-toggle {
+    .header-th .navbar-default .navbar-toggle {
         border-color: transparent;
     }
     
@@ -199,23 +200,36 @@
     }
     
     @media (max-width: 480px) {
-        .header-2nd .box-logo-header {
-            padding: 16px 18px;
+        .header-th {
+            height: 70px;
         }
-        .header-2nd .box-logo-header h1 {
+        .header-th .box-logo-header {
+            padding: 16px 14px;
+        }
+        .header-th .box-logo-header h1 {
             font-size: 18px;
+        }
+        .navbar-toggle {
+            margin: 18px 30px;
         }
     }
 </style>
 <style>
-    .layout-from-vote {
+    .layout-form-vote,
+    .layout-form-th {
         position: relative;
         margin: 50px 0;
     }
     
-    .wrapper-form-vote h1 {
+    .wrapper-form-vote h1,
+    .wrapper-form-th h1 {
         margin-bottom: 50px;
         text-align: center;
+        color: #fff;
+    }
+    
+    .wrapper-form-th h1 {
+        color: #000;
     }
     
     .error,
@@ -226,15 +240,10 @@
         color: #ff0000;
     }
     
-    .box-detail p {
-        font-size: 22px;
-        line-height: 30px;
-        margin: 0 150px;
-    }
-    
     .email-consent {
         display: block;
         margin: 0 15px 10px !important;
+        color: #fff;
     }
     
     .form-vote-sunmit {
@@ -249,7 +258,7 @@
         margin: 8px 0;
         display: inline-block;
         border: 1px solid #ccc;
-        border-radius: 4px;
+        border-radius: 0;
         box-sizing: border-box;
     }
     
@@ -259,6 +268,11 @@
         margin-right: 5px;
         vertical-align: middle;
         margin-left: 15px;
+        color: #fff !important;
+    }
+    
+    .row.form-group {
+        color: #fff;
     }
     
     .box-lawyer {
@@ -280,7 +294,7 @@
         display: block;
         background-color: #00AA4E;
         color: #fff;
-        width: 50%;
+        width: 200px;
         height: 50px;
         margin: 0 auto 25px;
         font-size: 22px;
@@ -359,7 +373,7 @@
         display: block;
         width: 300px;
         height: 300px;
-        margin: 0 auto;
+        margin: 0 auto 25px;
     }
     
     .box-qr img {
@@ -379,6 +393,7 @@
     .box-name .county {
         display: block;
         text-align: center;
+        color: #fff;
     }
     
     .box-name .province,
@@ -397,16 +412,38 @@
     .box-help .box-detail {
         display: inline-block;
         width: 100%;
-        height: 100px;
+        height: 100%;
         text-align: center;
         font-size: 24px;
-        padding: 10px;
+        /* padding: 10px; */
         text-decoration: none;
         background-color: #333;
         color: #fff;
         margin: 0 0 25px;
-        border-radius: 20px;
+        /* border-radius: 20px; */
     }
+    
+    .box-detail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .box-bg {
+        background-color: #3D58A2;
+        padding: 20px;
+    }
+    
+    .box-another {
+        display: block;
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    @media (max-width:991px) {}
+    
+    @media (max-width:768px) {}
     
     @media (max-width: 767px) {
         .wrapper-form-vote h1 {
@@ -422,6 +459,18 @@
         }
         .box-help .box-detail {
             font-size: 18px;
+        }
+        .btn-apply {
+            display: block;
+            background-color: #00AA4E;
+            color: #fff;
+            width: 100%;
+            height: 50px;
+            margin: 0 auto 25px;
+            font-size: 22px;
+            border: transparent;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
         }
     }
     
@@ -440,86 +489,69 @@
 <body>
 
     <article>
-        <!-- <section>
-            <div class="wrapper-cover">
-                <div class="layout-cover">
-                    <div class="box-banner-home2">
-                        <a href="">
-                            <img src="images/ped-bg.jpg" alt="">
-                        </a>
 
-                    </div>
-
-
-                </div>
-            </div>
-
-        </section> -->
 
 
         <section>
             <div class="wrapper-form-vote">
-                <div class="layout-from-vote">
+                <div class="layout-form-vote">
                     <div class="container">
-                        <h1>ร่วมสร้างอนาคตไทย</h1>
-                        <!-- <div class="box-lawyer">
-                            <a href="">
-                                <img src="images/user123.jpeg" alt="">
-                            </a>
-                        </div> -->
-                        <div class="avatar-upload">
-                            <div class="avatar-edit">
-                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                <label for="imageUpload"></label>
-                            </div>
-                            <div class="avatar-preview">
-                                <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                        <div class="box-bg">
+                            <h1>ร่วมสร้างอนาคตไทย</h1>
+                            <div class="avatar-upload">
+                                <div class="avatar-edit">
+                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                    <label for="imageUpload"></label>
                                 </div>
+                                <div class="avatar-preview">
+                                    <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="/action_page.php" class="form-vote-sunmit">
+
+                                <div class=" form-group">
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="text" id="lname" name="lastname" placeholder="ชื่อ">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" id="lname" name="lastname" placeholder="นามสกุล">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" id="lname" name="lastname" placeholder="เลขบัตรประชาชน 13 หลัก">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" id="lname" name="lastname" placeholder="เบอร์โทร">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <!-- <label for="lname"><span class="text-red">*</span></label> -->
+                                            <input type="text" id="lname" name="lastname" placeholder="อีเมล">
+                                        </div>
+                                    </div>
+
+                                    <!-- <div _ngcontent-yyb-c89="" class="remark">(ชื่อและนามสกุลต้องกรอกเป็นภาษาไทยเท่านั้น ไม่ต้องมีคำนำหน้า)</div> -->
+                                </div>
+
+
+
+
+
+                                <div class="row form-group">
+                                    <input type="checkbox" formcontrolname="isUnderstandConfirmed" name="isUnderstandConfirmed" id="isUnderstandConfirmed" class="ng-untouched ng-pristine ng-invalid"> ข้าพเจ้ายินยอมสมัคร
+                                    <p color="gray.dark" font-size="s" class="email-consent">การสมัคร แปลว่าคุณยอมรับ
+                                        <a href="/policies/terms-of-service" data-pass-thru="true">ข้อตกลงการใช้บริการ</a> และ <a href="/policies/privacy" data-pass-thru="true">นโยบายสิทธิส่วนบุคคล</a> ของ Thailandissue.org และคุณตกลงที่จะรับอีเมลเป็นครั้งคราวเกี่ยวกับแคมเปญบน
+                                        Thailandissue.org คุณสามารถยกเลิกการเป็นสมาชิกได้ตลอดเวลา</p>
+
+                                </div>
+
+                            </form>
+                            <div class="control-btn">
+                                <button class="btn-apply">สมัคร</button>
                             </div>
                         </div>
-                        <form action="/action_page.php" class="form-vote-sunmit">
 
-                            <div class=" form-group">
-
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <input type="text" id="lname" name="lastname" placeholder="ชื่อ">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="text" id="lname" name="lastname" placeholder="นามสกุล">
-                                    </div>
-                                </div>
-
-                                <!-- <div _ngcontent-yyb-c89="" class="remark">(ชื่อและนามสกุลต้องกรอกเป็นภาษาไทยเท่านั้น ไม่ต้องมีคำนำหน้า)</div> -->
-                            </div>
-
-
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <input type="text" id="lname" name="lastname" placeholder="เบอร์โทร">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <!-- <label for="lname"><span class="text-red">*</span></label> -->
-                                        <input type="text" id="lname" name="lastname" placeholder="อีเมล">
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            <div class="row form-group">
-                                <input type="checkbox" formcontrolname="isUnderstandConfirmed" name="isUnderstandConfirmed" id="isUnderstandConfirmed" class="ng-untouched ng-pristine ng-invalid"> ข้าพเจ้ายินยอมสมัคร
-                                <p color="gray.dark" font-size="s" class="email-consent">การสมัคร แปลว่าคุณยอมรับ
-                                    <a href="/policies/terms-of-service" data-pass-thru="true">ข้อตกลงการใช้บริการ</a> และ <a href="/policies/privacy" data-pass-thru="true">นโยบายสิทธิส่วนบุคคล</a> ของ Thailandissue.org และคุณตกลงที่จะรับอีเมลเป็นครั้งคราวเกี่ยวกับแคมเปญบน
-                                    Thailandissue.org คุณสามารถยกเลิกการเป็นสมาชิกได้ตลอดเวลา</p>
-
-                            </div>
-
-                        </form>
-                        <div class="control-btn">
-                            <button class="btn-apply">สมัคร</button>
-                        </div>
 
                     </div>
                 </div>
