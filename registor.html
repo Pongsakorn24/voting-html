@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;500;700&display=swap" rel="stylesheet">
+    <title>ลงชื่อสนับสนุน</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="slick/slick.js"></script>
+
+</head>
+<header>
+    <div class="header-2nd">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a class="navbar-brand"></a>
+                    <div class="box-logo-header">
+                        <h1>พรรคสร้างอนาคตไทย</h1>
+                        <!-- <a class="navbar-brand"></a>
+                        <a><img src="images/logo.jpg" alt=""></a> -->
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/"></a>
+                        </li>
+                        <!-- <li><a href="/user/profile">โปรไฟล์</a></li>
+                        <li><a href="/user/all-salepage">เซลเพจ</a></li>
+                        <li><a href="/register">สมัครสมาชิก</a></li>
+                        <li><a href="/login">เข้าสู่ระบบ</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<style>
+    body {
+        font-family: 'Prompt', sans-serif;
+    }
+    
+    .header-2nd .box-logo-header {
+        padding: 11px 0;
+        position: absolute;
+        overflow: hidden;
+        color: #fff;
+    }
+    
+    .header-2nd .box-logo-header h1 {
+        margin: 0;
+        font-size: 25px;
+        color: #fff;
+    }
+    
+    .header-2nd .box-logo-header img {
+        /* width: 100%; */
+        height: 42px;
+        position: relative;
+        display: block;
+    }
+    
+    .name-logo {
+        display: inline-block;
+    }
+    
+    .header-2nd {
+        background-color: #3D58A2;
+        position: relative;
+        z-index: 999;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+    }
+    
+    .header-2nd .navbar-default {
+        background-color: #3D58A2;
+        border-color: #e7e7e7;
+        position: fixed;
+    }
+    
+    .header-2nd .navbar-default .navbar-nav>li>a {
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .header-2nd .navbar-nav>li>a {
+        margin: 0;
+        padding: 25px 15px;
+    }
+    
+    .header-2nd .navbar-nav>li>a:hover {
+        border-bottom: 4px solid #fff;
+    }
+    
+    .navbar-right li:nth-child(4):after {
+        content: '';
+        height: 35px;
+        width: 1px;
+        background-color: #ffffff;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+    }
+    
+    .header-2nd .navbar-brand {
+        float: left;
+        padding: 0;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    /* .collapse.in {
+    display: block;
+} */
+    
+    .header-2nd .navbar {
+        border-radius: 0px;
+        position: relative;
+        min-height: 50px;
+        margin-bottom: 0;
+        border: 0px solid transparent;
+    }
+    
+    .header-2nd .navbar-right .box-registor {
+        padding: 15px 0;
+        display: inline-block;
+    }
+    
+    .header-2nd .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+    
+    .footer_mb {
+        display: none;
+    }
+    
+    @media (max-width:768px) {}
+    
+    @media (max-width: 767px) {
+        .footer_mb {
+            display: block;
+        }
+        .footer_mb {
+            position: fixed;
+            bottom: 0px;
+            z-index: 9999;
+            width: 100%;
+            height: 4.5rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+        }
+        .footer_mb a {
+            color: white !important;
+        }
+        .footer_mb {
+            position: fixed;
+            bottom: 0px;
+            z-index: 9999;
+            width: 100%;
+            height: 70px;
+        }
+        .footer_mb img {
+            width: auto;
+            height: 22px;
+            margin: 25px auto;
+        }
+        .row .col-xs-3 {
+            width: 25%;
+            margin-left: auto;
+            left: auto;
+            right: auto;
+        }
+        .footer_mb .container {
+            padding-right: 30px;
+            padding-left: 30px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .open-vote {
+            display: block;
+            background-color: #3D58A2;
+            color: #fff;
+            border-radius: 10px;
+            width: 80%;
+            height: 50px;
+            font-size: 20px;
+            border: transparent;
+            margin: 10px auto;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .header-2nd .box-logo-header {
+            padding: 16px 18px;
+        }
+        .header-2nd .box-logo-header h1 {
+            font-size: 18px;
+        }
+    }
+</style>
+<style>
+    .layout-from-vote {
+        position: relative;
+        margin: 50px 0;
+    }
+    
+    .wrapper-form-vote h1 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .error,
+    .remark {
+        font-weight: 400;
+        margin: 5px auto 0;
+        font-size: 14px;
+        color: #ff0000;
+    }
+    
+    .box-detail p {
+        font-size: 22px;
+        line-height: 30px;
+        margin: 0 150px;
+    }
+    
+    .email-consent {
+        display: block;
+        margin: 0 15px 10px !important;
+    }
+    
+    .form-vote-sunmit {
+        margin: 25px 0 0;
+        overflow: hidden;
+    }
+    
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=checkbox] {
+        width: 19px;
+        height: 19px;
+        margin-right: 5px;
+        vertical-align: middle;
+        margin-left: 15px;
+    }
+    
+    .box-lawyer {
+        display: block;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin: 0 auto 20px;
+        overflow: hidden;
+    }
+    
+    .box-lawyer a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .btn-apply {
+        display: block;
+        background-color: #00AA4E;
+        color: #fff;
+        width: 50%;
+        height: 50px;
+        margin: 0 auto 25px;
+        font-size: 22px;
+        border: transparent;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+    }
+    
+    .avatar-upload {
+        position: relative;
+        max-width: 150px;
+        margin: 50px auto 25px;
+    }
+    
+    .avatar-edit {
+        position: absolute;
+        right: 12px;
+        z-index: 1;
+        top: 10px;
+    }
+    
+    .avatar-edit input {
+        display: none;
+    }
+    
+    .avatar-edit label {
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        margin-bottom: 0;
+        border-radius: 100%;
+        background: #FFFFFF;
+        border: 1px solid transparent;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        font-weight: normal;
+        transition: all .2s ease-in-out;
+    }
+    
+    .avatar-edit label:hover {
+        background: #f1f1f1;
+        border-color: #d6d6d6;
+    }
+    
+    .avatar-edit label:after {
+        content: "\f040";
+        font-family: 'FontAwesome';
+        color: #757575;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .avatar-preview {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        border-radius: 100%;
+        border: transparent;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    .avatar-preview #imagePreview {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .box-qr {
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    
+    .box-qr img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .box-name label {
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: bold;
+    }
+    
+    .box-name label,
+    .box-name .province,
+    .box-name .county {
+        display: block;
+        text-align: center;
+    }
+    
+    .box-name .province,
+    .box-name .county {
+        font-size: 20px;
+    }
+    
+    .box-help {
+        display: block;
+    }
+    /* .box-help ul {
+    display: block;
+    padding: 0 0 0 0;
+} */
+    
+    .box-help .box-detail {
+        display: inline-block;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-size: 24px;
+        padding: 10px;
+        text-decoration: none;
+        background-color: #333;
+        color: #fff;
+        margin: 0 0 25px;
+        border-radius: 20px;
+    }
+    
+    @media (max-width: 767px) {
+        .wrapper-form-vote h1 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .layout-from-vote {
+            position: relative;
+            margin: 25px 0;
+        }
+        .wrapper-form-vote h1 {
+            font-size: 24px;
+        }
+        .box-help .box-detail {
+            font-size: 18px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .box-lawyer {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+        }
+    }
+</style>
+
+<body>
+
+    <article>
+        <!-- <section>
+            <div class="wrapper-cover">
+                <div class="layout-cover">
+                    <div class="box-banner-home2">
+                        <a href="">
+                            <img src="images/ped-bg.jpg" alt="">
+                        </a>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section> -->
+
+
+        <section>
+            <div class="wrapper-form-vote">
+                <div class="layout-from-vote">
+                    <div class="container">
+                        <h1>สมัคร ส.ส.</h1>
+                        <!-- <div class="box-lawyer">
+                            <a href="">
+                                <img src="images/user123.jpeg" alt="">
+                            </a>
+                        </div> -->
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                <label for="imageUpload"></label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                                </div>
+                            </div>
+                        </div>
+                        <form action="/action_page.php" class="form-vote-sunmit">
+
+                            <div class=" form-group">
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" id="lname" name="lastname" placeholder="ชื่อ">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" id="lname" name="lastname" placeholder="นามสกุล">
+                                    </div>
+                                </div>
+
+                                <!-- <div _ngcontent-yyb-c89="" class="remark">(ชื่อและนามสกุลต้องกรอกเป็นภาษาไทยเท่านั้น ไม่ต้องมีคำนำหน้า)</div> -->
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" id="lname" name="lastname" placeholder="จังหวัด">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- <label for="lname"><span class="text-red">*</span></label> -->
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row form-group">
+                                <input type="checkbox" formcontrolname="isUnderstandConfirmed" name="isUnderstandConfirmed" id="isUnderstandConfirmed" class="ng-untouched ng-pristine ng-invalid"> ข้าพเจ้ายินยอมสมัคร
+                                <p color="gray.dark" font-size="s" class="email-consent">การสมัคร แปลว่าคุณยอมรับ
+                                    <a href="/policies/terms-of-service" data-pass-thru="true">ข้อตกลงการใช้บริการ</a> และ <a href="/policies/privacy" data-pass-thru="true">นโยบายสิทธิส่วนบุคคล</a> ของ Thailandissue.org และคุณตกลงที่จะรับอีเมลเป็นครั้งคราวเกี่ยวกับแคมเปญบน
+                                    Thailandissue.org คุณสามารถยกเลิกการเป็นสมาชิกได้ตลอดเวลา</p>
+
+                            </div>
+
+                        </form>
+                        <div class="control-btn">
+                            <button class="btn-apply">สมัคร</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </article>
+
+</body>
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                $('#imagePreview').hide();
+                $('#imagePreview').fadeIn(650);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#imageUpload").change(function() {
+        readURL(this);
+    });
+</script>
+
+</html>
