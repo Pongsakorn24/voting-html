@@ -349,11 +349,10 @@ body {
 
 .box-img-correct {
     position: relative;
-    width: 100%;
     overflow: hidden;
     padding-top: 56.25%;
     border-radius: 10px;
-    margin: 25px 0;
+    margin: 25px 150px;
 }
 
 .box-img-correct a {
@@ -701,10 +700,10 @@ input[type=checkbox] {
 
 .photo-show {
     position: relative;
-    width: 100%;
     overflow: hidden;
     padding-top: 56.25%;
     border-radius: 10px;
+    margin: 0 150px;
 }
 
 .photo-show a {
