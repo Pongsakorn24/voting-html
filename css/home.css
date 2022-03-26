@@ -548,7 +548,7 @@ input[type=submit]:hover {
     font-size: 22px;
     line-height: 30px;
     margin: 0 150px;
-    color: #fff;
+    color: #000;
 }
 
 .hot-issue img {
