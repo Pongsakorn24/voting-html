@@ -92,7 +92,6 @@
     .box-title-issue label,
     .box-title-issue2 label {
         font-size: 12px;
-        color: #c1c1c1;
         font-weight: 400;
     }
     .box-img-correct {
@@ -239,7 +238,6 @@
     }
     .count-member,
     .target {
-        color: #FFD369;
         font-size: 45px;
         font-weight: bold;
     }

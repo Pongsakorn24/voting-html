@@ -1,6 +1,7 @@
 body {
     font-family: 'Prompt', sans-serif;
-    background-color: #393E46;
+    /* background-color: #EC255A; */
+    /* background-image: linear-gradient(to right, #ec255a, #bf0b6a, #8b146f, #521b67, #112b5f); */
 }
 
 .wrapper-cover {
@@ -97,7 +98,8 @@ body {
 
 .count-member,
 .target {
-    color: #FFD369;
+    color: #fff;
+    text-shadow: 2px 2px #000;
     font-size: 65px;
     font-weight: bold;
 }
@@ -267,7 +269,7 @@ body {
 
 .wrapper-correct,
 .wrapper-lawyer {
-    background-color: #222831;
+    background: linear-gradient(to right, #112b5f 32%, #ed0006 100%);
 }
 
 .layout-why,
@@ -287,18 +289,18 @@ body {
 .layout-correct .correct,
 .layout-edit-success .edit-success,
 .layout-from-vote .form-vote {
-    margin: 0;
+    margin: 0 0 25px;
     padding: 50px 0;
     font-size: 60px;
     line-height: 70px;
-    color: #393E46;
+    color: #fff;
     text-align: center;
-    background-color: #FFD369;
+    background: linear-gradient(to right, #112b5f 32%, #ed0006 100%);
 }
 
 .layout-edit-success .edit-success {
-    background-color: #FFD369;
-    color: #393E46;
+    background-color: #112b5f;
+    color: #fff;
 }
 
 .box-card-why {
@@ -329,8 +331,9 @@ body {
     object-fit: cover;
 }
 
-.box-card-why p {
-    color: #000;
+.box-card-why-win p,
+.box-card-why-lost p {
+    color: #112b5f;
     font-size: 20px;
     text-align: left;
     display: -webkit-box;
@@ -343,10 +346,16 @@ body {
     padding: 0 0 25px;
 }
 
-.box-card-why h3 {
+.box-card-why-win h3,
+.box-card-why-lost h3 {
     text-align: center;
     font-weight: bold;
-    color: #000;
+    color: #112b5f;
+}
+
+.box-card-why-lost p,
+.box-card-why-lost h3 {
+    color: #ed0006;
 }
 
 .box-img-correct {
@@ -373,8 +382,8 @@ body {
 
 .btn-read,
 .btn-share {
-    background-color: #FFD369;
-    color: #393E46;
+    background-color: #112b5f;
+    color: #ED0006;
     width: 40%;
     height: 50px;
     display: block;
@@ -422,7 +431,7 @@ input[type=submit]:hover {
 }
 
 .control-btn p {
-    color: #fff;
+    color: #ED0006;
 }
 
 
@@ -437,8 +446,8 @@ input[type=submit]:hover {
 } */
 
 .btn-submit {
-    background-color: #FFD369;
-    color: #393E46;
+    background-color: #112b5f;
+    color: #ED0006;
     width: 40%;
     height: 50px;
     display: block;
@@ -487,7 +496,7 @@ input[type=submit]:hover {
 
 .caution {
     background-color: #EEEEEE;
-    color: #393E46;
+    color: #ed0006;
     padding: 25px;
     font-size: 20px;
     text-align: center;
@@ -511,14 +520,14 @@ input[type=submit]:hover {
     line-height: 65px;
     font-weight: bold;
     margin: 0 0 10px;
-    color: #FFD369;
+    color: #112b5f;
 }
 
 .box-title-issue label,
 .box-title-issue2 label,
 .photo-bum {
     font-size: 22px;
-    color: #fff;
+    color: #ED0006;
     margin: 0;
     font-weight: 400;
 }
@@ -560,7 +569,7 @@ input[type=submit]:hover {
 
 .error,
 .text-red {
-    color: #dc3545;
+    color: #ff0000;
     font-size: 16px;
 }
 
@@ -569,7 +578,7 @@ input[type=submit]:hover {
     font-weight: 400;
     margin: 5px auto 0;
     font-size: 14px;
-    color: #fff;
+    color: #ff0000;
 }
 
 .slide-success {
@@ -635,7 +644,7 @@ input[type=submit]:hover {
 }
 
 .box-progress .progress {
-    background-color: #FFD369;
+    background-color: #112b5f;
     border-radius: 10px;
     text-align: center;
 }
@@ -650,7 +659,7 @@ input[type=submit]:hover {
 .layout-progress span {
     font-size: 22px;
     font-weight: bold;
-    color: #393E46;
+    color: #ED0006;
 }
 
 .modal-addform .modal-dialog,
@@ -731,7 +740,7 @@ input[type=checkbox] {
     position: relative;
     overflow: hidden;
     text-decoration: none;
-    color: #fff;
+    color: #112b5f;
     text-align: center;
     margin: 25px 0 0;
 }
@@ -753,7 +762,6 @@ input[type=checkbox] {
 .email-consent {
     display: block;
     margin: 0 15px 10px !important;
-    color: #fff;
 }
 
 .img-example {
@@ -765,8 +773,8 @@ input[type=checkbox] {
 .btn-notagree,
 .btn-confirm,
 .btn-download {
-    background-color: #FFD369;
-    color: #393E46;
+    background-color: #112b5f;
+    color: #ED0006;
     width: 200px;
     height: 50px;
     margin: 0 10px 25px;
@@ -778,9 +786,9 @@ input[type=checkbox] {
 
 .btn-agree,
 .btn-download {
-    background-color: #EEEEEE;
-    border: 2px solid #EEEEEE;
-    color: #393E46;
+    /* background-color: #EEEEEE;
+    border: 2px solid #EEEEEE; */
+    color: #ED0006;
 }
 
 .modal-confirm .modal-footer {
