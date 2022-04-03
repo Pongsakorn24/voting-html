@@ -215,20 +215,22 @@
     }
 </style>
 <style>
-    .layout-form-vote,
-    .layout-form-th {
+    .layout-form-th,
+    .layout-form-check {
         position: relative;
         margin: 50px 0;
     }
     
-    .wrapper-form-vote h1,
-    .wrapper-form-th h1 {
+    .wrapper-form-th h1,
+    .wrapper-form-check {
         margin-bottom: 50px;
         text-align: center;
         color: #fff;
     }
     
-    .wrapper-form-th h1 {
+    .wrapper-form-help h1 {
+        margin-bottom: 50px;
+        text-align: center;
         color: #000;
     }
     
@@ -240,9 +242,13 @@
         color: #ff0000;
     }
     
+    .email-consent a {
+        color: #00AA4E;
+    }
+    
     .email-consent {
-        display: block;
-        margin: 0 15px 10px !important;
+        display: inline-block;
+        margin: 10px 0 10px !important;
         color: #fff;
     }
     
@@ -290,7 +296,8 @@
         object-fit: cover;
     }
     
-    .btn-apply {
+    .btn-apply,
+    .btn-send {
         display: block;
         background-color: #00AA4E;
         color: #fff;
@@ -373,13 +380,17 @@
         display: block;
         width: 300px;
         height: 300px;
-        margin: 0 auto 25px;
+        margin: 25px auto;
     }
     
     .box-qr img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    
+    .box-name {
+        margin-bottom: 25px;
     }
     
     .box-name label {
@@ -411,6 +422,7 @@
     
     .box-help .box-detail {
         display: inline-block;
+        position: relative;
         width: 100%;
         height: 100%;
         text-align: center;
@@ -419,8 +431,21 @@
         text-decoration: none;
         background-color: #333;
         color: #fff;
-        margin: 0 0 25px;
+        margin: 0;
         /* border-radius: 20px; */
+    }
+    
+    .box-detail label {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 100px;
+        top: 15px;
+        right: 15px;
+        background-color: #00AA4E;
+        color: #fff;
+        font-size: 14px;
+        padding: 3px;
     }
     
     .box-detail img {
@@ -438,7 +463,227 @@
         display: block;
         width: 60%;
         text-align: center;
-        margin: 0 auto 50px;
+        margin: 50px auto;
+    }
+    
+    .modal-dialog {
+        width: 400px;
+        margin: 30px auto;
+    }
+    
+    .register-modal .modal-content {
+        position: relative;
+        background-color: #fff;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: transparent;
+        border: transparent;
+        border-radius: 10px;
+        padding: 0;
+        outline: 0;
+        overflow: hidden;
+        -webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+        box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    }
+    
+    .register-modal .modal-header {
+        padding: 0;
+        border-bottom: 0px solid #e5e5e5;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .register-modal .box-header {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .register-modal .box-header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .register-modal .modal-header .close {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        color: #fff;
+    }
+    
+    .nopaddingright {
+        padding-right: 0;
+    }
+    
+    .nopaddingleft {
+        padding-left: 0;
+    }
+    
+    .member,
+    .position {
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        line-height: 34px;
+    }
+    
+    .box-detail.active {
+        border: 4px solid #00AA4E;
+    }
+    
+    .box-logo-search {
+        display: block;
+        /* width: 200px; */
+        margin: 25px auto 40px;
+        padding: 10px;
+        /* background-color: #fff; */
+    }
+    
+    .box-logo-search a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .layout-search {
+        display: block;
+        position: relative;
+        margin: 10px 100px 30px;
+    }
+    
+    .box-search .form-control {
+        box-shadow: 0 0 9px 2px rgb(0 0 0 / 20%);
+        border: 0;
+        height: 50px;
+        padding: 15px 23px;
+        font-size: 18px;
+        margin: 0 auto 15px;
+    }
+    
+    .box-search button.btn-pin {
+        width: 100px;
+        height: 50px;
+        background-color: #00AA4E;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 0;
+        color: #fff;
+    }
+    
+    .box-search .btn-search {
+        display: block;
+        width: 100px;
+        height: 50px;
+        background-color: #00AA4E;
+        border: none;
+        margin: 15px auto;
+        background-size: 20px;
+        position: relative;
+        border-radius: 0;
+        color: #fff;
+    }
+    
+    .modal-information .modal-footer,
+    .modal-choose .modal-footer {
+        padding: 15px;
+        text-align: right;
+        border-top: transparent;
+    }
+    
+    .modal-information .modal-header,
+    .modal-choose .modal-header {
+        padding: 15px;
+        border-bottom: transparent;
+    }
+    
+    .btn-go-help,
+    .btn-go-registor {
+        display: block;
+        margin: 0 auto 15px;
+        width: 250px;
+        height: 50px;
+        color: #fff;
+        border: transparent;
+    }
+    
+    .btn-go-help {
+        background-color: #00AA4E;
+    }
+    
+    .btn-go-registor {
+        background-color: #3D58A2;
+    }
+    
+    .modal-choose .modal-body {
+        text-align: center;
+    }
+    
+    .modal-choose .modal-title,
+    .modal-information .modal-title {
+        margin: 0;
+        line-height: 1.42857143;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .modal-choose .modal-dialog,
+    .modal-information .modal-dialog {
+        margin: 266px auto;
+    }
+    
+    .modal-information .modal-dialog {
+        margin: 225px auto;
+    }
+    
+    .box-information {
+        padding-right: 15px;
+    }
+    
+    .modal-information .email-consent {
+        display: inline;
+        color: #000;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .modal-information .row.form-group {
+        margin: 0;
+    }
+    
+    .modal-information input[type=checkbox] {
+        margin-left: 0;
+    }
+    
+    .btn-save,
+    .btn-delete,
+    .btn-registor {
+        width: 200px;
+        height: 50px;
+        border: transparent;
+        color: #fff;
+        margin: 0 5px;
+    }
+    
+    .btn-save {
+        background-color: #00AA4E;
+    }
+    
+    .btn-delete {
+        background-color: #ff0000;
+    }
+    
+    .btn-registor {
+        background-color: #3D58A2;
+    }
+    
+    .btn-control {
+        margin: 25px 0;
     }
     
     @media (max-width:991px) {}
@@ -446,7 +691,8 @@
     @media (max-width:768px) {}
     
     @media (max-width: 767px) {
-        .wrapper-form-vote h1 {
+        .wrapper-form-vote h1,
+        .wrapper-form-help h1 {
             margin-bottom: 30px;
             text-align: center;
         }
@@ -454,8 +700,7 @@
             position: relative;
             margin: 25px 0;
         }
-        .wrapper-form-vote h1,
-        .wrapper-form-th h1 {
+        .wrapper-form-vote h1 {
             font-size: 24px;
         }
         .box-help .box-detail {
@@ -466,7 +711,35 @@
         }
         .box-another {
             width: 100%;
-            margin: 0 auto 25px;
+            margin: 25px auto;
+        }
+        .layout-search {
+            margin: 10px 0px 30px;
+        }
+        .avatar-upload {
+            margin: 0px auto 15px;
+        }
+        .box-logo-search {
+            margin: 10px auto 25px;
+        }
+        .modal-information .modal-dialog,
+        .modal-choose .modal-dialog {
+            width: 90%;
+        }
+        .modal-choose .modal-dialog {
+            margin: 250px auto;
+        }
+        .modal-information .modal-dialog {
+            margin: 175px auto;
+        }
+        .btn-save,
+        .btn-delete,
+        .btn-registor {
+            width: 150px;
+            height: 50px;
+            border: transparent;
+            color: #fff;
+            margin: 0 5px;
         }
     }
     
@@ -483,6 +756,7 @@
 </style>
 
 
+
 <body>
 
     <article>
@@ -490,61 +764,130 @@
 
 
         <section>
-            <div class="wrapper-form-th">
-                <div class="layout-form-th">
+            <div class="wrapper-form-help">
+                <div class="layout-form-help">
                     <div class="container">
                         <h1>คุณต้องการมีอนาคตที่ดีด้านใด</h1>
                         <div class="box-help">
 
                             <div class="row">
-                                <div class="col-sm-4 col-xs-6">
-                                    <div class="box-detail">
+                                <div class="col-sm-3 col-xs-6 nopaddingleft nopaddingright ">
+                                    <div class="box-detail active">
+                                        <label for="">1</label>
                                         <img src="images/h9.jpeg" alt="">
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-xs-6">
-                                    <div class="box-detail">
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
+                                    <div class="box-detail active">
+                                        <label for="">2</label>
                                         <img src="images/h1.jpeg" alt="">
 
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-xs-6">
-                                    <div class="box-detail">
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
+                                    <div class="box-detail active">
+                                        <label for="">3</label>
                                         <img src="images/h2.jpeg" alt="">
 
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
                                     <div class="box-detail">
                                         <img src="images/h3.jpeg" alt="">
 
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-3 col-xs-6  nopaddingleft nopaddingright">
                                     <div class="box-detail">
                                         <img src="images/h4.jpeg" alt="">
 
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
                                     <div class="box-detail">
                                         <img src="images/h5.jpeg" alt="">
 
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
                                     <div class="box-detail">
                                         <img src="images/h6.jpeg" alt="">
 
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
                                     <div class="box-detail">
                                         <img src="images/h7.jpeg" alt="">
 
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-3 col-xs-6 nopaddingleft nopaddingright">
+                                    <div class="box-detail">
+                                        <img src="images/h8.jpeg" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
+                                    <div class="box-detail">
+                                        <img src="images/h6.jpeg" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
+                                    <div class="box-detail">
+                                        <img src="images/h7.jpeg" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 nopaddingleft nopaddingright">
+                                    <div class="box-detail">
+                                        <img src="images/h8.jpeg" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 nopaddingleft nopaddingright">
+                                    <div class="box-detail">
+                                        <img src="images/h8.jpeg" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
+                                    <div class="box-detail">
+                                        <img src="images/h6.jpeg" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
+                                    <div class="box-detail">
+                                        <img src="images/h7.jpeg" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 nopaddingleft nopaddingright">
+                                    <div class="box-detail">
+                                        <img src="images/h8.jpeg" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 nopaddingleft nopaddingright">
+                                    <div class="box-detail">
+                                        <img src="images/h8.jpeg" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
+                                    <div class="box-detail">
+                                        <img src="images/h6.jpeg" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 nopaddingleft  nopaddingright">
+                                    <div class="box-detail">
+                                        <img src="images/h7.jpeg" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 nopaddingleft nopaddingright">
                                     <div class="box-detail">
                                         <img src="images/h8.jpeg" alt="">
 
@@ -552,16 +895,18 @@
                                 </div>
 
 
+
+
                             </div>
                             <div class="box-another">
                                 <div class=" form-group">
-                                    <input type="text" id="lname" name="lastname" placeholder="อื่นๆ โปรดบอกพวกเรา">
+                                    <input type="text" id="lname" name="lastname" style="height: 70px;" placeholder="เล่าให้พวกเราฟังถึงสิ่งที่คุณต้องการ">
                                 </div>
                                 <!-- <div _ngcontent-yyb-c89="" class="remark">(ชื่อและนามสกุลต้องกรอกเป็นภาษาไทยเท่านั้น ไม่ต้องมีคำนำหน้า)</div> -->
                             </div>
-                        </div>
-                        <div class="control-btn">
-                            <button class="btn-apply">สมัคร</button>
+                            <div class="control-btn">
+                                <button class="btn-apply" data-toggle="modal" data-target="#myModal">บอกพวกเรา</button>
+                            </div>
                         </div>
                     </div>
                     <!-- <ul>
@@ -586,6 +931,52 @@
         </section>
 
     </article>
+    <div class="modal-information">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">โปรดบอกเรา</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class=" form-group">
+
+                            <div class="row">
+                                <div class="box-information">
+                                    <div class="col-sm-6 nopaddingright">
+                                        <input type="text" id="lname" name="lastname" placeholder="ชื่อ">
+                                    </div>
+                                    <div class="col-sm-6 nopaddingright">
+                                        <input type="text" id="lname" name="lastname" placeholder="นามสกุล">
+                                    </div>
+                                    <div class="col-sm-12 nopaddingright">
+                                        <input type="text" id="lname" name="lastname" placeholder="เลขบัตรประชาชน ">
+                                    </div>
+                                    <div class="col-sm-12 nopaddingright">
+                                        <input type="text" id="lname" name="lastname" placeholder="เบอร์โทร">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row form-group">
+                                <input type="checkbox" formcontrolname="isUnderstandConfirmed" name="isUnderstandConfirmed" id="isUnderstandConfirmed" class="ng-untouched ng-pristine ng-invalid">
+                                <p color="gray.dark" font-size="s" class="email-consent">
+                                    ข้าพเจ้ายอมรับ<a href="/policies/terms-of-service" data-pass-thru="true"> ข้อตกลงการใช้บริการ</a> และ <a href="/policies/privacy" data-pass-thru="true">นโยบายสิทธิส่วนบุคคล</a> ของ พรรคสร้างอนาคตไทย
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-send">ส่ง</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

@@ -755,8 +755,6 @@
     }
 </style>
 
-
-
 <body>
 
     <article>
@@ -767,89 +765,211 @@
             <div class="wrapper-form-th">
                 <div class="layout-form-th">
                     <div class="container">
-                        <div class="box-bg">
-                            <h1>ร่วมสร้างอนาคตไทย</h1>
-                            <div class="avatar-upload">
-                                <div class="avatar-edit">
-                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                    <label for="imageUpload"></label>
-                                </div>
-                                <div class="avatar-preview">
-                                    <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+
+
+                        <form action="/action_page.php" class="form-vote-sunmit">
+
+                            <div class=" form-group">
+
+                                <div class="row">
+
+                                    <div class="col-sm-6">
+                                        <label for="country">ชื่อ</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="ชื่อ">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="country">นามสกุล</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="นามสกุล">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">วัน เดือน ปีเกิด</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="วัน เดือน ปีเกิด">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">อายุ</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="อายุ">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">สัญชาติ</label>
+                                        <select name="" id="">
+                                                <option value="">พุทธ</option>
+                                                <option value="">พม่า</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">ศาสนา</label>
+                                        <select name="" id="">
+                                                <option value="">พุทธ</option>
+                                                <option value="">คริสต์</option>
+                                                <option value="">อิสลาม</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">ภูมิลำเนา</label>
+                                        <select name="" id="">
+                                                <option value="">กรุงเทพ</option>
+                                               
+                                            </select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">สถานภาพ</label>
+                                        <select name="" id="">
+                                                <option value="">โสด</option>
+                                                <option value="">สมรส</option>
+                                                <option value="">หย่าร้าง</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">เบอรโทรศัพท์มือถือ</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เบอร์โทร">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">อาชีพปัจจุบัน</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="จังหวัด">
                                     </div>
                                 </div>
                             </div>
-                            <form action="/action_page.php" class="form-vote-sunmit">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label for="country">ตำแหน่ง (อาชีพ)</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">สถานที่ทำงาน</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">ความสามารถพิเศษ</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">เลขบัตรประจำตัวประชาชน</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                </div>
 
-                                <div class=" form-group">
-
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input type="text" id="lname" name="lastname" placeholder="ชื่อ">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <input type="text" id="lname" name="lastname" placeholder="นามสกุล">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <input type="text" id="lname" name="lastname" placeholder="เลขบัตรประชาชน 13 หลัก">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <input type="text" id="lname" name="lastname" placeholder="เบอร์โทร">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- <label for="lname"><span class="text-red">*</span></label> -->
-                                            <input type="text" id="lname" name="lastname" placeholder="อีเมล">
-                                        </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label for="country">วันออกบัตร บัตรประชาชน</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">วันหมดอายุ บัตรประชาชน</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">ออกให้ที่ (เขต/อำเภอ)</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">ออกให้ที่ (จังหวัด)</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
                                     </div>
 
-                                    <!-- <div _ngcontent-yyb-c89="" class="remark">(ชื่อและนามสกุลต้องกรอกเป็นภาษาไทยเท่านั้น ไม่ต้องมีคำนำหน้า)</div> -->
                                 </div>
-
-
-
-
-
-                                <div class="row form-group">
-                                    <input type="checkbox" formcontrolname="isUnderstandConfirmed" name="isUnderstandConfirmed" id="isUnderstandConfirmed" class="ng-untouched ng-pristine ng-invalid">
-                                    <p color="gray.dark" font-size="s" class="email-consent">
-                                        ข้าพเจ้ายอมรับ<a href="/policies/terms-of-service" data-pass-thru="true"> ข้อตกลงการใช้บริการ</a> และ <a href="/policies/privacy" data-pass-thru="true">นโยบายสิทธิส่วนบุคคล</a> ของ พรรคสร้างอนาคตไทย
-                                    </p>
-
-                                </div>
-
-                            </form>
-                            <div class="control-btn">
-                                <button class="btn-apply" data-toggle="modal" data-target="#myModal">สมัคร</button>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label for="country">วุฒิการศึกษา</label>
+                                        <select name="" id="">
+                                                <option value="">อนุบาล</option>
+                                                <option value="">คริสต์</option>
+                                                <option value="">อิสลาม</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">คณะ</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">สาขา</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">ปีที่จบการศึกษา</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label for="country">ชื่อสถาบัน</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">จังหวัด (ที่จบการศึกษา)</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="country">ประเทศ (ที่จบการศึกษา)</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="country">ที่อยู่ตามทะเบียนบ้าน</label>
+                                        <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="country">ที่อยู่ที่สามารถติดต่อได้</label>
+                                        <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
 
                     </div>
+                    <!-- <div _ngcontent-yyb-c89="" class="remark">(ชื่อและนามสกุลต้องกรอกเป็นภาษาไทยเท่านั้น ไม่ต้องมีคำนำหน้า)</div> -->
                 </div>
+
+                </form>
+                <div class="control-btn">
+                    <button class="btn-apply" type="submit" data-toggle="modal" data-target="#exampleModal3">สมัคร</button>
+                </div>
+            </div>
+            </div>
             </div>
         </section>
 
     </article>
-    <div class="modal-choose">
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="register-modal">
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">โปรดเลือก</h4>
+                        <div class="box-header">
+                            <img src="images/Consent.jpg" alt="">
+                            <!-- <img src="images/consent2.jpg" alt=""> -->
+                            <!-- <img src="images/Consent3.jpg" alt=""> -->
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
                     </div>
                     <div class="modal-body">
+                        <h2>ความยินยอมข้อมูลส่วนบุคคลของคุณ</h2>
+                        <p>ยินยอมที่จะให้ข้อมูลส่วนบุคคลใดๆที่เป็นประโยชน์ต่อการสร้างอนาคตที่ดีของท่านแก่พรรคสร้างอนาคตไทย</p>
 
-                        <button class="btn-go-help">บอกความต้องการ</button>
-                        <button class="btn-go-registor">สมัครสร้างอนาคตไทย</button>
+                        <!-- <h2>ความยินยอมข้อมูลส่วนบุคคลของคุณ</h2>
+                        <p>ยินยอมให้พรรคสร้างอนาคตไทย และ องค์กรที่มีส่วนเกี่ยวข้องติดต่อสื่อสารผ่านช่องทางที่ท่านให้ไว้</p> -->
 
+                        <!-- <h2>ความยินยอมข้อมูลส่วนบุคคลของคุณ</h2>
+                        <p>ยินยอมให้ พรรคสร้างอนาคตไทยเป็นผู้แทนในการดำเนินการลาออกจากการเป็นสมาชิกเดิม หรือ/และ สมัครเป็นสมาชิกพรรคอนาคตไทย</p> -->
                     </div>
+                    <div class="modal-footer">
 
+                        <button type="button" class="btn-rt-confirm" data-dismiss="modal">ให้ความยินยอม</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
+
 <script>
     function readURL(input) {
         if (input.files && input.files[0]) {
@@ -862,7 +982,7 @@
             reader.readAsDataURL(input.files[0]);
         }
     }
-    $("#imageUpload").change(function() {
+    $("#imageUpload ").change(function() {
         readURL(this);
     });
 </script>

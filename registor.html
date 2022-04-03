@@ -215,20 +215,22 @@
     }
 </style>
 <style>
-    .layout-form-vote,
-    .layout-form-th {
+    .layout-form-th,
+    .layout-form-check {
         position: relative;
         margin: 50px 0;
     }
     
-    .wrapper-form-vote h1,
-    .wrapper-form-th h1 {
+    .wrapper-form-th h1,
+    .wrapper-form-check {
         margin-bottom: 50px;
         text-align: center;
         color: #fff;
     }
     
-    .wrapper-form-th h1 {
+    .wrapper-form-help h1 {
+        margin-bottom: 50px;
+        text-align: center;
         color: #000;
     }
     
@@ -240,9 +242,13 @@
         color: #ff0000;
     }
     
+    .email-consent a {
+        color: #00AA4E;
+    }
+    
     .email-consent {
-        display: block;
-        margin: 0 15px 10px !important;
+        display: inline-block;
+        margin: 10px 0 10px !important;
         color: #fff;
     }
     
@@ -290,7 +296,8 @@
         object-fit: cover;
     }
     
-    .btn-apply {
+    .btn-apply,
+    .btn-send {
         display: block;
         background-color: #00AA4E;
         color: #fff;
@@ -373,13 +380,17 @@
         display: block;
         width: 300px;
         height: 300px;
-        margin: 0 auto 25px;
+        margin: 25px auto;
     }
     
     .box-qr img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    
+    .box-name {
+        margin-bottom: 25px;
     }
     
     .box-name label {
@@ -411,6 +422,7 @@
     
     .box-help .box-detail {
         display: inline-block;
+        position: relative;
         width: 100%;
         height: 100%;
         text-align: center;
@@ -419,8 +431,21 @@
         text-decoration: none;
         background-color: #333;
         color: #fff;
-        margin: 0 0 25px;
+        margin: 0;
         /* border-radius: 20px; */
+    }
+    
+    .box-detail label {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 100px;
+        top: 15px;
+        right: 15px;
+        background-color: #00AA4E;
+        color: #fff;
+        font-size: 14px;
+        padding: 3px;
     }
     
     .box-detail img {
@@ -438,7 +463,227 @@
         display: block;
         width: 60%;
         text-align: center;
-        margin: 0 auto;
+        margin: 50px auto;
+    }
+    
+    .modal-dialog {
+        width: 400px;
+        margin: 30px auto;
+    }
+    
+    .register-modal .modal-content {
+        position: relative;
+        background-color: #fff;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: transparent;
+        border: transparent;
+        border-radius: 10px;
+        padding: 0;
+        outline: 0;
+        overflow: hidden;
+        -webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+        box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    }
+    
+    .register-modal .modal-header {
+        padding: 0;
+        border-bottom: 0px solid #e5e5e5;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .register-modal .box-header {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .register-modal .box-header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .register-modal .modal-header .close {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        color: #fff;
+    }
+    
+    .nopaddingright {
+        padding-right: 0;
+    }
+    
+    .nopaddingleft {
+        padding-left: 0;
+    }
+    
+    .member,
+    .position {
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        line-height: 34px;
+    }
+    
+    .box-detail.active {
+        border: 4px solid #00AA4E;
+    }
+    
+    .box-logo-search {
+        display: block;
+        /* width: 200px; */
+        margin: 25px auto 40px;
+        padding: 10px;
+        /* background-color: #fff; */
+    }
+    
+    .box-logo-search a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .layout-search {
+        display: block;
+        position: relative;
+        margin: 10px 100px 30px;
+    }
+    
+    .box-search .form-control {
+        box-shadow: 0 0 9px 2px rgb(0 0 0 / 20%);
+        border: 0;
+        height: 50px;
+        padding: 15px 23px;
+        font-size: 18px;
+        margin: 0 auto 15px;
+    }
+    
+    .box-search button.btn-pin {
+        width: 100px;
+        height: 50px;
+        background-color: #00AA4E;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 0;
+        color: #fff;
+    }
+    
+    .box-search .btn-search {
+        display: block;
+        width: 100px;
+        height: 50px;
+        background-color: #00AA4E;
+        border: none;
+        margin: 15px auto;
+        background-size: 20px;
+        position: relative;
+        border-radius: 0;
+        color: #fff;
+    }
+    
+    .modal-information .modal-footer,
+    .modal-choose .modal-footer {
+        padding: 15px;
+        text-align: right;
+        border-top: transparent;
+    }
+    
+    .modal-information .modal-header,
+    .modal-choose .modal-header {
+        padding: 15px;
+        border-bottom: transparent;
+    }
+    
+    .btn-go-help,
+    .btn-go-registor {
+        display: block;
+        margin: 0 auto 15px;
+        width: 250px;
+        height: 50px;
+        color: #fff;
+        border: transparent;
+    }
+    
+    .btn-go-help {
+        background-color: #00AA4E;
+    }
+    
+    .btn-go-registor {
+        background-color: #3D58A2;
+    }
+    
+    .modal-choose .modal-body {
+        text-align: center;
+    }
+    
+    .modal-choose .modal-title,
+    .modal-information .modal-title {
+        margin: 0;
+        line-height: 1.42857143;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .modal-choose .modal-dialog,
+    .modal-information .modal-dialog {
+        margin: 266px auto;
+    }
+    
+    .modal-information .modal-dialog {
+        margin: 225px auto;
+    }
+    
+    .box-information {
+        padding-right: 15px;
+    }
+    
+    .modal-information .email-consent {
+        display: inline;
+        color: #000;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .modal-information .row.form-group {
+        margin: 0;
+    }
+    
+    .modal-information input[type=checkbox] {
+        margin-left: 0;
+    }
+    
+    .btn-save,
+    .btn-delete,
+    .btn-registor {
+        width: 200px;
+        height: 50px;
+        border: transparent;
+        color: #fff;
+        margin: 0 5px;
+    }
+    
+    .btn-save {
+        background-color: #00AA4E;
+    }
+    
+    .btn-delete {
+        background-color: #ff0000;
+    }
+    
+    .btn-registor {
+        background-color: #3D58A2;
+    }
+    
+    .btn-control {
+        margin: 25px 0;
     }
     
     @media (max-width:991px) {}
@@ -446,7 +691,8 @@
     @media (max-width:768px) {}
     
     @media (max-width: 767px) {
-        .wrapper-form-vote h1 {
+        .wrapper-form-vote h1,
+        .wrapper-form-help h1 {
             margin-bottom: 30px;
             text-align: center;
         }
@@ -461,16 +707,39 @@
             font-size: 18px;
         }
         .btn-apply {
-            display: block;
-            background-color: #00AA4E;
-            color: #fff;
             width: 100%;
+        }
+        .box-another {
+            width: 100%;
+            margin: 25px auto;
+        }
+        .layout-search {
+            margin: 10px 0px 30px;
+        }
+        .avatar-upload {
+            margin: 0px auto 15px;
+        }
+        .box-logo-search {
+            margin: 10px auto 25px;
+        }
+        .modal-information .modal-dialog,
+        .modal-choose .modal-dialog {
+            width: 90%;
+        }
+        .modal-choose .modal-dialog {
+            margin: 250px auto;
+        }
+        .modal-information .modal-dialog {
+            margin: 175px auto;
+        }
+        .btn-save,
+        .btn-delete,
+        .btn-registor {
+            width: 150px;
             height: 50px;
-            margin: 0 auto 25px;
-            font-size: 22px;
             border: transparent;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+            color: #fff;
+            margin: 0 5px;
         }
     }
     
@@ -486,6 +755,7 @@
     }
 </style>
 
+
 <body>
 
     <article>
@@ -493,8 +763,8 @@
 
 
         <section>
-            <div class="wrapper-form-vote">
-                <div class="layout-form-vote">
+            <div class="wrapper-form-th">
+                <div class="layout-form-th">
                     <div class="container">
                         <div class="box-bg">
                             <h1>สมัคร ส.ส.</h1>
@@ -543,16 +813,16 @@
 
 
                                 <div class="row form-group">
-                                    <input type="checkbox" formcontrolname="isUnderstandConfirmed" name="isUnderstandConfirmed" id="isUnderstandConfirmed" class="ng-untouched ng-pristine ng-invalid"> ข้าพเจ้ายินยอมสมัคร
-                                    <p color="gray.dark" font-size="s" class="email-consent">การสมัคร แปลว่าคุณยอมรับ
-                                        <a href="/policies/terms-of-service" data-pass-thru="true">ข้อตกลงการใช้บริการ</a> และ <a href="/policies/privacy" data-pass-thru="true">นโยบายสิทธิส่วนบุคคล</a> ของ Thailandissue.org และคุณตกลงที่จะรับอีเมลเป็นครั้งคราวเกี่ยวกับแคมเปญบน
-                                        Thailandissue.org คุณสามารถยกเลิกการเป็นสมาชิกได้ตลอดเวลา</p>
+                                    <input type="checkbox" formcontrolname="isUnderstandConfirmed" name="isUnderstandConfirmed" id="isUnderstandConfirmed" class="ng-untouched ng-pristine ng-invalid">
+                                    <p color="gray.dark" font-size="s" class="email-consent">
+                                        ข้าพเจ้ายอมรับ<a href="/policies/terms-of-service" data-pass-thru="true"> ข้อตกลงการใช้บริการ</a> และ <a href="/policies/privacy" data-pass-thru="true">นโยบายสิทธิส่วนบุคคล</a> ของ พรรคสร้างอนาคตไทย
+                                    </p>
 
                                 </div>
 
                             </form>
                             <div class="control-btn">
-                                <button class="btn-apply">สมัคร</button>
+                                <button class="btn-apply" type="submit" data-toggle="modal" data-target="#exampleModal3">สมัคร</button>
                             </div>
                         </div>
 
@@ -563,8 +833,41 @@
         </section>
 
     </article>
+    <div class="register-modal">
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="box-header">
+                            <img src="images/Consent.jpg" alt="">
+                            <!-- <img src="images/consent2.jpg" alt=""> -->
+                            <!-- <img src="images/Consent3.jpg" alt=""> -->
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>ความยินยอมข้อมูลส่วนบุคคลของคุณ</h2>
+                        <p>ยินยอมที่จะให้ข้อมูลส่วนบุคคลใดๆที่เป็นประโยชน์ต่อการสร้างอนาคตที่ดีของท่านแก่พรรคสร้างอนาคตไทย</p>
+
+                        <!-- <h2>ความยินยอมข้อมูลส่วนบุคคลของคุณ</h2>
+                        <p>ยินยอมให้พรรคสร้างอนาคตไทย และ องค์กรที่มีส่วนเกี่ยวข้องติดต่อสื่อสารผ่านช่องทางที่ท่านให้ไว้</p> -->
+
+                        <!-- <h2>ความยินยอมข้อมูลส่วนบุคคลของคุณ</h2>
+                        <p>ยินยอมให้ พรรคสร้างอนาคตไทยเป็นผู้แทนในการดำเนินการลาออกจากการเป็นสมาชิกเดิม หรือ/และ สมัครเป็นสมาชิกพรรคอนาคตไทย</p> -->
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn-rt-confirm" data-dismiss="modal">ให้ความยินยอม</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 <script>
     function readURL(input) {
         if (input.files && input.files[0]) {
@@ -577,7 +880,7 @@
             reader.readAsDataURL(input.files[0]);
         }
     }
-    $("#imageUpload").change(function() {
+    $("#imageUpload ").change(function() {
         readURL(this);
     });
 </script>
