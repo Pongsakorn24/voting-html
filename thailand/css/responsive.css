@@ -1,0 +1,67 @@
+@media (max-width:991px) {}
+
+@media (max-width:768px) {}
+
+@media (max-width: 767px) {
+    .wrapper-form-vote h1,
+    .wrapper-form-help h1 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .layout-from-vote {
+        position: relative;
+        margin: 25px 0;
+    }
+    .wrapper-form-vote h1 {
+        font-size: 24px;
+    }
+    .box-help .box-detail {
+        font-size: 18px;
+    }
+    .btn-apply {
+        width: 100%;
+    }
+    .box-another {
+        width: 100%;
+        margin: 25px auto;
+    }
+    .layout-search {
+        margin: 10px 0px 30px;
+    }
+    .avatar-upload {
+        margin: 0px auto 15px;
+    }
+    .box-logo-search {
+        margin: 10px auto 25px;
+    }
+    .modal-information .modal-dialog,
+    .modal-choose .modal-dialog {
+        width: 90%;
+    }
+    .modal-choose .modal-dialog {
+        margin: 250px auto;
+    }
+    .modal-information .modal-dialog {
+        margin: 175px auto;
+    }
+    .btn-save,
+    .btn-delete,
+    .btn-registor {
+        width: 150px;
+        height: 50px;
+        border: transparent;
+        color: #fff;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box-lawyer {
+        display: block;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        margin: 0 auto 20px;
+        overflow: hidden;
+    }
+}

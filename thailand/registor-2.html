@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;500;700&display=swap" rel="stylesheet">
-    <title>หน้าสมัคร ส.ส.</title>
+    <title>ร่วมสร้างอนาคตไทย</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/gobal.css">
     <link rel="stylesheet" href="css/insitepage01.css">
@@ -61,8 +61,7 @@
                 <div class="layout-form-th">
                     <div class="container">
                         <div class="box-bg">
-                            <h1>สมัคร ส.ส.</h1>
-
+                            <h1>ร่วมสร้างอนาคตไทย</h1>
                             <div class="avatar-upload">
                                 <div class="avatar-edit">
                                     <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
@@ -88,22 +87,19 @@
                                             <input type="text" id="lname" name="lastname" placeholder="เลขบัตรประชาชน 13 หลัก">
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="text" id="lname" name="lastname" placeholder="อีเมล">
-                                        </div>
-                                        <div class="col-sm-6">
                                             <input type="text" id="lname" name="lastname" placeholder="เบอร์โทร">
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="text" id="lname" name="lastname" placeholder="จังหวัด">
-                                        </div>
-                                        <div class="col-sm-6">
                                             <!-- <label for="lname"><span class="text-red">*</span></label> -->
-                                            <input type="text" id="lname" name="lastname" placeholder="เขต">
+                                            <input type="text" id="lname" name="lastname" placeholder="อีเมล">
                                         </div>
                                     </div>
 
                                     <!-- <div _ngcontent-yyb-c89="" class="remark">(ชื่อและนามสกุลต้องกรอกเป็นภาษาไทยเท่านั้น ไม่ต้องมีคำนำหน้า)</div> -->
                                 </div>
+
+
+
 
 
                                 <div class="row form-group">
@@ -116,7 +112,7 @@
 
                             </form>
                             <div class="control-btn">
-                                <button class="btn-apply" type="submit" data-toggle="modal" data-target="#exampleModal3">สมัคร</button>
+                                <button class="btn-apply" data-toggle="modal" data-target="#myModal">สมัคร</button>
                             </div>
                         </div>
 
@@ -127,41 +123,26 @@
         </section>
 
     </article>
-    <div class="register-modal">
-        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-choose">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="box-header">
-                            <img src="images/Consent.jpg" alt="">
-                            <!-- <img src="images/consent2.jpg" alt=""> -->
-                            <!-- <img src="images/Consent3.jpg" alt=""> -->
-                        </div>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">โปรดเลือก</h4>
                     </div>
                     <div class="modal-body">
-                        <h2>ความยินยอมข้อมูลส่วนบุคคลของคุณ</h2>
-                        <p>ยินยอมที่จะให้ข้อมูลส่วนบุคคลใดๆที่เป็นประโยชน์ต่อการสร้างอนาคตที่ดีของท่านแก่พรรคสร้างอนาคตไทย</p>
 
-                        <!-- <h2>ความยินยอมข้อมูลส่วนบุคคลของคุณ</h2>
-                        <p>ยินยอมให้พรรคสร้างอนาคตไทย และ องค์กรที่มีส่วนเกี่ยวข้องติดต่อสื่อสารผ่านช่องทางที่ท่านให้ไว้</p> -->
+                        <button class="btn-go-help">บอกความต้องการ</button>
+                        <button class="btn-go-registor">สมัครสร้างอนาคตไทย</button>
 
-                        <!-- <h2>ความยินยอมข้อมูลส่วนบุคคลของคุณ</h2>
-                        <p>ยินยอมให้ พรรคสร้างอนาคตไทยเป็นผู้แทนในการดำเนินการลาออกจากการเป็นสมาชิกเดิม หรือ/และ สมัครเป็นสมาชิกพรรคอนาคตไทย</p> -->
                     </div>
-                    <div class="modal-footer">
 
-                        <button type="button" class="btn-rt-confirm" data-dismiss="modal">ให้ความยินยอม</button>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
-
 <script>
     function readURL(input) {
         if (input.files && input.files[0]) {
@@ -174,7 +155,7 @@
             reader.readAsDataURL(input.files[0]);
         }
     }
-    $("#imageUpload ").change(function() {
+    $("#imageUpload").change(function() {
         readURL(this);
     });
 </script>
