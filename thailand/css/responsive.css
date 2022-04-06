@@ -53,6 +53,9 @@
         color: #fff;
         margin: 0 5px;
     }
+    .modal-warn .modal-dialog {
+        width: 90%;
+    }
 }
 
 @media (max-width: 480px) {
