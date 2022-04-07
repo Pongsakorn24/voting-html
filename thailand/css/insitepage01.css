@@ -506,7 +506,10 @@ input[type=checkbox] {
 
 .lds-ring {
     display: block;
-    position: relative;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
     width: 60px;
     height: 60px;
     margin: 0 auto;
@@ -519,10 +522,10 @@ input[type=checkbox] {
     width: 40px;
     height: 40px;
     margin: 8px;
-    border: 6px solid #fff;
+    border: 6px solid #707070;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #fff transparent transparent transparent;
+    border-color: #707070 transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1) {
