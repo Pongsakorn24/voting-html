@@ -56,6 +56,9 @@
     .modal-warn .modal-dialog {
         width: 90%;
     }
+    .email-consent {
+        display: inline;
+    }
 }
 
 @media (max-width: 480px) {
