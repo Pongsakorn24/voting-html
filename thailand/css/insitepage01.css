@@ -11,7 +11,8 @@
     color: #fff;
 }
 
-.wrapper-form-help h1 {
+.wrapper-form-help h1,
+.wrapper-form-allmember h1 {
     margin-bottom: 50px;
     text-align: center;
     color: #000;
@@ -547,4 +548,28 @@ input[type=checkbox] {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.box-allmember {
+    margin: 50px 0 100px;
+}
+
+.box-allmember .box-qr {
+    width: 150px;
+    height: 150px;
+}
+
+.box-allmember .avatar-upload {
+    position: relative;
+    max-width: 100px;
+    margin: 20px auto 20px;
+}
+
+.box-allmember .avatar-preview {
+    width: 100px;
+    height: 100px;
+}
+
+.box-allmember .box-bg {
+    margin-bottom: 25px;
 }
