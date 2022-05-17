@@ -3,7 +3,7 @@ body {
 }
 
 .header-2nd .box-logo-header {
-    padding: 21px 0;
+    padding: 14px 0;
     position: absolute;
     overflow: hidden;
     color: #fff;
@@ -156,9 +156,12 @@ body {
 
 @media (max-width: 480px) {
     .header-2nd .box-logo-header {
-        padding: 16px 18px;
+        padding: 7px 8px;
     }
     .header-2nd .box-logo-header h1 {
         font-size: 18px;
+    }
+    .header-2nd .box-logo-header img {
+        height: 37px;
     }
 }
