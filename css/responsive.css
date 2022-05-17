@@ -38,6 +38,18 @@
     .photo-show {
         margin: 0 30px;
     }
+    .modal-addform .btn-agree,
+    .modal-addform .btn-notagree {
+        width: 130px;
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    .modal-addform .modal-footer {
+        padding: 15px 5px;
+    }
+    .modal-addform .modal-header {
+        padding: 15px;
+    }
 }
 
 @media (max-width: 480px) {
