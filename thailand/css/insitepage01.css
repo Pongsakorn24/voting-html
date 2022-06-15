@@ -245,6 +245,11 @@ input[type=checkbox] {
     padding: 20px;
 }
 
+.box-bg-member {
+    background-color: #00AA4E;
+    padding: 20px;
+}
+
 .box-another {
     display: block;
     width: 60%;
