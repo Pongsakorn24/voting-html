@@ -638,6 +638,7 @@ margin: 0 auto;
   .w3-white{
     background-color: #fff;
     color: #3D58A2;
+    border-radius: 10px;
   }
   .well {
     min-height: 20px;
@@ -648,4 +649,21 @@ margin: 0 auto;
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.w3-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    max-height: 300px;
+    overflow: scroll;
+}
+.w3-dropdown-hover:first-child, .w3-dropdown-click:hover{
+    background-color: transparent !important;
 }

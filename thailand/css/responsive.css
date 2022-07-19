@@ -70,4 +70,7 @@
         margin: 0 auto 20px;
         overflow: hidden;
     }
+    .box-logo-search h1{
+        font-size: 22px;
+    }
 }
