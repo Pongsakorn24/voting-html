@@ -578,7 +578,10 @@ input[type=checkbox] {
 .box-allmember .box-bg {
     margin-bottom: 25px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 461ab6ef542edd243661386b6cef3eff1199acb7
 .box-user-county{
     display: block;
     width: 100%;
@@ -620,4 +623,8 @@ margin: 0 auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> 461ab6ef542edd243661386b6cef3eff1199acb7
