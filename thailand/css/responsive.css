@@ -71,6 +71,7 @@
         overflow: hidden;
     }
     .box-logo-search h1{
-        font-size: 22px;
+        font-size: 27px;
+    font-weight: bold;
     }
 }
