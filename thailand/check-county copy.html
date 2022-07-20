@@ -71,9 +71,9 @@
                                 </div>
                                 <div class="layout-search">
                                     <div class="w3-dropdown-hover">
-                                        <button class="w3-button w3-white" >เลือกพื้นที่</button>
-                                        <div class="w3-dropdown-content w3-bar-block w3-border" >
-                                          <a data-toggle="collapse" href="#county1" aria-expanded="false"  aria-controls="collapseExample" class="w3-bar-item w3-button" >เขตพระนคร</a>
+                                        <button class="w3-button w3-white" onclick="myFunction()">เลือกพื้นที่</button>
+                                        <div class="w3-dropdown-content w3-bar-block w3-border">
+                                          <a data-toggle="collapse" href="#county1" aria-expanded="false"  aria-controls="collapseExample" class="w3-bar-item w3-button">เขตพระนคร</a>
                                           <a data-toggle="collapse" href="#county2" aria-expanded="false"  aria-controls="collapseExample" class="w3-bar-item w3-button">เขตปทุมวัน </a>
                                           <a data-toggle="collapse" href="#county3" aria-expanded="false"  aria-controls="collapseExample" class="w3-bar-item w3-button">เขตบางคอแหลม</a>
                                           <a data-toggle="collapse" href="#county4" aria-expanded="false" aria-controls="collapseExample" class="w3-bar-item w3-button">เขตคลองเตย</a>
@@ -809,23 +809,7 @@
 </body>
 
 <script>
-  $(document).ready(function(){
-    $("a").click(function(){
-      $("collapse").toggleClass("collapse");
-    });
-  });
+ $(".w3-bar-item.w3-button").on('click', function(evt){ $('.collapse.in').removeClass('in') })
   </script>
-  <script>
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("collapse");
-    var btns = header.getElementsByClassName("well");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-      });
-    }
-    </script>
 
 </html>
