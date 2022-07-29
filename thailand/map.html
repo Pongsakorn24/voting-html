@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ionic.example">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;500;700&display=swap" rel="stylesheet">
+    <title>สำรวจ</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/gobal.css">
+    <link rel="stylesheet" href="css/insitepage01.css">
+    <link rel="stylesheet" href="css//map.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="slick/slick.js"></script>
+
+
+</head>
+<header>
+    <div class="header-th">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button> -->
+                    <a class="navbar-brand"></a>
+                    <div class="box-logo-header">
+                        <!-- <h1>พรรคสร้างอนาคตไทย</h1> -->
+                        <a class="navbar-brand"></a>
+                        <a><img src="images/logoพรรค.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/"></a>
+                        </li>
+                        <!-- <li><a href="/user/profile">โปรไฟล์</a></li>
+                        <li><a href="/user/all-salepage">เซลเพจ</a></li>
+                        <li><a href="/register">สมัครสมาชิก</a></li>
+                        <li><a href="/login">เข้าสู่ระบบ</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+  <style>
+
+  </style>
+
+<body>
+
+    <article>
+        <div class="box-station">
+            
+            <div class="pollingstation">
+                <div class="box-search">
+                    <input type="text" class="form-control" placeholder="ค้นหา"> 
+                </div>
+                <!-- <span>
+                    หน่วยเลือกตั้ง
+                </span> -->
+                <div class="box-img-poll">
+                    <img src="https://lh5.googleusercontent.com/p/AF1QipNBlK2Po-WZvWrPMyx_MnIz_IUp_BLesULMvs7I=w408-h306-k-no" alt="">
+                </div>
+                <div class="box-pad">
+                    <div class="box-mem-user">
+                    <img src="images/ct21-2.jpg" alt="">
+                </div>
+                <div class="box-name">
+                     <span>วรัญญา แอนดาริส </span>
+                     <span>จำนวนที่เข้าถึงด้วย QR พรรค (คน) </span>
+                     <strong>8</strong> 
+                </div>
+                <div class="box-poll-sta">
+                    <span>หน่วยเลือกตั้งที่ 21 สะพานสูง</span>
+                     <span>2292 ถนน พระราม 9 แขวง สวนหลวง แขวงสวนหลวง กรุงเทพมหานคร 10250</span>
+                </div>
+            <div class="box-sta">
+                <span>สถานที่ใกล้เคียง </span>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="box-img-poll">
+                            <img src="https://lh5.googleusercontent.com/p/AF1QipNBlK2Po-WZvWrPMyx_MnIz_IUp_BLesULMvs7I=w408-h306-k-no" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box-img-poll">
+                            <img src="https://lh5.googleusercontent.com/p/AF1QipNBlK2Po-WZvWrPMyx_MnIz_IUp_BLesULMvs7I=w408-h306-k-no" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+                
+               
+                <!-- <select class="form-control">
+                    <option value="">หน่วยเลือกตั้งที่ 1</option>
+                    <option value="">หน่วยเลือกตั้งที่ 2</option>
+                    <option value="">หน่วยเลือกตั้งที่ 3</option>
+                    <option value="">หน่วยเลือกตั้งที่ 4</option>
+                    <option value="">หน่วยเลือกตั้งที่ 5</option>
+                    <option value="">หน่วยเลือกตั้งที่ 6</option>
+                </select>
+                <span>
+                    สถานที่สำคัญ
+                </span>
+                <select class="form-control">
+                    <option value="">วัด</option>
+                    <option value="">โรงเรียน</option>
+                    <option value="">ร้านอาหาร</option>
+                    <option value="">ชุมชน</option>
+                </select> -->
+            </div>
+            <div class="box-pin">
+                <button class="pin-green">ปักหมุด</button>
+                <button class="pin-back">กลับแผนที่</button>
+            </div>
+            <div id="pattern" class="pattern">
+                        <div class="map">
+                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961712.058901661!2d96.9927060374
+                        8052!3d13.000307634169468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d8df747424db1%3A0x9
+                        ed72c880757e802!2z4Lib4Lij4Liw4LmA4LiX4Lio4LmE4LiX4Lii!5e0!3m2!1sth!2sth!4v1659035652637!5m2!1sth!2sth"
+                        width="600" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></a>
+                        
+                        
+                        </div>
+                    </div>
+            
+        </div>
+    </article>
+
+</body>
+
+<script>
+    $(document).ready(function(){
+  buildMap();
+});
+
+var sw = document.body.clientWidth,
+    bp = 550,
+    $map = $('.map');
+var static = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961712.058901661!2d96.99270603748052!3d13.000307634169468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d8df747424db1%3A0x9ed72c880757e802!2z4Lib4Lij4Liw4LmA4LiX4Lio4LmE4LiX4Lii!5e0!3m2!1sth!2sth!4v1659035652637!5m2!1sth!2sth";
+var embed = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961712.058901661!2d96.99270603748052!3d13.000307634169468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d8df747424db1%3A0x9ed72c880757e802!2z4Lib4Lij4Liw4LmA4LiX4Lio4LmE4LiX4Lii!5e0!3m2!1sth!2sth!4v1659035652637!5m2!1sth!2sth" width="600" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+
+function buildMap() {
+  if(sw>bp) { //If Large Screen
+      if($('.map-container').length < 1) { //If map doesn't already exist
+        buildEmbed();
+      }
+  } else {
+      if($('.static-img').length < 1) { //If static image doesn't exist
+        buildStatic();
+      }
+  }
+};
+
+function buildEmbed() { //Build iframe view
+    $('<div class="map-container"/>').html(embed).prependTo($map);
+};
+  
+function buildStatic() { //Build static map
+   var mapLink = $('.map-link').attr('href'),
+       $img = $('<img class="static-img" />').attr('src',static);
+   $('<a/>').attr('href',mapLink).html($img).prependTo($map); 
+}
+
+$(window).resize(function() {
+  sw = document.body.clientWidth;
+  buildMap();
+  google.maps.event.trigger(map, "resize");
+});
+   
+
+</script>
+</html>
