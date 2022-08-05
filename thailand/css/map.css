@@ -115,6 +115,8 @@ iframe {
   /* float: right; */
   /* left: 0; */
   /* right: 25; */
+  box-shadow: 0 0 9px 2px rgb(0 0 0 / 20%);
+
 }
 .box-img-poll{
   width: 100%;
@@ -180,4 +182,21 @@ iframe {
   display: block;
   border-top: 1px solid #e1e1e1;
   margin-bottom: 15px;
+}
+.box-pin2{
+  display: block;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  z-index: 2;
+}
+.pin-red{
+  display: block;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  background-color: red;
+  border: transparent;
+  border-radius: 10px;
+  margin: 10px 0;
 }
