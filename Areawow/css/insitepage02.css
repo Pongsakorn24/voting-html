@@ -11,11 +11,11 @@
     background-position-x: center;
     background-position-y: center;
     background-image: url(../images/img-recommended-02.png);
-    background-size: 100%;
+    background-size: 135%;
     overflow: hidden;
 }
 .layout-pin,.layout-home{
-    position: absolute;
+    /* position: absolute; */
     color: #fff;
     bottom: 0;
     left: 0;
@@ -113,7 +113,7 @@
     .box-pin img,.box-choose img{
         display: block;
         margin: 0 auto 25px;
-        width: 80px;
+        width: 50px;
     }
    .box-choose .box-homemy img{
     margin: 0;
@@ -132,7 +132,7 @@
 @media (max-width: 767px){
     .wrapper-home h2,.layout-pin h2{
         margin:0 0 25px  ;
-        font-size: 35px;
+        font-size: 25px;
     }
     
     .box-pin{
@@ -171,7 +171,7 @@
         left: 0;
         max-width: 100%;
         margin: 0 0;
-        padding: 65px 15px;
+        padding: 30px 15px;
         border-radius: 10px 10px 0 0;
     }
    
@@ -200,3 +200,4 @@
         }
 
 }
+

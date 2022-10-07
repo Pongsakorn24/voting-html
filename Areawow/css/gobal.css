@@ -158,12 +158,12 @@ body {
 
 @media (max-width: 480px) {
     .header-2nd .box-logo-header {
-        padding: 6px 8px;
+        padding: 12px 8px;
     }
     .header-2nd .box-logo-header h1 {
         font-size: 18px;
     }
     .header-2nd .box-logo-header img {
-        height: 32px;
+        height: 25px;
     }
 }
