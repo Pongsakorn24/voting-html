@@ -120,12 +120,13 @@
    }
    .box-image-speed{
     max-width: 50%;
-    margin: 150px auto;
+    text-align: center;
+    margin: 300px auto;
    }
    .box-image-speed img{
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
-       }
+    }
    
 
 @media (max-width: 767px){
@@ -170,7 +171,7 @@
         left: 0;
         max-width: 100%;
         margin: 0 0;
-        padding: 50px 15px;
+        padding: 65px 15px;
         border-radius: 10px 10px 0 0;
     }
    
@@ -191,7 +192,11 @@
         margin: 0 auto 25px ;
     }
     .box-image-speed{
-        margin: 384px auto;
+        margin: 345px auto;
     }
+    .box-image-speed img{
+        width: 100%;
+        margin: 0 auto;
+        }
 
 }
