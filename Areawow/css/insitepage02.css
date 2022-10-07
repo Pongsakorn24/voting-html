@@ -1,0 +1,197 @@
+.wrapper-home h2,.layout-pin h2{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 50px ;
+    color: #fff;
+}
+.wrapper-home ,.wrapper-pin{
+    position: relative;
+    min-height: 100vh;
+    background-position-x: center;
+    background-position-y: center;
+    background-image: url(../images/img-recommended-02.png);
+    background-size: 100%;
+    overflow: hidden;
+}
+.layout-pin,.layout-home{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    background-color: rgb(0 ,0,0,0.8);
+}
+.box-pin,.box-choose{
+    display: block;
+    text-align: left;
+    max-width: 95%;
+    /* height: 250px; */
+    background-color: #ca0000;
+    padding: 80px;
+    border-radius: 10px;
+    margin: 100px 0;
+}
+.box-pin span a{
+    /* display: inline-block; */
+    text-align: left;
+    margin:5px;
+    font-size: 35px;
+    width: auto;
+    padding: 5px 15px;
+    border-radius: 10px;
+    height: auto;
+    color: #fff;
+    background-color: #ca0000;
+    text-decoration: none;
+    border: 1px solid #fff;
+    list-style: none;
+    display: inline-block;
+    /* background-color: #F0F2F4; */
+    /* border-radius: 5px; */
+    /* padding: 5px 10px; */
+    font-size: 18px;
+    /* color: #B2BAC2; */
+    /* box-shadow: 0px 0px 7px black; */
+    /* margin: 3px 1px 3px 1px; */
+    line-height: 27px;
+    text-transform: uppercase;
+
+}
+.btn-find{
+    display: block;
+    width: 200px;
+    height: 70px;
+    color: #fff;
+    font-size: 25px;
+    margin: 25px auto;
+    border: transparent;
+    border-radius: 10px;
+    background-color: #333;
+    text-align: center;
+}
+.btn-send{
+    display: block;
+    width: 200px;
+    height: 70px;
+    color: #fff;
+    font-size: 25px;
+    margin: 0 auto 25px;
+    border: transparent;
+    border-radius: 10px;
+    background-color: #ca0000;
+    text-align: center;
+}
+.box-choose input.form-control{
+    height: 50px;
+    font-size: 20px;
+}
+.modal-email .modal-body input.form-control{
+    height: 50px;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 0 0 25px;
+    background-color: #e1e1e1;
+    color: #333;
+    border-radius: 10px;
+}
+.modal-email .modal-body{
+    font-size: 20px;
+}
+.modal-email .modal-body{
+    font-size: 20px;
+}
+.modal-email .modal-header,
+    .modal-email .modal-body,
+    .modal-email .modal-footer{
+        text-align: center;
+        border: transparent;
+    }
+    .box-pin img,.box-choose img{
+        display: block;
+        margin: 0 auto 25px;
+        width: 80px;
+    }
+   .box-choose .box-homemy img{
+    margin: 0;
+   }
+   .box-image-speed{
+    max-width: 50%;
+    margin: 150px auto;
+   }
+   .box-image-speed img{
+    width: 100%;
+    margin: 0 auto;
+       }
+   
+
+@media (max-width: 767px){
+    .wrapper-home h2,.layout-pin h2{
+        margin:0 0 25px  ;
+        font-size: 35px;
+    }
+    
+    .box-pin{
+        max-width: 100%;
+        height: auto;
+        padding: 50px 15px;
+        text-align: left;
+        border-radius: 10px;
+    }
+    .box-pin span a{
+        margin: 5px 2px;
+        font-size: 13px;
+        line-height: 1.5;
+        width: auto;
+        padding: 5px 15px;
+        border-radius: 10px;
+        height: auto;
+        color: #fff;
+        text-decoration: none;
+    
+    }
+    .btn-find {
+        height: 50px;
+    }
+    .wrapper-home ,.wrapper-pin {
+        background-size: cover;
+    }
+    .layout-pin,.layout-home{
+        position: absolute;
+        padding-left: 0px;
+    }
+    .box-pin,.box-choose{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        max-width: 100%;
+        margin: 0 0;
+        padding: 50px 15px;
+        border-radius: 10px 10px 0 0;
+    }
+   
+    
+    .modal-email .modal-header img{
+        margin: 0 auto;
+        width: 70px;
+        height: auto;
+
+    }
+    .modal-content{
+        margin: 205px 0;
+    }
+    .modal-email .modal-footer{
+        margin: 0 15px;
+    }
+    .btn-send{
+        margin: 0 auto 25px ;
+    }
+    .box-image-speed{
+        margin: 384px auto;
+    }
+
+}

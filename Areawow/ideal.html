@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>หน้าแรก</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="slick/slick.js"></script>
+</head>
+<header>
+    <div class="header-2nd">
+        <div class="top-nav">
+            <div class="box-logo-header">
+                <a href="">
+                    <img src="images/ideal_4.png" alt="">
+                </a>
+
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <a class="navbar-brand"></a>
+                        <!-- <div class="box-logo-header">
+                            <a href="">
+                                <img src="images/ideal_4.png" alt="">
+                            </a>
+                            
+                        </div> -->
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="/" class="active">FIND A DOCTOR</a>
+                            </li>
+                            <li>
+                                <a href="/">HAIR</a>
+                            </li>
+                            <li>
+                                <a href="/">FACE</a>
+                            </li>
+                            <li>
+                                <a href="/">BODY</a>
+                            </li>
+                            <li>
+                                <a href="/">TREATENTS</a>
+                            </li>
+                            <li>
+                                <a href="/">SPA + WELLNESS</a>
+                            </li>
+
+                            <!-- <li><a href="/user/profile">โปรไฟล์</a></li>
+                        <li><a href="/user/all-salepage">เซลเพจ</a></li>
+                        <li><a href="/register">สมัครสมาชิก</a></li>
+                        <li><a href="/login">เข้าสู่ระบบ</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+
+        </div>
+        </nav>
+    </div>
+
+</header>
+<style>
+    body {
+        font-family: 'Chonburi', cursive;
+    }
+    
+    .header-2nd .box-logo-header {
+        padding: 14px 0;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .header-2nd .navbar-right {
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        padding: 15px 0;
+    }
+    
+    .header-2nd .navbar-nav>li {
+        display: inline-block;
+        float: none;
+    }
+    
+    .header-2nd .box-logo-header h1 {
+        margin: 0;
+        font-size: 25px;
+    }
+    
+    .header-2nd .box-logo-header img {
+        /* width: 100%; */
+        height: 42px;
+        position: relative;
+        /* display: block; */
+    }
+    
+    .name-logo {
+        display: inline-block;
+    }
+    
+    .header-2nd {
+        background-color: #fff;
+        position: relative;
+        z-index: 999;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+    }
+    
+    .header-2nd .navbar-default {
+        background-color: #fff;
+        border-color: #e7e7e7;
+        position: fixed;
+    }
+    
+    .header-2nd .navbar-default .navbar-nav>li>a {
+        color: #333;
+        font-size: 18px;
+    }
+    
+    .header-2nd .navbar-nav>li>a {
+        margin: 0;
+        padding: 25px 15px;
+    }
+    
+    .header-2nd .navbar-nav>li>a:hover {
+        border-bottom: 4px solid #fff;
+    }
+    
+    .navbar-right li:nth-child(4):after {
+        content: '';
+        height: 35px;
+        width: 1px;
+        background-color: #ffffff;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+    }
+    
+    .header-2nd .navbar-brand {
+        float: left;
+        padding: 0;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    /* .collapse.in {
+    display: block;
+} */
+    
+    .header-2nd .navbar {
+        border-radius: 0px;
+        position: relative;
+        /* min-height: 50px; */
+        margin-bottom: 0;
+        border: 0px solid transparent;
+    }
+    
+    .header-2nd .navbar-right .box-registor {
+        padding: 15px 0;
+        display: inline-block;
+    }
+    
+    .header-2nd .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+    
+    .footer_mb {
+        display: none;
+    }
+    
+    .wrapper-footer {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        background-color: #e1e1e1;
+    }
+    
+    .layout-footer {
+        padding: 25px 0;
+    }
+    
+    .wrapper-footer span {
+        position: relative;
+        color: #846d81;
+    }
+    
+    .bottom-nav {
+        display: block;
+        height: 100px;
+        border-bottom: 1px solid #000;
+        overflow: hidden;
+    }
+    
+    .top-nav {
+        display: block;
+        height: 70px;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    
+    .header-2nd .bottom-nav .navbar-right a.active {
+        background-color: #000;
+        color: #fff !important;
+    }
+    
+    @media (max-width:768px) {}
+    
+    @media (max-width: 767px) {
+        .footer_mb {
+            display: block;
+        }
+        .footer_mb {
+            position: fixed;
+            bottom: 0px;
+            z-index: 9999;
+            width: 100%;
+            height: 4.5rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+        }
+        .footer_mb a {
+            color: white !important;
+        }
+        .footer_mb {
+            position: fixed;
+            bottom: 0px;
+            z-index: 9999;
+            width: 100%;
+            height: 70px;
+        }
+        .footer_mb img {
+            width: auto;
+            height: 22px;
+            margin: 25px auto;
+        }
+        .row .col-xs-3 {
+            width: 25%;
+            margin-left: auto;
+            left: auto;
+            right: auto;
+        }
+        .footer_mb .container {
+            padding-right: 30px;
+            padding-left: 30px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .open-vote {
+            display: block;
+            background-color: #0032eb;
+            color: #fff;
+            border-radius: 10px;
+            width: 80%;
+            height: 50px;
+            font-size: 20px;
+            border: transparent;
+            margin: 10px auto;
+        }
+        .top-nav {
+            display: inline-block;
+            height: fit-content;
+        }
+        .bottom-nav {
+            height: fit-content;
+        }
+        .header-2nd .box-logo-header {
+            position: absolute;
+            z-index: 999;
+        }
+        .header-2nd .navbar-toggle {
+            position: relative;
+            float: right;
+            padding: 9px 10px;
+            margin-top: 0px;
+            margin-right: 15px;
+            margin-bottom: 8px;
+            background-color: transparent;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .header-2nd .navbar-nav>li>a {
+            margin: 0;
+            padding: 10px 15px;
+        }
+        .header-2nd .navbar-nav>li {
+            display: block;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .header-2nd .box-logo-header {
+            padding: 0px 10px;
+        }
+        .header-2nd .box-logo-header h1 {
+            font-size: 18px;
+        }
+    }
+</style>
+<style>
+    body {
+        font-family: 'Prompt', sans-serif;
+    }
+    
+    .wrapper-cover,
+    .box-img-substance {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+    
+    .box-img-substance {
+        overflow: hidden;
+        border-radius: 0;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+    }
+    
+    .wrapper-cover .box-cover a,
+    .box-img-substance a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .wrapper-cover a img,
+    .box-img-substance a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .wrapper-quote h1,
+    .wrapper-product h1,
+    .wrapper-reccommended h1,
+    .wrapper-detail-product h1 {
+        text-align: center;
+        font-weight: bold;
+        margin: 50px 0;
+        color: #000;
+        font-size: 16px;
+    }
+    
+    .wrapper-reccommended h1 {
+        margin: 50px 0 20px;
+    }
+    
+    .wrapper-quote h1 {
+        margin: 50px 0 0;
+    }
+    
+    .wrapper-quote span,
+    .wrapper-quote label {
+        display: block;
+        position: relative;
+        text-align: center;
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    .wrapper-quote span {
+        font-size: 50px;
+    }
+    
+    .wrapper-quote label {
+        font-size: 20;
+    }
+    
+    .wrapper-reccommended h1 {
+        color: #000;
+    }
+    /* .wrapper-reccommended h1::after,
+.wrapper-reccommended h1::before,
+.wrapper-quote h1::after,
+.wrapper-quote h1::before,
+.wrapper-product h1::after,
+.wrapper-product h1::before,
+.wrapper-reccommended h1::after,
+.wrapper-reccommended h1::before,
+.wrapper-detail-product h1::after,
+.wrapper-detail-product h1::before {
+    background-color: #202020;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin: 0.75em 4rem 0;
+    vertical-align: top;
+    width: 5pc;
+} */
+    
+    .wrapper-quote span::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: #7f3f97;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    
+    .box-detail-substance,
+    .box-detail-substance2 {
+        position: absolute;
+        width: 70%;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 194px auto;
+    }
+    
+    .box-detail-substance2 {
+        margin: 80px auto;
+    }
+    
+    .box-detail-substance label,
+    .box-detail-substance2 label {
+        display: block;
+        position: relative;
+        color: #000;
+        font-weight: 400;
+        font-size: 16px;
+        padding: 5px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .box-detail-substance label::after,
+    .box-detail-substance2 label::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: #7f3f97;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    
+    .box-detail-substance h2,
+    .box-detail-substance2 h2 {
+        font-size: 35px;
+        line-height: 60px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1;
+        color: #000;
+        text-align: center;
+    }
+    
+    .box-detail-substance2 h2 {
+        font-size: 20px;
+    }
+    
+    .box-detail-substance p,
+    .box-detail-substance2 p {
+        font-weight: 100;
+        font-size: 14px;
+    }
+    
+    .readmore {
+        display: block;
+        width: 200px;
+        height: 50px;
+        color: #000;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        background-color: transparent;
+        margin: 0 auto;
+    }
+    
+    .readmore:hover {
+        color: #fff;
+        background-color: #7f3f97;
+        border: transparent;
+    }
+    /* .box-detail-substance p {
+    color: #7f3f97;
+} */
+    
+    .box-detail-substance ol {
+        display: block;
+        margin-bottom: 25px;
+        padding: 0 0 0 15px;
+    }
+    
+    .box-detail-substance ol li {
+        margin: 0 0 10px;
+    }
+    
+    .box-sub {
+        display: block;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin: 50px 0;
+    }
+    
+    .view-more {
+        width: 150px;
+        height: 50px;
+        border: 2px solid #333;
+        font-size: 16px;
+        background-color: transparent;
+    }
+    
+    .box-card-new,
+    .box-card-product {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .box-card-product .card-img-product {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-radius: 0;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+    }
+    
+    .box-card-new .card-img-new a,
+    .box-card-new .box-detail span,
+    .box-card-product .card-img-product a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .box-card-product .card-img-product a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .box-card-product span {
+        font-size: 16px;
+        line-height: 24px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+    
+    .slide-product .slick-prev,
+    .slide-substance .slick-prev {
+        background-image: url(../images/ic-back.png);
+        background-position: center center;
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        margin-right: 75px;
+    }
+    
+    .slide-product .slick-next,
+    .slide-substance .slick-next {
+        background-image: url(../images/ic-next.png);
+        background-position: center center;
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+    }
+    
+    .slide-product .slick-prev,
+    .slide-product .slick-next,
+    .slide-substance .slick-prev,
+    .slide-substance .slick-next {
+        width: 75px;
+        height: 50px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: auto 30px;
+        border: none;
+        overflow: hidden;
+        text-indent: 900px;
+        background-position: center;
+    }
+    
+    .box-card-product {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .layout-search-all {
+        margin: 50px 0;
+    }
+    
+    .wrapper-reccommended {
+        /* background-color: #c5b4d1; */
+        display: block;
+        overflow: hidden;
+    }
+    
+    .layout-recommended {
+        /* margin: 50px 0; */
+        padding-bottom: 50px;
+        border-bottom: 1px solid #000;
+    }
+    
+    .box-reccommended {
+        display: block;
+        overflow: hidden;
+        padding: 0 0 0 0;
+        border: none;
+        /* border-top: 1px solid #000; */
+        /* border-bottom: 1px solid #000; */
+        background-color: #e1e1e1;
+    }
+    
+    .box-reccommended ul {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .box-reccommended .box-detail-rec {
+        display: inline-block;
+        width: 19%;
+        list-style-type: none;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .box-reccommended .box-detail-rec img {
+        width: 25px;
+        height: 25px;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px;
+        position: relative;
+        top: 0;
+    }
+    
+    .box-reccommended .box-detail-rec label,
+    .box-reccommended .box-detail-rec span {
+        display: block !important;
+        text-align: center;
+        color: #000;
+    }
+    
+    .box-user span {
+        position: absolute;
+        color: #fff;
+        bottom: 0;
+        left: 0;
+        font-size: 30px;
+        width: 35%;
+        height: 150px;
+        padding: 35px 0 20px 175px;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .box-user img {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        position: absolute;
+        left: 35px;
+        bottom: 25px;
+    }
+    
+    .box-user ul {
+        padding: 0 0 0 0;
+    }
+    
+    .box-user ul li {
+        list-style-type: none;
+    }
+    
+    .box-p-img {
+        padding: 0 160px;
+    }
+    
+    .wrapper-detail-product p {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Prompt', sans-serif;
+        font-weight: normal;
+        /* margin: 20px 100px; */
+        margin-bottom: 60px;
+        text-align: left;
+    }
+    
+    .card__share {
+        float: right;
+        position: absolute;
+        right: 100px;
+        bottom: -25px;
+        z-index: 999;
+    }
+    
+    .card__social {
+        position: absolute;
+        top: 0;
+        right: 0;
+        visibility: hidden;
+        width: 135px;
+        transform: translateZ(0);
+        transform: translateX(0px);
+        transition: transform 0.35s ease;
+    }
+    
+    .card__social--active {
+        visibility: visible;
+        transform: translateZ(0);
+        transform: translateX(-48px);
+        transition: transform 0.35s ease;
+    }
+    
+    .share-icon {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        outline: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    }
+    
+    .share-icon .share {
+        background-image: url(../images/share.svg);
+    }
+    
+    .card__social li {
+        display: inline-block;
+    }
+    
+    .card__social li {
+        display: inline-block;
+    }
+    
+    .card__social li a img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .card__social li a img:hover {
+        transform: scale(1.2);
+        transition: 0.6s;
+    }
+    
+    .card__share a {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        outline: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    }
+    
+    .card__share .share-icon img {
+        width: 30px;
+        height: 30px;
+        margin: 9px 8px;
+    }
+    
+    .box-reccommended .slick-dots ul {
+        display: block;
+    }
+    
+    .box-reccommended .slick-dots li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .box-reccommended .slick-dots button {
+        background-color: #fff;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        overflow: hidden;
+        text-indent: 1000px;
+        border: 0;
+    }
+    
+    .box-reccommended .slick-dots .slick-active button {
+        background-color: #a483bc;
+    }
+    
+    .box-reccommended .slick-arrow {
+        display: none !important;
+    }
+    
+    .box-reccommended .slick-prev,
+    .box-reccommended .slick-next {
+        display: none !important;
+    }
+    
+    .wrapper-ref h1 {
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 auto;
+        color: #000;
+        text-align: center;
+    }
+    
+    .wrapper-ref h1::after,
+    .wrapper-ref h1::before {
+        background-color: #202020;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        margin: 0.75em 4rem 0;
+        vertical-align: top;
+        width: 5pc;
+    }
+    
+    .wrapper-ref {
+        display: block;
+        overflow: hidden;
+    }
+    
+    .layout-ref {
+        padding: 50px 0;
+    }
+    
+    .wrapper-ref span {
+        display: block;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    .wrapper-detail-product {
+        text-align: center;
+    }
+    /* .wrapper-detail-product img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+*/
+    
+    .nopaddingright {
+        padding-right: 0;
+    }
+    
+    .nopaddinglet {
+        padding-left: 0;
+    }
+    /* .box-detail-substance {
+    margin: 0 0 50px;
+} */
+    
+    .box-img-big img {
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    .wrapper-product .note {
+        font-size: 12px;
+        position: relative;
+        top: -32px;
+        text-align: center;
+    }
+    
+    .layout-detail-product {
+        margin: 0 0 50px;
+    }
+    
+    .wp-block-image {
+        margin: 0 0 1em;
+    }
+    
+    .wp-block-image .alignright {
+        float: right;
+        margin: 0.5em 0 0.5em 1em;
+    }
+    
+    .wp-block-image .alignleft {
+        float: left;
+        margin: 0.5em 1em 0.5em 0;
+    }
+    
+    .img-test {
+        display: block;
+        width: 100%;
+    }
+    
+    .wrapper-conternt {
+        display: block;
+    }
+    
+    .wrapper-conternt h1 {
+        position: relative;
+        padding: 0 0 10px;
+    }
+    
+    .wrapper-conternt h1::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        bottom: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+    
+    .quote {
+        display: block;
+        position: relative;
+        margin: 50px 0;
+    }
+    /* 
+.box-quote::after,
+.box-quote::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+} */
+    
+    .box-quote {
+        border: none;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        color: #333;
+    }
+    
+    .layout-content {
+        border: none;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+    
+    .layout-content {
+        padding: 50px 0;
+        position: relative;
+    }
+    
+    .box-quote label {
+        padding: 50px;
+        font-size: 25px;
+    }
+    
+    .wrapper-substance {
+        display: block;
+        background-color: #e1e1e1;
+    }
+    
+    .layout-substance {
+        padding: 50px 0;
+    }
+    
+    .box-c1 {
+        position: absolute;
+        right: 0;
+        width: 24%;
+    }
+    
+    @media (max-width:991px) {}
+    
+    @media (max-width:768px) {}
+    
+    @media (max-width: 767px) {
+        .wrapper-quote h1,
+        .wrapper-product h1,
+        .wrapper-reccommended h1,
+        .wrapper-detail-product {
+            text-align: center;
+            font-weight: bold;
+        }
+        .box-sub {
+            display: block;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            margin: 0 0 0;
+        }
+        .box-sub .box-detail-substance {
+            width: 100% !important;
+            padding: 0 15px;
+            margin: 0 0 50px;
+        }
+        .box-user span {
+            width: 55%;
+            height: 50px;
+            padding: 5px 0 5px 70px;
+            font-size: 13px;
+        }
+        .box-user img {
+            width: 35px;
+            height: 35px;
+            left: 20px;
+            bottom: 7px;
+        }
+        .box-detail-substance h2 {
+            font-size: 30px;
+            line-height: 42px;
+        }
+        .wrapper-detail-product img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card__share {
+            float: right;
+            position: absolute;
+            right: 25px;
+            bottom: -25px;
+            z-index: 999;
+        }
+        .layout-recommended {
+            margin: 25px 0;
+        }
+        .box-sub .col-sm-6,
+        .box-sub .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .box-sub .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .slide-substance .slick-prev {
+            background-image: url(../images/ic-back.png);
+            background-position: center center;
+            position: absolute;
+            cursor: pointer;
+            top: 105px;
+            bottom: 0;
+            left: 10px;
+            z-index: 10;
+            margin-right: 75px;
+        }
+        .slide-product .slick-next,
+        .slide-substance .slick-next {
+            background-image: url(../images/ic-next.png);
+            background-position: center center;
+            position: absolute;
+            cursor: pointer;
+            top: 105px;
+            bottom: 0;
+            right: 10px;
+            z-index: 10;
+        }
+        .slide-substance .slick-prev,
+        .slide-substance .slick-next {
+            width: 35px;
+            height: 35px;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            border-radius: 100%;
+            background-size: auto 12px;
+            border: none;
+            overflow: hidden;
+            text-indent: 900px;
+            background-position: center;
+        }
+        .box-reccommended ul {
+            padding: 0 0 0 0;
+        }
+        .wrapper-detail-product iframe {
+            width: 100%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        .wrapper-detail-product p {
+            margin: 20px 0px;
+        }
+        .wrapper-quote span {
+            font-size: 30px;
+        }
+        .slide-product .slick-prev,
+        .slide-product .slick-next {
+            display: none !important;
+        }
+        .box-img-substance {
+            border-radius: 0;
+        }
+        .box-quote label {
+            padding: 15px;
+            font-size: 14px;
+        }
+        .box-p-img {
+            padding: 0;
+        }
+        .wrapper-quote h1,
+        .wrapper-product h1,
+        .wrapper-reccommended h1,
+        .wrapper-detail-product h1 {
+            margin: 25px 0;
+        }
+        .layout-content {
+            margin-bottom: 25px;
+            padding-top: 25px;
+        }
+        .slide-content .slick-prev,
+        .slide-content .slick-next {
+            display: none !important;
+        }
+        .layout-content {
+            border-top: transparent;
+        }
+        .box-c1 {
+            display: block;
+            position: relative;
+            margin: 0 15px;
+            width: fit-content;
+        }
+        .wp-block-image .alignleft {
+            margin: 0.5em 0 0.5em 0;
+        }
+    }
+    
+    @media (max-width: 480px) {}
+</style>
+
+<body>
+
+    <article>
+
+        <section>
+            <div class="wrapper-quote">
+                <h1>สารออกฤทธิ์</h1>
+                <span>white tomato extract</span>
+                <label for="">สารสกัดจากธรรมชาติ </label>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper-cover">
+                <div class="layout-cover">
+                    <div class="box-cover">
+                        <a href="">
+                            <img src="images/cover 1.jpg" alt="">
+                        </a>
+                    </div>
+                    <!-- <div class="card__share">
+                        <div class="card__social">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/line.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a id="share" class="share-toggle share-icon" href="#">
+                            <img src="images/share-g.png" alt="">
+                        </a>
+                    </div> -->
+                    <!-- <div class="box-user">
+                        <span>
+                            <img src="images/doctor.png" alt="">
+                            <ul>
+                                <li>ชื่อ นามสกุล</li>
+                                <li>ผู้แนะนำ</li>
+                            </ul>
+                        </span>
+
+                    </div> -->
+        </section>
+        <section>
+            <div class="quote">
+                <div class="container">
+                    <div class="box-quote">
+                        <label for="">" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iusto tenetur eum quae in! Ex sunt perspiciatis accusantium et molestiae, nam asperiores. Aperiam repellendus ea voluptas magni at voluptatibus voluptatem. "</label>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper-detail-product">
+                <div class="layout-detail-product">
+                    <h1>งานวิจัยที่เกี่ยวข้อง</h1>
+                    <div class="container">
+                        <div class="box-p-img">
+                            <!-- <figure class="alignleft size-large is-resized"><img src="images/coverdetails.jpg" alt=""></figure> -->
+                            <div class="wp-block-image">
+                                <figure class="alignleft size-large is-resized"><img loading="lazy" src="images/coverdetails.jpg" alt="" class="wp-image-106757" width="250" height="200"></figure>
+                            </div>
+                            <p>Caroteniod สวัสดีคะทุกคน วันนี้จะมารู้ลึกเกี่ยวกับพืชมหัศจรรย์ ที่เป็นที่พูดถึงกันในยุโรปและอเมริกา ซึ่งจะต้องบอกเลยว่ามีสารที่สำคัญมากมายในเรื่องของผิวพรรณและสุขภาพ ที่นำมาใช้ในทางการแพทย์และเสริมความงามและเป็นส่วนผสมหลักของอาหารเสริมหลายชนิด
+                                นั่นก็คือมะเขือเทศสีขาว (Crystal tomato) แต่มะเขือเทศสีขาวที่ดีที่สุดจะมีรูปร่างที่ไม่เหมือนมะเขือเทศทั่วไปและไม่สามารถปลูกได้ในพื้นที่อื่น แต่ปลูกได้ในพื้นที่เล็กๆของประเทศอิสราเอล โดยไม่มีการตัดต่อพันธุกรรม เราไปดูกันว่าทำไมถึงได้รับสมญานามว่าเป็นราชินีแห่งวงการผิวพรรณ
+                                จากการที่เรารู้จักกับพี่คนหนึ่งซึ่งเขาศึกษาในเรื่องของวิทยาศาสตร์ชะลอวัย ซึ่งเราเองอยู่ในงานด้านสายสุขภาพเหมือนกันได้เล่าถึงความมหัศจรรย์ของพืชชนิดนี้ ทำให้เราสนใจมากเพราะมีคุณประโยชน์ในทางการแพทย์ด้วย เราจึงตั้งใจที่จะทำกระทู้นี้ขึ้นมา
+                                เพื่อเป็นประโยชน์ให้กับทุกคนไม่มากก็น้อยค่ะ (เคยเห็นแต่มะเขือเทศสีขาวลูกเล็กๆ ที่พ่อเคยปลูกที่บ้าน 555 แต่ไม่ใช่ลูกเล็กแบบนั้นนะคะทุกคน มะเขือเทศสีขาวที่พูดถึงเขามีลักษณะเฉพาะ ลูกจะใหญ่ๆ ตามภาพประกอบเลยคะ) มะเขือเทศสีขาว
+                                (Crystal tomato)
+                            </p>
+                            <div class="wp-block-image">
+                                <figure class="alignright size-large is-resized"><img loading="lazy" src="images/p2.png" alt="" class="wp-image-106757" width="250" height="200"></figure>
+                            </div>
+                            <!-- <img src="images/p2.png" alt=""> -->
+                            <p>มี ไลโคปีน เป็นสารในกลุ่มแคโรทีนอยด์ที่ละลายได้ดีในไขมัน ทำให้พืชหรือผลไม้มีสีแดง เหลือง ส้ม หรือขาว พบมากในมะเขือเทศ.....แต่ในมะเขือเทศสีขาวจะมีลักษณะเฉพาะคือ มี Colorless Caroteniod ไม่มีสี ซึ่งเป็นสารสำคัญที่ทำให้มะเขือเทศเป็นสีขาวนั่นเองคะ
+                                จากการศึกษามาในหลายงานวิจัย พบว่าไลโคปีนเป็นสารต้านอนุมูลอิสระ ที่มีฤทธิ์ต้านอนุมูลอิสระแรงที่สุดในกลุ่มแคโรทีนอยด์ โดยมีประสิทธิภาพในการต่อต้านอนุมูลอิสระสูงกว่าเบต้าแคโรทีน (b-carotene) 2 เท่า นอกจากนี้ยังมีประสิทธิภาพในการต่อต้านอนุมูลอิสระสูงกว่าแอลฟา
+                                โทโคฟีรอล (a-tocopherol) 10 เท่า ซึ่งไลโคปีนจะช่วยปกป้องผิวจากการถูกทำร้ายด้วยรังสียูวีในแสงแดด ลดความรุนแรงที่เกิดจากอาการผิวไหม้จากแสงแดด และช่วยชะลอผิวไม่ให้แก่ก่อนวัย โดยการศึกษาวิจัยทางคลินิก พบว่า</p>
+                            <p>(ด้านผิวพรรณ)</p>
+                            <p>-มะเขือเทศขาว มีสารธรรมชาติ คือ สารแคโรทีนอยด์ไม่มีสี (Colorless Carotenoids) ซึ่งเป็นแคโรทีนอยด์ตั้งต้นในกระบวนการชีวะสังเคราะห์ของแคโรทีนอยด์อื่นๆโดยทำหน้าที่ดูดซับแสงในช่วงรังสีอัลตราไวโอเลต หรือ ยูวี (UV radiation)ที่ไม่สามารถมองเห็นได้ด้วยตาเปล่า
+                                ด้วยประการนี้จึงมีคุณสมบัติเฉพาะตัวและมีประสิทธิภาพสูงในการช่วยดูดซับรังสียูวี (UV radiation)จากแสงแดดเช่น รังสียูวีเอ (UVA) และ รังสียูวีบี (UVB)ช่วยยับยั้งการสร้างเม็ดสีเมลานินใหม่ ลดจำนวนเซลล์เม็ดสีเมลานินที่มีอยู่รวมทั้งช่วยลดรอยฝ้า
+                                กระ จุดด่างดำ และรอยแผลเป็นจากสิวจึงช่วยให้ผิวดูสว่างกระจ่างใส ช่วยปรับสีผิวให้สว่างสม่ำเสมอกระจ่างใสทั่วเรือนร่าง -ในมะเขือเทศขาว มีสารไฟโตอีน (Phytoene) และ ไฟโตฟลูอีน (Phytofluene)ในปริมาณมากกว่าในมะเขือเทศทั่วไปเป็นสารต้านอนุมูลอิสระที่ช่วยเพิ่มประสิทธิภาพการดูดซับรังสียูวีปกป้องผิวจากแสงแดด
+                                และ ช่วยลดการอักเสบของผิวและพบว่า Colorless Carotenoids มีในชั้นผิวเราถึง 38% หากใครมีสารนี้ในผิวมาก มันก็จะทำให้ผิวขาวใสมากแต่ถ้าใครมีน้อยก็จะทำให้ผิวดูคล้ำนั่นเองคะ</p>
+                            <!-- <img src="images/p1.png" alt=""> -->
+                            <div class="wp-block-image">
+                                <figure class="alignright size-large is-resized"><img loading="lazy" src="images/p1.png" alt="" class="wp-image-106757" width="250" height="200"></figure>
+                            </div>
+                            <p>(ด้านการแพทย์)</p>
+                            <p>-แคโรทีนอยด์มีฤทธิ์ต้านอนุมูลอิสระสูง ช่วยลดความเสี่ยงการเกิดโรคมะเร็ง โดยเฉพาะโรคมะเร็งต่อมลูกหมาก ช่วยลดการแพร่กระจายของเซลล์มะเร็งและช่วยลดปริมาณการสร้างเส้นเลือดใหม่ที่ก้อนเนื้อมะเร็ง แต่อย่างไรก็ตาม ร่างกายมนุษย์ไม่สามารถสร้างไลโคปีนได้นะคะ
+                                จึงต้องรับประทานเข้าไปเท่านั้น โดยพบว่า การรับประทานไลโคปีน 10 มิลลิกรัม เป็นระยะเวลา 12 สัปดาห์ ทำให้ระดับไลโคปีนในเลือดเพิ่มสูงขึ้น และช่วยเพิ่มระดับแคโรทีนอยด์ในผิวหนัง ซึ่งช่วยปกป้องผิวจากแสงแดด และช่วยต่อต้านอนุมูลอิสระที่ถูกสร้างขึ้นหลังจากผิวได้รับแสงแดด
+                                โดยการรับประทานผักผลไม้ที่เป็นแหล่งของไลโคปีน อย่างเช่น มะเขือเทศ ควรนำมะเขือเทศมาทำให้สุกก่อนรับประทาน เพราะมะเขือเทศที่ผ่านความร้อนแล้วจะทำให้โครงสร้างของไลโคปีนเปลี่ยนจาก Trans isomers เป็น Cis isomers ทำให้ร่างกายสามารถดูดซึมไลโคปีนได้ดีกว่ารับประทานแบบสดๆ
+                                ไลโคปีนจากมะเขือเทศ จึงเปรียบเสมือนการเสริมสร้างเกราะปกป้องผิวจากแสงแดด ให้ผิวสวยกระจ่างใส มีสุขภาพที่ดีจากภายใน นอกจากนี้ ควรดื่มน้ำให้ได้วันละ 6-8 แก้ว เพื่อเติมความชุ่มชื้นให้ผิว พักผ่อนให้เพียงพอ รวมทั้งหลีกเลี่ยงปัจจัยทำร้ายผิวจากภายนอก
+                                ซึ่งได้แก่ แสงแดด มลภาวะต่างๆ แอลกอฮอล์ และ บุหรี่ ผิวพรรณของเราก็จะคงความสวยงามและอ่อนเยาว์อยู่กับเราได้ยาวนานขึ้นคะ</p>
+                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/jcrvC7T__F8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper-conternt">
+                <div class="container">
+                    <div class="layout-content">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h1>white tomato</h1>
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nostrum!</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <div class="slide-content">
+                                        <div class="col-sm-4">
+                                            <img src="images/photo5.jpg" alt="" class="img-test">
+                                            <strong>white tomato</strong>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nostrum reprehenderit molestias asperiores tempora sapiente, assumenda illum consectetur inventore possimus nisi totam distinctio itaque
+                                                corrupti alias nobis quo dignissimos. Neque!</p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <img src="images/photo5.jpg" alt="" class="img-test">
+
+                                            <strong>white tomato</strong>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nostrum reprehenderit molestias asperiores tempora sapiente, assumenda illum consectetur inventore possimus nisi totam distinctio itaque
+                                                corrupti alias nobis quo dignissimos. Neque!</p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <img src="images/photo5.jpg" alt="" class="img-test">
+                                            <strong>white tomato</strong>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nostrum reprehenderit molestias asperiores tempora sapiente, assumenda illum consectetur inventore possimus nisi totam distinctio itaque
+                                                corrupti alias nobis quo dignissimos. Neque!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper-conternt">
+                <div class="container">
+                    <div class="layout-content">
+                        <div class="row">
+                            <div class="box-c1">
+                                <h1>white tomato</h1>
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nostrum!</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <div class="slide-content">
+                                        <div class="col-sm-4">
+                                            <img src="images/photo5.jpg" alt="" class="img-test">
+                                            <strong>white tomato</strong>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nostrum reprehenderit molestias asperiores tempora sapiente, assumenda illum consectetur inventore possimus nisi totam distinctio itaque
+                                                corrupti alias nobis quo dignissimos. Neque!</p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <img src="images/photo5.jpg" alt="" class="img-test">
+
+                                            <strong>white tomato</strong>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nostrum reprehenderit molestias asperiores tempora sapiente, assumenda illum consectetur inventore possimus nisi totam distinctio itaque
+                                                corrupti alias nobis quo dignissimos. Neque!</p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <img src="images/photo5.jpg" alt="" class="img-test">
+                                            <strong>white tomato</strong>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nostrum reprehenderit molestias asperiores tempora sapiente, assumenda illum consectetur inventore possimus nisi totam distinctio itaque
+                                                corrupti alias nobis quo dignissimos. Neque!</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper-reccommended">
+                <h1>คำแนะนำ</h1>
+
+                <div class="container">
+                    <div class="layout-recommended">
+                        <div class="box-reccommended">
+                            <div class="box-detail-rec">
+                                <img src="images/like-w.png" alt="">
+                                <label>เหมาะกับใคร</label>
+                                <span>ผู้หญิงเอเชีย ผิวคล้ำ ที่มีปัญฆาผิวแห้ง แตกกร้าน</span>
+                            </div>
+                            <div class="box-detail-rec">
+                                <img src="images/testing-tube-w.png" alt="">
+                                <label>ปริมาณที่แนะนำ</label>
+                                <span>ใช้ต่อเนื่อง 0.1 กรัม ต่อเนื่องเป็นเวลา 28 วัน</span>
+                            </div>
+                            <div class="box-detail-rec">
+                                <img src="images/sand-clock-w.png" alt="">
+                                <label>ระยะเวลา</label>
+                                <span>ในระยะผลัดผิว 28 วัน</span>
+                            </div>
+                            <div class="box-detail-rec">
+                                <img src="images/two-hearts-w.png" alt="">
+                                <label>สารทดแทน</label>
+                                <span>มะม่วงสีฟ้าจากเกาะบอร์เนียว มาเลเซีย</span>
+                            </div>
+                            <div class="box-detail-rec">
+                                <img src="images/exclamation-mark-w.png" alt="">
+                                <label>ข้อพึงระวัง</label>
+                                <span> ต้องรับประทานน้ำให้มาก เนื่องจากมีผลขอการผลิตน้ำลาย</span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="wrapper-product">
+                <div class="layout-product">
+                    <h1>ผลิตภัณฑ์จากทั่วโลก</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="box-card-product">
+                                    <div class="card-img-product">
+                                        <a href="">
+                                            <img src="images/pp1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <span>serum</span>
+                                    <p>สารออกฤทธิ์ 2%</p>
+                                    <label for="">999.00</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 col-xs-6">
+                                <div class="row">
+                                    <div class="slide-product">
+                                        <div class="col-sm-4">
+                                            <div class="box-card-product">
+                                                <div class="card-img-product">
+                                                    <a href="">
+                                                        <img src="images/pp2.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <span>serum</span>
+                                                <p>สารออกฤทธิ์ 1%</p>
+                                                <label for="">1,200.00</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="box-card-product">
+                                                <div class="card-img-product">
+                                                    <a href="">
+                                                        <img src="images/pp3.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <span>serum</span>
+                                                <p>สารออกฤทธิ์ 1%</p>
+                                                <label for="">1,000.00</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="box-card-product">
+                                                <div class="card-img-product">
+                                                    <a href="">
+                                                        <img src="images/pp4.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <span>serum</span>
+                                                <p>สารออกฤทธิ์ 3%</p>
+                                                <label for="">7,500.00</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <div class="box-card-product">
+                                                <div class="card-img-product">
+                                                    <a href="">
+                                                        <img src="images/pp1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <span>serum</span>
+                                                <p>สารออกฤทธิ์ 2%</p>
+                                                <label for="">999.00</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="box-card-product">
+                                                <div class="card-img-product">
+                                                    <a href="">
+                                                        <img src="images/pp2.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <span>serum</span>
+                                                <p>สารออกฤทธิ์ 2%</p>
+                                                <label for="">999.00</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="note">หมายเหตุ ทั้งหมดนี้มิใช่ผลิตภัณฑ์ที่ได้รับความเห็นชอบจากผู้เชี่ยวชาญ หากคุณสนใจโปรดขอคำแนะนำก่อนตัดสินใจ​</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- <section>
+            <div class="wrapper-ref">
+                <div class="layout-ref">
+                    <div class="container">
+                        <h1>อ้างอิง</h1>
+                        <span> 
+                            <a href="">www.testweb.com</a> จากแพทย์...
+                            </span>
+                        <span> 
+                                <a href="">www.testweb.com</a> จากแพทย์...
+                                </span>
+                        <span> 
+                                    <a href="">www.testweb.com</a> จากแพทย์...
+                                    </span>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </article>
+    <footer>
+        <div class="wrapper-footer">
+            <div class="layout-footer">
+                <div class="container">
+                    <span> © 2020 Copyright</span>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function($) {
+
+        $('.card__share > a').on('click', function(e) {
+            e.preventDefault() // prevent default action - hash doesn't appear in url
+            $(this).parent().find('div').toggleClass('card__social--active');
+            $(this).toggleClass('share-expanded');
+        });
+
+    });
+</script>
+
+<script src="fancybox/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
+<script>
+    $(document).ready(function() {
+        $('[data-fancybox="images"]').fancybox({
+            afterLoad: function(instance, current) {
+                var pixelRatio = window.devicePixelRatio || 1;
+
+                if (pixelRatio > 1.5) {
+                    current.width = current.width / pixelRatio;
+                    current.height = current.height / pixelRatio;
+                }
+            }
+        });
+    });
+</script>
+
+<script>
+    $('.slide-substance').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                focusOnSelect: false,
+                autoplay: true
+            }
+        }]
+    });
+</script>
+<script>
+    $('.box-reccommended').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: true,
+        autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                focusOnSelect: false,
+                autoplay: true
+            }
+        }]
+    });
+</script>
+<script>
+    $('.slide-product').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                focusOnSelect: false,
+                autoplay: true
+            }
+        }]
+    });
+</script>
+<script>
+    $('.slide-content').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                focusOnSelect: false,
+                autoplay: true
+            }
+        }]
+    });
+</script>
+
+
+</html>
