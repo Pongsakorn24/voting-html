@@ -477,4 +477,17 @@
       
       
 }
+@media (max-width: 420px){
+    .box-image-speed{
+        margin: 480px auto 0;
+    }
+    
+}
+@media (max-width: 414px){
+    .box-image-speed{
+        margin: 430px auto 0;
+    }
+    
+}
+
 
