@@ -422,14 +422,14 @@
       .lds-ellipsis {
         display: inline-block;
         position: relative;
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
       }
       .lds-ellipsis div {
         position: absolute;
         top: 33px;
-        width: 10px;
-        height: 10px;
+        width: 7px;
+        height: 7px;
         border-radius: 50%;
         background: #fff;
         animation-timing-function: cubic-bezier(0, 1, 1, 0);
