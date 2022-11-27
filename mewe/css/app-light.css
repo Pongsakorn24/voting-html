@@ -60,7 +60,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Overpass", sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2981,6 +2981,9 @@ input[type="button"].btn-block {
   border-bottom: 1px solid #e9ecef; }
   .nav-tabs .nav-item {
     margin-bottom: -1px; }
+    .card-team .nav-tabs .nav-item{
+      display: inline-block;
+    }
   .nav-tabs .nav-link {
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
@@ -3312,7 +3315,9 @@ background-color: #001a4e;}
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem; }
-
+.wrapper .card-title{
+  font-size: 20px;
+}
 .card-title {
   margin-bottom: 0.75rem; }
 
@@ -3551,7 +3556,15 @@ background-color: #001a4e;}
 .pagination-sm .page-item:last-child .page-link {
   border-top-right-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem; }
-
+.wrapper-profile .badge{
+  display: inline-block;
+  padding: 0.8em;
+  font-size: 75%;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
 .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
@@ -4261,7 +4274,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Overpass", sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4346,7 +4359,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Overpass", sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5660,8 +5673,8 @@ button.bg-dark:focus {
 
 .mt-5,
 .my-5 {
-  margin-top: 3rem !important;
-  margin-bottom: 5.9rem !important; }
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important; }
 
 .mr-5,
 .mx-5 {
@@ -5669,7 +5682,7 @@ button.bg-dark:focus {
 
 .mb-5,
 .my-5 {
-  margin-bottom: 3rem !important; }
+  margin-bottom: 1rem !important; }
 
 .ml-5,
 .mx-5 {
@@ -7365,7 +7378,13 @@ h1, h2, h3 {
 .h4, .h5, .h6,
 h4, h5, h6, strong {
   font-weight: 600; }
-
+  .wrapper-profile .small,.wrapper-profile small {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .01em; }
+    .clear-weme{
+      margin:5px 0 10px;
+    }
 .small, small {
   font-size: 1.2rem;
   font-weight: 300;
@@ -7388,6 +7407,11 @@ button:focus {
 margin-bottom: 10px;}
 
 /* dropdown */
+.table-interest .dropdown-toggle::after {
+  display: inline-block;
+  font-family: "feather";
+  content: "";
+  font-size: 0.75rem; }
 .dropdown-toggle::after {
   display: inline-block;
   font-family: "feather";
@@ -7708,7 +7732,7 @@ select {
   width: 64px; }
 
 .avatar-xl img {
-  width: 110px; }
+  width: 140px; }
 
 .squircle {
   height: 84px;
@@ -7843,7 +7867,7 @@ select {
   stroke-width: 8;
   font-weight: 400;
   font-size: 1.2rem;
-  font-family: "Overpass", sans-serif; }
+  font-family: 'Prompt', sans-serif; }
 
 .gauge-container.g3 > .gauge .dial {
   stroke: transparent;
@@ -8064,16 +8088,18 @@ select {
 h1, h2, h3, h4, h5, h6, strong {
   color: #001a4e; }
 .tag-interest{
+  font-size: 16px;
   color: #878787;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1;
 }
 .name-c{
+  text-align: center;
   font-size: 1.7rem !important;
 }
 .text-muted {
-  color: #adb5bd !important; }
+  color: #333 !important; }
 
 svg.navbar-brand-img {
   fill: #1b68ff; }
@@ -8135,11 +8161,13 @@ svg.navbar-brand-img {
 
 /* table */
 .table {
-  color: #6c757d; }
+  color: #333; }
   .table thead th {
-    color: #ced4da; }
+    font-weight: bolder;
+    color: #333; }
   .table tbody tr th {
-    color: #001a4e; }
+    font-weight: bolder;
+    color: #333;  }
   .table tr.collapse {
     border-top: 1px solid #e9ecef;
     border-bottom: 1px solid #e9ecef; }
@@ -9224,7 +9252,7 @@ form.was-validated select:valid ~ .select2-container--bootstrap4 .select2-select
 
 .uppy-Root {
   box-sizing: border-box;
-  font-family: "Overpass", sans-serif;
+  font-family: 'Prompt', sans-serif;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10652,7 +10680,7 @@ form.was-validated select:valid ~ .select2-container--bootstrap4 .select2-select
   height: 30px;
   background-color: transparent;
   outline: 0;
-  font-family: "Overpass", sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-size: 12px;
   line-height: 1.4;
   border: 0;

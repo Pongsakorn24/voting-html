@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Tiny Dashboard - A Bootstrap Dashboard Template</title>
+    <!-- Simple bar CSS -->
+    <link rel="stylesheet" href="css/simplebar.css">
+    <!-- Fonts CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="css/feather.css">
+    <!-- Date Range Picker CSS -->
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+    <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+  </head>
+
+  <body class="vertical light ">
+    <div class="wrapper">
+      <nav class="topnav navbar navbar-light">
+        <button type="button" class="navbar-toggler text-muted mt-2 p-0 mr-3
+          collapseSidebar">
+          <i class="fe fe-menu navbar-toggler-icon"></i>
+        </button>
+        <form class="form-inline mr-auto searchform text-muted">
+          <input class="form-control mr-sm-2 bg-transparent border-0 pl-4
+            text-muted" type="search" placeholder="ค้นหา"
+            aria-label="Search">
+        </form>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-muted my-2" href="#" id="modeSwitcher"
+              data-mode="light">
+              <i class="fe fe-sun fe-16"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted my-2" href="./#" data-toggle="modal"
+              data-target=".modal-shortcut">
+              <span class="fe fe-grid fe-16"></span>
+            </a>
+          </li>
+          <li class="nav-item nav-notif">
+            <a class="nav-link text-muted my-2" href="./#" data-toggle="modal"
+              data-target=".modal-notif">
+              <span class="fe fe-bell fe-16"></span>
+              <span class="dot dot-md bg-success"></span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-muted pr-0" href="#"
+              id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="avatar avatar-sm mt-2">
+                <img src="./assets/avatars/face-1.jpg" alt="..."
+                  class="avatar-img rounded-circle">
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Settings</a>
+              <a class="dropdown-item" href="#">Activities</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <aside class="sidebar-left border-right bg-white shadow" id="leftSidebar"
+      data-simplebar>
+      <a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted
+        ml-2 mt-3" data-toggle="toggle">
+        <i class="fe fe-x"><span class="sr-only"></span></i>
+      </a>
+      <nav class="vertnav navbar navbar-light">
+        <!-- nav bar -->
+        <div class="w-100 mb-4 d-flex">
+          <a class="navbar-brand mx-auto mt-2 flex-fill text-center"
+            href="./index copy.html">
+            <!-- <svg version="1.1" id="logo" class="navbar-brand-img brand-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" xml:space="preserve">
+              <g>
+                <polygon class="st0" points="78,105 15,105 24,87 87,87 	" />
+                <polygon class="st0" points="96,69 33,69 42,51 105,51 	" />
+                <polygon class="st0" points="78,33 15,33 24,15 87,15 	" />
+              </g>
+            </svg> -->
+            <img src="assets/images/WEME_logo.png" alt="">
+          </a>
+        </div>
+        <ul class="navbar-nav flex-fill w-100 mb-2">
+          <li class="nav-item dropdown">
+            <a href="./index copy.html" data-toggle="collapse"
+              aria-expanded="false" class="dropdown-toggle nav-link">
+              <i class="fe fe-home fe-16"></i>
+              <span class="ml-3 item-text">แดชบอร์ด</span>
+              <!-- <span class="sr-only">(current)</span> -->
+            </a>
+
+          </li>
+        </ul>
+        <p class="text-muted nav-heading mt-4 mb-1">
+          <span>ข้อมูล</span>
+        </p>
+        <ul class="navbar-nav flex-fill w-100 mb-2">
+          <li class="nav-item dropdown">
+            <a href="#sale" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle nav-link">
+              <i class="fe fe-user fe-16"></i>
+              <span class="ml-3 item-text">ทีมขาย</span>
+            </a>
+            <ul class="collapse list-unstyled pl-4 w-100" id="sale">
+              <a class="nav-link pl-3" href="./contacts-list sale.html"><span
+                  class="ml-1">ทีมขายทั้งหมด</span></a>
+              <a class="nav-link pl-3" href="./contacts-grid sale.html"><span
+                  class="ml-1">ค้นหาทีมขาย</span></a>
+              <!-- <a class="nav-link pl-3" href="./contacts-new copy.html"><span
+                  class="ml-1">สร้างทีมขาย</span></a> -->
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#customer" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle nav-link">
+              <i class="fe fe-book fe-16"></i>
+              <span class="ml-3 item-text">ลูกค้า</span>
+            </a>
+            <ul class="collapse list-unstyled pl-4 w-100" id="customer">
+              <a class="nav-link pl-3" href="./contacts-list customer.html"><span
+                  class="ml-1">ลูกค้าทั้งหมด</span></a>
+              <a class="nav-link pl-3" href="./contacts-grid customer.html"><span
+                  class="ml-1">ค้นหาลูกค้า</span></a>
+              <!-- <a class="nav-link pl-3" href="./contacts-new copy.html"><span
+                  class="ml-1">สร้างลูกค้า</span></a> -->
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#sendemail" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle nav-link">
+              <i class="fe fe-send fe-16"></i>
+              <span class="ml-3 item-text">ส่งอีเมล์</span>
+            </a>
+            <ul class="collapse list-unstyled pl-4 w-100" id="sendemail">
+              <a class="nav-link pl-3" href="./setting-sentemail.html"><span
+                  class="ml-1">หน้ารวม</span></a>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#mkt" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle nav-link">
+              <i class="fe fe-pie-chart fe-16"></i>
+              <span class="ml-3 item-text">การตลาด</span>
+            </a>
+            <ul class="collapse list-unstyled pl-4 w-100" id="mkt">
+              <a class="nav-link pl-3" href="./setting-article.html"><span
+                  class="ml-1">เนื้อหาที่น่าสนใจ</span></a>
+              <a class="nav-link pl-3" href="./setting-activity.html"><span
+                  class="ml-1">กิจกรรม</span></a>
+              <a class="nav-link pl-3" href="./setting-promotion.html"><span
+                  class="ml-1">โปรโมชั่น</span></a>
+              <a class="nav-link pl-3" href="./setting-special.html"><span
+                  class="ml-1">สิทธิพิเศษ</span></a>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#setting" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle nav-link">
+              <i class="fe fe-book-open fe-16"></i>
+              <span class="ml-3 item-text">หลักสูตร</span>
+            </a>
+            <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+              <a class="nav-link pl-3" href="./setting-all-course.html"><span
+                  class="ml-1">รวมหลักสูตร</span></a>
+            </ul>
+            <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+              <a class="nav-link pl-3" href="./setting-course.html"><span
+                  class="ml-1">สร้างหลักสูตร</span></a>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#setting" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle nav-link">
+              <i class="fe fe-book-open fe-16"></i>
+              <span class="ml-3 item-text">บททดสอบ</span>
+            </a>
+            <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+              <a class="nav-link pl-3" href="./setting-all-learning.html"><span
+                  class="ml-1">รวมบททดสอบ</span></a>
+            </ul>
+            <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+              <a class="nav-link pl-3" href="./setting-learning.html"><span
+                  class="ml-1">สร้างบททดสอบ</span></a>
+            </ul>
+            
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#setting" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle nav-link">
+              <i class="fe fe-settings fe-16"></i>
+              <span class="ml-3 item-text">ตั้งค่า</span>
+            </a>
+            <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+              <a class="nav-link pl-3" href="./setting-interest.html"><span
+                  class="ml-1">ความสนใจ</span></a>
+            </ul>
+            <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+              <a class="nav-link pl-3" href="./setting-add-data.html"><span
+                  class="ml-1">ข้อมูลเพิ่มเติม</span></a>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+      <main role="main" class="main-content">
+        <div class="wrapper-profile">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-12">
+
+                <!-- <button class="btn mb-2 btn-secondary btn-lg" style="background-color: #001a4e !important; border: 0px solid transparent;">ทักไลน์</button>
+              <button class="btn mb-2 btn-secondary btn-lg" style="background-color: #001a4e !important; border: 0px solid transparent;" >ส่งอีเมล์</button>
+              <button class="btn mb-2 btn-secondary btn-lg" style="background-color: #001a4e !important; border: 0px solid transparent;"> ชวนเข้าร่วมกิจกรรม</button> -->
+                <div class="row">
+                  <div class="col-md-5 mb-4">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <strong class="card-title">
+                          <span class="fe fe-user fe-16"></span> โปรไฟล์ลูกค้า</strong>
+                      </div>
+                      <div class="card-body">
+                        <!-- <h2 class="h3 mb-4 page-title">โปรไฟล์ลูกค้า</h2> -->
+                        <div class="row mt-5 align-items-center">
+                          <div class="col-md-12 text-center mb-5">
+                            <div class="avatar avatar-xl">
+                              <img src="./assets/avatars/face-1.jpg" alt="..."
+                                class="avatar-img rounded-circle">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="row align-items-center">
+                              <div class="col-md-12">
+                                <h4 class="name-c">ใจดี ยินดีใจ</h4>
+                                <div class="col">
+                                  <div class="row" style="text-align: center;">
+                                    <div class="col-md-4">
+                                      <small class="mb-0 text-muted">วันเกิด</small>
+                                      <p class="mb-0 text-muted"><strong>22/10/1998</strong></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <small class="mb-0 text-muted">อายุ</small>
+                                      <p class="mb-0 text-muted"><strong>25 ปี</strong></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <small class="mb-0 text-muted">เพศ</small>
+                                      <p class="mb-0 text-muted"><strong>หญิง</strong></p>
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="clear-weme">
+                                        <small class="mb-0 text-muted">อีเมล</small>
+                                        <p class="mb-0 text-muted"><strong>admin@gmail.com</strong></p>
+                                      </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="clear-weme">
+                                        <small class="mb-0 text-muted">เบอร์โทร</small>
+                                        <p class="mb-0 text-muted"><strong>
+                                            0999999999</strong></p>
+                                      </div>
+
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div class="clear-weme">
+                                        <small class="mb-0 text-muted">ที่อยู่</small>
+                                        <p class="mb-0 text-muted"><strong>9
+                                            ประชาอุทิศ 99 เขตราษฎร์บูรณะ
+                                            แขวงราษฎร์บูรณะ กทม. 10140</strong></p>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+
+
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div> <!-- /. card-body -->
+                    </div> <!-- /. card-body -->
+                  </div>
+
+                  <div class="col-md-7 mb-4">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <strong class="card-title">
+                          <span class="fe fe-heart fe-16"></span> ความสนใจ</strong>
+                      </div>
+                      <div class="card-body">
+                        <div class="col-md-12">
+                          <h5 class="tag-interest">ทัศนคติ </h5>
+                          <p class="small mb-3"><span class="badge badge-dark">1212</span></p>
+                          <h5 class="tag-interest">ความเข้ากัน </h5>
+                          <p class="small mb-3"><span class="badge badge-dark">พฤหัสบดี</span></p>
+                          <p class="small mb-3"><span class="badge badge-dark">ราศีสิงห์</span></p>
+                          <p class="small mb-3"><span class="badge badge-dark">ผู้หญิง</span></p>
+                          <h5 class="tag-interest">ความสนใจ </h5>
+                          <p class="small mb-3"><span class="badge badge-dark">อารมณ์ดี</span></p>
+                          <p class="small mb-3"><span class="badge badge-dark">รักครอบครัว</span></p>
+                          <p class="small mb-3"><span class="badge badge-dark">สุภาพ</span></p>
+                          <p class="small mb-3" data-toggle="modal" data-target="#exampleModal"><span class="badge badge-dark">ผู้บริหาร</span></p>
+                          <p class="small mb-3"><span class="badge badge-dark">ท่องเที่ยว</span></p>
+                          <p class="small mb-3"><span class="badge badge-dark">ของแถม</span></p>
+                          <p class="small mb-3"><span class="badge badge-dark">ลดราคา</span></p>
+                          <p class="small mb-3"><span class="badge badge-dark">ความงาม</span></p>
+                          <p class="small mb-3"><span class="badge badge-dark">สัตว์เลี้ยง</span></p>
+                          
+                        </div>
+
+
+                      </div> <!-- /. card-body -->
+                    </div> <!-- /. card-body -->
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <strong class="card-title">
+                          <span class="fe fe-message-square fe-16"></span>
+                          คำแนะนำจากเรา</strong>
+                      </div>
+                      <div class="card-body">
+                        <p class="text-muted">ใกล้วันเกิดภรรยาเขาแล้ว ซื้ออะไรดี
+                        </p>
+                        <div class="mb-2">
+                          <button type="button" class="btn mb-2
+                            btn-outline-primary ">บทความ</button>
+                          <!-- <button type="button" class="btn mb-2 btn-primary " >โปรโมชั่น</button> -->
+                          <button type="button" class="btn mb-2
+                            btn-outline-primary ">กิจกรรม</button>
+                          <button type="button" class="btn mb-2
+                            btn-outline-primary ">โปรโมชั่น</button>
+                          <button type="button" class="btn mb-2
+                            btn-outline-primary ">สิทธิพิเศษ</button>
+                            <button type="button" class="btn mb-2
+                            btn-outline-primary ">ข้อมูลเพิ่ม</button>
+                        </div>
+                      </div> <!-- /. card-body -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card shadow">
+                  <div class="card-header">
+                    <strong class="card-title mb-0">ความสัมพันธ์ เดือนธันวาคม</strong>
+                    
+                  </div>
+                  <div class="card-body">
+                    <form class="form">
+                      <div class="form-row">
+                        <div class="form-group col-auto
+                          mr-auto">
+                          <!-- <label class="my-1 mr-2 sr-only"
+                            for="inlineFormCustomSelectPref1">Show</label>
+                          <select class="custom-select
+                            mr-sm-2"
+                            id="inlineFormCustomSelectPref1">
+                            <option value="">...</option>
+                            <option value="1">12</option>
+                            <option value="2" selected>32</option>
+                            <option value="3">64</option>
+                            <option value="3">128</option>
+                          </select> -->
+                        </div>
+                        <div class="form-group col-auto">
+                          <div class="">
+                            <select class="form-control
+                              select2"
+                              id="validationSelect2" required>
+                              <option value="">เลือก</option>
+                              <option value="ID">รายวัน</option>
+                              <option value="ID">รายสัปดาห์</option>
+                              <option value="MT">รายเดือน</option>
+                              <option value="NE">รายปี</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please
+                              select a valid state. </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div id="lineChart"></div>
+                  </div> <!-- /.card-body -->
+                </div> <!-- /.card -->
+              </div>
+              <div class="col-12">
+                
+                  <div class="col-md-12">
+
+
+                    <div class="card shadow">
+                      <div class="card-body">
+                        <div class="col">
+                          <h2 class="page-title">เซลล์ที่ดูแล</h2>
+                          <p class="text-muted">รายชื่อเซลล์ที่ดูแลคุณ</p>
+                        </div>
+                        <table class="table table-borderless table-hover" style="text-align: center;">
+                          <thead>
+                            <tr>
+                              <th>ลำดับ
+                                <!-- <div class="custom-control custom-checkbox">
+                                  <input type="checkbox"
+                                    class="custom-control-input" id="all2">
+                                  <label class="custom-control-label"
+                                    for="all2"></label>
+                                </div> -->
+                              </th>
+                              <th>รหัส</th>
+                              <th>ชื่อผู้ใช้</th>
+                              <th>เบอร์ติดต่อ</th>
+                              <th>วัน</th>
+                              <th>สถานะ</th>
+                            </tr>
+                          </thead>
+                          <tbody >
+                            <tr>
+                              <td>1</td>
+                              <!-- <td>
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox"
+                                    class="custom-control-input" id="2474">
+                                  <label class="custom-control-label"
+                                    for="2474"></label>
+                                </div>
+                              </td> -->
+                              <td>
+                                <div class="avatar avatar-sm">
+                                  <img src="./assets/avatars/face-3.jpg"
+                                    alt="..." class="avatar-img rounded-circle">
+                                </div>
+                              </td>
+                              <td>
+                                <a href="profile sale.html">
+                                  <p class="mb-0 text-muted"><strong> มีดี
+                                      ใจเย็นดี</strong></p>
+                                  <small class="mb-0 text-muted">2474</small></a>
+                              </td>
+                              <td>
+                                <p class="mb-0 text-muted">089-999-9999</p>
+                                <small class="mb-0 text-muted"></small>
+                              </td>
+                              
+                              <td class="text-muted">13/09/2020</td>
+                              <td><span class="dot dot-lg bg-success mr-2"></span>ดูแลอยู่
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <!-- <td>
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox"
+                                    class="custom-control-input" id="2474">
+                                  <label class="custom-control-label"
+                                    for="2474"></label>
+                                </div>
+                              </td> -->
+                              <td>
+                                <div class="avatar avatar-sm">
+                                  <img src="./assets/avatars/face-3.jpg"
+                                    alt="..." class="avatar-img rounded-circle">
+                                </div>
+                              </td>
+                              <td>
+                                <a href="profile sale.html">
+                                  <p class="mb-0 text-muted"><strong> ดีใจ
+                                      ยินดีใจ</strong></p>
+                                  <small class="mb-0 text-muted">2474</small></a>
+                              </td>
+                              <td>
+                                <p class="mb-0 text-muted">089-999-9999</p>
+                                <small class="mb-0 text-muted"></small>
+                              </td>
+                              
+                              <td class="text-muted">13/09/2020</td>
+                              <td><span class="dot dot-lg bg-danger mr-2"></span>เคยดูแล
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <nav aria-label="Table Paging" class="my-3">
+                        <ul class="pagination justify-content-end mb-0">
+                          <li class="page-item"><a class="page-link" href="#">ก่อน</a></li>
+                          <li class="page-item active"><a class="page-link"
+                              href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">ถัดไป</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+
+                    <!-- Striped rows -->
+                    <div class="card shadow">
+                      <div class="card-body">
+                        <div class="col">
+                          <h2 class="page-title">กิจกรรม</h2>
+                          <p class="text-muted">กิจกรรมต่างๆ
+                            ที่เราได้ทำการตามขั้นตอน</p>
+                        </div>
+                        <table class="table table-hover">
+                          <thead class="thead-primary " style="border-top:
+                            transparent !important;">
+                            <tr role="row">
+
+                              <th>วันที่</th>
+                              <th>กิจกรรม</th>
+                              <th>รีวิวจากลูกค้า</th>
+                              <th>คำแนะนำ</th>
+                              <th>สถานะการติดตาม</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="width: 20%;">2020-12-26 01:32:21</td>
+                              <td>บทความ</td>
+                              <td><span class="dot dot-lg bg-warning mr-2"></span>พอใจ</td>
+                              
+                              <td>นำเสนอสิ่งที่น่าสนใจเพิ่ม</td>
+                              <td><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</td>
+                              <td>
+                                    <div class="dropdown">
+                                      <button class="btn btn-sm dropdown-toggle more-vertical" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span class="text-muted sr-only">Action</span>
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-secondary mr-2"></span>ยังไม่เปิดการขาย</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-danger mr-2"></span>ปิดการขายไม่สำเร็จ</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</a>
+                                      </div>
+                                    </div>
+                                  </td>
+                            </tr>
+                            <tr>
+                              <td>2020-04-21 00:38:38</td>
+                              <td>เชิญ</td>
+                              <td><span class="dot dot-lg bg-danger mr-2"></span>ไม่มีการตอบรับ</td>
+                              
+                              <td>ควรโทรหาลูกค้า</td>
+                              <td><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</td>
+                              <td>
+                                    <div class="dropdown">
+                                      <button class="btn btn-sm dropdown-toggle more-vertical" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span class="text-muted sr-only">Action</span>
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-secondary mr-2"></span>ยังไม่เปิดการขาย</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-danger mr-2"></span>ปิดการขายไม่สำเร็จ</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</a>
+                                      </div>
+                                    </div>
+                                  </td>
+                            </tr>
+                            <tr>
+                              <td>2019-06-25 19:13:36</td>
+                              <td>เรียนรู้</td>
+                              <td><span class="dot dot-lg bg-success mr-2"></span>ประทับใจมาก</td>
+                              
+                              <td>ขอการรีวิว</td>
+                              <td><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</td>
+                              <td>
+                                    <div class="dropdown">
+                                      <button class="btn btn-sm dropdown-toggle more-vertical" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span class="text-muted sr-only">Action</span>
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-secondary mr-2"></span>ยังไม่เปิดการขาย</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-danger mr-2"></span>ปิดการขายไม่สำเร็จ</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</a>
+                                      </div>
+                                    </div>
+                                  </td>
+                            </tr>
+                            <tr>
+                              <td>2021-01-22 13:28:00</td>
+                              <td>แบบทดสอบ</td>
+                              <td><span class="dot dot-lg bg-success mr-2"></span>ประทับใจมากที่สุด</td>
+                              
+                              <td>ส่งคำขอบคุณการผู้บริหาร</td>
+                              <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
+                              <td>
+                                    <div class="dropdown">
+                                      <button class="btn btn-sm dropdown-toggle more-vertical" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span class="text-muted sr-only">Action</span>
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-secondary mr-2"></span>ยังไม่เปิดการขาย</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-danger mr-2"></span>ปิดการขายไม่สำเร็จ</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</a>
+                                      </div>
+                                    </div>
+                                  </td>
+                              
+                            </tr>
+                            <tr>
+                              <td>2021-01-22 13:28:00</td>
+                              <td>บทความ,เชิญ,เรียนรู้,แบบทดสอบ</td>
+                              <td><span class="dot dot-lg bg-danger mr-2"></span>ไม่พอใจ</td>
+                              
+                              <td>หัวหน้าควรโทรหาลูกค้า</td>
+                              <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
+                              <td>
+                                    <div class="dropdown">
+                                      <button class="btn btn-sm dropdown-toggle more-vertical" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span class="text-muted sr-only">Action</span>
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-secondary mr-2"></span>ยังไม่เปิดการขาย</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-danger mr-2"></span>ปิดการขายไม่สำเร็จ</a>
+                                        <a class="dropdown-item" href="#"><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</a>
+                                      </div>
+                                    </div>
+                                  </td>
+                              
+                            </tr>
+                            <tr>
+                              <td>2021-01-22 13:28:00</td>
+                              <td>บทความ,เชิญ,เรียนรู้,แบบทดสอบ</td>
+                              <td><span class="dot dot-lg bg-danger mr-2"></span>ประทับใจ</td>
+                              
+                              <td>นำเสนอสิทธิพิเศษเพิ่ม</td>
+                              <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
+                              <td>
+                                <div class="dropdown">
+                                  <button class="btn btn-sm dropdown-toggle more-vertical" type="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <span class="text-muted sr-only">Action</span>
+                                  </button>
+                                  <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">HOT</a>
+                                    <a class="dropdown-item" href="#">WARM</a>
+                                    <a class="dropdown-item" href="#">COLD</a>
+                                  </div>
+                                </div>
+                              </td>
+                              
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div> <!-- .col-12 -->
+                </div>
+              </div>
+            </div> <!-- .container-fluid -->
+          </div>
+
+          <div class="modal fade modal-notif modal-slide" tabindex="-1"
+            role="dialog" aria-labelledby="defaultModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="defaultModalLabel">Notifications</h5>
+                  <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush my-n3">
+                    <div class="list-group-item bg-transparent">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <span class="fe fe-box fe-24"></span>
+                        </div>
+                        <div class="col">
+                          <small><strong>Package has uploaded successfull</strong></small>
+                          <div class="my-0 text-muted small">Package is zipped
+                            and uploaded</div>
+                          <small class="badge badge-pill badge-light
+                            text-muted">1m ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item bg-transparent">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <span class="fe fe-download fe-24"></span>
+                        </div>
+                        <div class="col">
+                          <small><strong>Widgets are updated successfull</strong></small>
+                          <div class="my-0 text-muted small">Just create new
+                            layout Index, form, table</div>
+                          <small class="badge badge-pill badge-light
+                            text-muted">2m ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item bg-transparent">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <span class="fe fe-inbox fe-24"></span>
+                        </div>
+                        <div class="col">
+                          <small><strong>Notifications have been sent</strong></small>
+                          <div class="my-0 text-muted small">Fusce dapibus,
+                            tellus ac cursus commodo</div>
+                          <small class="badge badge-pill badge-light
+                            text-muted">30m ago</small>
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                    <div class="list-group-item bg-transparent">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <span class="fe fe-link fe-24"></span>
+                        </div>
+                        <div class="col">
+                          <small><strong>Link was attached to menu</strong></small>
+                          <div class="my-0 text-muted small">New layout has
+                            been attached to the menu</div>
+                          <small class="badge badge-pill badge-light
+                            text-muted">1h ago</small>
+                        </div>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div> <!-- / .list-group -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary btn-block"
+                    data-dismiss="modal">Clear All</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade modal-shortcut modal-slide" tabindex="-1"
+            role="dialog" aria-labelledby="defaultModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="defaultModalLabel">Shortcuts</h5>
+                  <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body px-5">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-success justify-content-center">
+                        <i class="fe fe-cpu fe-32 align-self-center
+                          text-white"></i>
+                      </div>
+                      <p>Control area</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-primary justify-content-center">
+                        <i class="fe fe-activity fe-32 align-self-center
+                          text-white"></i>
+                      </div>
+                      <p>Activity</p>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-primary justify-content-center">
+                        <i class="fe fe-droplet fe-32 align-self-center
+                          text-white"></i>
+                      </div>
+                      <p>Droplet</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-primary justify-content-center">
+                        <i class="fe fe-upload-cloud fe-32 align-self-center
+                          text-white"></i>
+                      </div>
+                      <p>Upload</p>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-primary justify-content-center">
+                        <i class="fe fe-users fe-32 align-self-center
+                          text-white"></i>
+                      </div>
+                      <p>Users</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-primary justify-content-center">
+                        <i class="fe fe-settings fe-32 align-self-center
+                          text-white"></i>
+                      </div>
+                      <p>Settings</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-show-tag">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">คำอธิบายแท็กความสนใจ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h2>ผู้บริหาร</h2>
+                    <p>เป็นผู้บริหาร และชอบแนวคิดของผู้บริหาร </p>
+                  </div>
+                  <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                    <button type="button" class="btn btn-primary">บันทึก</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </main> <!-- main -->
+      </div> <!-- .wrapper -->
+      <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src='js/daterangepicker.js'></script>
+    <script src='js/jquery.stickOnScroll.js'></script>
+    <script src="js/tinycolor-min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/topojson.min.js"></script>
+    <script src="js/datamaps.all.min.js"></script>
+    <script src="js/datamaps-zoomto.js"></script>
+    <script src="js/datamaps.custom.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script>
+      /* defind global options */
+      Chart.defaults.global.defaultFontFamily = base.defaultFontFamily;
+      Chart.defaults.global.defaultFontColor = colors.mutedColor;
+    </script>
+    <script src="js/gauge.min.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/apexcharts.min.js"></script>
+    <script src="js/apexcharts.custom2.js"></script>
+    <script src="js/apps.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag()
+      {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-56159088-1');
+    </script>
+    </body>
+
+  </html>
