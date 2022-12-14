@@ -31,7 +31,7 @@
           collapseSidebar">
           <i class="fe fe-menu navbar-toggler-icon"></i>
         </button>
-        <form class="form-inline mr-auto searchform text-muted">
+        <!-- <form class="form-inline mr-auto searchform text-muted">
           <input class="form-control mr-sm-2 bg-transparent border-0 pl-4
             text-muted" type="search" placeholder="ค้นหา"
             aria-label="Search">
@@ -55,7 +55,13 @@
               <span class="fe fe-bell fe-16"></span>
               <span class="dot dot-md bg-success"></span>
             </a>
-          </li>
+          </li> -->
+          <!-- <li class="nav-item nav-notif">
+            <a class="nav-link text-muted my-2" href="./#" data-toggle="modal"
+              data-target=".modal-notif"> MEWE
+              <span class="dot dot-md bg-success"></span>
+            </a>
+          </li>  -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-muted pr-0" href="#"
               id="navbarDropdownMenuLink" role="button"
@@ -100,7 +106,7 @@
               <a href="./index copy.html" data-toggle="collapse"
                 aria-expanded="false" class="dropdown-toggle nav-link">
                 <i class="fe fe-home fe-16"></i>
-                <span class="ml-3 item-text">แดชบอร์ด</span>
+                <span class="ml-3 item-text">ภาพรวม</span>
                 <!-- <span class="sr-only">(current)</span> -->
               </a>
 
@@ -113,14 +119,16 @@
             <li class="nav-item dropdown">
               <a href="#sale" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
-                <i class="fe fe-user fe-16"></i>
+                <i class="bi bi-currency-dollar fe-16"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                  <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                </svg></i>
                 <span class="ml-3 item-text">ทีมขาย</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="sale">
                 <a class="nav-link pl-3" href="./contacts-list sale.html"><span
                     class="ml-1">ทีมขายทั้งหมด</span></a>
-                <a class="nav-link pl-3" href="./contacts-grid sale.html"><span
-                    class="ml-1">ค้นหาทีมขาย</span></a>
+                <!-- <a class="nav-link pl-3" href="./contacts-grid sale.html"><span
+                    class="ml-1">ค้นหาทีมขาย</span></a> -->
                 <!-- <a class="nav-link pl-3" href="./contacts-new copy.html"><span
                     class="ml-1">สร้างทีมขาย</span></a> -->
               </ul>
@@ -128,19 +136,19 @@
             <li class="nav-item dropdown">
               <a href="#customer" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
-                <i class="fe fe-book fe-16"></i>
+                <i class="fe fe-user fe-16"></i>
                 <span class="ml-3 item-text">ลูกค้า</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="customer">
                 <a class="nav-link pl-3" href="./contacts-list customer.html"><span
                     class="ml-1">ลูกค้าทั้งหมด</span></a>
-                <a class="nav-link pl-3" href="./contacts-grid customer.html"><span
-                    class="ml-1">ค้นหาลูกค้า</span></a>
+                <!-- <a class="nav-link pl-3" href="./contacts-grid customer.html"><span
+                    class="ml-1">ค้นหาลูกค้า</span></a> -->
                 <!-- <a class="nav-link pl-3" href="./contacts-new copy.html"><span
                     class="ml-1">สร้างลูกค้า</span></a> -->
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a href="#sendemail" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
                 <i class="fe fe-send fe-16"></i>
@@ -151,12 +159,12 @@
                     class="ml-1">หน้ารวม</span></a>
 
               </ul>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a href="#mkt" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
                 <i class="fe fe-pie-chart fe-16"></i>
-                <span class="ml-3 item-text">การตลาด</span>
+                <span class="ml-3 item-text">สร้างความสัมพันธ์</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="mkt">
                 <a class="nav-link pl-3" href="./setting-article.html"><span
@@ -187,8 +195,8 @@
             <li class="nav-item dropdown">
               <a href="#learning" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
-                <i class="fe fe-book-open fe-16"></i>
-                <span class="ml-3 item-text">บททดสอบ</span>
+                <i class="fe fe-file-text fe-16"></i>
+                <span class="ml-3 item-text">แบบทดสอบ</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="learning">
                 <a class="nav-link pl-3" href="./setting-all-learning.html"><span
@@ -198,7 +206,7 @@
                 <a class="nav-link pl-3" href="./setting-learning.html"><span
                     class="ml-1">สร้างบททดสอบ</span></a>
               </ul>
-              
+
             </li>
             <li class="nav-item dropdown">
               <a href="#setting" data-toggle="collapse" aria-expanded="false"
@@ -210,16 +218,17 @@
                 <a class="nav-link pl-3" href="./setting-interest.html"><span
                     class="ml-1">ความสนใจ</span></a>
               </ul>
-              <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+              <!-- <ul class="collapse list-unstyled pl-4 w-100" id="setting">
                 <a class="nav-link pl-3" href="./setting-add-data.html"><span
                     class="ml-1">ข้อมูลเพิ่มเติม</span></a>
-              </ul>
+              </ul> -->
               <ul class="collapse list-unstyled pl-4 w-100" id="setting">
                 <a class="nav-link pl-3" href="./setting-score.html"><span
                     class="ml-1">ความพึงพอใจ</span></a>
               </ul>
               <ul class="collapse list-unstyled pl-4 w-100" id="setting">
-                <a class="nav-link pl-3" href="./setting-recommend-cheklist.html"><span
+                <a class="nav-link pl-3"
+                  href="./setting-recommend-cheklist.html"><span
                     class="ml-1">สิ่งที่แนะให้ทำ</span></a>
               </ul>
             </li>
@@ -237,9 +246,9 @@
               <button class="btn mb-2 btn-secondary btn-lg" style="background-color: #001a4e !important; border: 0px solid transparent;"> ชวนเข้าร่วมกิจกรรม</button> -->
                 <div class="row">
                   <div class="col-md-5 mb-4" >
-                    <div class="card shadow" style="background-color: #e1e1e1 !important;; color:#333 !important;" >
-                      <div class="card-header" style="background-color: #e1e1e1 !important;; color:#333 !important;" >
-                        <strong class="card-title" style="color:#333 !important;">
+                    <div class="card shadow" style=" background-color: #333; color:#fff !important;" >
+                      <div class="card-header" style=" background-color: #333; color:#fff !important;" >
+                        <strong class="card-title" style="background-color: #333; color:#fff !important;">
                           <span class="fe fe-user fe-16" ></span> โปรไฟล์เซลล์</strong>
                       </div>
                       <div class="card-body">
@@ -253,44 +262,62 @@
                           </div>
                           <div class="col">
                             <div class="row align-items-center">
-                              <div class="col-md-12">
-                                <h4 class="name-c">เทรนนิ่ง ยินดีใจ</h4>
+                              <div class="col-md-12" >
+                                <h4 class="name-c" style="background-color: #333; color:#fff !important;">เทรนนิ่ง ยินดีใจ</h4>
+                                <div class="box" style="display: block; text-align:
+                                  center; margin-bottom: 15px; color:#fff !important;">
+                                    <p class="mb-0
+                                      text-muted" style="display: inline-block; 
+                                      text-align: center;
+                                      color: white;"><strong><span
+                                          class="badge
+                                          badge-warning" style="display:
+                                          inline-block; text-align:
+                                          center; color: white;">พอใจ</span></strong></p>
+                                    <p class="mb-0
+                                      text-muted" style="display:
+                                      inline-block; text-align: center;"><strong><span
+                                          class="badge
+                                          badge-warning" style=" display:
+                                          inline-block;text-align:
+                                          center; color: white;">2</span></strong></p>
+                                  </div>
                                 <div class="col">
-                                  <div class="row" style="text-align: center;">
+                                  <div class="row" style="text-align: center; color:#fff !important;">
                                     <div class="col-md-4">
-                                      <small class="mb-0 text-muted"style="color:#333 !important;">วันเกิด</small>
-                                      <p class="mb-0 text-muted"><strong>22/10/1998</strong></p>
+                                      <small class="mb-0 text-muted"style="color:#fff !important; font-weight:bold;">วันเกิด</small>
+                                      <p class="mb-0 text-muted" ><strong style="color:#fff !important; ">22/10/1998</strong></p>
                                     </div>
                                     <div class="col-md-4">
-                                      <small class="mb-0 text-muted"style="color:#333 !important;">อายุ</small>
-                                      <p class="mb-0 text-muted"><strong>25 ปี</strong></p>
+                                      <small class="mb-0 text-muted"style="color:#fff !important; font-weight:bold;">อายุ</small>
+                                      <p class="mb-0 text-muted"><strong style="color:#fff !important; ">25 ปี</strong></p>
                                     </div>
                                     <div class="col-md-4">
-                                      <small class="mb-0 text-muted"style="color:#333 !important;">เพศ</small>
-                                      <p class="mb-0 text-muted"><strong>หญิง</strong></p>
+                                      <small class="mb-0 text-muted"style="color:#fff !important; font-weight:bold;">เพศ</small>
+                                      <p class="mb-0 "><strong style="color:#fff !important; ">หญิง</strong></p>
                                     </div>
                                   </div>
                                   <hr>
                                   <div class="row">
                                     <div class="col-md-6">
                                       <div class="clear-weme">
-                                        <small class="mb-0 text-muted"style="color:#333 !important;">อีเมล</small>
-                                        <p class="mb-0 text-muted"><strong>admin@gmail.com</strong></p>
+                                        <small class="mb-0 text-muted"style="color:#fff !important; font-weight:bold;">อีเมล</small>
+                                        <p class="mb-0 "><strong style="color:#fff !important; ">admin@gmail.com</strong></p>
                                       </div>
 
                                     </div>
                                     <div class="col-md-6">
                                       <div class="clear-weme">
-                                        <small class="mb-0 text-muted"style="color:#333 !important;">เบอร์โทร</small>
-                                        <p class="mb-0 text-muted"><strong>
+                                        <small class="mb-0 text-muted"style="color:#fff !important; font-weight:bold;">เบอร์โทร</small>
+                                        <p class="mb-0 "style="color:#fff !important; "><strong style="color:#fff !important; ">
                                             0999999999</strong></p>
                                       </div>
 
                                     </div>
                                     <div class="col-md-12">
                                       <div class="clear-weme">
-                                        <small class="mb-0 text-muted">ที่อยู่</small>
-                                        <p class="mb-0 text-muted"><strong>9
+                                        <small class="mb-0 text-muted"style="color:#fff !important; font-weight:bold;" >ที่อยู่</small>
+                                        <p class="mb-0 " ><strong style="color:#fff !important; ">9
                                             ประชาอุทิศ 99 เขตราษฎร์บูรณะ
                                             แขวงราษฎร์บูรณะ กทม. 10140</strong></p>
                                       </div>
@@ -312,8 +339,8 @@
                   </div>
 
                   <div class="col-md-7 mb-4">
-                    <div class="card shadow" style="background-color: #e1e1e1 !important;; color:#333 !important;">
-                      <div class="card-header" style="background-color: #e1e1e1 !important;; color:#333 !important;">
+                    <div class="card shadow" style=" color:#333 !important;">
+                      <div class="card-header" style=" color:#333 !important;">
                         <strong class="card-title" style="color:#333 !important;">
                           <span class="fe fe-heart fe-16"></span> ความสนใจ</strong>
                       </div>
@@ -321,65 +348,122 @@
                         <div class="col-md-12">
                           <h5 class="tag-interest">ทัศนคติ </h5>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">1212</span></p>
+                              badge-dark">1212</span></p>
                           <h5 class="tag-interest">ความเข้ากัน </h5>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">พฤหัสบดี</span></p>
+                              badge-dark">พฤหัสบดี</span></p>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">ราศีสิงห์</span></p>
+                              badge-dark">ราศีสิงห์</span></p>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">ผู้หญิง</span></p>
+                              badge-dark">ผู้หญิง</span></p>
                           <h5 class="tag-interest">ความสนใจ </h5>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">อารมณ์ดี</span></p>
+                              badge-dark">อารมณ์ดี</span></p>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">รักครอบครัว</span></p>
+                              badge-dark">รักครอบครัว</span></p>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">สุภาพ</span></p>
+                              badge-dark">สุภาพ</span></p>
                           <p class="small mb-3" data-toggle="modal"
                             data-target="#exampleModal"><span class="badge
-                              badge-secondary">ผู้บริหาร</span></p>
+                              badge-dark">ผู้บริหาร</span></p>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">ท่องเที่ยว</span></p>
+                              badge-dark">ท่องเที่ยว</span></p>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">ของแถม</span></p>
+                              badge-dark">ของแถม</span></p>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">ลดราคา</span></p>
+                              badge-dark">ลดราคา</span></p>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">ความงาม</span></p>
+                              badge-dark">ความงาม</span></p>
                           <p class="small mb-3"><span class="badge
-                              badge-secondary">สัตว์เลี้ยง</span></p>
+                              badge-dark">สัตว์เลี้ยง</span></p>
 
                         </div>
 
 
                       </div> <!-- /. card-body -->
                     </div> <!-- /. card-body -->
-                    <div class="card shadow" style="background-color: #e1e1e1 !important;; color:#333 !important;">
-                      <div class="card-header" style="background-color: #e1e1e1 !important;; color:#333 !important;">
+                    <div class="card shadow" style=" color:#333 !important;">
+                      <div class="card-header" style=" color:#333 !important;">
                         <strong class="card-title" style="color:#333 !important;">
                           <span class="fe fe-message-square fe-16"></span>
                           คำแนะนำจากเรา</strong>
                       </div>
                       <div class="card-body">
-                        <p class="text-muted">สิ่งที่คุณต้องเรียนรู้
+                        <p class="text-muted" style="color:#333 !important; font-weight:bold; font-size: 25px;">สิ่งที่คุณต้องเรียนรู้
                         </p>
                         <div class="mb-2">
-                          <button type="button" class="btn mb-2 btn-outline-secondary-dark ">บทความ</button>
-                          <!-- <button type="button" class="btn mb-2 btn-primary " >โปรโมชั่น</button> -->
-                          <button type="button" class="btn mb-2 btn-outline-secondary-dark ">เชิญ</button>
-                          <button type="button" class="btn mb-2 btn-outline-secondary-dark ">เรียนรู้</button>
-                          <button type="button" class="btn mb-2 btn-outline-secondary-dark ">แบบทดสอบ</button>
+                          <button type="button" class="btn mb-2
+                            btn-outline-dark " type="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">เพิ่มประสิทธิภาพ</button>
+                          <!-- <button class="btn btn-sm
+                                      dropdown-toggle more-horizontal"
+                                      > -->
+                          <span class="text-muted sr-only">Action</span>
+                        </button>
+                        <div class="dropdown-menu
+                          dropdown-menu-right" style="padding: 0
+                          15px;">
+                          <div class="form-check">
+                            <input class="form-check-input"
+                              type="checkbox" value=""
+                              id="defaultCheck1">
+                            <label class="form-check-label"
+                              for="defaultCheck1"> บทความ</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input"
+                              type="checkbox" value=""
+                              id="defaultCheck1">
+                            <label class="form-check-label"
+                              for="defaultCheck1"> เชิญ</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input"
+                              type="checkbox" value=""
+                              id="defaultCheck1">
+                            <label class="form-check-label"
+                              for="defaultCheck1"> เรียนรู้</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input"
+                              type="checkbox" value=""
+                              id="defaultCheck1">
+                            <label class="form-check-label"
+                              for="defaultCheck1"> แบบทดสอบ</label>
+                          </div>
+                          
+                          <button type="button" class="btn
+                            btn-primary" data-toggle="modal"
+                            data-target="#exampleModal"
+                            style="padding: 5px 20px ; margin: 10px
+                            auto; ">
+                            <span class=""></span>ส่ง</button>
+                          <!-- <button type="button" class="btn
+                                        btn-secondary" data-toggle="modal"
+                                        data-target="#exampleModal"
+                                        style="padding: 5px 20px ; margin: 10px
+                                        auto; ">
+                                        <span class=""></span>ส่งทุกคน</button> -->
                         </div>
+                       
+                      </div>
+                        <!-- <div class="mb-2">
+                          <button type="button" class="btn mb-2 btn-outline-dark ">บทความ</button>
+                          <button type="button" class="btn mb-2 btn-outline-dark ">เชิญ</button>
+                          <button type="button" class="btn mb-2 btn-outline-dark ">เรียนรู้</button>
+                          <button type="button" class="btn mb-2 btn-outline-dark ">แบบทดสอบ</button>
+                        </div> -->
                       </div> <!-- /. card-body -->
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12">
+              <!-- <div class="col-12">
                 <div class="card shadow">
                   <div class="card-header">
-                    <strong class="card-title mb-0">ความสัมพันธ์ เดือนธันวาคม</strong>
+                    <strong class="card-title mb-0">คะแนนเฉลี่ยความสัมพันธ์ เดือนธันวาคม</strong>
                     
                   </div>
                   <div class="card-body">
@@ -387,17 +471,7 @@
                       <div class="form-row">
                         <div class="form-group col-auto
                           mr-auto">
-                          <!-- <label class="my-1 mr-2 sr-only"
-                            for="inlineFormCustomSelectPref1">Show</label>
-                          <select class="custom-select
-                            mr-sm-2"
-                            id="inlineFormCustomSelectPref1">
-                            <option value="">...</option>
-                            <option value="1">12</option>
-                            <option value="2" selected>32</option>
-                            <option value="3">64</option>
-                            <option value="3">128</option>
-                          </select> -->
+                          
                         </div>
                         <div class="form-group col-auto">
                           <div class="">
@@ -418,28 +492,28 @@
                       </div>
                     </form>
                     <div id="lineChart"></div>
-                  </div> <!-- /.card-body -->
+                  </div> 
                   
-                </div> <!-- /.card -->
+                </div> 
                 
-              </div>
+              </div> -->
                   <div class="col-md-12">
 
 
                     <div class="card shadow">
                       <div class="card-body">
                         <div class="col">
-                          <h2 class="page-title">ลูกค้า</h2>
-                          <p class="text-muted">รายชื่อลูกค้าที่คุณดูแล</p>
+                          <h2 class="page-title">ลูกค้าที่ดูแลอยู่</h2>
+                          <p class="text-muted">รายชื่อลูกค้าที่เซลล์ดูแล</p>
                         </div>
-                        <table class="table table-borderless table-hover">
+                        <table class="table table-borderless table-hover" style="text-align: center;">
                           <thead>
                             <tr>
                               <th>ลำดับ</th>
                               <th>รูป</th>
                               <th>ชื่อลูกค้า</th>
                               <th>อีเมล</th>
-                              <th>เบอร์</th>
+                              <th>คะแนนเฉลี่ยความสัมพันธ์</th>
                               <th>สถานะ</th>
                               <th></th>
 
@@ -458,7 +532,7 @@
                                 <a href="profile sale.html">
                                   <p class="mb-0 text-muted"><strong>ใจดี
                                       ยินดีใจ</strong></p>
-                                  <small class="mb-0 text-muted">2474</small></a>
+                                  </a>
                               </td>
                               
 
@@ -466,7 +540,7 @@
                                 <p class="mb-0 text-muted">customer@gmail.com</p>
                               </td>
                               <td>
-                                <small class="mb-0 text-muted">089-979-9998</small>
+                                <small class="mb-0 text-muted">5</small>
                               </td>
                               <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
                               
@@ -496,7 +570,7 @@
                               </td>
                               <td>
                                 <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
-                                <small class="mb-0 text-muted">2474</small>
+                                
                               </td>
                               
 
@@ -504,9 +578,9 @@
                                 <p class="mb-0 text-muted">customer@gmail.com</p>
                               </td>
                               <td>
-                                <small class="mb-0 text-muted">089-979-9998</small>
+                                <small class="mb-0 text-muted">4.5</small>
                               </td>
-                              <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
+                              <td><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</td>
                               <td>
                                 <div class="dropdown">
                                   <button class="btn btn-sm dropdown-toggle more-vertical" type="button" data-toggle="dropdown"
@@ -532,7 +606,7 @@
                               </td>
                               <td>
                                 <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
-                                <small class="mb-0 text-muted">2474</small>
+                                
                               </td>
                               
 
@@ -540,9 +614,9 @@
                                 <p class="mb-0 text-muted">customer@gmail.com</p>
                               </td>
                               <td>
-                                <small class="mb-0 text-muted">089-979-9998</small>
+                                <small class="mb-0 text-muted">3.5</small>
                               </td>
-                              <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
+                              <td><span class="dot dot-lg bg-danger mr-2"></span>ปิดการขายไม่สำเร็จ</td>
                               <td>
                                 <div class="dropdown">
                                   <button class="btn btn-sm dropdown-toggle more-vertical" type="button" data-toggle="dropdown"
@@ -568,7 +642,7 @@
                               </td>
                               <td>
                                 <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
-                                <small class="mb-0 text-muted">2474</small>
+                                
                               </td>
                               
 
@@ -576,7 +650,7 @@
                                 <p class="mb-0 text-muted">customer@gmail.com</p>
                               </td>
                               <td>
-                                <small class="mb-0 text-muted">089-979-9998</small>
+                                <small class="mb-0 text-muted">2.5</small>
                               </td>
                               <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
                               <td>
@@ -604,7 +678,7 @@
                               </td>
                               <td>
                                 <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
-                                <small class="mb-0 text-muted">2474</small>
+                                
                               </td>
                               
 
@@ -612,9 +686,9 @@
                                 <p class="mb-0 text-muted">customer@gmail.com</p>
                               </td>
                               <td>
-                                <small class="mb-0 text-muted">089-979-9998</small>
+                                <small class="mb-0 text-muted">5</small>
                               </td>
-                              <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
+                              <td><span class="dot dot-lg bg-secondary mr-2"></span>ยังไม่เปิดการขาย</td>
                               <td>
                                 <div class="dropdown">
                                   <button class="btn btn-sm dropdown-toggle more-vertical" type="button" data-toggle="dropdown"
@@ -640,7 +714,7 @@
                               </td>
                               <td>
                                 <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
-                                <small class="mb-0 text-muted">2474</small>
+                                
                               </td>
                               
 
@@ -648,9 +722,9 @@
                                 <p class="mb-0 text-muted">customer@gmail.com</p>
                               </td>
                               <td>
-                                <small class="mb-0 text-muted">089-979-9998</small>
+                                <small class="mb-0 text-muted">1</small>
                               </td>
-                              <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
+                              <td><span class="dot dot-lg bg-secondary mr-2"></span>ยังไม่เปิดการขาย</td>
                               <td>
                                 <div class="dropdown">
                                   <button class="btn btn-sm dropdown-toggle more-vertical" type="button" data-toggle="dropdown"
@@ -676,7 +750,7 @@
                               </td>
                               <td>
                                 <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
-                                <small class="mb-0 text-muted">2474</small>
+                                
                               </td>
                               
 
@@ -684,7 +758,7 @@
                                 <p class="mb-0 text-muted">customer@gmail.com</p>
                               </td>
                               <td>
-                                <small class="mb-0 text-muted">089-979-9998</small>
+                                <small class="mb-0 text-muted">2</small>
                               </td>
                               <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
                               <td>
@@ -704,10 +778,8 @@
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-
-                      <nav aria-label="Table Paging" class="my-3">
-                        <ul class="pagination justify-content-end mb-0">
+                        <nav aria-label="Table Paging" class="my-3" style="display: block; text-align: center;">
+                        <ul class="pagination justify-content-end mb-0" style="justify-content: center !important;">
                           <li class="page-item"><a class="page-link" href="#">ก่อน</a></li>
                           <li class="page-item active"><a class="page-link"
                               href="#">1</a></li>
@@ -716,6 +788,9 @@
                           <li class="page-item"><a class="page-link" href="#">ถัดไป</a></li>
                         </ul>
                       </nav>
+                      </div>
+
+                      
                     </div>
                   </div> <!-- .col-12 -->
 
@@ -725,9 +800,9 @@
                     <div class="card shadow">
                       <div class="card-body">
                         <div class="col">
-                          <h2 class="page-title">กิจกรรม</h2>
-                          <p class="text-muted">กิจกรรมต่างๆ
-                            ที่เราได้ทำการตามขั้นตอน</p>
+                          <h2 class="page-title">กิจกรรมที่ผ่านมา</h2>
+                          <p class="text-muted">ภาพรวมกิจกรรมต่างๆ
+                            ที่เราได้ทำกับลูกค้าที่ผ่านมา</p>
                         </div>
                         <table class="table table-hover">
                           <thead class="thead-primary " style="border-top:
@@ -735,9 +810,11 @@
                             <tr role="row">
 
                               <th>วันที่</th>
+                              <th>รูป</th>
+                              <th>ชื่อลูกค้า</th>
                               <th>กิจกรรม</th>
-                              <th>รีวิวจากทีมขาย</th>
-                              <th>คำแนะนำ</th>
+                              <th>รีวิวจากลูกค้า</th>
+                              <!-- <th>คำแนะนำ</th> -->
                               <th>สถานะการติดตาม</th>
                               <th></th>
                             </tr>
@@ -745,10 +822,20 @@
                           <tbody>
                             <tr>
                               <td style="width: 20%;">2020-12-26 01:32:21</td>
+                              <td>
+                                <div class="avatar avatar-sm">
+                                  <img src="./assets/avatars/face-7.jpg"
+                                    alt="..." class="avatar-img rounded-circle">
+                                </div>
+                              </td>
+                              <td>
+                                <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
+                                
+                              </td>
                               <td>บทความ</td>
                               <td><span class="dot dot-lg bg-warning mr-2"></span>พอใจ</td>
                               
-                              <td>นำเสนอสิ่งที่น่าสนใจเพิ่ม</td>
+                              <!-- <td>นำเสนอสิ่งที่น่าสนใจเพิ่ม</td> -->
                               <td><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</td>
                               <td>
                                     <div class="dropdown">
@@ -767,10 +854,20 @@
                             </tr>
                             <tr>
                               <td>2020-04-21 00:38:38</td>
+                              <td>
+                                <div class="avatar avatar-sm">
+                                  <img src="./assets/avatars/face-7.jpg"
+                                    alt="..." class="avatar-img rounded-circle">
+                                </div>
+                              </td>
+                              <td>
+                                <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
+                                
+                              </td>
                               <td>เชิญ</td>
                               <td><span class="dot dot-lg bg-danger mr-2"></span>ไม่มีการตอบรับ</td>
                               
-                              <td>ควรโทรหาลูกค้า</td>
+                              <!-- <td>ควรโทรหาลูกค้า</td> -->
                               <td><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</td>
                               <td>
                                     <div class="dropdown">
@@ -789,10 +886,20 @@
                             </tr>
                             <tr>
                               <td>2019-06-25 19:13:36</td>
+                              <td>
+                                <div class="avatar avatar-sm">
+                                  <img src="./assets/avatars/face-7.jpg"
+                                    alt="..." class="avatar-img rounded-circle">
+                                </div>
+                              </td>
+                              <td>
+                                <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
+                                
+                              </td>
                               <td>เรียนรู้</td>
                               <td><span class="dot dot-lg bg-success mr-2"></span>ประทับใจมาก</td>
                               
-                              <td>ขอการรีวิว</td>
+                              <!-- <td>ขอการรีวิว</td> -->
                               <td><span class="dot dot-lg bg-warning mr-2"></span>ระหว่างดำเนินการขาย</td>
                               <td>
                                     <div class="dropdown">
@@ -811,10 +918,20 @@
                             </tr>
                             <tr>
                               <td>2021-01-22 13:28:00</td>
+                              <td>
+                                <div class="avatar avatar-sm">
+                                  <img src="./assets/avatars/face-7.jpg"
+                                    alt="..." class="avatar-img rounded-circle">
+                                </div>
+                              </td>
+                              <td>
+                                <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
+                                
+                              </td>
                               <td>แบบทดสอบ</td>
                               <td><span class="dot dot-lg bg-success mr-2"></span>ประทับใจมากที่สุด</td>
                               
-                              <td>ส่งคำขอบคุณการผู้บริหาร</td>
+                              <!-- <td>ส่งคำขอบคุณการผู้บริหาร</td> -->
                               <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
                               <td>
                                     <div class="dropdown">
@@ -834,10 +951,20 @@
                             </tr>
                             <tr>
                               <td>2021-01-22 13:28:00</td>
+                              <td>
+                                <div class="avatar avatar-sm">
+                                  <img src="./assets/avatars/face-7.jpg"
+                                    alt="..." class="avatar-img rounded-circle">
+                                </div>
+                              </td>
+                              <td>
+                                <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
+                                
+                              </td>
                               <td>บทความ,เชิญ,เรียนรู้,แบบทดสอบ</td>
                               <td><span class="dot dot-lg bg-danger mr-2"></span>ไม่พอใจ</td>
                               
-                              <td>หัวหน้าควรโทรหาลูกค้า</td>
+                              <!-- <td>หัวหน้าควรโทรหาลูกค้า</td> -->
                               <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
                               <td>
                                     <div class="dropdown">
@@ -857,10 +984,20 @@
                             </tr>
                             <tr>
                               <td>2021-01-22 13:28:00</td>
+                              <td>
+                                <div class="avatar avatar-sm">
+                                  <img src="./assets/avatars/face-7.jpg"
+                                    alt="..." class="avatar-img rounded-circle">
+                                </div>
+                              </td>
+                              <td>
+                                <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
+                                
+                              </td>
                               <td>บทความ,เชิญ,เรียนรู้,แบบทดสอบ</td>
                               <td><span class="dot dot-lg bg-danger mr-2"></span>ประทับใจ</td>
                               
-                              <td>นำเสนอสิทธิพิเศษเพิ่ม</td>
+                              <!-- <td>นำเสนอสิทธิพิเศษเพิ่ม</td> -->
                               <td><span class="dot dot-lg bg-success mr-2"></span>ปิดการขาย</td>
                               <td>
                                 <div class="dropdown">
@@ -879,6 +1016,16 @@
                             </tr>
                           </tbody>
                         </table>
+                        <nav aria-label="Table Paging" class="my-3" style="display: block; text-align: center;">
+                          <ul class="pagination justify-content-end mb-0" style="justify-content: center !important;">
+                            <li class="page-item"><a class="page-link" href="#">ก่อน</a></li>
+                            <li class="page-item active"><a class="page-link"
+                                href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">ถัดไป</a></li>
+                          </ul>
+                        </nav>
                       </div>
                     </div>
                   </div> <!-- .col-12 -->

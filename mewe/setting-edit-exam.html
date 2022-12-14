@@ -36,9 +36,10 @@
           collapseSidebar">
           <i class="fe fe-menu navbar-toggler-icon"></i>
         </button>
-        <form class="form-inline mr-auto searchform text-muted">
+        <!-- <form class="form-inline mr-auto searchform text-muted">
           <input class="form-control mr-sm-2 bg-transparent border-0 pl-4
-            text-muted" type="search" placeholder="ค้นหา" aria-label="Search">
+            text-muted" type="search" placeholder="ค้นหา"
+            aria-label="Search">
         </form>
         <ul class="nav">
           <li class="nav-item">
@@ -59,11 +60,17 @@
               <span class="fe fe-bell fe-16"></span>
               <span class="dot dot-md bg-success"></span>
             </a>
-          </li>
+          </li> -->
+          <!-- <li class="nav-item nav-notif">
+            <a class="nav-link text-muted my-2" href="./#" data-toggle="modal"
+              data-target=".modal-notif"> MEWE
+              <span class="dot dot-md bg-success"></span>
+            </a>
+          </li>  -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-muted pr-0" href="#"
-              id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+              id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="avatar avatar-sm mt-2">
                 <img src="./assets/avatars/face-1.jpg" alt="..."
                   class="avatar-img rounded-circle">
@@ -104,7 +111,7 @@
               <a href="./index copy.html" data-toggle="collapse"
                 aria-expanded="false" class="dropdown-toggle nav-link">
                 <i class="fe fe-home fe-16"></i>
-                <span class="ml-3 item-text">แดชบอร์ด</span>
+                <span class="ml-3 item-text">ภาพรวม</span>
                 <!-- <span class="sr-only">(current)</span> -->
               </a>
 
@@ -117,14 +124,16 @@
             <li class="nav-item dropdown">
               <a href="#sale" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
-                <i class="fe fe-user fe-16"></i>
+                <i class="bi bi-currency-dollar fe-16"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                  <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                </svg></i>
                 <span class="ml-3 item-text">ทีมขาย</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="sale">
                 <a class="nav-link pl-3" href="./contacts-list sale.html"><span
                     class="ml-1">ทีมขายทั้งหมด</span></a>
-                <a class="nav-link pl-3" href="./contacts-grid sale.html"><span
-                    class="ml-1">ค้นหาทีมขาย</span></a>
+                <!-- <a class="nav-link pl-3" href="./contacts-grid sale.html"><span
+                    class="ml-1">ค้นหาทีมขาย</span></a> -->
                 <!-- <a class="nav-link pl-3" href="./contacts-new copy.html"><span
                     class="ml-1">สร้างทีมขาย</span></a> -->
               </ul>
@@ -132,19 +141,19 @@
             <li class="nav-item dropdown">
               <a href="#customer" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
-                <i class="fe fe-book fe-16"></i>
+                <i class="fe fe-user fe-16"></i>
                 <span class="ml-3 item-text">ลูกค้า</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="customer">
                 <a class="nav-link pl-3" href="./contacts-list customer.html"><span
                     class="ml-1">ลูกค้าทั้งหมด</span></a>
-                <a class="nav-link pl-3" href="./contacts-grid customer.html"><span
-                    class="ml-1">ค้นหาลูกค้า</span></a>
+                <!-- <a class="nav-link pl-3" href="./contacts-grid customer.html"><span
+                    class="ml-1">ค้นหาลูกค้า</span></a> -->
                 <!-- <a class="nav-link pl-3" href="./contacts-new copy.html"><span
                     class="ml-1">สร้างลูกค้า</span></a> -->
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a href="#sendemail" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
                 <i class="fe fe-send fe-16"></i>
@@ -155,12 +164,12 @@
                     class="ml-1">หน้ารวม</span></a>
 
               </ul>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a href="#mkt" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
                 <i class="fe fe-pie-chart fe-16"></i>
-                <span class="ml-3 item-text">การตลาด</span>
+                <span class="ml-3 item-text">สร้างความสัมพันธ์</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="mkt">
                 <a class="nav-link pl-3" href="./setting-article.html"><span
@@ -191,8 +200,8 @@
             <li class="nav-item dropdown">
               <a href="#learning" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
-                <i class="fe fe-book-open fe-16"></i>
-                <span class="ml-3 item-text">บททดสอบ</span>
+                <i class="fe fe-file-text fe-16"></i>
+                <span class="ml-3 item-text">แบบทดสอบ</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="learning">
                 <a class="nav-link pl-3" href="./setting-all-learning.html"><span
@@ -202,7 +211,7 @@
                 <a class="nav-link pl-3" href="./setting-learning.html"><span
                     class="ml-1">สร้างบททดสอบ</span></a>
               </ul>
-              
+
             </li>
             <li class="nav-item dropdown">
               <a href="#setting" data-toggle="collapse" aria-expanded="false"
@@ -214,16 +223,17 @@
                 <a class="nav-link pl-3" href="./setting-interest.html"><span
                     class="ml-1">ความสนใจ</span></a>
               </ul>
-              <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+              <!-- <ul class="collapse list-unstyled pl-4 w-100" id="setting">
                 <a class="nav-link pl-3" href="./setting-add-data.html"><span
                     class="ml-1">ข้อมูลเพิ่มเติม</span></a>
-              </ul>
+              </ul> -->
               <ul class="collapse list-unstyled pl-4 w-100" id="setting">
                 <a class="nav-link pl-3" href="./setting-score.html"><span
                     class="ml-1">ความพึงพอใจ</span></a>
               </ul>
               <ul class="collapse list-unstyled pl-4 w-100" id="setting">
-                <a class="nav-link pl-3" href="./setting-recommend-cheklist.html"><span
+                <a class="nav-link pl-3"
+                  href="./setting-recommend-cheklist.html"><span
                     class="ml-1">สิ่งที่แนะให้ทำ</span></a>
               </ul>
             </li>
@@ -256,7 +266,7 @@
                     <div class="card shadow">
                       <div class="card-body">
                         <div class="form-group sm-3">
-                          <label for="customFile">รูปปก</label>
+                          <label for="customFile">รูปปก (ขนาด 1000x1000 พิกเซล)</label>
                           <div class="custom-file">
                             <input type="file" class="custom-file-input" id="customFile">
                             <label class="custom-file-label" for="customFile">เลือกรูปปก</label>

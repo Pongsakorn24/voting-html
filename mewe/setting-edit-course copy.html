@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>เรียนรู้</title>
+    <title>สร้างหลักสูตร</title>
     <!-- Simple bar CSS -->
     <link rel="stylesheet" href="css/simplebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,12 @@
       rel="stylesheet">
     <!-- Icons CSS -->
     <link rel="stylesheet" href="css/feather.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/dropzone.css">
+    <link rel="stylesheet" href="css/uppy.min.css">
+    <link rel="stylesheet" href="css/jquery.steps.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/quill.snow.css">
     <!-- Date Range Picker CSS -->
     <link rel="stylesheet" href="css/daterangepicker.css">
     <!-- App CSS -->
@@ -242,227 +248,90 @@
             <div class="col-12">
               <div class="row align-items-center my-4">
                 <div class="col">
-                  <h2 class="page-title">เรียนรู้การเปิดการขาย</h2>
-                  <p class="text-muted">เรียนรู้การเปิดการขาย</p>
+                  <h2 class="page-title">สร้างหลักสูตร</h2>
+                  <p class="text-muted">โปรดสร้างเนื้อหาหลักสูตร</p>
                 </div>
                 <!-- <div class="col-auto">
-                  <button type="button" class="btn btn-secondary"><span class="fe fe-trash fe-12 mr-2"></span>ลบ</button>
-                  <a href="setting-edit-learning.html">
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    <span class="fe fe-plus fe-12 mr-2"></span>สร้าง</button></a>
+                  <button type="button" class="btn btn-secondary"><span
+                      class="fe fe-trash fe-12 mr-2"></span>ลบ</button>
+                  <button type="button" class="btn btn-primary"
+                    data-toggle="modal" data-target="#exampleModal"><span
+                      class="fe fe-plus fe-12 mr-2"></span>สร้าง</button>
                 </div> -->
               </div>
               <div class="row">
                 <!-- Striped rows -->
-                <div class="col-md-12 my-12">
-                  <div class="table-interest">
+                
+                  <div class="">
                     <div class="card shadow">
                       <div class="card-body">
-                        <!-- <h5 class="card-title">Striped rows</h5> -->
-                        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                        <div class="card-deck mb-12">
-                          <div class="card border-0 bg-transparent">
-                            <iframe width="100%" height="600" src="https://www.youtube.com/embed/gOTrf8cnMso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            <!-- <img src="./assets/products/p4.jpg" alt="..."
-                              class="card-img-top img-fluid rounded"> -->
-                            <div class=""><br>
-                              <h5 class="h6 card-title mb-1">เรียนรู้การเปิดการขาย</h5>
-                              <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nobis, animi dolores autem sit
-                                dolorum mollitia, suscipit necessitatibus
-                                tempore placeat asperiores corporis provident,
-                                non vitae! Tenetur soluta cupiditate quibusdam.
-                                Molestiae, ipsum!
-                              </p>
-                              <p class="card-text">
-                                <span class="badge badge-light text-muted mr-2">3
-                                  ชั่วโมง</span>
-                                <span class="badge badge-pill badge-light
-                                  text-muted">จำนวนที่เข้าร่วม 4 คน</span>
-                              </p>
-                            </div>
-                          </div> <!-- .card -->
-
+                        <div class="form-group sm-3">
+                          <label for="customFile">รูปปก (ขนาด 1000x1000 พิกเซล)</label>
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">เลือกรูปปก</label>
+                          </div>
                         </div>
-
-                        <table class="table table-striped table-hover">
-                          <br><br>
-                          <h2 class="h4 mb-1">คนเข้าร่วม</h2>
-                        <p class="text-muted">รายชื่อคนที่เข้าร่วม</p>
-                          <thead>
-                            <tr>
-                              <th style="width: 5%;">
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox"
-                                    class="custom-control-input" id="chall">
-                                  <label class="custom-control-label" for="d1"></label>
-                                </div>
-                              </th>
-                              <th style="width: 10%;">ลำดับ</th>
-                              <th style="width: 25%;">รูป</th>
-                              <th style="width: 25%;">ชื่อ</th>
-                              <th style="width: 40%;">อีเมล์</th>
-                              <th style="width: 5%;">
-                                <!-- <span class="fe fe-more-horizontal fe-12 mr-2"></span> -->
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox"
-                                    class="custom-control-input" id="d1">
-                                  <label class="custom-control-label" for="d1"></label>
-                                </div>
-                              </td>
-                              <td>1</td>
-                              <td>
-                                <div class="avatar avatar-md">
-                                  <img
-                                    src="./assets/avatars/face-7.jpg"
-                                    alt="..." class="avatar-img
-                                    rounded-circle">
-                                </div>
-                              </td>
-                              <td>ใจดี</td>
-                              <td>aaa@gmail.com</td>
-                              <td>
-                                <div class="dropdown">
-                                  <button class="btn btn-sm dropdown-toggle"
-                                    type="button" id="dr1"
-                                    data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <span class="fe fe-more-horizontal fe-12
-                                      mr-2"></span>
-                                  </button>
-                                  <div class="dropdown-menu "
-                                    aria-labelledby="dr1">
-                                    <a class="dropdown-item" href="#">แก้ไข</a>
-                                    <a class="dropdown-item" href="#">ลบ</a>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox"
-                                    class="custom-control-input" id="d1">
-                                  <label class="custom-control-label" for="d1"></label>
-                                </div>
-                              </td>
-                              <td>2</td>
-                              <td>
-                                <div class="avatar avatar-md">
-                                  <img
-                                    src="./assets/avatars/face-7.jpg"
-                                    alt="..." class="avatar-img
-                                    rounded-circle">
-                                </div>
-                              </td>
-                              <td>ใจดี</td>
-                              <td>aaa@gmail.com</td>
-                              <td>
-                                <div class="dropdown">
-                                  <button class="btn btn-sm dropdown-toggle"
-                                    type="button" id="dr1"
-                                    data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <span class="fe fe-more-horizontal fe-12
-                                      mr-2"></span>
-                                  </button>
-                                  <div class="dropdown-menu "
-                                    aria-labelledby="dr1">
-                                    <a class="dropdown-item" href="#">แก้ไข</a>
-                                    <a class="dropdown-item" href="#">ลบ</a>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox"
-                                    class="custom-control-input" id="d1">
-                                  <label class="custom-control-label" for="d1"></label>
-                                </div>
-                              </td>
-                              <td>3</td>
-                              <td>
-                                <div class="avatar avatar-md">
-                                  <img
-                                    src="./assets/avatars/face-7.jpg"
-                                    alt="..." class="avatar-img
-                                    rounded-circle">
-                                </div>
-                              </td>
-                              <td>ใจดี</td>
-                              <td>aaa@gmail.com</td>
-                              <td>
-                                <div class="dropdown">
-                                  <button class="btn btn-sm dropdown-toggle"
-                                    type="button" id="dr1"
-                                    data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <span class="fe fe-more-horizontal fe-12
-                                      mr-2"></span>
-                                  </button>
-                                  <div class="dropdown-menu "
-                                    aria-labelledby="dr1">
-                                    <a class="dropdown-item" href="#">แก้ไข</a>
-                                    <a class="dropdown-item" href="#">ลบ</a>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox"
-                                    class="custom-control-input" id="d1">
-                                  <label class="custom-control-label" for="d1"></label>
-                                </div>
-                              </td>
-                              <td>4</td>
-                              <td>
-                                <div class="avatar avatar-md">
-                                  <img
-                                    src="./assets/avatars/face-7.jpg"
-                                    alt="..." class="avatar-img
-                                    rounded-circle">
-                                </div>
-                              </td>
-                              <td>ใจดี</td>
-                              <td>aaa@gmail.com</td>
-                              <td>
-                                <div class="dropdown">
-                                  <button class="btn btn-sm dropdown-toggle"
-                                    type="button" id="dr1"
-                                    data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <span class="fe fe-more-horizontal fe-12
-                                      mr-2"></span>
-                                  </button>
-                                  <div class="dropdown-menu "
-                                    aria-labelledby="dr1">
-                                    <a class="dropdown-item" href="#">แก้ไข</a>
-                                    <a class="dropdown-item" href="#">ลบ</a>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-
-                          </tbody>
-                        </table>
-                      </div>
+                        <div class="form-group sm-6">
+                          <label for="simpleinput">ชื่อหลักสูตร</label>
+                          <input type="text" id="simpleinput" class="form-control"
+                            placeholder="โปรดสร้างชื่อหลักสูตร">
+                        </div>
+                        <div class="form-group sm-6">
+                          <label for="simpleinput">ประเภทหลักสูตร</label>
+                          <div class="custom-control custom-checkbox">
+                            <div class="row">
+                              <div class="col-sm-1">
+                                <input type="checkbox"
+                              class="custom-control-input" id="">
+                            <label class="custom-control-label" for="">ดูฟรี</label>
+                              </div>
+                              <div class="col-sm-2">
+                                <input type="checkbox"
+                              class="custom-control-input" id="">
+                              <label class="custom-control-label" for="">สั่งซื้อเท่านั้น</label>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        
+                        <div class="form-group sm-6">
+                          <label for="example-email">รายละเอียด</label>
+                          <input type="email" id="example-email"
+                            name="example-email" class="form-control"
+                            placeholder="รายละเอียดของหลักสูตร">
+                        </div>
+                        <div class="form-group sm-6">
+                          <label for="simpleinput">ลิงค์สำหรับเข้าเรียนรู้</label>
+                          <input type="text" id="simpleinput" class="form-control"
+                            placeholder="โปรดใส่ลิงค์ Youtube ที่ต้องการใช้งาน">
+                        </div>
+                        <label for="example-email">เนื้อหาหลักสูตร</label>
+                        
+                        <!-- Create the editor container -->
+                        <div id="editor" style="min-height:auto;">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nunc lobortis convallis efficitur. Cras nisi
+                            felis, luctus nec nibh quis, consequat maximus
+                            velit. Ut iaculis at lacus sed pellentesque.</p>
+                          <p>Maecenas luctus nisl quis leo porta, quis elementum
+                            mi tempus. Morbi blandit metus ut nulla scelerisque,
+                            sed ornare purus elementum. Vivamus sed augue in
+                            tortor commodo malesuada sed et nulla. Nullam cursus
+                            erat eget tellus maximus, ut placerat lorem
+                            fringilla.</p>
+                        </div>
+                        
+                        <div class="box" style="display: block; margin: 25px; text-align: center;" >
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                          <button type="button" class="btn btn-primary">บันทึก</button>
+                        </div>
+                          </div>
+                        
                     </div>
                   </div>
-
-                </div> <!-- Striped rows -->
-
+                </div> <!-- end section -->
               </div>
 
 
@@ -609,14 +478,15 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="modal-creat-tag"> 
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-creat-tag">
+          <div class="modal fade" id="exampleModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">สร้างบทเรียน</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <h5 class="modal-title" id="exampleModalLabel">สร้างบทความ</h5>
+                  <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
@@ -624,26 +494,30 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group mb-6">
-                        <label for="simpleinput">ชื่อบทเรียน</label>
-                        <input type="text" id="simpleinput" class="form-control" placeholder="โปรดสร้างชื่อสิทธิพิเศษ">
+                        <label for="simpleinput">ชื่อบทความ</label>
+                        <input type="text" id="simpleinput" class="form-control"
+                          placeholder="โปรดสร้างชื่อบทความ">
                       </div>
                       <div class="form-group mb-6">
                         <label for="example-email">รายละเอียด</label>
-                        <input type="email" id="example-email" name="example-email" class="form-control" placeholder="รายละเอียดของสิทธิพิเศษ">
+                        <input type="email" id="example-email"
+                          name="example-email" class="form-control"
+                          placeholder="รายละเอียดของกิจกรรม">
                       </div>
-                      
-                    </div> 
-                    
+
+                    </div> <!-- /.col -->
+
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                  <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">ยกเลิก</button>
                   <button type="button" class="btn btn-primary">บันทึก</button>
                 </div>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </main> <!-- main -->
     </div> <!-- .wrapper -->
     <script src="js/jquery.min.js"></script>
@@ -655,7 +529,14 @@
     <script src='js/jquery.stickOnScroll.js'></script>
     <script src="js/tinycolor-min.js"></script>
     <script src="js/config.js"></script>
-    <script src="js/apps.js"></script>
+    <script src='js/jquery.mask.min.js'></script>
+    <script src='js/select2.min.js'></script>
+    <script src='js/jquery.steps.min.js'></script>
+    <script src='js/jquery.validate.min.js'></script>
+    <script src='js/jquery.timepicker.js'></script>
+    <script src='js/dropzone.min.js'></script>
+    <script src='js/uppy.min.js'></script>
+    <script src='js/quill.min.js'></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async
       src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
@@ -668,6 +549,186 @@
       }
       gtag('js', new Date());
       gtag('config', 'UA-56159088-1');
+    </script>
+    <script>
+      $('.select2').select2(
+      {
+        theme: 'bootstrap4',
+      });
+      $('.select2-multi').select2(
+      {
+        multiple: true,
+        theme: 'bootstrap4',
+      });
+      $('.drgpicker').daterangepicker(
+      {
+        singleDatePicker: true,
+        timePicker: false,
+        showDropdowns: true,
+        locale:
+        {
+          format: 'MM/DD/YYYY'
+        }
+      });
+      $('.time-input').timepicker(
+      {
+        'scrollDefault': 'now',
+        'zindex': '9999' /* fix modal open */
+      });
+      /** date range picker */
+      if ($('.datetimes').length)
+      {
+        $('.datetimes').daterangepicker(
+        {
+          timePicker: true,
+          startDate: moment().startOf('hour'),
+          endDate: moment().startOf('hour').add(32, 'hour'),
+          locale:
+          {
+            format: 'M/DD hh:mm A'
+          }
+        });
+      }
+      var start = moment().subtract(29, 'days');
+      var end = moment();
+
+      function cb(start, end)
+      {
+        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+      }
+      $('#reportrange').daterangepicker(
+      {
+        startDate: start,
+        endDate: end,
+        ranges:
+        {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb);
+      cb(start, end);
+      $('.input-placeholder').mask("00/00/0000",
+      {
+        placeholder: "__/__/____"
+      });
+      $('.input-zip').mask('00000-000',
+      {
+        placeholder: "____-___"
+      });
+      $('.input-money').mask("#.##0,00",
+      {
+        reverse: true
+      });
+      $('.input-phoneus').mask('(000) 000-0000');
+      $('.input-mixed').mask('AAA 000-S0S');
+      $('.input-ip').mask('0ZZ.0ZZ.0ZZ.0ZZ',
+      {
+        translation:
+        {
+          'Z':
+          {
+            pattern: /[0-9]/,
+            optional: true
+          }
+        },
+        placeholder: "___.___.___.___"
+      });
+      // editor
+      var editor = document.getElementById('editor');
+      if (editor)
+      {
+        var toolbarOptions = [
+          [
+          {
+            'font': []
+          }],
+          [
+          {
+            'header': [1, 2, 3, 4, 5, 6, false]
+          }],
+          ['bold', 'italic', 'underline', 'strike'],
+          ['blockquote', 'code-block'],
+          [
+          {
+            'header': 1
+          },
+          {
+            'header': 2
+          }],
+          [
+          {
+            'list': 'ordered'
+          },
+          {
+            'list': 'bullet'
+          }],
+          [
+          {
+            'script': 'sub'
+          },
+          {
+            'script': 'super'
+          }],
+          [
+          {
+            'indent': '-1'
+          },
+          {
+            'indent': '+1'
+          }], // outdent/indent
+          [
+          {
+            'direction': 'rtl'
+          }], // text direction
+          [
+          {
+            'color': []
+          },
+          {
+            'background': []
+          }], // dropdown with defaults from theme
+          [
+          {
+            'align': []
+          }],
+          ['clean'] // remove formatting button
+        ];
+        var quill = new Quill(editor,
+        {
+          modules:
+          {
+            toolbar: toolbarOptions
+          },
+          theme: 'snow'
+        });
+      }
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function()
+      {
+        'use strict';
+        window.addEventListener('load', function()
+        {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form)
+          {
+            form.addEventListener('submit', function(event)
+            {
+              if (form.checkValidity() === false)
+              {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
     </script>
   </body>
 </html>

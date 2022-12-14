@@ -116,9 +116,7 @@ barChartCtn && (barChart = new ApexCharts(barChartCtn, barChartoptions)).render(
 var lineChart,
     lineChartoptions = {
         series: [
-            { name: "Page views", data: [31, 28, 30, 51, 42, 109, 100, 31, 40, 28, 31, 58, 30, 51, 42, 109, 100, 116] },
-            { name: "Visitors", data: [11, 45, 20, 32, 34, 52, 41, 11, 32, 45, 11, 75, 20, 32, 34, 52, 41, 81] },
-            { name: "Orders", data: [5, 25, 9, 14, 14, 32, 21, 5, 12, 25, 5, 55, 9, 14, 14, 32, 21, 65] },
+            { name: "ลูกค้า", data: [1, 2, 3, 1, 2, 0, 1, 1, 1, 2, 2, 3, 5, 1, 1, 1, 1, 4] }
         ],
         chart: { height: 350, type: "line", background: !1, zoom: { enabled: !1 }, toolbar: { show: !1 } },
         theme: { mode: colors.chartTheme },

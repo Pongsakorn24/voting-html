@@ -38,9 +38,10 @@
           collapseSidebar">
           <i class="fe fe-menu navbar-toggler-icon"></i>
         </button>
-        <form class="form-inline mr-auto searchform text-muted">
+        <!-- <form class="form-inline mr-auto searchform text-muted">
           <input class="form-control mr-sm-2 bg-transparent border-0 pl-4
-            text-muted" type="search" placeholder="ค้นหา" aria-label="Search">
+            text-muted" type="search" placeholder="ค้นหา"
+            aria-label="Search">
         </form>
         <ul class="nav">
           <li class="nav-item">
@@ -61,11 +62,17 @@
               <span class="fe fe-bell fe-16"></span>
               <span class="dot dot-md bg-success"></span>
             </a>
-          </li>
+          </li> -->
+          <!-- <li class="nav-item nav-notif">
+            <a class="nav-link text-muted my-2" href="./#" data-toggle="modal"
+              data-target=".modal-notif"> MEWE
+              <span class="dot dot-md bg-success"></span>
+            </a>
+          </li>  -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-muted pr-0" href="#"
-              id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+              id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="avatar avatar-sm mt-2">
                 <img src="./assets/avatars/face-1.jpg" alt="..."
                   class="avatar-img rounded-circle">
@@ -106,7 +113,7 @@
               <a href="./index copy.html" data-toggle="collapse"
                 aria-expanded="false" class="dropdown-toggle nav-link">
                 <i class="fe fe-home fe-16"></i>
-                <span class="ml-3 item-text">แดชบอร์ด</span>
+                <span class="ml-3 item-text">ภาพรวม</span>
                 <!-- <span class="sr-only">(current)</span> -->
               </a>
 
@@ -119,14 +126,16 @@
             <li class="nav-item dropdown">
               <a href="#sale" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
-                <i class="fe fe-user fe-16"></i>
+                <i class="bi bi-currency-dollar fe-16"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                  <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                </svg></i>
                 <span class="ml-3 item-text">ทีมขาย</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="sale">
                 <a class="nav-link pl-3" href="./contacts-list sale.html"><span
                     class="ml-1">ทีมขายทั้งหมด</span></a>
-                <a class="nav-link pl-3" href="./contacts-grid sale.html"><span
-                    class="ml-1">ค้นหาทีมขาย</span></a>
+                <!-- <a class="nav-link pl-3" href="./contacts-grid sale.html"><span
+                    class="ml-1">ค้นหาทีมขาย</span></a> -->
                 <!-- <a class="nav-link pl-3" href="./contacts-new copy.html"><span
                     class="ml-1">สร้างทีมขาย</span></a> -->
               </ul>
@@ -134,19 +143,19 @@
             <li class="nav-item dropdown">
               <a href="#customer" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
-                <i class="fe fe-book fe-16"></i>
+                <i class="fe fe-user fe-16"></i>
                 <span class="ml-3 item-text">ลูกค้า</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="customer">
                 <a class="nav-link pl-3" href="./contacts-list customer.html"><span
                     class="ml-1">ลูกค้าทั้งหมด</span></a>
-                <a class="nav-link pl-3" href="./contacts-grid customer.html"><span
-                    class="ml-1">ค้นหาลูกค้า</span></a>
+                <!-- <a class="nav-link pl-3" href="./contacts-grid customer.html"><span
+                    class="ml-1">ค้นหาลูกค้า</span></a> -->
                 <!-- <a class="nav-link pl-3" href="./contacts-new copy.html"><span
                     class="ml-1">สร้างลูกค้า</span></a> -->
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a href="#sendemail" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
                 <i class="fe fe-send fe-16"></i>
@@ -157,12 +166,12 @@
                     class="ml-1">หน้ารวม</span></a>
 
               </ul>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a href="#mkt" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
                 <i class="fe fe-pie-chart fe-16"></i>
-                <span class="ml-3 item-text">การตลาด</span>
+                <span class="ml-3 item-text">สร้างความสัมพันธ์</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="mkt">
                 <a class="nav-link pl-3" href="./setting-article.html"><span
@@ -193,8 +202,8 @@
             <li class="nav-item dropdown">
               <a href="#learning" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
-                <i class="fe fe-book-open fe-16"></i>
-                <span class="ml-3 item-text">บททดสอบ</span>
+                <i class="fe fe-file-text fe-16"></i>
+                <span class="ml-3 item-text">แบบทดสอบ</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="learning">
                 <a class="nav-link pl-3" href="./setting-all-learning.html"><span
@@ -204,7 +213,7 @@
                 <a class="nav-link pl-3" href="./setting-learning.html"><span
                     class="ml-1">สร้างบททดสอบ</span></a>
               </ul>
-              
+
             </li>
             <li class="nav-item dropdown">
               <a href="#setting" data-toggle="collapse" aria-expanded="false"
@@ -216,16 +225,17 @@
                 <a class="nav-link pl-3" href="./setting-interest.html"><span
                     class="ml-1">ความสนใจ</span></a>
               </ul>
-              <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+              <!-- <ul class="collapse list-unstyled pl-4 w-100" id="setting">
                 <a class="nav-link pl-3" href="./setting-add-data.html"><span
                     class="ml-1">ข้อมูลเพิ่มเติม</span></a>
-              </ul>
+              </ul> -->
               <ul class="collapse list-unstyled pl-4 w-100" id="setting">
                 <a class="nav-link pl-3" href="./setting-score.html"><span
                     class="ml-1">ความพึงพอใจ</span></a>
               </ul>
               <ul class="collapse list-unstyled pl-4 w-100" id="setting">
-                <a class="nav-link pl-3" href="./setting-recommend-cheklist.html"><span
+                <a class="nav-link pl-3"
+                  href="./setting-recommend-cheklist.html"><span
                     class="ml-1">สิ่งที่แนะให้ทำ</span></a>
               </ul>
             </li>
@@ -350,34 +360,12 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Brown,
                                         Asher D.</strong></p>
-                                    <small class="mb-0 text-muted">2474</small>
                                   </td>
                                   <td>
                                     <span class="sparkline inlineline"></span>
                                   </td>
 
-                                  <!-- <td class="w-25"><small
-                                      class="text-muted"> Egestas
-                                      integer eget aliquet nibh
-                                      praesent. In hac
-                                      habitasse platea dictumst quisque
-                                      sagittis purus.</small></td> -->
-                                  <!-- <td class="text-muted">13/09/2020</td> -->
-                                  <!-- <td><button class="btn btn-sm
-                                      dropdown-toggle more-horizontal"
-                                      type="button"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false">
-                                      <span class="text-muted sr-only">Action</span>
-                                    </button>
-                                    <div class="dropdown-menu
-                                      dropdown-menu-right">
-                                      <a class="dropdown-item" href="#">HOT</a>
-                                      <a class="dropdown-item" href="#">WORM</a>
-                                      <a class="dropdown-item" href="#">COLD</a>
-                                    </div>
-                                  </td> -->
+                                  
                                   <td>
                                     15
                                   </td>
@@ -471,7 +459,6 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Leblanc,
                                         Yoshio V.</strong></p>
-                                    <small class="mb-0 text-muted">2786</small>
                                   </td>
                                   <td>
                                     <span class="sparkline inlineline"></span>
@@ -578,7 +565,6 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Hester,
                                         Nissim L.</strong></p>
-                                    <small class="mb-0 text-muted">2747</small>
                                   </td>
                                   <td>
                                     <span class="sparkline inlineline"></span>
@@ -683,7 +669,6 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Gardner,
                                         Leigh S.</strong></p>
-                                    <small class="mb-0 text-muted">2639</small>
                                   </td>
                                   <td>
                                     <span class="sparkline inlineline"></span>
@@ -788,7 +773,6 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Higgins,
                                         Uriah L.</strong></p>
-                                    <small class="mb-0 text-muted">2238</small>
                                   </td>
                                   <td>
                                     <span class="sparkline inlineline"></span>
@@ -893,7 +877,6 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Wheeler,
                                         Ralph F.</strong></p>
-                                    <small class="mb-0 text-muted">2152</small>
                                   </td>
                                   <td>
                                     <span class="sparkline inlineline"></span>
@@ -998,7 +981,6 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Kelley,
                                         Sonya Y.</strong></p>
-                                    <small class="mb-0 text-muted">2488</small>
                                   </td>
                                   <td>
                                     <span class="sparkline inlineline"></span>
@@ -1153,8 +1135,9 @@
                                   </td>
                                   <th>รูป</th>
                                   <th>ชื่อ</th>
-                                  <th>ตำแหน่ง</th>
-                                  <th>ติดต่อ</th>
+                                  <th>ที่อยู่</th>
+                                  <th>อีเมล</th>
+                                  <th>เบอร์โทร</th>
                                   <!-- <th class="w-25">คำแนะนำ</th> -->
                                   <!-- <th>วันที่</th> -->
                                   <th>สถานะ</th>
@@ -1184,19 +1167,17 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Brown,
                                         Asher D.</strong></p>
-                                    <small class="mb-0 text-muted">2474</small>
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted">Accumsan
-                                      Consulting</p>
-                                    <small class="mb-0 text-muted">Ap
-                                      #331-7123 Lobortis Avenue</small>
+                                    <p class="mb-0 text-muted">Suspendisse
+                                      LLC</p>
+
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted"><a
-                                        href="#" class="text-muted">(958)
-                                        421-0798</a></p>
-                                    <small class="mb-0 text-muted">Nigeria</small>
+                                    <p class="mb-0 text-muted">customer@gmail.com</p>
+                                  </td>
+                                  <td>
+                                    <small class="mb-0 text-muted">089-979-9998</small>
                                   </td>
                                   <!-- <td class="w-25"><small
                                       class="text-muted"> Egestas
@@ -1244,20 +1225,17 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Leblanc,
                                         Yoshio V.</strong></p>
-                                    <small class="mb-0 text-muted">2786</small>
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted">Fringilla
-                                      Ornare Placerat Consulting</p>
-                                    <small class="mb-0 text-muted">287-8300
-                                      Nisl. St</small>
+                                    <p class="mb-0 text-muted">Suspendisse
+                                      LLC</p>
+
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted"><a
-                                        href="#" class="text-muted">(899)
-                                        881-3833</a></p>
-                                    <small class="mb-0 text-muted">Papua
-                                      New Guinea</small>
+                                    <p class="mb-0 text-muted">customer@gmail.com</p>
+                                  </td>
+                                  <td>
+                                    <small class="mb-0 text-muted">089-979-9998</small>
                                   </td>
                                   <!-- <td class="w-25"><small
                                       class="text-muted"> Lorem ipsum
@@ -1306,27 +1284,19 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Hester,
                                         Nissim L.</strong></p>
-                                    <small class="mb-0 text-muted">2747</small>
+                                    
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted">Tristique
-                                      Ltd</p>
-                                    <small class="mb-0 text-muted">4577
-                                      Cras St.</small>
+                                    <p class="mb-0 text-muted">Suspendisse
+                                      LLC</p>
+
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted"><a
-                                        href="#" class="text-muted">(977)
-                                        220-6518</a></p>
-                                    <small class="mb-0 text-muted">Central
-                                      African Republic</small>
+                                    <p class="mb-0 text-muted">customer@gmail.com</p>
                                   </td>
-                                  <!-- <td class="w-25"><small
-                                      class="text-muted"> Non tellus
-                                      orci ac auctor augue. Elit at
-                                      imperdiet
-                                      dui accumsan sit.</small></td> -->
-                                  <!-- <td class="text-muted">21/08/2019</td> -->
+                                  <td>
+                                    <small class="mb-0 text-muted">089-979-9998</small>
+                                  </td>
                                   <td><button class="btn btn-sm
                                       dropdown-toggle more-horizontal"
                                       type="button"
@@ -1366,20 +1336,18 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Gardner,
                                         Leigh S.</strong></p>
-                                    <small class="mb-0 text-muted">2639</small>
+                                    
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted">Orci
-                                      Luctus Et Inc.</p>
-                                    <small class="mb-0 text-muted">P.O.
-                                      Box 228, 7512 Lectus Ave</small>
+                                    <p class="mb-0 text-muted">Suspendisse
+                                      LLC</p>
+
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted"><a
-                                        href="#" class="text-muted">(537)
-                                        315-1481</a></p>
-                                    <small class="mb-0 text-muted">United
-                                      Kingdom</small>
+                                    <p class="mb-0 text-muted">customer@gmail.com</p>
+                                  </td>
+                                  <td>
+                                    <small class="mb-0 text-muted">089-979-9998</small>
                                   </td>
                                   <!-- <td class="w-25"><small
                                       class="text-muted"> Nunc pulvinar
@@ -1426,26 +1394,19 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Higgins,
                                         Uriah L.</strong></p>
-                                    <small class="mb-0 text-muted">2238</small>
+                                    
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted">Sit Amet
-                                      Lorem Industries</p>
-                                    <small class="mb-0 text-muted">Ap
-                                      #377-5357 Sed Road</small>
+                                    <p class="mb-0 text-muted">Suspendisse
+                                      LLC</p>
+
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted"><a
-                                        href="#" class="text-muted">(238)
-                                        386-0247</a></p>
-                                    <small class="mb-0 text-muted">Canada</small>
+                                    <p class="mb-0 text-muted">customer@gmail.com</p>
                                   </td>
-                                  <!-- <td class="w-25"><small
-                                      class="text-muted"> Libero id
-                                      faucibus nisl tincidunt eget. Leo
-                                      a diam
-                                      sollicitudin tempor id. </small></td> -->
-                                  <!-- <td class="text-muted">26/07/2020</td> -->
+                                  <td>
+                                    <small class="mb-0 text-muted">089-979-9998</small>
+                                  </td>
                                   <td><button class="btn btn-sm
                                       dropdown-toggle more-horizontal"
                                       type="button"
@@ -1485,26 +1446,19 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Wheeler,
                                         Ralph F.</strong></p>
-                                    <small class="mb-0 text-muted">2152</small>
+                                    
                                   </td>
                                   <td>
                                     <p class="mb-0 text-muted">Suspendisse
                                       LLC</p>
-                                    <small class="mb-0 text-muted">Ap
-                                      #410-5363 Non, Avenue</small>
+
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted"><a
-                                        href="#" class="text-muted">(587)
-                                        675-3258</a></p>
-                                    <small class="mb-0 text-muted">Chad</small>
+                                    <p class="mb-0 text-muted">customer@gmail.com</p>
                                   </td>
-                                  <!-- <td class="w-25"><small
-                                      class="text-muted"> Libero id
-                                      faucibus nisl tincidunt eget. Leo
-                                      a diam
-                                      sollicitudin tempor id. </small></td> -->
-                                  <!-- <td class="text-muted">11/09/2019</td> -->
+                                  <td>
+                                    <small class="mb-0 text-muted">089-979-9998</small>
+                                  </td>
                                   <td><button class="btn btn-sm
                                       dropdown-toggle more-horizontal"
                                       type="button"
@@ -1544,28 +1498,20 @@
                                   <td>
                                     <p class="mb-0 text-muted"><strong>Kelley,
                                         Sonya Y.</strong></p>
-                                    <small class="mb-0 text-muted">2488</small>
+                                    
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted">Dolor
-                                      Incorporated</p>
-                                    <small class="mb-0 text-muted">8250
-                                      Molestie St.</small>
+                                    <p class="mb-0 text-muted">Suspendisse
+                                      LLC</p>
+
                                   </td>
                                   <td>
-                                    <p class="mb-0 text-muted"><a
-                                        href="#" class="text-muted">(934)
-                                        582-9495</a></p>
-                                    <small class="mb-0 text-muted">British
-                                      Indian Ocean Territory</small>
+                                    <p class="mb-0 text-muted">customer@gmail.com</p>
                                   </td>
-                                  <!-- <td class="w-25"><small
-                                      class="text-muted"> A lacus
-                                      vestibulum sed arcu non odio
-                                      euismod
-                                      lacinia. In tellus integer feugiat
-                                      scelerisque.</small></td> -->
-                                  <!-- <td class="text-muted">30/03/2021</td> -->
+                                  <td>
+                                    <small class="mb-0 text-muted">089-979-9998</small>
+                                  </td>
+                                  
                                   <td><button class="btn btn-sm
                                       dropdown-toggle more-horizontal"
                                       type="button"
@@ -1879,8 +1825,10 @@
 
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary"
+                  <a href="page-article.html">
+                    <button type="button" class="btn btn-secondary"
                     data-dismiss="modal">ตัวอย่าง</button>
+                  </a>
                   <button type="button" class="btn btn-primary">ถัดไป</button>
                 </div>
               </div>

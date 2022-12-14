@@ -114,7 +114,9 @@
   content: ""; }
 
 .fe-bar-chart-2:before {
-  content: ""; }
+  content: ""; 
+color: #292571;}
+  
 
 .fe-battery:before {
   content: ""; }
