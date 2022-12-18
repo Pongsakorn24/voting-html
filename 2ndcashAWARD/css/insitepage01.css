@@ -2110,6 +2110,24 @@ margin-bottom: 5px;
         text-align: center;
         font-size: 14px !important;
     }
+    .o2o{
+        color: #ff00c0 !important;
+    }
+    .o2o-bg{
+        background-color: #ff00c0 !important;
+    }
+    .o2o-bar:first-child:after {
+        content: '';
+        width: 3px;
+        height: 100%;
+        background-color: #ff00c0 !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+
     
 
 @media (max-width: 1280px) {
