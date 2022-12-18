@@ -358,9 +358,10 @@
                       </div> <!-- /. card-body -->
                     </div> <!-- /. card-body -->
                   </div>
-
                   <div class="col-md-7 mb-4">
-                    <div class="card shadow" style=" color:#333 !important;">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="card shadow" style=" color:#333 !important;">
                       <div class="card-header" style=" color:#333 !important;">
                         <strong class="card-title" style="color:#333 !important;">
                           <span class="fe fe-heart fe-16"></span> ความสนใจ</strong>
@@ -403,7 +404,51 @@
 
                       </div> <!-- /. card-body -->
                     </div> <!-- /. card-body -->
-                    <div class="card shadow" style=" color:#333 !important;">
+                      </div>
+                      <div class="col-sm-6">
+<div class="card shadow " style=" color:#333 !important;">
+                      <div class="card-header" style=" color:#333 !important;">
+                        <strong class="card-title" style="color:#333 !important;">
+                          <span class="fe fe-star fe-16"></span>
+                          ดูแลลูกค้ายอดเยี่ยมประจำเดือน</strong>
+                      </div>
+                      <div class="card-body3">
+                        <div class="row">
+                        <div class="col-md-12 text-center mb-5" style="margin-bottom: 10px !important;">
+                          <div class="avatar avatar-xl2">
+                            <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle">
+                          </div>
+                        </div>
+                        <div class="col-md-12 " >
+                          <h4 class="name-t" style="color:#333 !important;">ยอดเยี่ยม ยิ่งดี</h4>
+                          
+                        </div>
+                        <div class="col-md-12" style="margin-bottom: 10px;">
+                          <div class="box" style="display: block; text-align:
+                            center;  color:#fff !important;">
+                              <p class="mb-0
+                                text-muted" style="display: inline-block; 
+                                text-align: center;
+                                color: white;"><strong><span class="badge
+                                    badge-warning" style="display:
+                                    inline-block; text-align:
+                                    center; color: white;">พอใจ</span></strong></p>
+                              <p class="mb-0
+                                text-muted" style="display:
+                                inline-block; text-align: center;"><strong><span class="badge
+                                    badge-warning" style=" display:
+                                    inline-block;text-align:
+                                    center; color: white;">2</span></strong></p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                      </div>
+                       
+                      </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="card shadow " style=" color:#333 !important;">
                       <div class="card-header" style=" color:#333 !important;">
                         <strong class="card-title" style="color:#333 !important;">
                           <span class="fe fe-message-square fe-16"></span>
@@ -424,9 +469,8 @@
                           <span class="text-muted sr-only">Action</span>
                         </button>
                         <div class="dropdown-menu
-                          dropdown-menu-right" style="padding: 0
-                          15px;">
-                          <div class="form-check">
+                          dropdown-menu-right" style="padding: 15px 15px;"><b>โปรดเลือก</b> 
+                          <div class="form-check" >
                             <input class="form-check-input"
                               type="checkbox" value=""
                               id="defaultCheck1">
@@ -457,7 +501,7 @@
                           
                           <button type="button" class="btn
                             btn-primary" data-toggle="modal"
-                            data-target="#exampleModal"
+                            data-target="#exampleModal2"
                             style="padding: 5px 20px ; margin: 10px
                             auto; ">
                             <span class=""></span>ส่ง</button>
@@ -478,6 +522,13 @@
                         </div> -->
                       </div> <!-- /. card-body -->
                     </div>
+                      </div>
+                    </div>
+                      
+                      
+                    
+                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -1221,6 +1272,141 @@
                   </div> -->
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="modal-choose">
+            <div class="modal fade" id="exampleModal2" tabindex="-1"
+              aria-labelledby="exampleModalLabel2" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">เลือกสิ่งที่ต้องส่ง</h5>
+                    <button type="button" class="close" data-dismiss="modal"
+                      aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <!-- Striped rows -->
+                      <div class="col-md-12 mb-4">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <p class="mb-2"><strong></strong></p>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox"
+                                value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                บทความ </label>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                              <!-- <label for="custom-select">เนื้อหา</label> -->
+                              <select class="custom-select" id="custom-select">
+                                <option selected="">เลือกเนื้อหา</option>
+                                <option value="1">เนื้อหา 1</option>
+                                <option value="2">เนื้อหา 2</option>
+                                <option value="3">เนื้อหา 3</option>
+                              </select>
+                            </div>
+                            <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox"
+                                value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                กิจกรรม </label>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                              <!-- <label for="custom-select">เนื้อหา</label> -->
+                              <select class="custom-select" id="custom-select">
+                                <option selected="">เลือกเนื้อหา</option>
+                                <option value="1">เนื้อหา 1</option>
+                                <option value="2">เนื้อหา 2</option>
+                                <option value="3">เนื้อหา 3</option>
+                              </select>
+                            </div>
+                            <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox"
+                                value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                โปรโมชั่น </label>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                              <!-- <label for="custom-select">เนื้อหา</label> -->
+                              <select class="custom-select" id="custom-select">
+                                <option selected="">เลือกเนื้อหา</option>
+                                <option value="1">เนื้อหา 1</option>
+                                <option value="2">เนื้อหา 2</option>
+                                <option value="3">เนื้อหา 3</option>
+                              </select>
+                            </div>
+                            <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox"
+                                value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                สิทธิพิเศษ</label>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                              <!-- <label for="custom-select">เนื้อหา</label> -->
+                              <select class="custom-select" id="custom-select">
+                                <option selected="">เลือกเนื้อหา</option>
+                                <option value="1">เนื้อหา 1</option>
+                                <option value="2">เนื้อหา 2</option>
+                                <option value="3">เนื้อหา 3</option>
+                              </select>
+                            </div>
+                            <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox"
+                                value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                ข้อมูลเพิ่ม </label>
+                            </div>
+                            <div class="form-group sm-6">
+                              <label>เลือก</label>
+  
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"
+                                  id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label"
+                                  for="inlineCheckbox1">ชื่อ-นามสกุล</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"
+                                  id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label"
+                                  for="inlineCheckbox2">อายุ</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"
+                                  id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label"
+                                  for="inlineCheckbox3">ที่อยู่</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="col-md-12 mb-4">
+                        <label for="custom-select">เนื้อหา</label>
+                        <select class="custom-select" id="custom-select">
+                          <option selected="">เลือกเนื้อหา</option>
+                          <option value="1">เนื้อหา 1/option>
+                          <option value="2">เนื้อหา 2</option>
+                          <option value="3">เนื้อหา 3</option>
+                        </select>
+                      </div> -->
+                    </div>
+  
+  
+                  </div>
+                  <div class="modal-footer">
+                    <a href="../mewe/page-article.html">
+                      <button type="button" class="btn btn-secondary"
+                      data-dismiss="modal">ตัวอย่าง</button>
+                    </a>
+                    <button type="button" class="btn btn-primary">ถัดไป</button>
+                  </div>
+                </div>
+              </div>
+  
             </div>
           </div>
         </main> <!-- main -->

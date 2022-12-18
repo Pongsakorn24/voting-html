@@ -4987,7 +4987,13 @@ input[type="button"].btn-block {
 }
 
 .wrapper .card-title {
-  font-size: 20px;
+  font-size: 19px;
+}
+.nopaddingleft{
+ padding-left: 0px;
+}
+.nopaddingright{
+  padding-right: 0px;
 }
 
 .card-title {
@@ -11648,6 +11654,10 @@ select {
   width: 150px;
   height: 150px;
 }
+.avatar-xl2 img {
+  width: 50px;
+  height: 50px;
+}
 
 .squircle {
   height: 84px;
@@ -12175,6 +12185,10 @@ strong {
 .name-c {
   text-align: center;
   font-size: 1.7rem !important;
+}
+.name-t {
+  text-align: center;
+  font-size: 18px !important;
 }
 
 .navbar .text-muted {
@@ -13038,6 +13052,9 @@ form.was-validated select:valid~.select2-container--bootstrap4 .select2-selectio
 }
 .card-body2{
   padding: 15px 0 ;
+}
+.card-body3{
+  padding: 10px 20px ;
 }
 .card-title2{
   display: -webkit-box;

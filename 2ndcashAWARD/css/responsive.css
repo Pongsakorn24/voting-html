@@ -1,0 +1,947 @@
+@media (max-width: 1280px) {
+    .wrapper-special-deal .container-fluid,
+    .wrapper-banner-get .container-fluid,
+    .wrapper-rate2 .container-fluid {
+        padding-right: 105px;
+        padding-left: 105px;
+    }
+    .layout-banner img {
+        height: 400px;
+    }
+    .top-title h1 {
+        font-size: 80px;
+    }
+    .top-title {
+        margin: 160px 0;
+    }
+    .wrapper-rate .layout-card-rate .box-card {
+        width: 150px;
+        height: 150px;
+    }
+    .box-card .percent {
+        font-size: 40px;
+    }
+    .box-card .total,
+    .box-card .recommend,
+    .box-card .agent {
+        font-size: 20px;
+    }
+    .layout-box-card {
+        margin: 36px auto;
+    }
+    .box-why {
+        width: 350px;
+        height: 550px;
+    }
+    .box-pinterest-deal {
+        padding-top: 72.25%;
+    }
+    .layout-list {
+        width: 350px;
+    }
+    .box-get ol li {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .panel-title>.small,
+    .panel-title>.small>a,
+    .panel-title>a,
+    .panel-title>small,
+    .panel-title>small>a {
+        font-size: 20px;
+    }
+    .wrapper-interested .layout-card-rate .box-card {
+        padding: 14px;
+        width: 70px;
+        height: 70px;
+    }
+    .wrapper-interested .box-card .percent {
+        font-size: 20px;
+    }
+    .wrapper-interested .box-card .total,
+    .wrapper-interested .box-card .recommend,
+    .wrapper-interested .box-card .agent {
+        font-size: 12px;
+    }
+    .wrapper-interested .layout-box-card {
+        margin: 3px auto;
+    }
+    .wrapper-interested .layout-rate h1 {
+        font-size: 30px;
+    }
+    .wrapper-interested .layout-rate h1 strong {
+        font-size: 40px;
+    }
+    .layout-rate {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    /*footer*/
+    .layout-footer {
+        display: none;
+    }
+    .footer_mb {
+        display: block;
+    }
+    .center,
+    .center-align {
+        text-align: center;
+    }
+    .white-text {
+        color: #fff !important;
+    }
+    .color_site {
+        background-color: #051565!important;
+    }
+    .footer_mb {
+        position: fixed;
+        bottom: 0px;
+        z-index: 9999;
+        width: 100%;
+        height: 4.5rem;
+    }
+    .footer_mb a {
+        color: white !important;
+    }
+    .footer_mb {
+        position: fixed;
+        bottom: 0px;
+        z-index: 9999;
+        width: 100%;
+        height: 4.5rem;
+    }
+    .footer_mb img {
+        width: auto;
+        height: 22px;
+        margin: 25px auto;
+    }
+    .row .col-xs-3 {
+        width: 25%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .panel-title>.small,
+    .panel-title>.small>a,
+    .panel-title>a,
+    .panel-title>small,
+    .panel-title>small>a {
+        font-size: 16px;
+    }
+    .footer_mb .container {
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #3aef8f;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-why-detail ol,
+    .box-get ol,
+    .wrapper-rate2 ol {
+        -webkit-line-clamp: 13;
+    }
+}
+
+@media (max-width: 767px) {
+    .layout-banner img {
+        height: 100%;
+    }
+    .layout-rate h1 {
+        font-size: 45px;
+    }
+    .layout-rate h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .wrapper-why h1 {
+        font-size: 35px;
+        margin: 0;
+    }
+    .layout-box-why {
+        margin: 0 0 25px;
+    }
+    .layout-interested .layout-rate h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    /* .box-card{
+        background-color: #fff;
+        display: inline-block;
+        border-radius: 100%;
+        width: 70px;
+        width: 70px;
+        margin: 0 4px;
+        box-shadow: 0 8px 4px rgba(0,0,0, 0.12), 0 2px 4px rgba(0,0,0, 0.24);
+    } */
+    .wrapper-rate .layout-card-rate .box-card,
+    .wrapper-interested-mb .layout-card-rate .box-card {
+        display: inline-block;
+        border: 3px solid #e7e7e7;
+        height: 70px;
+        width: 70px;
+        margin: 0 4px;
+    }
+    .layout-box-card {
+        margin: 14px auto;
+    }
+    .layout-search {
+        margin: 10px 20px 20px;
+    }
+    .box-card .percent {
+        font-size: 20px;
+        font-weight: bold;
+        color: #133664;
+        margin-bottom: 5px;
+    }
+    .box-card .total,
+    .box-card .recommend,
+    .box-card .agent {
+        font-size: 15px;
+    }
+    .btn-detail,
+    .btn-consultation {
+        width: 160px;
+        height: 60px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .btn-invest,
+    .btn-shopee,
+    .btn-calculate {
+        width: 160px;
+        height: 60px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .btn-detail:hover,
+    .btn-invest:hover,
+    .btn-shopee:hover,
+    .btn-calculate:hover {
+        width: 160px;
+        height: 60px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .layout-special-deal .special-deal,
+    .wrapper-interested .layout-card-rate {
+        margin-bottom: 60px;
+        display: flex;
+        font-size: 45px;
+    }
+    .slide-head {
+        height: 100%;
+    }
+    .why {
+        font-size: 25px;
+        display: block;
+        font-weight: bold;
+        color: #133664;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .wrapper-rate2 .rate2,
+    .layout-faq .faq,
+    .layout-interested .interested,
+    .layout-concept .concept,
+    .layout-definition .definition {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .wrapper-rate2 img {
+        width: 60%;
+    }
+    .box-concept-img img,
+    .box-people img {
+        width: 100%;
+    }
+    .slide-wrapper .slide-head .slick-slide img {
+        height: 300px;
+    }
+    .box-why-detail li {
+        font-size: 17px;
+    }
+    .box-why-detail ol,
+    .box-get ol,
+    .wrapper-rate2 ol {
+        line-height: 28px;
+        padding-left: 25px;
+    }
+    .btn-invest,
+    .btn-shopee {
+        margin: 0 4px;
+    }
+    .wrapper-interested .layout-rate h1 {
+        font-size: 20px;
+    }
+    .wrapper-interested .layout-rate h2 {
+        font-size: 15px;
+    }
+    .box-interested-img img {
+        height: 150px;
+    }
+    .wrapper-interested .box-card .total,
+    .wrapper-interested .box-card .recommend,
+    .wrapper-interested .box-card .agent {
+        font-size: 15px;
+    }
+    .wrapper-interested .box-card .percent {
+        font-size: 27px;
+    }
+    .layout-rate {
+        margin-bottom: 10px;
+    }
+    .box-interested-img {
+        margin-bottom: 10px;
+    }
+    .wrapper-interested .layout-card-rate {
+        margin-bottom: 30px;
+        display: flex;
+    }
+    .layout-definition .definition {
+        margin: 0 0 30px;
+    }
+    .wrapper-banner .box-btn-detail {
+        top: 200px;
+        left: 20px;
+        display: none;
+    }
+    .layout-special-deal .special-deal,
+    .wrapper-interested .layout-card-rate {
+        margin-bottom: 5px;
+        display: block;
+        font-weight: bold;
+    }
+    .wrapper-interested .layout-card-rate {
+        display: flex;
+    }
+    .layout-special-deal .special-deal {
+        font-size: 30px;
+        color: #133664;
+    }
+    .slide-wrapper .slick-prev,
+    .slide-wrapper .slick-next {
+        top: -170%;
+    }
+    .layout-special-deal {
+        margin: 30px 0 0;
+    }
+    .slide-wrapper .slide .slick-slide img {
+        display: block;
+        width: 100%;
+        height: 100px;
+    }
+    .slide-wrapper {
+        margin-bottom: 30px;
+    }
+    .box-why-detail {
+        margin-bottom: 20px;
+    }
+    .box-why {
+        margin-bottom: 40px;
+    }
+    .box-get .online,
+    .box-get .offline {
+        font-size: 48px;
+        text-align: center;
+        display: block;
+        margin-bottom: 45px;
+    }
+    .box-get ol li {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .box-get .online,
+    .box-get .offline {
+        font-size: 30px;
+        text-align: center;
+        display: block;
+        margin-bottom: 12px;
+        font-weight: bold;
+        color: #133664;
+    }
+    .layout-banner-get {
+        margin-bottom: 30px;
+    }
+    .box-list {
+        margin-bottom: 30px;
+    }
+    .wrapper-banner-get,
+    .wrapper-rate2,
+    .wrapper-definition {
+        margin-bottom: 0px;
+    }
+    .wrapper-rate2 .decide {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #133664;
+        text-align: center;
+        font-weight: bold;
+    }
+    .wrapper-rate2 li {
+        font-size: 17px;
+    }
+    .layout-faq .faq {
+        margin-bottom: 35px;
+    }
+    .layout-definition p,
+    .layout-concept p {
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-weight: 100;
+    }
+    .box-big-content strong,
+    .box-small-people strong {
+        font-size: 20px;
+    }
+    .box-big-content {
+        margin-bottom: 20px;
+    }
+    .header-2nd .navbar-brand {
+        padding: 0px;
+    }
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        margin-top: 8px;
+        margin-right: 15px;
+        margin-bottom: 0;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #3aef8f;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+    .navbar-toggle .icon-bar {
+        display: block;
+        width: 18px;
+        height: 2px;
+        border-radius: 1px;
+    }
+    .layout-faq {
+        margin-bottom: 30px;
+    }
+    .box-people {
+        margin-bottom: 20px;
+    }
+    .wrapper-interested .layout-card-rate .box-card {
+        display: block;
+        border: 3px solid #e7e7e7;
+        padding: 10px;
+    }
+    .box-mockup {
+        margin-bottom: 20px;
+    }
+    .modal-body .box-btn-invest {
+        margin: 20px 0;
+    }
+    .checkmark {
+        height: 20px;
+        width: 20px;
+    }
+    .agree .checkmark:after {
+        top: 7px;
+        left: 7px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: white;
+    }
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: 150px 10px;
+    }
+    .agree {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .wrapper-rate2 ol {
+        margin-bottom: 20px;
+    }
+    .modal-title2 {
+        font-size: 17px;
+    }
+    /* .header-2nd .navbar {
+    height: 30px;
+} */
+    .header-2nd .navbar-nav>li>a {
+        margin: 0;
+        padding: 15px;
+    }
+    .header-2nd .navbar-default .navbar-nav>li>a:hover {
+        background-color: #e7e7e7;
+    }
+    .layout-banner {
+        margin-bottom: 30px;
+    }
+    .layout-rate h1 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    .layout-interested .layout-rate h1 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .layout-rate h1 strong {
+        font-size: 45px;
+        font-weight: bold;
+        color: #133664;
+    }
+    .layout-interested .layout-rate h1 strong {
+        font-size: 45px;
+        font-weight: bold;
+        color: #133664;
+    }
+    .layout-card-rate {
+        margin-bottom: 30px;
+    }
+    .wrapper-rate {
+        margin-bottom: 30px;
+    }
+    .layout-special-deal .layout-rate strong {
+        color: #133664;
+        font-weight: bold;
+    }
+    .box-faq {
+        margin-bottom: 30px;
+    }
+    .wrapper-concept {
+        display: none;
+    }
+    .wrapper-concept-mb {
+        display: block;
+        background-color: #c1c1c138;
+        overflow: hidden;
+    }
+    .layout-concept .concept {
+        margin-top: 30px;
+    }
+    .layout-interested .interested {
+        margin: 0 0 30px;
+        color: #133664;
+    }
+    .wrapper-interested {
+        display: none;
+    }
+    .wrapper-interested-mb {
+        display: block;
+        background-color: #c1c1c138;
+        margin-bottom: 50px;
+    }
+    .wrapper-interested-mb .layout-card-rate .box-card {
+        border-radius: 100%;
+        box-shadow: 0 8px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    }
+    .panel-body {
+        padding: 15px 25px;
+    }
+    .panel-default>.panel-heading+.panel-collapse>.panel-body {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .layout-banner-get img {
+        width: 100%;
+        height: 200px;
+    }
+    .layout-interested {
+        padding-bottom: 0;
+        padding-top: 35px;
+    }
+    .slide-definition .slick-dots button {
+        width: 20px;
+    }
+    /*footer*/
+    .layout-footer {
+        display: none;
+    }
+    .footer_mb {
+        display: block;
+    }
+    .center,
+    .center-align {
+        text-align: center;
+    }
+    .white-text {
+        color: #fff !important;
+    }
+    .color_site {
+        background-color: #051056!important;
+    }
+    .footer_mb {
+        position: fixed;
+        bottom: 0px;
+        z-index: 9999;
+        width: 100%;
+        height: 4.5rem;
+    }
+    .footer_mb a {
+        color: white !important;
+    }
+    .footer_mb {
+        position: fixed;
+        bottom: 0px;
+        z-index: 9999;
+        width: 100%;
+        height: 4.5rem;
+    }
+    .footer_mb img {
+        width: auto;
+        height: 40px;
+        margin: 18px auto;
+    }
+    .row .col-xs-3 {
+        width: 25%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .panel-title>.small,
+    .panel-title>.small>a,
+    .panel-title>a,
+    .panel-title>small,
+    .panel-title>small>a {
+        font-size: 16px;
+    }
+    .footer_mb .container {
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /*banner*/
+    .user-img {
+        margin: 40px auto 15px auto;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        overflow: hidden;
+        border: 2px solid #ffffff;
+    }
+    .bottom-user {
+        bottom: 0px;
+        left: 20px;
+    }
+    .user-img .name-user {
+        font-size: 23px;
+        color: #fff;
+        font-weight: bold;
+        position: absolute;
+        margin: 9px 20px;
+        width: 148px;
+    }
+    .top-title {
+        text-align: center;
+        margin: 60px 0 0 0;
+    }
+    .top-title h1 {
+        color: #fff;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    /*all*/
+    .modal-content {
+        padding: 34px;
+    }
+    .box-why {
+        width: 100%;
+        height: 530px;
+        margin: 0;
+    }
+    .layout-banner-get,
+    .box-rate2 {
+        margin: 0;
+    }
+    .wrapper-special-deal .container-fluid,
+    .wrapper-banner-get .container-fluid,
+    .wrapper-rate2 .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .card-why .why-detail {
+        padding: 0 15px;
+    }
+    .box-get {
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+    .layout-list {
+        width: 100%;
+    }
+    .box-thumbnail {
+        display: block;
+        position: relative;
+        margin-bottom: 100px;
+    }
+    .box-thumbnail:last-child {
+        display: block;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .layout-faq {
+        margin: 50px 45px;
+    }
+    .layout-concept {
+        padding: 0;
+        margin: 30px 15px;
+    }
+    .box-btn-invest {
+        margin-bottom: 30px;
+    }
+    .layout-why {
+        padding-bottom: 0;
+        padding: 0 20px;
+    }
+    .countdown li span {
+        font-size: 25px;
+    }
+    .countdown li {
+        padding: 10px;
+        font-size: 5px;
+    }
+    .layout-o2o .decide {
+        margin: 20px;
+        font-size: 35px;
+    }
+    .box-deal {
+        overflow: hidden;
+    }
+    .box-deal h2 {
+        margin-top: 0;
+        margin-left: 15px;
+    }
+    .box-deal p {
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 100;
+        margin: 0;
+    }
+    .card__share .share-icon img {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+    }
+    .card__share a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .wrapper-img-title .card__share {
+        bottom:-20px;
+        right: 20px;
+    }
+    .card__social {
+        width: 140px;
+    }
+    .card__social li a img {
+        width: 30px;
+        height: 30px;
+    }
+    .layout-pinterest {
+        display: none;
+    }
+    .layout-pinterest-mb {
+        display: block;
+    }
+    .box-pinterest-deal {
+        margin-bottom: 0px;
+    }
+    .wrapper-pinterest {
+        margin: 0;
+    }
+    .box-deal {
+        margin: 10px 0 20px;
+    }
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .wrapper-special-deal {
+        padding: 0 30px;
+    }
+    /*footer*/
+    .layout-footer,
+    .bottom-footer {
+        height: auto;
+        text-align: center;
+    }
+    .layout-footer .box-logo img {
+        margin-bottom: 10px;
+    }
+    .layout-footer .col-sm-6 {
+        border-left: 0;
+        height: auto;
+    }
+    .box-product {
+        margin-bottom: 10px;
+    }
+    .box-contact h3,
+    .box-product h3,
+    .layout-social span,
+    .box-contact a,
+    .box-product {
+        margin-bottom: 0px;
+    }
+    .box-contact h3,
+    .box-product h3,
+    .layout-social span {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .box-product ul li {
+        display: inline-block;
+        margin: 0px 6px;
+    }
+    .layout-social {
+        margin-top: 30px;
+    }
+    .box-contact span,
+    .box-contact a {
+        display: inline-block;
+    }
+    .bottom-left,
+    .bottom-right {
+        float: none;
+    }
+    /*finish-footer*/
+    .btn-invest span {
+        top: 0px;
+    }
+    .box-deal h2 strong:first-child {
+        font-size: 20px;
+    }
+    .box-deal h2 strong {
+        color: #133664;
+        font-weight: bold;
+        font-size: 35px;
+    }
+    .wrapper-special-deal .box-btn-invest .btn-invest {
+        width: 205px;
+    }
+    .box-deal h2,
+    .box-deal h3 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+        margin-right: 25px;
+    }
+    .box-deal h2 {
+        margin-bottom: 10px;
+    }
+    .box-deal h3 {
+        margin-bottom: 20px;
+    }
+    .card-why p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 360px) {
+    .wrapper-rate .layout-card-rate .box-card {
+        margin: 0 4px;
+    }
+    .btn-invest,
+    .btn-shopee {
+        margin: 0;
+    }
+    .top-title h1 {
+        font-size: 35px;
+        margin: 9px 15px;
+    }
+    .user-img span img {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+    .user-img .name-user {
+        font-size: 15px;
+    }
+    .card__share a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .card__share .share-icon img {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        display: inline-block;
+    }
+    /* .card__share {
+        bottom: -17px;
+    } */
+    .layout-rate h1 strong {
+        font-size: 38px;
+    }
+    .layout-rate h1 {
+        font-size: 25px;
+    }
+    .layout-rate h2 {
+        font-size: 20px;
+    }
+    .wrapper-rate .layout-card-rate .box-card,
+    .wrapper-interested-mb .layout-card-rate .box-card {
+        height: 60px;
+        width: 60px;
+    }
+    .box-card .percent {
+        font-size: 17px;
+    }
+    .box-card .total,
+    .box-card .recommend,
+    .box-card .agent {
+        font-size: 10px;
+    }
+    .btn-detail,
+    .btn-consultation,
+    .btn-invest,
+    .btn-shopee,
+    .btn-calculate {
+        width: 140px;
+        height: 60px;
+    }
+    .btn-detail:hover,
+    .btn-invest:hover,
+    .btn-shopee:hover,
+    .btn-calculate:hover {
+        width: 140px;
+    }
+    .box-btn-detail span img,
+    .box-btn-invest span img {
+        width: 20px;
+        height: 20px;
+    }
+    .box-btn-detail span,
+    .box-btn-invest span {
+        top: 0px;
+    }
+    .layout-o2o .decide,
+    .wrapper-why h1,
+    .layout-special-deal .special-deal,
+    .wrapper-rate2 .rate2,
+    .layout-faq .faq,
+    .layout-interested .interested,
+    .layout-concept .concept,
+    .layout-definition .definition {
+        font-size: 25px;
+    }
+}

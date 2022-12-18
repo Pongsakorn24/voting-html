@@ -286,7 +286,7 @@
                         </th>
                         <th style="width: 10%;">รูป</th>
                         <th style="width: 10%;">ชื่อผู้ใช้</th>
-                        <th style="width: 15%;">จำนวนหลักสูตร</th>
+                        <th style="width: 15%;">อีเมล</th>
                         <th style="width: 15%;">คะแนนเฉลี่ย</th>
                         <th style="width: 15%;">กิจกรรม</th>
                         <th style="width: 10%;">สถานะ</th>
@@ -314,7 +314,7 @@
                           </a>
                         </td>
                         <td>
-                          2
+                          customer@gmail.com
                         </td>
                         <td>
                           5
@@ -342,7 +342,7 @@
                             <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
                           </td>
                           <td>
-                            2
+                            customer@gmail.com
                           </td>
                           <td>
                             5
@@ -386,7 +386,7 @@
                             <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
                           </td>
                           <td>
-                            2
+                            customer@gmail.com
                           </td>
                           <td>
                             5
@@ -430,7 +430,7 @@
                             <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
                           </td>
                           <td>
-                            2
+                            customer@gmail.com
                           </td>
                           <td>
                             5
@@ -474,7 +474,7 @@
                             <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
                           </td>
                           <td>
-                            2
+                            customer@gmail.com
                           </td>
                           <td>
                             5
@@ -518,7 +518,7 @@
                             <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
                           </td>
                           <td>
-                            2
+                            customer@gmail.com
                           </td>
                           <td>
                             5
@@ -562,7 +562,7 @@
                             <p class="mb-0 text-muted"><strong>ใจดี ยินดีใจ</strong></p>
                           </td>
                           <td>
-                            2
+                            customer@gmail.com
                           </td>
                           <td>
                             5
@@ -572,8 +572,7 @@
                               btn-outline-primary " data-toggle="dropdown"
                               aria-haspopup="true" aria-expanded="false" style="font-size: 13px;">สร้างความสัมพันธ์</button>
                               <div class="dropdown-menu
-                              dropdown-menu-right" style="padding: 0
-                              15px;">
+                          dropdown-menu-right" style="padding: 15px 15px;"><b>โปรดเลือก</b> 
                               <div class="form-check">
                                 <input class="form-check-input"
                                   type="checkbox" value=""
@@ -611,7 +610,7 @@
                               </div>
                               <button type="button" class="btn
                                 btn-primary" data-toggle="modal"
-                                data-target="#exampleModal"
+                                data-target="#exampleModal2"
                                 style="padding: 5px 20px ; margin: 10px
                                 auto; ">
                                 <span class=""></span>ส่ง</button>
@@ -840,7 +839,7 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">เพิ่มทีมขาย</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">เลือกสิ่งที่ต้องส่ง</h5>
                     <button type="button" class="close" data-dismiss="modal"
                       aria-label="Close">
                       <span aria-hidden="true">&times;</span>
@@ -848,26 +847,125 @@
                   </div>
                   <div class="modal-body">
                     <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group mb-6">
-                          <label for="simpleinput">อีเมล</label>
-                          <input type="text" id="simpleinput"
-                            class="form-control"
-                            placeholder="โปรดกรอกอีเมลทีมขายที่ต้องการเพิ่ม">
+                      <!-- Striped rows -->
+                      <div class="col-md-12 mb-4">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <p class="mb-2"><strong></strong></p>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox"
+                                value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                บทความ </label>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                              <!-- <label for="custom-select">เนื้อหา</label> -->
+                              <select class="custom-select" id="custom-select">
+                                <option selected="">เลือกเนื้อหา</option>
+                                <option value="1">เนื้อหา 1</option>
+                                <option value="2">เนื้อหา 2</option>
+                                <option value="3">เนื้อหา 3</option>
+                              </select>
+                            </div>
+                            <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox"
+                                value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                กิจกรรม </label>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                              <!-- <label for="custom-select">เนื้อหา</label> -->
+                              <select class="custom-select" id="custom-select">
+                                <option selected="">เลือกเนื้อหา</option>
+                                <option value="1">เนื้อหา 1</option>
+                                <option value="2">เนื้อหา 2</option>
+                                <option value="3">เนื้อหา 3</option>
+                              </select>
+                            </div>
+                            <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox"
+                                value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                โปรโมชั่น </label>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                              <!-- <label for="custom-select">เนื้อหา</label> -->
+                              <select class="custom-select" id="custom-select">
+                                <option selected="">เลือกเนื้อหา</option>
+                                <option value="1">เนื้อหา 1</option>
+                                <option value="2">เนื้อหา 2</option>
+                                <option value="3">เนื้อหา 3</option>
+                              </select>
+                            </div>
+                            <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox"
+                                value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                สิทธิพิเศษ</label>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                              <!-- <label for="custom-select">เนื้อหา</label> -->
+                              <select class="custom-select" id="custom-select">
+                                <option selected="">เลือกเนื้อหา</option>
+                                <option value="1">เนื้อหา 1</option>
+                                <option value="2">เนื้อหา 2</option>
+                                <option value="3">เนื้อหา 3</option>
+                              </select>
+                            </div>
+                            <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox"
+                                value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                ข้อมูลเพิ่ม </label>
+                            </div>
+                            <div class="form-group sm-6">
+                              <label>เลือก</label>
+  
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"
+                                  id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label"
+                                  for="inlineCheckbox1">ชื่อ-นามสกุล</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"
+                                  id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label"
+                                  for="inlineCheckbox2">อายุ</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"
+                                  id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label"
+                                  for="inlineCheckbox3">ที่อยู่</label>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div> <!-- /.col -->
+                      </div>
+                      <!-- <div class="col-md-12 mb-4">
+                        <label for="custom-select">เนื้อหา</label>
+                        <select class="custom-select" id="custom-select">
+                          <option selected="">เลือกเนื้อหา</option>
+                          <option value="1">เนื้อหา 1/option>
+                          <option value="2">เนื้อหา 2</option>
+                          <option value="3">เนื้อหา 3</option>
+                        </select>
+                      </div> -->
                     </div>
+  
+  
                   </div>
                   <div class="modal-footer">
-                    <a href="page-article.html">
+                    <a href="../mewe/page-article.html">
                       <button type="button" class="btn btn-secondary"
-                        data-dismiss="modal">ยกเลิก</button>
+                      data-dismiss="modal">ตัวอย่าง</button>
                     </a>
-                    <button type="button" class="btn btn-primary">เพิ่ม</button>
+                    <button type="button" class="btn btn-primary">ถัดไป</button>
                   </div>
                 </div>
               </div>
-
+  
             </div>
           </div>
         </main> <!-- main -->
