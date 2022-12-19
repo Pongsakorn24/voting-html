@@ -88,9 +88,7 @@ body {
 .search-toggle .ic {
     font-size: 1.5rem!important;
 }
-.ic-search:before {
-    content: "\e923";
-}
+
 .sc-power .component-cardgroup {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -228,6 +226,37 @@ body {
 .component-card .card-info, .entry-meta {
     color: #696d7c;
 }
+
+  #navbar {
+    background-color: #3f3f37;
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    display: flex;
+    transition: top 0.3s;
+    justify-content: space-around;
+  }
+    #navbar a {
+      display: block;
+      color: #878472;
+      text-align: center;
+      padding: 15px;
+      text-decoration: none;
+    }
+      #navbar a:hover {
+        background-color: #878472;
+        color: #3f3f37;
+      }
+    
+  
+  .content {
+    margin: 50px 25px;}
+    .content h1 {
+      margin-bottom: 25px;
+    
+  }
+  
+
 @media (max-width: 1280px) {
     
 }

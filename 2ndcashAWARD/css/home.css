@@ -1180,8 +1180,8 @@ body {
 }
 .videoWrapper-cloud{
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-	height: 0;
+    /* padding-bottom: 56.25%; 16:9 */
+	/* height: 0; */
 }
 .videoWrapper-cloud iframe {
     position: absolute;
@@ -1557,6 +1557,11 @@ body {
 }
 .box-author {
     padding: 25px 0 0;
+}
+.videoWrapper-cloud{
+    position: relative;
+    padding-bottom: 56.25%; 
+	height: 0;
 }
 
 }
