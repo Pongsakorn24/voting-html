@@ -226,37 +226,121 @@ body {
 .component-card .card-info, .entry-meta {
     color: #696d7c;
 }
-
-  #navbar {
-    background-color: #3f3f37;
-    position: fixed;
-    top: -50px;
+.box-slide img{
     width: 100%;
-    display: flex;
-    transition: top 0.3s;
-    justify-content: space-around;
-  }
-    #navbar a {
-      display: block;
-      color: #878472;
-      text-align: center;
-      padding: 15px;
-      text-decoration: none;
-    }
-      #navbar a:hover {
-        background-color: #878472;
-        color: #3f3f37;
-      }
-    
-  
-  .content {
-    margin: 50px 25px;}
-    .content h1 {
-      margin-bottom: 25px;
-    
-  }
-  
+}
+.btn-slide{
+    background-color: transparent;
+    color: #000;
+    border: transparent;
+}
+.active {
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #39bcd3;
+    position: absolute;
+    z-index: 1200;
+    bottom: 0;
+    transition: all .4s linear;
+}
+.layput-slide{
+    position: relative;
+    margin: 50px 0;
+    overflow: hidden;
+}
+.w3-border-pinko2o{
+    border-color: #ff00c0 !important;
+}
+/* .box-slide .w3-bottombar {
+    border-bottom: 6px solid #fff !important;
+    background-color: transparent;
+} */
+.wrapper-hot{
+    background-color: #000;
+}
+.layout-hot,
+.layout-own{
+    padding: 50px;
+}
+.heading{
+    font-size: 35px;
+   color: #fff;
+   margin-bottom: 25px;
+}
+.bulet{
+    color: #ff00c0;
+}
 
+.object-fit:before {
+    content: "";
+    display: block;
+}
+
+.box-thumbnail {
+    position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin: 0 !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box-thumbnail2 {
+    position: relative;
+  width: 100%;
+  padding-top: 87%; /* 16:9 Aspect Ratio */
+    margin: 0 !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box-thumbnail a,
+.box-thumbnail2 a{
+position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.box-thumbnail a img,
+.box-thumbnail2 a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-thumbnail .card-title{
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #fff;
+}
+.text-thumbnail .card-meta {
+    padding: 15px;
+}
+.component-card .card-info .card-date, .component-card .card-info .card-time, .entry-meta .entry-date, .entry-meta .entry-time {
+    font-size: .7rem;
+    font-weight: 500;
+    font-family: IBM Plex Sans Thai,sans-serif;
+    height: 12px;
+    line-height: 12px;
+    color: #696d7c;
+}
+.wrapper-own .card-title{
+    color: #000 !important;
+}
+.wrapper-own .heading{
+    font-size: 35px;
+   color: #000;
+   margin-bottom: 25px;
+   font-weight: bold;
+}
+.box-all-thumbnail{
+    margin-bottom: 15px;
+}
 @media (max-width: 1280px) {
     
 }

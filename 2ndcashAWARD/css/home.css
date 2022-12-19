@@ -546,7 +546,7 @@ body {
 }
 
 .wrapper-conclude li{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 30px;
     color: #333;
@@ -1048,12 +1048,13 @@ body {
     text-shadow: none;
     margin: 0px 0px 5px;
 }
-.wrapper-material .pic-article{
-    display: block;
+.wrapper-material .pic-article {
+    display: inline-block;
     margin: 0 auto;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    width: 49% ;
+    margin: 25px auto 40px;
+    text-align: center;
+    /* overflow: hidden; */
 }
 .wrapper-material h3{
     font-family: 'Prompt', sans-serif;
@@ -1533,7 +1534,6 @@ body {
     margin: 0 auto;
     max-width: 100%;
     width: 95%;
-    border-radius: 10px;
     margin: 0 auto 15px;
 }
 .wrapper-all-article .wrapper-article .article{
@@ -1562,6 +1562,25 @@ body {
     position: relative;
     padding-bottom: 56.25%; 
 	height: 0;
+}
+.wrapper-conclude ul {
+    display: block;
+    list-style-type: disc;
+    margin-left: 5px;
+}
+.wrapper-conclude li {
+    font-size: 16px;
+}
+.layout-conclude {
+    margin: 0px 15px 0 15px;
+}
+.wrapper-article-page .box-btn-invest {
+    font-family: 'Prompt', sans-serif;
+    margin: 25px 0;
+}
+.wrapper-material p {
+    font-size: 16px;
+    
 }
 
 }
