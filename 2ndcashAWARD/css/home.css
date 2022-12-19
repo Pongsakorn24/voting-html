@@ -528,6 +528,8 @@ body {
     padding: 35px 0;
 }
 
+
+
 .wrapper-conclude h3,
 .wrapper-gallery h3 {
     font-size: 35px;
@@ -543,7 +545,14 @@ body {
     margin-left: 30px;
 }
 
-.wrapper-conclude li,
+.wrapper-conclude li{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #333;
+    margin:0 15px 15px ;
+    position: relative;
+}
 .wrapper-material p {
     font-size: 16px;
     font-weight: 400;
@@ -552,6 +561,9 @@ body {
     margin-bottom: 15px;
     padding: 0 15px 0 ;
     position: relative;
+}
+.layout-material p{
+    color: #fff;
 }
 
 .wrapper-material p label {
@@ -1087,10 +1099,12 @@ body {
     text-align: center;
     margin: 10px 0 ;
 }
-.box-author .desc{
+.box-author .desc,
+.box-author-cloud .desc{
     color: #fff ;
 }
-.box-author .pic img{
+.box-author .pic img,
+.box-author-cloud .pic img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1100,6 +1114,21 @@ body {
     font-family: 'Prompt', sans-serif;
     padding: 75px 0;
     /* background-color: #e1e1e1; */
+}
+.box-author-cloud{
+    font-family: 'Prompt', sans-serif;
+    padding: 0 0;
+    /* background-color: #e1e1e1; */
+}
+.box-author-cloud .entry-author {
+    margin: 0px auto;
+    text-align: center;
+    max-width: 90%;
+}
+.box-author-cloud .entry-author .pic {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
 }
 .entry-author h2 a{
     color: #fff !important;
@@ -1149,6 +1178,19 @@ body {
 	padding-top: 25px;
 	height: 0;
 }
+.videoWrapper-cloud{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.videoWrapper-cloud iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 .videoWrapper iframe {
 	position: absolute;
 	top: 0;
@@ -1160,6 +1202,15 @@ body {
 .box-videoWrapper .row{
     margin-left: 0;
     margin-right: 0;
+}
+.bg-all{
+    background-color: #000;
+}
+.bg-all-w{
+    background-color: #fff;
+}
+.o2o-w{
+    color: #fff !important;
 }
 @media (max-width: 1280px) {
     /* .layout-choose .container,

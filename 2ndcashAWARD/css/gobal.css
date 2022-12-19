@@ -285,6 +285,9 @@
 }
 
 @media (max-width: 991px) {
+    .header-2nd {
+        z-index: 9999;
+    }
     .header-2nd .box-logo {
         padding: 10px;
         position: relative;
