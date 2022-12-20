@@ -288,6 +288,14 @@
     float: left;
     margin: 25px 0;
 }
+.box-banner-bt a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-banner-bt-mb {
+    display: none;
+}
 
 
 /*finish-footer*/
@@ -388,6 +396,10 @@
     }
     .header-2nd .box-logo img {
         height: 42px;
+    }
+    
+    .box-banner-bt {
+        margin-bottom: 72px;
     }
 }
 

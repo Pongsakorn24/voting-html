@@ -6,6 +6,7 @@ body {
 #content {
     min-height: calc(100vh - 584px);
     min-height: calc((var(--vh, 1vh) * 100) - 584px);
+    background-color: #000;
 }
 .sc-power {
     height: 100vh;
@@ -231,7 +232,7 @@ body {
 }
 .btn-slide{
     background-color: transparent;
-    color: #000;
+    color: #fff;
     border: transparent;
 }
 .active {
@@ -258,7 +259,7 @@ body {
     background-color: transparent;
 } */
 .wrapper-hot{
-    background-color: #000;
+    background-color: #051565;
 }
 .layout-hot,
 .layout-own{
@@ -330,11 +331,11 @@ position: absolute;
     color: #696d7c;
 }
 .wrapper-own .card-title{
-    color: #000 !important;
+    color: #fff !important;
 }
 .wrapper-own .heading{
     font-size: 35px;
-   color: #000;
+   color: #fff;
    margin-bottom: 25px;
    font-weight: bold;
 }
