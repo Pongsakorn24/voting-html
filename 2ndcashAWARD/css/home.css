@@ -548,7 +548,7 @@ body {
 .wrapper-conclude li{
     font-size: 24px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 32px;
     color: #333;
     margin:0 15px 15px ;
     position: relative;
@@ -1056,6 +1056,14 @@ body {
     text-align: center;
     /* overflow: hidden; */
 }
+.wrapper-material .pic-article-all {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100% ;
+    margin: 25px auto 40px;
+    text-align: center;
+    /* overflow: hidden; */
+}
 .wrapper-material h3{
     font-family: 'Prompt', sans-serif;
     font-size: 35px;
@@ -1064,6 +1072,10 @@ body {
     position: relative;
     color: #3aef8f;
     font-weight: bold;
+}
+.layout-material a{
+    color: #ff00c0;
+    text-decoration: none;
 }
 .wrapper-material p:first-child:after{
     content: '';
