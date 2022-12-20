@@ -137,7 +137,7 @@
         margin-left: auto;
     }
     .navbar-default .navbar-toggle .icon-bar {
-        background-color: #3aef8f;
+        background-color: #ff00c0;
     }
 }
 
@@ -421,7 +421,7 @@
         border-radius: 4px;
     }
     .navbar-default .navbar-toggle .icon-bar {
-        background-color: #3aef8f;
+        background-color: #ff00c0;
     }
     .navbar-default .navbar-toggle {
         border-color: transparent;
