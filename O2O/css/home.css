@@ -269,7 +269,7 @@ body {
     background-color: transparent;
 } */
 .wrapper-hot{
-    background-color: #ff00c0;
+    background-color: #051565;
 }
 .layout-hot,
 .layout-own,
@@ -285,6 +285,7 @@ body {
 .bulet{
     color: #ff00c0;
     display: inline-block;
+    margin-left: 15px;
 }
 .bulet-b{
     color: #051565;
@@ -394,6 +395,10 @@ position: absolute;
 }
 .wrapper-highlight{
     background-image: url("https://news.spacebar.th/img/bg-spotlight.jpg");
+}
+.wrapper-hot .heading ,
+.wrapper-hot .text-thumbnail .card-title {
+    color: #ff00c0;
 }
 
 @media (max-width: 1280px) {
