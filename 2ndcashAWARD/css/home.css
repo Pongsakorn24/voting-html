@@ -1075,7 +1075,7 @@ body {
 }
 .layout-material a{
     color: #ff00c0;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .wrapper-material p:first-child:after{
     content: '';
