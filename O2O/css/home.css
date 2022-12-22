@@ -102,13 +102,12 @@ body {
 
 .sc-power .component-cardgroup {
     display: grid;
-    grid-template-columns: repeat(4 ,1fr );
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4,1fr);
     height: 100vh;
 }
-.sc-power .component-cardgroup .component-card:last-child {
-    grid-column-end: span 2 !important;
-    grid-row-end: span 2 !important;
+.sc-power .component-cardgroup .component-card:first-child {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
 }
 .hero-category .component-card:before, .sc-most-read .component-card:before, .sc-power .component-card:before, .sc-spotlight .component-card:before {
     content: "";
@@ -128,12 +127,8 @@ body {
     overflow: hidden;
     transform: translateZ(0);
 }
-.sc-power .component-card:last-child .object-fit:before {
+.sc-power .component-card:first-child .object-fit:before {
     padding-top: 100vh;
-}
-.object-fit:before {
-    content: "";
-    display: block;
 }
 
 .component-card .image img {
