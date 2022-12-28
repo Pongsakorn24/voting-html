@@ -1328,6 +1328,10 @@ body {
     .layout-article .container {
         width: 90%;
     }
+    .layout-article-page {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1337,6 +1341,11 @@ body {
     .layout-article .container {
         width: auto;
     }
+    .layout-article-page {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
 }
 
 @media (max-width: 767px) {

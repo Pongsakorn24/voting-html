@@ -814,10 +814,9 @@ body {
 .btn-consultation:hover,
 .btn-calculate:hover {
     border-radius: 10px;
-    width: 300px;
-    height: 80px;
-    font-size: 30px;
+   
     color: #ffffff;
+    background-color: #333;
     border: 1px solid transparent;
 }
 
@@ -826,8 +825,7 @@ body {
 .btn-shopee:hover,
 .btn-calculate:hover {
     background-color: #333;
-    /* border-bottom: 4px solid #464646; */
-    transition: 0.3s;
+    
 }
 
 .btn-consultation {
