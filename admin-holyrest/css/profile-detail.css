@@ -145,6 +145,7 @@
     background-color: #051565;
     margin-top: 50px;
     color: #fff;
+    padding: 50px;
 }
 .box-bg-2 h3 {
     color: #fff;
@@ -210,7 +211,7 @@
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -242,4 +243,9 @@ input[type=text], select {
 }
 .dropdown-menu{
     padding: 15px !important;
+}
+.box-img{
+    display: block;
+    height: 350px;
+    width: 100%;
 }
