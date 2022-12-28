@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <title>2NDCASH</title>
+        <!-- plugins:css -->
+        <link rel="stylesheet" href="../../vendors/feather/feather.css">
+        <link rel="stylesheet"
+            href="../../vendors/ti-icons/css/themify-icons.css">
+        <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+        <!-- endinject -->
+        <!-- Plugin css for this page -->
+        <!-- End plugin css for this page -->
+        <!-- inject:css -->
+        <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+        <link rel="stylesheet" href="../../css/profile-detail.css">
+        <!-- endinject -->
+        <link rel="shortcut icon" href="../../images/favicon.png" />
+    </head>
+
+    <body>
+        <div class="container-scroller">
+            <!-- partial:../../partials/_navbar.html -->
+            <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+                <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"> Holyrest
+                    <!-- <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/2ndcash000.png" class="mr-2" alt="logo" /></a>
+                    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/dashboard/favicon_green.png" alt="logo" /></a> -->
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-center
+                    justify-content-end">
+                    <button class="navbar-toggler navbar-toggler
+                        align-self-center" type="button" data-toggle="minimize">
+                        <span class="icon-menu"></span>
+                    </button>
+                    <ul class="navbar-nav mr-lg-2">
+                        <li class="nav-item nav-search d-none d-lg-block">
+                            <div class="input-group">
+                                <div class="input-group-prepend hover-cursor"
+                                    id="navbar-search-icon">
+                                    <span class="input-group-text" id="search">
+                                        <i class="icon-search"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control"
+                                    id="navbar-search-input" placeholder="Search
+                                    now" aria-label="search"
+                                    aria-describedby="search">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav navbar-nav-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link count-indicator dropdown-toggle"
+                                id="notificationDropdown" href="#"
+                                data-toggle="dropdown">
+                                <i class="icon-bell mx-0"></i>
+                                <span class="count"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right
+                                navbar-dropdown preview-list"
+                                aria-labelledby="notificationDropdown">
+                                <p class="mb-0 font-weight-normal float-left
+                                    dropdown-header">Notifications</p>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-success">
+                                            <i class="ti-info-alt mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject
+                                            font-weight-normal">Application
+                                            Error</h6>
+                                        <p class="font-weight-light small-text
+                                            mb-0 text-muted">
+                                            Just now
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-warning">
+                                            <i class="ti-settings mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject
+                                            font-weight-normal">Settings</h6>
+                                        <p class="font-weight-light small-text
+                                            mb-0 text-muted">
+                                            Private message
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-info">
+                                            <i class="ti-user mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject
+                                            font-weight-normal">New user
+                                            registration</h6>
+                                        <p class="font-weight-light small-text
+                                            mb-0 text-muted">
+                                            2 days ago
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-profile dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                data-toggle="dropdown" id="profileDropdown">
+                                <img src="../../images/faces/face28.jpg"
+                                    alt="profile" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right
+                                navbar-dropdown"
+                                aria-labelledby="profileDropdown">
+                                <a class="dropdown-item">
+                                    <i class="ti-settings text-primary"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item">
+                                    <i class="ti-power-off text-primary"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-settings d-none d-lg-flex">
+                            <a class="nav-link" href="#">
+                                <i class="icon-ellipsis"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none
+                        align-self-center" type="button"
+                        data-toggle="offcanvas">
+                        <span class="icon-menu"></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                <!-- partial:../../partials/_settings-panel.html -->
+
+
+                <!-- partial -->
+                <!-- partial:../../partials/_sidebar.html -->
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">
+                                <i class="icon-grid menu-icon"></i>
+                                <span class="menu-title">ภาพรวม</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../pages/ui-features/allemai.html"  aria-expanded="false" >
+                                <i class="icon-paper menu-icon "></i>
+                                <span class="menu-title">ติดต่อ</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../pages/ui-features/customer.html" aria-expanded="false" >
+                                <i class="icon-head menu-icon"></i>
+                                <span class="menu-title">ลูกค้า</span>
+                            </a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <i class="icon-paper menu-icon"></i>
+                                <span class="menu-title">ผู้เข้าร่วม</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#experience" aria-expanded="false" aria-controls="experience">
+                                <i class="icon-paper menu-icon"></i>
+                                <span class="menu-title">หน้าประสบการณ์</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="experience">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">สร้างประสบการณ์</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">ฐานข้อมูลการเข้าร่วม</a></li>
+                                </ul>
+                            </div>
+                        </li>  -->
+                    </ul>
+                </nav>
+                <!-- partial -->
+                <div class="main-panel">
+                    <div class="content-wrapper">
+
+                        <div class="row">
+
+                            <div class="col-lg-5 grid-margin stretch-card">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h4 class="card-title">โปรไฟล์</h4>
+
+                                        <div class="box-img-pf">
+                                            <a href="">
+                                                <img
+                                                    src="../../images/faces/face1.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 class="profile-name">ยินดี
+                                            ดีใจ
+                                            <img src="../../images/shield.png" alt="">
+                                        </h3>
+
+                                        <div class="box-tag-profile">
+                                            <label class="badge badge-warning">กำลังติดตาม</label>
+                                        </div>
+                                    </div>
+                                    <div class="profile-detail">
+                                        <span class="title-tag ">ข้อมูลทั่วไป</span>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div
+                                                    class="box-align">
+                                                    <label for="">เพศ</label>
+                                                    <span>ชาย</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div
+                                                    class="box-align">
+                                                    <label for="">วัน/เดือน/ปีเกิด</label>
+                                                    <span>22/10/1998</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div
+                                                    class="box-align">
+                                                    <label for="">อีเมล</label>
+                                                    <span>aaa@gmail.com</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div
+                                                    class="box-align">
+                                                    <label for="">เบอร์โทร</label>
+                                                    <span>099-999-9999</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div
+                                                    class="box-align">
+                                                    <label for="">ที่อยู่</label>
+                                                    <span>8
+                                                        ประชาอุทิส
+                                                        24 แยก 3
+                                                        เขตราษฎร์บูรณะ
+                                                        แขวง
+                                                        แขวงราษฎร์บูรณะ
+                                                        กทม. 10140</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <span class="title-tag">ช่องทางโซเซียล</span>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div
+                                                    class="box-align">
+                                                    <label for="">Facebook</label>
+                                                    <span>ชาย</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div
+                                                    class="box-align">
+                                                    <label for="">Line</label>
+                                                    <span>aaa0101</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-lg-7 grid-margin ">
+                                <div class="row">
+                                    <div class="col-sm-12 grid-margin
+                                        stretch-card">
+                                        <div class="card">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="profile-detail">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-sm-6">
+                                                                <span
+                                                                    class="title-tag
+                                                                    shop">ยอดซื้อรวม</span>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-6">
+                                                                <span
+                                                                    class="total">9,999
+                                                                    บาท</span>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 stretch-card">
+                                        <div class="card">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="tag-interest">
+                                                        <span class="title-tag">แท็กความสนใจ</span>
+                                                        <label class="badge
+                                                            badge-success">ธุรกิจ</label>
+                                                        <label class="badge
+                                                            badge-success">ธุรกิจ</label>
+                                                        <label class="badge
+                                                            badge-success">ธุรกิจ</label>
+                                                        <label class="badge
+                                                            badge-success">ธุรกิจ</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 grid-margin
+                                stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">ประวัติการรับ</h4>
+                                        <p class="card-description">
+                                            รายการประวัติการรับ
+                                        </p>
+                                        <div
+                                            class="table-responsive">
+                                            <table class="table
+                                                table-striped"
+                                                style="text-align:
+                                                center;">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            style="width:
+                                                            5%;">วันที่</th>
+                                                        <th
+                                                            style="width:
+                                                            5%;">เวลา</th>
+                                                        <th
+                                                            style="width:
+                                                            15%;">
+                                                            ปัญหา
+                                                        </th>
+                                                        <th
+                                                            style="width:
+                                                            10%;">
+                                                            ระดับ
+                                                        </th>
+                                                        <th
+                                                            style="width:
+                                                            10%;">
+                                                            รูป
+                                                        </th>
+                                                        <th style="width: 10%;">
+                                                            สถานะ
+                                                        </th>
+                                                        <th style="width: 10%;">
+                                                            การติดต่อ
+                                                        </th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>01/01/2023</td>
+                                                        <td>09:09</td>
+                                                        <td>เครียดสะสม</td>
+                                                        <td>ระดับ</td>
+                                                        <td><a href="">ดูรูป</a></td>
+                                                        <td
+                                                            class="text-success">ส่งแล้ว</td>
+                                                        <td>
+                                                            <button
+                                                                type="button"
+                                                                class="btn
+                                                                btn-outline-info
+                                                                btn-fw">ติดต่อ</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>01/01/2023</td>
+                                                        <td>09:09</td>
+                                                        <td>เครียดสะสม</td>
+                                                        <td>ระดับ</td>
+                                                        <td><a href="">ดูรูป</a></td>
+                                                        <td class="text-danger">ยังไม่ส่ง</td>
+                                                        <td>
+                                                            <button
+                                                                type="button"
+                                                                class="btn
+                                                                btn-outline-info
+                                                                btn-fw">ติดต่อ</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 grid-margin
+                                stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">ประวัติการส่ง</h4>
+                                        <p class="card-description">
+                                            รายการประวัติการส่ง
+                                        </p>
+                                        <div
+                                            class="table-responsive">
+                                            <table class="table
+                                                table-striped"
+                                                style="text-align:
+                                                center;">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            style="width:
+                                                            5%;">วันที่</th>
+                                                        <th
+                                                            style="width:
+                                                            5%;">เวลา</th>
+                                                        <th
+                                                            style="width:
+                                                            15%;">
+                                                            ฟอร์ม
+                                                        </th>
+                                                        <th
+                                                            style="width:
+                                                            10%;">
+                                                            การตอบรับ
+                                                        </th>
+                                                        <th
+                                                            style="width:
+                                                            10%;">
+                                                            สถานะ
+                                                        </th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>01/01/2023</td>
+                                                        <td>09:09</td>
+                                                        <td>การเติบโตของผู้ใช้ระบบ</td>
+                                                        <td><label
+                                                                class="text-success">ตอบรับ</label></td>
+                                                        <td><button class="btn
+                                                            btn-outline-info
+                                                                btn-sm
+                                                                dropdown-toggle"
+                                                                type="button"
+                                                                id="dropdownMenuSizeButton3"
+                                                                data-toggle="dropdown"
+                                                                aria-haspopup="true"
+                                                                aria-expanded="false">
+                                                               เลือก
+                                                            </button>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuSizeButton3" style="">
+                                                                <!-- <h6 class="dropdown-header">Settings</h6> -->
+                                                                <label
+                                                                class="badge
+                                                                badge-success">ปิดการขายสำเร็จ</label>
+                                                                <label
+                                                                class="badge
+                                                                badge-warning">กำลังติดตาม</label>
+                                                                <label
+                                                                class="badge
+                                                                badge-warning-or">ยังปิดการขายไม่ได้</label>
+                                                                <label
+                                                                class="badge
+                                                                badge-danger">ปฏิเสธ</label>
+                                                              </div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>01/01/2023</td>
+                                                        <td>09:09</td>
+                                                        <td>การเติบโตของผู้ใช้ระบบ</td>
+                                                        <td><label
+                                                                class="text-success">ตอบรับ</label></td>
+                                                        <td><label
+                                                                class="badge
+                                                                badge-success">ปิดการขายสำเร็จ</label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>01/01/2023</td>
+                                                        <td>09:09</td>
+                                                        <td>การเติบโตของผู้ใช้ระบบ</td>
+                                                        <td><label
+                                                                class="text-success">ตอบรับ</label></td>
+                                                        <td><label
+                                                                class="badge
+                                                                badge-warning">กำลังติดตาม</label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>01/01/2023</td>
+                                                        <td>09:09</td>
+                                                        <td>การเติบโตของผู้ใช้ระบบ</td>
+                                                        <td><label
+                                                                class="text-success">ตอบรับ</label></td>
+                                                        <td><label
+                                                                class="badge
+                                                                badge-warning-or">ยังปิดการขายไม่ได้</label></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>01/01/2023</td>
+                                                        <td>09:09</td>
+                                                        <td>การเติบโตของผู้ใช้ระบบ</td>
+                                                        <td><label
+                                                                class="text-danger">ไม่ตอบรับ</label></td>
+                                                        <td><label
+                                                                class="badge
+                                                                badge-danger">ปฏิเสธ</label></td>
+                                                    </tr>
+
+
+
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- page-body-wrapper ends -->
+                        <footer class="footer">
+                            <div class="d-sm-flex justify-content-center
+                                justify-content-sm-between">
+                                <span class="text-muted text-center
+                                    text-sm-left
+                                    d-block d-sm-inline-block">Copyright
+                                    © 2021.
+                                    Premium <a
+                                        href="https://www.bootstrapdash.com/"
+                                        target="_blank">Bootstrap admin
+                                        template</a>
+                                    from BootstrapDash. All rights
+                                    reserved.</span>
+
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- container-scroller -->
+                    <!-- plugins:js -->
+                    <script src="../../vendors/js/vendor.bundle.base.js"></script>
+                    <!-- endinject -->
+                    <!-- Plugin js for this page -->
+                    <!-- End plugin js for this page -->
+                    <!-- inject:js -->
+                    <script src="../../js/off-canvas.js"></script>
+                    <script src="../../js/hoverable-collapse.js"></script>
+                    <script src="../../js/template.js"></script>
+                    <script src="../../js/settings.js"></script>
+                    <script src="../../js/todolist.js"></script>
+                    <!-- endinject -->
+                    <!-- Custom js for this page-->
+                    <!-- End custom js for this page-->
+                </body>
+
+            </html>

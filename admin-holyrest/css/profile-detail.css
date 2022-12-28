@@ -1,0 +1,245 @@
+.box-profile{
+    display: block;
+}
+.box-img-pf{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+.box-img-pf img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-name{
+    display: block;
+    margin:  auto ;
+    text-align: center;
+}
+.profile-detail{
+    margin: 0 15px 15px ;
+}
+.profile-detail ul li{
+    list-style-type: none !important;
+}
+.profile-detail span{
+    display: block;
+}
+.profile-detail label{
+    display: block;
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: 0;
+    color: #686868;
+    
+}
+.title-tag{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.title-tag::after{
+    content: "";
+    width: 15px;
+    height: 1;
+    color: blue;
+
+}
+.box-align{
+    margin-bottom: 15px;
+}
+.badge-warning-or {
+    color: #fff;
+    background-color: #fa5421;
+}
+.box-tag-profile{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.tag-interest{
+    display: block;
+}
+.total{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: right;
+}
+.shop{
+    padding: 20px 0 0;
+}
+
+/*form*/
+.wrapper-cover{
+   width: 100%;
+}
+
+.wrapper-cover a img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+.title-form{
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #112b5f;
+    text-align: center;
+}
+.box-article{
+    margin: 25px 0;
+}
+.box-article p{
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0 150px;
+    color: #000;
+}
+.wrapper-cover {
+    position: relative;
+}
+.layout-cover {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.box-banner-home, .box-banner-home2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 40.25%;
+    margin-bottom: 25px;
+}
+.box-banner-home a, .box-banner-home2 a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.box-banner-home a img, .box-banner-home2 a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-detail-email {
+    padding: 20px 0;
+    background-color: #fff;
+}
+.box-detail-email h2, .box-bg-2 h3 {
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #051565;
+    text-align: center;
+}
+.box-detail-email p {
+    
+}
+.box-bg-2 {
+    background-color: #051565;
+    margin-top: 50px;
+    color: #fff;
+}
+.box-bg-2 h3 {
+    color: #fff;
+    margin-top: 50px;
+}
+.avatar-upload {
+    position: relative;
+    max-width: 150px;
+    margin: 50px auto 25px;
+}
+.avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+.avatar-edit input {
+    display: none;
+}
+.avatar-edit label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 12%);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+.avatar-edit label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+.avatar-preview {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 100%;
+    border: transparent;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 10%);
+}
+.avatar-preview #imagePreview {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nopaddingright {
+    padding-right: 0;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.btn-more, .btn-share-coupon {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    margin: 25px 10px;
+    font-size: 22px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+}
+.btn-share-coupon {
+    background-color: #707070;
+}
+.control-btn {
+    margin: 0 0 25px;
+    position: relative;
+    display: block;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.dropdown-menu{
+    padding: 15px !important;
+}

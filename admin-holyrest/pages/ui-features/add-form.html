@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <title>2NDCASH</title>
+        <!-- plugins:css -->
+        <link rel="stylesheet" href="../../vendors/feather/feather.css">
+        <link rel="stylesheet"
+            href="../../vendors/ti-icons/css/themify-icons.css">
+        <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+        <!-- endinject -->
+        <!-- Plugin css for this page -->
+        <!-- End plugin css for this page -->
+        <!-- inject:css -->
+        <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+        <link rel="stylesheet" href="../../css/profile-detail.css">
+        <!-- endinject -->
+        <link rel="shortcut icon" href="../../images/favicon.png" />
+    </head>
+
+    <body>
+        <div class="container-scroller">
+            <!-- partial:../../partials/_navbar.html -->
+            <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+                <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"> Holyrest
+                    <!-- <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/2ndcash000.png" class="mr-2" alt="logo" /></a>
+                    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/dashboard/favicon_green.png" alt="logo" /></a> -->
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-center
+                    justify-content-end">
+                    <button class="navbar-toggler navbar-toggler
+                        align-self-center" type="button" data-toggle="minimize">
+                        <span class="icon-menu"></span>
+                    </button>
+                    <ul class="navbar-nav mr-lg-2">
+                        <li class="nav-item nav-search d-none d-lg-block">
+                            <div class="input-group">
+                                <div class="input-group-prepend hover-cursor"
+                                    id="navbar-search-icon">
+                                    <span class="input-group-text" id="search">
+                                        <i class="icon-search"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control"
+                                    id="navbar-search-input" placeholder="Search
+                                    now" aria-label="search"
+                                    aria-describedby="search">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav navbar-nav-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link count-indicator dropdown-toggle"
+                                id="notificationDropdown" href="#"
+                                data-toggle="dropdown">
+                                <i class="icon-bell mx-0"></i>
+                                <span class="count"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right
+                                navbar-dropdown preview-list"
+                                aria-labelledby="notificationDropdown">
+                                <p class="mb-0 font-weight-normal float-left
+                                    dropdown-header">Notifications</p>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-success">
+                                            <i class="ti-info-alt mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject
+                                            font-weight-normal">Application
+                                            Error</h6>
+                                        <p class="font-weight-light small-text
+                                            mb-0 text-muted">
+                                            Just now
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-warning">
+                                            <i class="ti-settings mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject
+                                            font-weight-normal">Settings</h6>
+                                        <p class="font-weight-light small-text
+                                            mb-0 text-muted">
+                                            Private message
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-info">
+                                            <i class="ti-user mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject
+                                            font-weight-normal">New user
+                                            registration</h6>
+                                        <p class="font-weight-light small-text
+                                            mb-0 text-muted">
+                                            2 days ago
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-profile dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                data-toggle="dropdown" id="profileDropdown">
+                                <img src="../../images/faces/face28.jpg"
+                                    alt="profile" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right
+                                navbar-dropdown"
+                                aria-labelledby="profileDropdown">
+                                <a class="dropdown-item">
+                                    <i class="ti-settings text-primary"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item">
+                                    <i class="ti-power-off text-primary"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-settings d-none d-lg-flex">
+                            <a class="nav-link" href="#">
+                                <i class="icon-ellipsis"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none
+                        align-self-center" type="button"
+                        data-toggle="offcanvas">
+                        <span class="icon-menu"></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                <!-- partial:../../partials/_settings-panel.html -->
+
+
+                <!-- partial -->
+                <!-- partial:../../partials/_sidebar.html -->
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">
+                                <i class="icon-grid menu-icon"></i>
+                                <span class="menu-title">ภาพรวม</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../pages/ui-features/allemai.html"  aria-expanded="false" >
+                                <i class="icon-paper menu-icon "></i>
+                                <span class="menu-title">ติดต่อ</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../pages/ui-features/customer.html" aria-expanded="false" >
+                                <i class="icon-head menu-icon"></i>
+                                <span class="menu-title">ลูกค้า</span>
+                            </a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <i class="icon-paper menu-icon"></i>
+                                <span class="menu-title">ผู้เข้าร่วม</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#experience" aria-expanded="false" aria-controls="experience">
+                                <i class="icon-paper menu-icon"></i>
+                                <span class="menu-title">หน้าประสบการณ์</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="experience">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">สร้างประสบการณ์</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">ฐานข้อมูลการเข้าร่วม</a></li>
+                                </ul>
+                            </div>
+                        </li>  -->
+                    </ul>
+                </nav>
+                <!-- partial -->
+                <div class="main-panel">
+                    <div class="content-wrapper">
+
+                        <div class="row">
+                            <div class="col-lg-12 grid-margin stretch-card"><div
+                                    class="card"><div class="card-body"><div
+                                            class="card-title">ฟอร์มการติดต่อ</div><p
+                                            class="card-description"></p><form
+                                            action="#"
+                                            class="forms-sample"><div
+                                                class="box-bg"><div
+                                                    class="form-group row"><label
+                                                        class="col-sm-3
+                                                        col-form-label">อัพโหลดรูปปก
+                                                        ( ขนาด 2560 x 600 )</label><div
+                                                        class="col-sm-9"><input
+                                                            type="file"
+                                                            name="picture"
+                                                            id="picture"
+                                                            style="display:none"
+                                                            accept="image/x-png,image/gif,image/jpeg"
+                                                            hidden=""><label
+                                                            for="picture"
+                                                            class="btn btn-sm
+                                                            btn-danger
+                                                            btn-icon-text"><i
+                                                                class="ti-upload
+                                                                btn-icon-prepend"></i>Upload</label></div></div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-sm-3 col-form-label">หัวข้อ</label>
+                                                                    <div class="col-sm-9">
+                                                                        <input type="text" name="title" value="" placeholder="โปรดใส่หัวข้อฟอร์ม" class="form-control">
+                                                                    </div>
+                                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">รายละเอียดโครงการ</label>
+                                                    <div class="col-sm-9 layout-box">
+                                                        <!-- <textarea name="" id=""
+                                                            cols="30" rows="10"></textarea> -->
+                                                        <!-- <div class="box-s4">
+                                                            <div id="rdw-wrapper-8457" class="demo-wrapper
+                                                                rdw-editor-wrapper"
+                                                                aria-label="rdw-wrapper">
+                                                                <div class="rdw-editor-toolbar demo-toolbar-absolute" aria-label="rdw-toolbar" aria-hidden="false" style="visibility: visible;">
+                                                                    <div
+                                                                        class="rdw-dropdown-wrapper
+                                                                        rdw-inline-dropdown"
+                                                                        aria-label="rdw-dropdown">
+                                                                        <a
+                                                                            class="rdw-dropdown-selectedtext">
+                                                                            <img
+                                                                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuMjM2IDBjMS42NTIgMCAyLjk0LjI5OCAzLjg2Ni44OTMuOTI1LjU5NSAxLjM4OCAxLjQ4NSAxLjM4OCAyLjY2OSAwIC42MDEtLjE3MyAxLjEzOS0uNTE2IDEuNjEtLjM0My40NzQtLjg0NC44My0xLjQ5OSAxLjA2OC44NDMuMTY3IDEuNDc0LjUyMyAxLjg5NSAxLjA3MS40MTkuNTUuNjMgMS4xODMuNjMgMS45MDMgMCAxLjI0NS0uNDQ0IDIuMTg3LTEuMzMgMi44MjUtLjg4Ni42NDEtMi4xNDQuOTYxLTMuNzY5Ljk2MUgwdi0yLjE2N2gxLjQ5NFYyLjE2N0gwVjBoNi4yMzZ6TTQuMzA4IDUuNDQ2aDIuMDI0Yy43NTIgMCAxLjMzLS4xNDMgMS43MzQtLjQzLjQwNS0uMjg1LjYwOC0uNzAxLjYwOC0xLjI1IDAtLjYtLjIwNC0xLjA0NC0uNjEyLTEuMzMtLjQwOC0uMjg2LTEuMDE2LS40MjctMS44MjYtLjQyN0g0LjMwOHYzLjQzN3ptMCAxLjgwNFYxMWgyLjU5M2MuNzQ3IDAgMS4zMTQtLjE1MiAxLjcwNy0uNDUyLjM5LS4zLjU4OC0uNzQ1LjU4OC0xLjMzNCAwLS42MzYtLjE2OC0xLjEyNC0uNS0xLjQ2LS4zMzYtLjMzNS0uODY0LS41MDQtMS41ODItLjUwNEg0LjMwOHoiIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg=="
+                                                                                alt=""><div
+                                                                                class="rdw-dropdown-carettoopen"></div></a></div><div
+                                                                        class="rdw-block-wrapper"
+                                                                        aria-label="rdw-block-control"><div
+                                                                            class="rdw-dropdown-wrapper
+                                                                            rdw-block-dropdown"
+                                                                            aria-label="rdw-dropdown"><a
+                                                                                class="rdw-dropdown-selectedtext"
+                                                                                title="Block
+                                                                                Type"><span>Normal</span><div
+                                                                                    class="rdw-dropdown-carettoopen"></div></a></div></div><div
+                                                                        class="rdw-fontsize-wrapper"
+                                                                        aria-label="rdw-font-size-control"><div
+                                                                            class="rdw-dropdown-wrapper
+                                                                            rdw-fontsize-dropdown"
+                                                                            aria-label="rdw-dropdown"><a
+                                                                                class="rdw-dropdown-selectedtext"
+                                                                                title="Font
+                                                                                Size"><span>16</span><div
+                                                                                    class="rdw-dropdown-carettoopen"></div></a></div></div><div
+                                                                        class="rdw-dropdown-wrapper
+                                                                        rdw-list-dropdown"
+                                                                        aria-label="rdw-dropdown"><a
+                                                                            class="rdw-dropdown-selectedtext"
+                                                                            title="List"><img
+                                                                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMS43MiAzLjQyN2MuOTUxIDAgMS43MjItLjc2OCAxLjcyMi0xLjcwOFMyLjY3LjAxIDEuNzIuMDFDLjc3LjAwOCAwIC43NzUgMCAxLjcxNWMwIC45NC43NzQgMS43MTEgMS43MiAxLjcxMXptMC0yLjYyNWMuNTEgMCAuOTIyLjQxMi45MjIuOTE0YS45Mi45MiAwIDAgMS0xLjg0MiAwIC45Mi45MiAwIDAgMSAuOTItLjkxNHpNMS43MiA4LjcwM2MuOTUxIDAgMS43MjItLjc2OCAxLjcyMi0xLjcwOFMyLjY3IDUuMjg3IDEuNzIgNS4yODdDLjc3IDUuMjg3IDAgNi4wNTIgMCA2Ljk5NXMuNzc0IDEuNzA4IDEuNzIgMS43MDh6bTAtMi42MjJjLjUxIDAgLjkyMi40MTIuOTIyLjkxNGEuOTIuOTIgMCAwIDEtMS44NDIgMGMwLS41MDUuNDE1LS45MTQuOTItLjkxNHpNMS43MiAxMy45ODJjLjk1MSAwIDEuNzIyLS43NjggMS43MjItMS43MDggMC0uOTQzLS43NzQtMS43MDgtMS43MjEtMS43MDgtLjk0NyAwLTEuNzIxLjc2OC0xLjcyMSAxLjcwOHMuNzc0IDEuNzA4IDEuNzIgMS43MDh6bTAtMi42MjVjLjUxIDAgLjkyMi40MTIuOTIyLjkxNGEuOTIuOTIgMCAxIDEtMS44NDIgMCAuOTIuOTIgMCAwIDEgLjkyLS45MTR6TTUuNzQ0IDIuMTE1aDkuODQ1YS40LjQgMCAwIDAgLjQwMS0uMzk5LjQuNCAwIDAgMC0uNDAxLS4zOTlINS43NDRhLjQuNCAwIDAgMC0uNDAyLjM5OS40LjQgMCAwIDAgLjQwMi4zOTl6TTUuNzQ0IDcuMzk0aDkuODQ1YS40LjQgMCAwIDAgLjQwMS0uMzk5LjQuNCAwIDAgMC0uNDAxLS4zOThINS43NDRhLjQuNCAwIDAgMC0uNDAyLjM5OC40LjQgMCAwIDAgLjQwMi4zOTl6TTUuNzQ0IDEyLjY3aDkuODQ1YS40LjQgMCAwIDAgLjQwMS0uMzk5LjQuNCAwIDAgMC0uNDAxLS4zOTlINS43NDRhLjQuNCAwIDAgMC0uNDAyLjQuNC40IDAgMCAwIC40MDIuMzk4eiIvPjwvZz48L3N2Zz4="
+                                                                                alt=""><div
+                                                                                class="rdw-dropdown-carettoopen"></div></a></div><div
+                                                                        class="rdw-dropdown-wrapper
+                                                                        rdw-text-align-dropdown"
+                                                                        aria-label="rdw-dropdown"><a
+                                                                            class="rdw-dropdown-selectedtext"
+                                                                            title="Text
+                                                                            Align"><img
+                                                                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNOC40OTMgMTQuODg3SC4zMjZhLjMyNi4zMjYgMCAwIDEgMC0uNjUyaDguMTY3YS4zMjYuMzI2IDAgMCAxIDAgLjY1MnpNMTQuNjE4IDEwLjE2MkguMzI2YS4zMjYuMzI2IDAgMCAxIDAtLjY1M2gxNC4yOTJhLjMyNi4zMjYgMCAwIDEgMCAuNjUzek04LjQ5MyA1LjQzNUguMzI2YS4zMjYuMzI2IDAgMCAxIDAtLjY1Mmg4LjE2N2EuMzI2LjMyNiAwIDAgMSAwIC42NTJ6TTE0LjYxOC43MDlILjMyNmEuMzI2LjMyNiAwIDAgMSAwLS42NTJoMTQuMjkyYS4zMjYuMzI2IDAgMCAxIDAgLjY1MnoiLz48L2c+PC9zdmc+"
+                                                                                alt=""><div
+                                                                                class="rdw-dropdown-carettoopen"></div></a></div><div
+                                                                        class="rdw-colorpicker-wrapper"
+                                                                        aria-haspopup="true"
+                                                                        aria-label="rdw-color-picker"
+                                                                        title="Color
+                                                                        Picker"><div
+                                                                            class="rdw-option-wrapper"><img
+                                                                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTQuNDA2LjU4NWExLjk5OCAxLjk5OCAwIDAgMC0yLjgyNSAwbC0uNTQuNTRhLjc0MS43NDEgMCAxIDAtMS4wNDggMS4wNDhsLjE3NS4xNzUtNS44MjYgNS44MjUtMi4wMjIgMi4wMjNhLjkxLjkxIDAgMCAwLS4yNjYuNjAybC0uMDA1LjEwOHYuMDAybC0uMDgxIDEuODI5YS4zMDIuMzAyIDAgMCAwIC4zMDIuMzE2aC4wMTNsLjk3LS4wNDQuNTkyLS4wMjYuMjY4LS4wMTJjLjI5Ny0uMDEzLjU3OS0uMTM3Ljc5LS4zNDdsNy43Ny03Ljc3LjE0Ni4xNDRhLjc0Ljc0IDAgMCAwIDEuMDQ4IDBjLjI5LS4yOS4yOS0uNzU5IDAtMS4wNDhsLjU0LS41NGMuNzgtLjc4Ljc4LTIuMDQ0IDAtMi44MjV6TTguNzk1IDcuMzMzbC0yLjczLjUxNSA0LjQ1Mi00LjQ1MiAxLjEwOCAxLjEwNy0yLjgzIDIuODN6TTIuMDggMTMuNjczYy0xLjE0OCAwLTIuMDguMjk1LTIuMDguNjYgMCAuMzYzLjkzMi42NTggMi4wOC42NTggMS4xNSAwIDIuMDgtLjI5NCAyLjA4LS42NTkgMC0uMzY0LS45My0uNjU5LTIuMDgtLjY1OXoiLz48L2c+PC9zdmc+"
+                                                                                alt=""></div></div><div
+                                                                        class="rdw-link-wrapper"
+                                                                        aria-haspopup="true"
+                                                                        aria-label="rdw-link-control"><div
+                                                                            class="rdw-dropdown-wrapper
+                                                                            rdw-link-dropdown"
+                                                                            aria-label="rdw-dropdown"><a
+                                                                                class="rdw-dropdown-selectedtext"><img
+                                                                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjk2Ny45NUEzLjIyNiAzLjIyNiAwIDAgMCAxMS42Ny4wMDJjLS44NyAwLTEuNjg2LjMzNy0yLjI5Ny45NDhMNy4xMDUgMy4yMThBMy4yNDcgMy4yNDcgMCAwIDAgNi4yNCA2LjI0YTMuMjI1IDMuMjI1IDAgMCAwLTMuMDIyLjg2NUwuOTUgOS4zNzNhMy4yNTMgMy4yNTMgMCAwIDAgMCA0LjU5NCAzLjIyNiAzLjIyNiAwIDAgMCAyLjI5Ny45NDhjLjg3IDAgMS42ODYtLjMzNiAyLjI5OC0uOTQ4TDcuODEyIDExLjdhMy4yNDcgMy4yNDcgMCAwIDAgLjg2NS0zLjAyMyAzLjIyNSAzLjIyNSAwIDAgMCAzLjAyMi0uODY1bDIuMjY4LTIuMjY3YTMuMjUyIDMuMjUyIDAgMCAwIDAtNC41OTV6TTcuMTA1IDEwLjk5M0w0LjgzNyAxMy4yNmEyLjIzMyAyLjIzMyAwIDAgMS0xLjU5LjY1NSAyLjIzMyAyLjIzMyAwIDAgMS0xLjU5LS42NTUgMi4yNTIgMi4yNTIgMCAwIDEgMC0zLjE4bDIuMjY4LTIuMjY4YTIuMjMyIDIuMjMyIDAgMCAxIDEuNTktLjY1NWMuNDMgMCAuODQxLjEyIDEuMTk1LjM0M0w0Ljc3MiA5LjQzOGEuNS41IDAgMSAwIC43MDcuNzA3bDEuOTM5LTEuOTM4Yy41NDUuODY4LjQ0MiAyLjAzLS4zMTMgMi43ODV6bTYuMTU1LTYuMTU1bC0yLjI2OCAyLjI2N2EyLjIzMyAyLjIzMyAwIDAgMS0xLjU5LjY1NWMtLjQzMSAwLS44NDEtLjEyLTEuMTk1LS4zNDNsMS45MzgtMS45MzhhLjUuNSAwIDEgMC0uNzA3LS43MDdMNy40OTkgNi43MWEyLjI1MiAyLjI1MiAwIDAgMSAuMzEzLTIuNzg1bDIuMjY3LTIuMjY4YTIuMjMzIDIuMjMzIDAgMCAxIDEuNTktLjY1NSAyLjIzMyAyLjIzMyAwIDAgMSAyLjI0NiAyLjI0NWMwIC42MDMtLjIzMiAxLjE2OC0uNjU1IDEuNTl6IiBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="
+                                                                                    alt=""><div
+                                                                                    class="rdw-dropdown-carettoopen"></div></a></div></div><div
+                                                                        class="rdw-embedded-wrapper"
+                                                                        aria-haspopup="true"
+                                                                        aria-label="rdw-embedded-control"><div
+                                                                            class="rdw-option-wrapper"
+                                                                            title="Embedded"><img
+                                                                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzA4IDYuNjE1YS40MzYuNDM2IDAgMCAwLS41NDMuMjkxbC0xLjgzIDYuMDQ1YS40MzYuNDM2IDAgMCAwIC44MzMuMjUyTDcgNy4xNmEuNDM2LjQzNiAwIDAgMC0uMjktLjU0NHpNOC45MzEgNi42MTVhLjQzNi40MzYgMCAwIDAtLjU0My4yOTFsLTEuODMgNi4wNDVhLjQzNi40MzYgMCAwIDAgLjgzNC4yNTJsMS44My02LjA0NGEuNDM2LjQzNiAwIDAgMC0uMjktLjU0NHoiLz48cGF0aCBkPSJNMTYuNTY0IDBILjQzNkEuNDM2LjQzNiAwIDAgMCAwIC40MzZ2MTYuMTI4YzAgLjI0LjE5NS40MzYuNDM2LjQzNmgxNi4xMjhjLjI0IDAgLjQzNi0uMTk1LjQzNi0uNDM2Vi40MzZBLjQzNi40MzYgMCAwIDAgMTYuNTY0IDB6TTMuNDg3Ljg3MmgxMC4wMjZ2MS43NDNIMy40ODdWLjg3MnptLTIuNjE1IDBoMS43NDN2MS43NDNILjg3MlYuODcyem0xNS4yNTYgMTUuMjU2SC44NzJWMy40ODhoMTUuMjU2djEyLjY0em0wLTEzLjUxM2gtMS43NDNWLjg3MmgxLjc0M3YxLjc0M3oiLz48Y2lyY2xlIGN4PSI5My44NjciIGN5PSIyNDUuMDY0IiByPSIxMy4xMjgiIHRyYW5zZm9ybT0ibWF0cml4KC4wMzMyIDAgMCAuMDMzMiAwIDApIi8+PGNpcmNsZSBjeD0iOTMuODY3IiBjeT0iMzYwLjU5MiIgcj0iMTMuMTI4IiB0cmFuc2Zvcm09Im1hdHJpeCguMDMzMiAwIDAgLjAzMzIgMCAwKSIvPjxwYXRoIGQ9Ik0xNC4yNTQgMTIuNjQxSDEwLjJhLjQzNi40MzYgMCAwIDAgMCAuODcyaDQuMDU0YS40MzYuNDM2IDAgMCAwIDAtLjg3MnoiLz48L3N2Zz4="
+                                                                                alt=""></div></div><div
+                                                                        class="rdw-image-wrapper"
+                                                                        aria-haspopup="true"
+                                                                        aria-label="rdw-image-control"><div
+                                                                            class="rdw-option-wrapper"
+                                                                            title="Image"><img
+                                                                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTQuNzQxIDBILjI2Qy4xMTYgMCAwIC4xMzYgMCAuMzA0djEzLjM5MmMwIC4xNjguMTE2LjMwNC4yNTkuMzA0SDE0Ljc0Yy4xNDMgMCAuMjU5LS4xMzYuMjU5LS4zMDRWLjMwNEMxNSAuMTM2IDE0Ljg4NCAwIDE0Ljc0MSAwem0tLjI1OCAxMy4zOTFILjUxN1YuNjFoMTMuOTY2VjEzLjM5eiIvPjxwYXRoIGQ9Ik00LjEzOCA2LjczOGMuNzk0IDAgMS40NC0uNzYgMS40NC0xLjY5NXMtLjY0Ni0xLjY5NS0xLjQ0LTEuNjk1Yy0uNzk0IDAtMS40NC43Ni0xLjQ0IDEuNjk1IDAgLjkzNC42NDYgMS42OTUgMS40NCAxLjY5NXptMC0yLjc4MWMuNTA5IDAgLjkyMy40ODcuOTIzIDEuMDg2IDAgLjU5OC0uNDE0IDEuMDg2LS45MjMgMS4wODYtLjUwOSAwLS45MjMtLjQ4Ny0uOTIzLTEuMDg2IDAtLjU5OS40MTQtMS4wODYuOTIzLTEuMDg2ek0xLjgxIDEyLjE3NGMuMDYgMCAuMTIyLS4wMjUuMTcxLS4wNzZMNi4yIDcuNzI4bDIuNjY0IDMuMTM0YS4yMzIuMjMyIDAgMCAwIC4zNjYgMCAuMzQzLjM0MyAwIDAgMCAwLS40M0w3Ljk4NyA4Ljk2OWwyLjM3NC0zLjA2IDIuOTEyIDMuMTQyYy4xMDYuMTEzLjI3LjEwNS4zNjYtLjAyYS4zNDMuMzQzIDAgMCAwLS4wMTYtLjQzbC0zLjEwNC0zLjM0N2EuMjQ0LjI0NCAwIDAgMC0uMTg2LS4wOC4yNDUuMjQ1IDAgMCAwLS4xOC4xTDcuNjIyIDguNTM3IDYuMzk0IDcuMDk0YS4yMzIuMjMyIDAgMCAwLS4zNTQtLjAxM2wtNC40IDQuNTZhLjM0My4zNDMgMCAwIDAtLjAyNC40My4yNDMuMjQzIDAgMCAwIC4xOTQuMTAzeiIvPjwvZz48L3N2Zz4="
+                                                                                alt=""></div></div></div><div
+                                                                    class="demo-editor
+                                                                    rdw-editor-main"><div
+                                                                        class="DraftEditor-root"><div
+                                                                            class="DraftEditor-editorContainer"><div
+                                                                                aria-label="rdw-editor"
+                                                                                class="notranslate
+                                                                                public-DraftEditor-content"
+                                                                                contenteditable="true"
+                                                                                role="textbox"
+                                                                                spellcheck="false"
+                                                                                style="outline:
+                                                                                none;
+                                                                                user-select:
+                                                                                text;
+                                                                                white-space:
+                                                                                pre-wrap;
+                                                                                overflow-wrap:
+                                                                                break-word;"><div
+                                                                                    data-contents="true"><div
+                                                                                        class=""
+                                                                                        data-block="true"
+                                                                                        data-editor="86pp3"
+                                                                                        data-offset-key="4gkj2-0-0"><div
+                                                                                            data-offset-key="4gkj2-0-0"
+                                                                                            class="public-DraftStyleDefault-block
+                                                                                            public-DraftStyleDefault-ltr"><span
+                                                                                                data-offset-key="4gkj2-0-0"><br
+                                                                                                    data-text="true"></span></div></div></div></div></div></div></div></div></div></div></div> -->
+                                                        
+                                                        <div class="form-group row" style="">
+                                                            <div class="col-sm-9 layout-box">
+                                                                <textarea style="width:100%;max-width:100%" class="form-control" rows="10" disabled="..."></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">แท็กความสนใจ</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" name="title" value="" placeholder="โปรดใส่แท็กความสนใจ" class="form-control">
+                                                    </div>
+                                                </div>
+                                                    <p
+                                                        class="card-description">ข้อมูลที่คุณต้องการจัดเก็บ</p><div
+                                                        class="form-group row"><label
+                                                            class="col-sm-3
+                                                            col-form-label">รายการ</label><div
+                                                            class="col-sm-4"><div
+                                                                class="form-check
+                                                                form-check-primary"><label
+                                                                    class="form-check-label"><input
+                                                                        type="checkbox"
+                                                                        name="opt_fullname"
+                                                                        value="false"
+                                                                        class="form-check-input">ชื่อ-นามสกุล
+                                                                    <i
+                                                                        class="input-helper"></i><i
+                                                                        class="input-helper"></i></label></div><div
+                                                                class="form-check
+                                                                form-check-primary"><label
+                                                                    class="form-check-label"><input
+                                                                        type="checkbox"
+                                                                        name="opt_address"
+                                                                        value="false"
+                                                                        class="form-check-input">ที่อยู่
+                                                                    <i
+                                                                        class="input-helper"></i><i
+                                                                        class="input-helper"></i></label></div><div
+                                                                class="form-check
+                                                                form-check-primary"><label
+                                                                    class="form-check-label"><input
+                                                                        type="checkbox"
+                                                                        name="opt_citizen_id"
+                                                                        value="false"
+                                                                        class="form-check-input">เพศ
+                                                                    <i
+                                                                        class="input-helper"></i><i
+                                                                        class="input-helper"></i></label></div><div
+                                                                class="form-check
+                                                                form-check-primary"><label
+                                                                    class="form-check-label"><input
+                                                                        type="checkbox"
+                                                                        name="opt_bank"
+                                                                        value="false"
+                                                                        class="form-check-input">วัน/เดือน/ปีเกิด
+                                                                    <i
+                                                                        class="input-helper"></i><i
+                                                                        class="input-helper"></i></label></div>
+                                                            <div
+                                                                class="form-check
+                                                                form-check-primary"><label
+                                                                    class="form-check-label"><input
+                                                                        type="checkbox"
+                                                                        name="opt_bank_name"
+                                                                        value="false"
+                                                                        class="form-check-input">เบอร์
+                                                                    <i
+                                                                        class="input-helper"></i><i
+                                                                        class="input-helper"></i></label></div>
+                                                            <div
+                                                                class="form-check
+                                                                form-check-primary"><label
+                                                                    class="form-check-label"><input
+                                                                        type="checkbox"
+                                                                        name="opt_bank_name"
+                                                                        value="false"
+                                                                        class="form-check-input">Facebook
+                                                                    <i
+                                                                        class="input-helper"></i><i
+                                                                        class="input-helper"></i></label></div>
+                                                            <div
+                                                                class="form-check
+                                                                form-check-primary"><label
+                                                                    class="form-check-label"><input
+                                                                        type="checkbox"
+                                                                        name="opt_bank_name"
+                                                                        value="false"
+                                                                        class="form-check-input">Line
+                                                                    <i
+                                                                        class="input-helper"></i><i
+                                                                        class="input-helper"></i></label></div>
+                                                            <div
+                                                                class="form-check
+                                                                form-check-primary"><label
+                                                                    class="form-check-label"><input
+                                                                        type="checkbox"
+                                                                        name="opt_bank_name"
+                                                                        value="false"
+                                                                        class="form-check-input">ยอดการซื้อ
+                                                                    <i
+                                                                        class="input-helper"></i><i
+                                                                        class="input-helper"></i></label></div>
+                                                        </div></div><p
+                                                        class="card-description">เผยแพร่</p><div
+                                                        class="form-group row"><label
+                                                            class="col-sm-3
+                                                            col-form-label">เผยแพร่</label><div
+                                                            class="col-sm-4"><div
+                                                                class="form-check
+                                                                form-check-info"><label
+                                                                    class="form-check-label"><input
+                                                                        type="checkbox"
+                                                                        name="activate"
+                                                                        value="false"
+                                                                        class="form-check-input"><i
+                                                                        class="input-helper"></i></label></div></div></div><button
+                                                        type="submit" class="btn
+                                                        btn-primary mr-2">บันทึก</button><button
+                                                        type="button" class="btn
+                                                        btn-light">ยกเลิก</button></div></form></div></div></div>
+                                <!-- page-body-wrapper ends -->
+                                <footer class="footer">
+                                    <div class="d-sm-flex justify-content-center
+                                        justify-content-sm-between">
+                                        <span class="text-muted text-center
+                                            text-sm-left
+                                            d-block d-sm-inline-block">Copyright
+                                            © 2021.
+                                            Premium <a
+                                                href="https://www.bootstrapdash.com/"
+                                                target="_blank">Bootstrap admin
+                                                template</a>
+                                            from BootstrapDash. All rights
+                                            reserved.</span>
+
+                                    </div>
+                                </footer>
+                            </div>
+                            <!-- container-scroller -->
+                            <!-- plugins:js -->
+                            <script
+                                src="../../vendors/js/vendor.bundle.base.js"></script>
+                            <!-- endinject -->
+                            <!-- Plugin js for this page -->
+                            <!-- End plugin js for this page -->
+                            <!-- inject:js -->
+                            <script src="../../js/off-canvas.js"></script>
+                            <script src="../../js/hoverable-collapse.js"></script>
+                            <script src="../../js/template.js"></script>
+                            <script src="../../js/settings.js"></script>
+                            <script src="../../js/todolist.js"></script>
+                            <!-- endinject -->
+                            <!-- Custom js for this page-->
+                            <!-- End custom js for this page-->
+                        </body>
+
+                    </html>
