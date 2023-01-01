@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <head>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta name="x-apple-disable-message-reformatting">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="telephone=no" name="format-detection">
+        <title></title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sarabun&amp;display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <!-- Icons CSS -->
+        <link rel="stylesheet" href="css/feather.css">
+    </head>
+    <style>
+        body{
+            font-family: 'Sarabun', sans-serif;
+        }
+    .box-article {
+    margin: 25px 0;
+}
+.title-form {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: bold;
+    margin: 10px 0 10px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+.title-meet{
+    display: block;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: bold;
+    margin: 15px 0 10px;
+    color: #FFFFFF;
+    font-family: 'Prompt', sans-serif;
+}
+.wrapper-box-meet{
+    font-family: 'Prompt', sans-serif;
+}
+.box-article p {
+    font-size: 18px;
+    line-height: 2;
+    /* margin: 0 150px; */
+    color: #000;
+}
+.box-all-imgcover{
+    max-height: 600px;
+    overflow: hidden;
+}
+.box-img{
+    position: relative;
+  width: 100%;
+  /* padding-top: 56.25%; */
+}
+/* .box-img a {
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+} */
+.box-img a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box-bg-2 {
+    background-color: #292571;
+    margin-top: 50px;
+    color: #fff;
+    padding: 50px;
+}
+.box-bg-2 h3 {
+    color: #fff;
+    margin-top: 50px;
+}
+.box-detail-email h2, .box-bg-2 h3 {
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #fff;
+    text-align: center;
+}
+.avatar-upload {
+    position: relative;
+    max-width: 150px;
+    margin: 50px auto 25px;
+}
+.avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+.avatar-edit input {
+    display: none;
+}
+.avatar-edit label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 12%);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+.avatar-edit label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+.avatar-preview {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 100%;
+    border: transparent;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 10%);
+}
+.avatar-preview #imagePreview {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.control-btn {
+    margin: 0 0 25px;
+    position: relative;
+    display: block;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.btn-more, .btn-share-coupon {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    margin: 25px 10px;
+    font-size: 22px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+}
+.btn-more, .btn-share-coupon {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    margin: 25px 10px 0;
+    font-size: 22px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+}
+.btn-join{
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    margin: 25px 10px 0;
+    font-size: 22px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+}
+.box-card-meet,.box-card-course{
+    max-width: 50%;
+    margin: 0 auto;
+
+}
+.box-img-meet,.box-img-course{
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+.box-img-meet{
+    border-radius: 10px;
+}
+.box-img-meet a{
+   
+}
+.box-img-meet a img,
+.box-img-course a img{
+    width: 100%;
+    height: 100%;
+}
+.box-date ul{
+    display: block;
+    padding: 0 0 0 0;
+}
+.box-date ul li{
+    list-style-type: none;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.box-tag {
+    font-family: 'Prompt', sans-serif;
+    margin: 25px 15px 10px;
+}
+.box-tag a {
+    background: #292571;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    padding: 3px 10px;
+    text-shadow: none;
+    margin: 0px 0px 5px;
+}
+.form-template .container{
+ padding: 0 150px;
+}
+.box-article img{
+    display: block;
+    max-width: 60%;
+    margin: 15px auto;
+    text-align: center;
+}
+.wrapper-box-meet,.wrapper-box-course{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.layout-box-meet,.layout-box-course{
+    margin: 50px;
+}
+.box-card-meet {
+    max-width: 55%;
+    background-color: #292571;
+    border-radius: 10px;
+}
+.wrapper-box-course{
+    background-color: #e1e1e1;
+}
+.wrapper-box-meet h1{
+    color: #fff;
+}
+
+
+.Clear{
+    margin-right: 10px;
+}
+.box-article iframe{
+    display: block;
+    max-width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.img-coverform{
+    max-width: 100% !important;
+    margin: 0 auto !important;
+}
+.btn-join {
+    color: #292571;
+    border: 2px solid #292571;
+    background-color: #fff;
+    font-family: 'Prompt', sans-serif;
+    width: 180px;
+    height: 55px;
+    font-size: 22px;
+    border-radius: 15px;
+}
+.box-date{
+    padding: 25px 100px 0;
+}
+.title-course{
+    display: block;
+    color: #292571;
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 33.5px;
+}
+.tt-detail-course{
+    font-size: 18px;
+    font-family: 'Prompt', sans-serif;
+    display: block;
+    text-align: center;
+}
+.box-title-all{
+    display: block;
+    margin: 25px;
+}
+.box-detail-test{
+    text-align: center;
+}
+.box-mg-test{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.user-test{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.box-mm-training,
+.box-testimonial{
+    display: block;
+    position: relative;
+    margin: 50px 0;
+}
+.box-detail-test{
+    display: block;
+    margin: 25px 0 ;
+}
+.box-detail-test label{
+    margin: 15px 0;
+}
+@media screen and (max-width: 767px) {
+    .form-template .container {
+    padding: 0 15px;
+}
+.title-course {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.box-mm-training, .box-testimonial {
+    margin: 25px 0 50px;
+}
+.box-detail-pf{
+    margin: 15px 0;
+
+}
+}
+
+
+</style>
+    <body>
+        <article class="form-template">
+            <div class="wrapper-cover">
+                <div class="box-all-imgcover">
+                    <div class="box-img">
+                        <a href="">
+                            <img
+                                src="assets/images/99.png"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="box-course-all">
+                        <div class="box-title-all">
+                            <h1 class="title-course">เรียนรู้ทักษะเพิ่มความสัมพันธ์ระหว่างคุณและลูกค้า</h1>
+                            <label class="tt-detail-course">หลักสูตรเหล่านี้จะนำพาความสำเร็จมาสู่คุณ
+                                และ แบรนด์ของคุณ</label>
+                        </div>
+                        <img
+                            src="https://www.2ndcashstory.co/images/cover_weme.jpg"
+                            alt="" class="img-coverform">
+                        <div class="control-btn">
+                            <button class="btn
+                                btn-join" data-toggle="modal"
+                                data-target="#myModal">เข้าร่วม</button>
+                        </div>
+                        <div class="box-mm-training">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img
+                                        src="https://www.2ndcashstory.co/images/IMG_2967.jpg"
+                                        alt="" class="user-test">
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="box-detail-pf">
+                                        <h2>Facilitation for Modern Meeting สร้างการมีส่วนร่วมในที่ประชุม สำหรับองค์กรยุคใหม่</h2>
+                                        
+                                        <p>Facilitation for Modern Meeting สร้างการมีส่วนร่วมในที่ประชุม สำหรับองค์กรยุคใหม่ เป็นหลักสูตรคุณภาพ เนื้อหากระชับ ได้ใจความ เพื่อการนำไปใช้ต่อยอดได้ทันที เน้นหลักการที่เป็นรูปธรรม อธิบายอย่างเห็นภาพ เพื่อให้คุณที่แม้ไม่เคยมีประสบการณ์ในการเป็นนักกระบวนกร ก็สามารถสร้างการมีส่วนร่วม เป็นผู้นำ ลดความขัดแย้ง และช่วยทำให้การตัดสินใจร่วมกันของทีมเป็นเรื่องที่ได้อย่างง่ายดาย</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-testimonial">
+                            <h1 style="text-align: center;">Here's What They Are Saying</h1>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="box-detail-test">
+                                        <p>Pierluigi’s UI/UX advice and
+                                            consultation was very useful for
+                                            improving and organising my design
+                                            workflow and he demonstrated great
+                                            knowledge on both UI/UX Design as
+                                            well as Personal Branding and
+                                            Marketing. I highly recommend him!</p>
+                                        <div class="box-mg-test">
+                                            <img
+                                                src="https://images.squarespace-cdn.com/content/v1/5a79b97a1f318db5be607f92/1601740314280-4742PYSZBZ4RTRXV9FEU/leo.png?format=300w"
+                                                alt="" class="user-test">
+                                        </div>
+                                        <label for="">SHAHIN SROWAR, SENIOR UI/UX DESIGNER</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="box-detail-test">
+                                        <p>Pierluigi’s UI/UX advice and
+                                            consultation was very useful for
+                                            improving and organising my design
+                                            workflow and he demonstrated great
+                                            knowledge on both UI/UX Design as
+                                            well as Personal Branding and
+                                            Marketing. I highly recommend him!</p>
+                                        <div class="box-mg-test">
+                                            <img
+                                                src="https://images.squarespace-cdn.com/content/v1/5a79b97a1f318db5be607f92/1601740314280-4742PYSZBZ4RTRXV9FEU/leo.png?format=300w"
+                                                alt="" class="user-test">
+                                        </div>
+                                        <label for="">SHAHIN SROWAR, SENIOR UI/UX DESIGNER</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="box-detail-test">
+                                        <p>Pierluigi’s UI/UX advice and
+                                            consultation was very useful for
+                                            improving and organising my design
+                                            workflow and he demonstrated great
+                                            knowledge on both UI/UX Design as
+                                            well as Personal Branding and
+                                            Marketing. I highly recommend him!</p>
+                                        <div class="box-mg-test">
+                                            <img
+                                                src="https://images.squarespace-cdn.com/content/v1/5a79b97a1f318db5be607f92/1601740314280-4742PYSZBZ4RTRXV9FEU/leo.png?format=300w"
+                                                alt="" class="user-test">
+                                        </div>
+                                        <label for="">SHAHIN SROWAR, SENIOR UI/UX DESIGNER</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-btn">
+                                <button class="btn
+                                    btn-join" data-toggle="modal"
+                                    data-target="#myModal">เข้าร่วม</button>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </article>
+    </body>
+    <script>
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+</script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</html>

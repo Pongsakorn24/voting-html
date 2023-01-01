@@ -1,2351 +1,748 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
 
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,
-      shrink-to-fit=no">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="telephone=no" name="format-detection">
-    <title></title>
-    <!--[if (mso 16)]>
-    <style type="text/css">
-    a {text-decoration: none;}
-    </style>
-    <![endif]-->
-    <!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]-->
-    <!--[if gte mso 9]>
-<xml>
-    <o:OfficeDocumentSettings>
-    <o:AllowPNG></o:AllowPNG>
-    <o:PixelsPerInch>96</o:PixelsPerInch>
-    </o:OfficeDocumentSettings>
-</xml>
-<![endif]-->
-</head>
-<style>
-    /* CONFIG STYLES Please do not delete and edit CSS styles below */
-/* IMPORTANT THIS STYLES MUST BE ON FINAL EMAIL */
-#outlook a {
-    padding: 0;
+    <head>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta name="x-apple-disable-message-reformatting">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="telephone=no" name="format-detection">
+        <title></title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sarabun&amp;display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <!-- Icons CSS -->
+        <link rel="stylesheet" href="css/feather.css">
+        <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        body{
+            font-family: 'Sarabun', sans-serif;
+        }
+    .box-article {
+    margin: 25px 0;
+}
+.title-form {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: bold;
+    margin: 10px 0 10px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
 }
 
-.es-button {
-    mso-style-priority: 100 !important;
-    text-decoration: none !important;
+.title-meet{
+    display: block;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: bold;
+    margin: 15px 0 10px;
+    color: #FFFFFF;
+    font-family: 'Prompt', sans-serif;
 }
-
-a[x-apple-data-detectors] {
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
+.wrapper-box-meet{
+    font-family: 'Prompt', sans-serif;
 }
-
-.es-desk-hidden {
-    display: none;
-    float: left;
+.box-article p {
+    font-size: 18px;
+    line-height: 2;
+    /* margin: 0 150px; */
+    color: #000;
+}
+.box-all-imgcover{
+    max-height: 600px;
     overflow: hidden;
-    width: 0;
-    max-height: 0;
-    line-height: 0;
-    mso-hide: all;
 }
-
-[data-ogsb] .es-button {
-    border-width: 0 !important;
-    padding: 10px 30px 10px 30px !important;
+.box-img{
+    position: relative;
+  width: 100%;
+  /* padding-top: 56.25%; */
 }
-
-[data-ogsb] .es-button.es-button-1621619122263 {
-    padding: 10px 30px !important;
+/* .box-img a {
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+} */
+.box-img a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-[data-ogsb] .es-button.es-button-1621619122282 {
-    padding: 5px 30px !important;
+.box-bg-2 {
+    background-color:rgba(64,87,109,0.07);
+    margin-top: 50px;
+    color: #fff;
+    padding: 50px;
 }
-
-[data-ogsb] .es-button.es-button-1669211045752 {
-    padding: 10px 30px !important;
-}
-
-/*
-END OF IMPORTANT
-*/
-body {
-    width: 100%;
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-
-table {
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
-    border-collapse: collapse;
-    border-spacing: 0px;
-}
-
-table td,
-body,
-.es-wrapper {
-    padding: 0;
-    Margin: 0;
-}
-
-.es-content,
-.es-header,
-.es-footer {
-    table-layout: fixed !important;
-    width: 100%;
-}
-
-img {
+.box-input-tt{
+    max-width: 75%;
+    margin: 0 auto;
+    background-color: #fff;
+    /* background-color: #292571; */
+    color: #292571;
     display: block;
-    border: 0;
-    outline: none;
-    text-decoration: none;
-    -ms-interpolation-mode: bicubic;
-}
+    padding: 50px 50px;
+    border-radius: 25px;
+    font-family: 'Prompt', sans-serif;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 10%);
 
-p,
-hr {
-    Margin: 0;
 }
+.box-input-tt h3{
+color: #292571 !important;
+font-family: 'Prompt', sans-serif;
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    Margin: 0;
-    line-height: 120%;
-    mso-line-height-rule: exactly;
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
+
 }
-
-p,
-ul li,
-ol li,
-a {
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    mso-line-height-rule: exactly;
-}
-
-.es-left {
-    float: left;
-}
-
-.es-right {
-    float: right;
-}
-
-.es-p5 {
-    padding: 5px;
-}
-
-.es-p5t {
-    padding-top: 5px;
-}
-
-.es-p5b {
-    padding-bottom: 5px;
-}
-
-.es-p5l {
-    padding-left: 5px;
-}
-
-.es-p5r {
-    padding-right: 5px;
-}
-
-.es-p10 {
-    padding: 10px;
-}
-
-.es-p10t {
-    padding-top: 10px;
-}
-
-.es-p10b {
-    padding-bottom: 10px;
-}
-
-.es-p10l {
-    padding-left: 10px;
-}
-
-.es-p10r {
-    padding-right: 10px;
-}
-
-.es-p15 {
-    padding: 15px;
-}
-
-.es-p15t {
-    padding-top: 15px;
-}
-
-.es-p15b {
-    padding-bottom: 15px;
-}
-
-.es-p15l {
-    padding-left: 15px;
-}
-
-.es-p15r {
-    padding-right: 15px;
-}
-
-.es-p20 {
-    padding: 20px;
-}
-
-.es-p20t {
-    padding-top: 20px;
-}
-
-.es-p20b {
-    padding-bottom: 20px;
-}
-
-.es-p20l {
-    padding-left: 20px;
-}
-
-.es-p20r {
-    padding-right: 20px;
-}
-
-.es-p25 {
-    padding: 25px;
-}
-
-.es-p25t {
-    padding-top: 25px;
-}
-
-.es-p25b {
-    padding-bottom: 25px;
-}
-
-.es-p25l {
-    padding-left: 25px;
-}
-
-.es-p25r {
-    padding-right: 25px;
-}
-
-.es-p30 {
-    padding: 30px;
-}
-
-.es-p30t {
-    padding-top: 30px;
-}
-
-.es-p30b {
-    padding-bottom: 30px;
-}
-
-.es-p30l {
-    padding-left: 30px;
-}
-
-.es-p30r {
-    padding-right: 30px;
-}
-
-.es-p35 {
-    padding: 35px;
-}
-
-.es-p35t {
-    padding-top: 35px;
-}
-
-.es-p35b {
-    padding-bottom: 35px;
-}
-
-.es-p35l {
-    padding-left: 35px;
-}
-
-.es-p35r {
-    padding-right: 35px;
-}
-
-.es-p40 {
-    padding: 40px;
-}
-
-.es-p40t {
-    padding-top: 40px;
-}
-
-.es-p40b {
-    padding-bottom: 40px;
-}
-
-.es-p40l {
-    padding-left: 40px;
-}
-
-.es-p40r {
-    padding-right: 40px;
-}
-
-.es-menu td {
-    border: 0;
-}
-
-.es-menu td a img {
-    display: inline-block !important;
-    vertical-align: middle;
-}
-
-/*
-END CONFIG STYLES
-*/
-s {
-    text-decoration: line-through;
-}
-
-p,
-ul li,
-ol li {
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-    line-height: 150%;
-}
-
-ul li,
-ol li {
-    Margin-bottom: 15px;
-    margin-left: 0;
-}
-
-a {
-    text-decoration: underline;
-}
-
-.es-menu td a {
-    text-decoration: none;
+.box-input-tt .form-control {
     display: block;
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-}
-
-.es-wrapper {
     width: 100%;
-    height: 100%;
-    background-image: ;
-    background-repeat: repeat;
-    background-position: center top;
-}
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292571;
+    background-color: rgba(64,87,109,0.07);
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 15px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: 'Prompt', sans-serif;
 
-.es-wrapper-color,
-.es-wrapper {
-    background-color: #fafafa;
 }
-
-.es-header {
-    background-color: transparent;
-    background-image: ;
-    background-repeat: repeat;
-    background-position: center top;
+.box-bg-2 h3 {
+    color: #fff;
+    margin-top: 50px;
 }
-
-.es-header-body {
-    background-color: transparent;
-}
-
-.es-header-body p,
-.es-header-body ul li,
-.es-header-body ol li {
-    color: #333333;
-    font-size: 14px;
-}
-
-.es-header-body a {
-    color: #666666;
-    font-size: 14px;
-}
-
-.es-content-body {
-    background-color: #ffffff;
-}
-
-.es-content-body p,
-.es-content-body ul li,
-.es-content-body ol li {
-    color: #333333;
-    font-size: 14px;
-}
-
-.es-content-body a {
-    color: #5c68e2;
-    font-size: 14px;
-}
-
-.es-footer {
-    background-color: transparent;
-    background-image: ;
-    background-repeat: repeat;
-    background-position: center top;
-}
-
-.es-footer-body {
-    background-color: #ffffff;
-}
-
-.es-footer-body p,
-.es-footer-body ul li,
-.es-footer-body ol li {
-    color: #333333;
-    font-size: 12px;
-}
-
-.es-footer-body a {
-    color: #333333;
-    font-size: 12px;
-}
-
-.es-infoblock,
-.es-infoblock p,
-.es-infoblock ul li,
-.es-infoblock ol li {
-    line-height: 120%;
-    font-size: 12px;
-    color: #cccccc;
-}
-
-.es-infoblock a {
-    font-size: 12px;
-    color: #cccccc;
-}
-
-h1 {
-    font-size: 46px;
-    font-style: normal;
+.box-detail-email h2, .box-bg-2 h3 {
+    font-size: 35px;
+    line-height: 2;
     font-weight: bold;
-    color: #333333;
-}
-
-h2 {
-    font-size: 26px;
-    font-style: normal;
-    font-weight: bold;
-    color: #333333;
-}
-
-h3 {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: bold;
-    color: #333333;
-}
-
-.es-header-body h1 a,
-.es-content-body h1 a,
-.es-footer-body h1 a {
-    font-size: 46px;
-}
-
-.es-header-body h2 a,
-.es-content-body h2 a,
-.es-footer-body h2 a {
-    font-size: 26px;
-}
-
-.es-header-body h3 a,
-.es-content-body h3 a,
-.es-footer-body h3 a {
-    font-size: 20px;
-}
-
-a.es-button,
-button.es-button {
-    border-style: solid;
-    border-color: #5c68e2;
-    border-width: 10px 30px 10px 30px;
-    display: inline-block;
-    background: #5c68e2;
-    border-radius: 5px;
-    font-size: 20px;
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 120%;
-    color: #ffffff;
-    text-decoration: none;
-    width: auto;
+    margin: 0 0 10px;
+    color: #fff;
     text-align: center;
 }
-
-.es-button-border {
-    border-style: solid solid solid solid;
-    border-color: #2cb543 #2cb543 #2cb543 #2cb543;
-    background: #5c68e2;
-    border-width: 0px 0px 0px 0px;
-    display: inline-block;
-    border-radius: 5px;
-    width: auto;
+.avatar-upload {
+    position: relative;
+    max-width: 150px;
+    margin: 25px auto 25px;
 }
-
-.msohide {
-    mso-hide: all;
+.avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
 }
-
-.es-button img {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-/* RESPONSIVE STYLES Please do not delete and edit CSS styles below. If you don't need responsive layout, please delete this section. */
-@media only screen and (max-width: 600px) {
-
-    p,
-    ul li,
-    ol li,
-    a {
-        line-height: 150% !important;
-    }
-
-    h1,
-    h2,
-    h3,
-    h1 a,
-    h2 a,
-    h3 a {
-        line-height: 120% !important;
-    }
-
-    h1 {
-        font-size: 36px !important;
-        text-align: left;
-    }
-
-    h2 {
-        font-size: 26px !important;
-        text-align: left;
-    }
-
-    h3 {
-        font-size: 20px !important;
-        text-align: left;
-    }
-
-    .es-header-body h1 a,
-    .es-content-body h1 a,
-    .es-footer-body h1 a {
-        font-size: 36px !important;
-        text-align: left;
-    }
-
-    .es-header-body h2 a,
-    .es-content-body h2 a,
-    .es-footer-body h2 a {
-        font-size: 26px !important;
-        text-align: left;
-    }
-
-    .es-header-body h3 a,
-    .es-content-body h3 a,
-    .es-footer-body h3 a {
-        font-size: 20px !important;
-        text-align: left;
-    }
-
-    .es-menu td a {
-        font-size: 12px !important;
-    }
-
-    .es-header-body p,
-    .es-header-body ul li,
-    .es-header-body ol li,
-    .es-header-body a {
-        font-size: 14px !important;
-    }
-
-    .es-content-body p,
-    .es-content-body ul li,
-    .es-content-body ol li,
-    .es-content-body a {
-        font-size: 14px !important;
-    }
-
-    .es-footer-body p,
-    .es-footer-body ul li,
-    .es-footer-body ol li,
-    .es-footer-body a {
-        font-size: 14px !important;
-    }
-
-    .es-infoblock p,
-    .es-infoblock ul li,
-    .es-infoblock ol li,
-    .es-infoblock a {
-        font-size: 12px !important;
-    }
-
-    *[class="gmail-fix"] {
-        display: none !important;
-    }
-
-    .es-m-txt-c,
-    .es-m-txt-c h1,
-    .es-m-txt-c h2,
-    .es-m-txt-c h3 {
-        text-align: center !important;
-    }
-
-    .es-m-txt-r,
-    .es-m-txt-r h1,
-    .es-m-txt-r h2,
-    .es-m-txt-r h3 {
-        text-align: right !important;
-    }
-
-    .es-m-txt-l,
-    .es-m-txt-l h1,
-    .es-m-txt-l h2,
-    .es-m-txt-l h3 {
-        text-align: left !important;
-    }
-
-    .es-m-txt-r img,
-    .es-m-txt-c img,
-    .es-m-txt-l img {
-        display: inline !important;
-    }
-
-    .es-button-border {
-        display: inline-block !important;
-    }
-
-    a.es-button,
-    button.es-button {
-        font-size: 20px !important;
-        display: inline-block !important;
-    }
-
-    .es-adaptive table,
-    .es-left,
-    .es-right {
-        width: 100% !important;
-    }
-
-    .es-content table,
-    .es-header table,
-    .es-footer table,
-    .es-content,
-    .es-footer,
-    .es-header {
-        width: 100% !important;
-        max-width: 600px !important;
-    }
-
-    .es-adapt-td {
-        display: block !important;
-        width: 100% !important;
-    }
-
-    .adapt-img {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    .es-m-p0 {
-        padding: 0 !important;
-    }
-
-    .es-m-p0r {
-        padding-right: 0 !important;
-    }
-
-    .es-m-p0l {
-        padding-left: 0 !important;
-    }
-
-    .es-m-p0t {
-        padding-top: 0 !important;
-    }
-
-    .es-m-p0b {
-        padding-bottom: 0 !important;
-    }
-
-    .es-m-p20b {
-        padding-bottom: 20px !important;
-    }
-
-    .es-mobile-hidden,
-    .es-hidden {
-        display: none !important;
-    }
-
-    tr.es-desk-hidden,
-    td.es-desk-hidden,
-    table.es-desk-hidden {
-        width: auto !important;
-        overflow: visible !important;
-        float: none !important;
-        max-height: inherit !important;
-        line-height: inherit !important;
-    }
-
-    tr.es-desk-hidden {
-        display: table-row !important;
-    }
-
-    table.es-desk-hidden {
-        display: table !important;
-    }
-
-    td.es-desk-menu-hidden {
-        display: table-cell !important;
-    }
-
-    .es-menu td {
-        width: 1% !important;
-    }
-
-    table.es-table-not-adapt,
-    .esd-block-html table {
-        width: auto !important;
-    }
-
-    table.es-social {
-        display: inline-block !important;
-    }
-
-    table.es-social td {
-        display: inline-block !important;
-    }
-
-    .es-m-p5 {
-        padding: 5px !important;
-    }
-
-    .es-m-p5t {
-        padding-top: 5px !important;
-    }
-
-    .es-m-p5b {
-        padding-bottom: 5px !important;
-    }
-
-    .es-m-p5r {
-        padding-right: 5px !important;
-    }
-
-    .es-m-p5l {
-        padding-left: 5px !important;
-    }
-
-    .es-m-p10 {
-        padding: 10px !important;
-    }
-
-    .es-m-p10t {
-        padding-top: 10px !important;
-    }
-
-    .es-m-p10b {
-        padding-bottom: 10px !important;
-    }
-
-    .es-m-p10r {
-        padding-right: 10px !important;
-    }
-
-    .es-m-p10l {
-        padding-left: 10px !important;
-    }
-
-    .es-m-p15 {
-        padding: 15px !important;
-    }
-
-    .es-m-p15t {
-        padding-top: 15px !important;
-    }
-
-    .es-m-p15b {
-        padding-bottom: 15px !important;
-    }
-
-    .es-m-p15r {
-        padding-right: 15px !important;
-    }
-
-    .es-m-p15l {
-        padding-left: 15px !important;
-    }
-
-    .es-m-p20 {
-        padding: 20px !important;
-    }
-
-    .es-m-p20t {
-        padding-top: 20px !important;
-    }
-
-    .es-m-p20r {
-        padding-right: 20px !important;
-    }
-
-    .es-m-p20l {
-        padding-left: 20px !important;
-    }
-
-    .es-m-p25 {
-        padding: 25px !important;
-    }
-
-    .es-m-p25t {
-        padding-top: 25px !important;
-    }
-
-    .es-m-p25b {
-        padding-bottom: 25px !important;
-    }
-
-    .es-m-p25r {
-        padding-right: 25px !important;
-    }
-
-    .es-m-p25l {
-        padding-left: 25px !important;
-    }
-
-    .es-m-p30 {
-        padding: 30px !important;
-    }
-
-    .es-m-p30t {
-        padding-top: 30px !important;
-    }
-
-    .es-m-p30b {
-        padding-bottom: 30px !important;
-    }
-
-    .es-m-p30r {
-        padding-right: 30px !important;
-    }
-
-    .es-m-p30l {
-        padding-left: 30px !important;
-    }
-
-    .es-m-p35 {
-        padding: 35px !important;
-    }
-
-    .es-m-p35t {
-        padding-top: 35px !important;
-    }
-
-    .es-m-p35b {
-        padding-bottom: 35px !important;
-    }
-
-    .es-m-p35r {
-        padding-right: 35px !important;
-    }
-
-    .es-m-p35l {
-        padding-left: 35px !important;
-    }
-
-    .es-m-p40 {
-        padding: 40px !important;
-    }
-
-    .es-m-p40t {
-        padding-top: 40px !important;
-    }
-
-    .es-m-p40b {
-        padding-bottom: 40px !important;
-    }
-
-    .es-m-p40r {
-        padding-right: 40px !important;
-    }
-
-    .es-m-p40l {
-        padding-left: 40px !important;
-    }
-
-    .es-desk-hidden {
-        display: table-row !important;
-        width: auto !important;
-        overflow: visible !important;
-        max-height: inherit !important;
-    }
-
-    button.es-button {
-        width: 100%;
-    }
-
-    .h-auto {
-        height: auto !important;
-    }
-}
-
-/* END RESPONSIVE STYLES */
-html,
-body {
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-}
-
-input,
-textarea {
-    box-sizing: border-box;
-    resize: vertical;
-    -webkit-appearance: none;
-}
-</style>
-<style>
-    /* CONFIG STYLES Please do not delete and edit CSS styles below */
-/* IMPORTANT THIS STYLES MUST BE ON FINAL EMAIL */
-#outlook a {
-    padding: 0;
-}
-
-.es-button {
-    mso-style-priority: 100 !important;
-    text-decoration: none !important;
-}
-
-a[x-apple-data-detectors] {
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-}
-
-.es-desk-hidden {
+.avatar-edit input {
     display: none;
-    float: left;
-    overflow: hidden;
-    width: 0;
-    max-height: 0;
-    line-height: 0;
-    mso-hide: all;
 }
-
-[data-ogsb] .es-button {
-    border-width: 0 !important;
-    padding: 10px 30px 10px 30px !important;
+.avatar-edit label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 12%);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
 }
-
-[data-ogsb] .es-button.es-button-1621619122263 {
-    padding: 10px 30px !important;
+.avatar-edit label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
 }
-
-[data-ogsb] .es-button.es-button-1621619122282 {
-    padding: 5px 30px !important;
+.avatar-preview {
+    width: 125px;
+    height: 125px;
+    position: relative;
+    border-radius: 100%;
+    border: transparent;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 10%);
 }
-
-[data-ogsb] .es-button.es-button-1669211045752 {
-    padding: 10px 30px !important;
-}
-
-/*
-END OF IMPORTANT
-*/
-body {
-    width: 100%;
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-
-table {
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
-    border-collapse: collapse;
-    border-spacing: 0px;
-}
-
-table td,
-body,
-.es-wrapper {
-    padding: 0;
-    Margin: 0;
-}
-
-.es-content,
-.es-header,
-.es-footer {
-    table-layout: fixed !important;
-    width: 100%;
-}
-
-img {
-    display: block;
-    border: 0;
-    outline: none;
-    text-decoration: none;
-    -ms-interpolation-mode: bicubic;
-}
-
-p,
-hr {
-    Margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    Margin: 0;
-    line-height: 120%;
-    mso-line-height-rule: exactly;
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-}
-
-p,
-ul li,
-ol li,
-a {
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    mso-line-height-rule: exactly;
-}
-
-.es-left {
-    float: left;
-}
-
-.es-right {
-    float: right;
-}
-
-.es-p5 {
-    padding: 5px;
-}
-
-.es-p5t {
-    padding-top: 5px;
-}
-
-.es-p5b {
-    padding-bottom: 5px;
-}
-
-.es-p5l {
-    padding-left: 5px;
-}
-
-.es-p5r {
-    padding-right: 5px;
-}
-
-.es-p10 {
-    padding: 10px;
-}
-
-.es-p10t {
-    padding-top: 10px;
-}
-
-.es-p10b {
-    padding-bottom: 10px;
-}
-
-.es-p10l {
-    padding-left: 10px;
-}
-
-.es-p10r {
-    padding-right: 10px;
-}
-
-.es-p15 {
-    padding: 15px;
-}
-
-.es-p15t {
-    padding-top: 15px;
-}
-
-.es-p15b {
-    padding-bottom: 15px;
-}
-
-.es-p15l {
-    padding-left: 15px;
-}
-
-.es-p15r {
-    padding-right: 15px;
-}
-
-.es-p20 {
-    padding: 20px;
-}
-
-.es-p20t {
-    padding-top: 20px;
-}
-
-.es-p20b {
-    padding-bottom: 20px;
-}
-
-.es-p20l {
-    padding-left: 20px;
-}
-
-.es-p20r {
-    padding-right: 20px;
-}
-
-.es-p25 {
-    padding: 25px;
-}
-
-.es-p25t {
-    padding-top: 25px;
-}
-
-.es-p25b {
-    padding-bottom: 25px;
-}
-
-.es-p25l {
-    padding-left: 25px;
-}
-
-.es-p25r {
-    padding-right: 25px;
-}
-
-.es-p30 {
-    padding: 30px;
-}
-
-.es-p30t {
-    padding-top: 30px;
-}
-
-.es-p30b {
-    padding-bottom: 30px;
-}
-
-.es-p30l {
-    padding-left: 30px;
-}
-
-.es-p30r {
-    padding-right: 30px;
-}
-
-.es-p35 {
-    padding: 35px;
-}
-
-.es-p35t {
-    padding-top: 35px;
-}
-
-.es-p35b {
-    padding-bottom: 35px;
-}
-
-.es-p35l {
-    padding-left: 35px;
-}
-
-.es-p35r {
-    padding-right: 35px;
-}
-
-.es-p40 {
-    padding: 40px;
-}
-
-.es-p40t {
-    padding-top: 40px;
-}
-
-.es-p40b {
-    padding-bottom: 40px;
-}
-
-.es-p40l {
-    padding-left: 40px;
-}
-
-.es-p40r {
-    padding-right: 40px;
-}
-
-.es-menu td {
-    border: 0;
-}
-
-.es-menu td a img {
-    display: inline-block !important;
-    vertical-align: middle;
-}
-
-/*
-END CONFIG STYLES
-*/
-s {
-    text-decoration: line-through;
-}
-
-p,
-ul li,
-ol li {
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-    line-height: 150%;
-}
-
-ul li,
-ol li {
-    Margin-bottom: 15px;
-    margin-left: 0;
-}
-
-a {
-    text-decoration: underline;
-}
-
-.es-menu td a {
-    text-decoration: none;
-    display: block;
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-}
-
-.es-wrapper {
+.avatar-preview #imagePreview {
     width: 100%;
     height: 100%;
-    background-image: ;
-    background-repeat: repeat;
-    background-position: center top;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-.es-wrapper-color,
-.es-wrapper {
-    background-color: #fafafa;
+.form-group {
+    margin-bottom: 15px;
 }
-
-.es-header {
-    background-color: transparent;
-    background-image: ;
-    background-repeat: repeat;
-    background-position: center top;
-}
-
-.es-header-body {
-    background-color: transparent;
-}
-
-.es-header-body p,
-.es-header-body ul li,
-.es-header-body ol li {
-    color: #333333;
-    font-size: 14px;
-}
-
-.es-header-body a {
-    color: #666666;
-    font-size: 14px;
-}
-
-.es-content-body {
-    background-color: #ffffff;
-}
-
-.es-content-body p,
-.es-content-body ul li,
-.es-content-body ol li {
-    color: #333333;
-    font-size: 14px;
-}
-
-.es-content-body a {
-    color: #5c68e2;
-    font-size: 14px;
-}
-
-.es-footer {
-    background-color: transparent;
-    background-image: ;
-    background-repeat: repeat;
-    background-position: center top;
-}
-
-.es-footer-body {
-    background-color: #ffffff;
-}
-
-.es-footer-body p,
-.es-footer-body ul li,
-.es-footer-body ol li {
-    color: #333333;
-    font-size: 12px;
-}
-
-.es-footer-body a {
-    color: #333333;
-    font-size: 12px;
-}
-
-.es-infoblock,
-.es-infoblock p,
-.es-infoblock ul li,
-.es-infoblock ol li {
-    line-height: 120%;
-    font-size: 12px;
-    color: #cccccc;
-}
-
-.es-infoblock a {
-    font-size: 12px;
-    color: #cccccc;
-}
-
-h1 {
-    font-size: 46px;
-    font-style: normal;
-    font-weight: bold;
-    color: #333333;
-}
-
-h2 {
-    font-size: 26px;
-    font-style: normal;
-    font-weight: bold;
-    color: #333333;
-}
-
-h3 {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: bold;
-    color: #333333;
-}
-
-.es-header-body h1 a,
-.es-content-body h1 a,
-.es-footer-body h1 a {
-    font-size: 46px;
-}
-
-.es-header-body h2 a,
-.es-content-body h2 a,
-.es-footer-body h2 a {
-    font-size: 26px;
-}
-
-.es-header-body h3 a,
-.es-content-body h3 a,
-.es-footer-body h3 a {
-    font-size: 20px;
-}
-
-a.es-button,
-button.es-button {
-    border-style: solid;
-    border-color: #5c68e2;
-    border-width: 10px 30px 10px 30px;
-    display: inline-block;
-    background: #5c68e2;
-    border-radius: 5px;
-    font-size: 20px;
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 120%;
-    color: #ffffff;
-    text-decoration: none;
-    width: auto;
+.control-btn {
+    margin: 0 0 25px;
+    position: relative;
+    display: block;
+    padding-bottom: 25px;
     text-align: center;
 }
+.btn-more, .btn-share-coupon {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    margin: 25px 10px;
+    font-size: 22px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+}
+.btn-more, .btn-share-coupon {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    margin: 25px 10px 0;
+    font-size: 22px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+}
+.btn-join {
+    color: #292571 !important;
+    border: 2px solid #292571 !important;
+    background-color: #fff;
+    width: 180px;
+    height: 55px;
+    font-size: 22px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+.btn-join2 {
+    color: #fff !important;
+    border: 2px solid #292571 !important;
+    background-color: #292571;
+    width: 180px;
+    height: 55px;
+    font-size: 22px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+.box-card-meet,.box-card-course{
+    max-width: 50%;
+    margin: 0 auto;
 
-.es-button-border {
-    border-style: solid solid solid solid;
-    border-color: #2cb543 #2cb543 #2cb543 #2cb543;
-    background: #5c68e2;
-    border-width: 0px 0px 0px 0px;
+}
+.box-img-meet,.box-img-course{
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+.box-img-meet{
+    border-radius: 10px 10px 0 0;
+}
+.box-img-meet a{
+   
+}
+.box-img-meet a img,
+.box-img-course a img{
+    width: 100%;
+    height: 100%;
+}
+.box-date ul{
+    display: block;
+    padding: 0 0 0 0;
+}
+.box-date ul li{
+    list-style-type: none;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.box-tag {
+    font-family: 'Prompt', sans-serif;
+    margin: 25px 15px 10px;
+}
+.box-tag a {
+    background: #292571;
+    border: none;
+    border-radius: 10px;
     display: inline-block;
-    border-radius: 5px;
-    width: auto;
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    padding: 3px 10px;
+    text-shadow: none;
+    margin: 0px 0px 5px;
+}
+.form-template .container{
+ padding: 0 150px;
+}
+.box-article img{
+    display: block;
+    max-width: 60%;
+    margin: 15px auto;
+    text-align: center;
+}
+.wrapper-box-meet,.wrapper-box-course{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.layout-box-meet,.layout-box-course{
+    margin: 50px;
+}
+.box-card-meet {
+    max-width: 55%;
+    background-color: #292571;
+    border-radius: 10px;
+}
+.wrapper-box-course{
+    background-color: #e1e1e1;
+}
+.wrapper-box-meet h1{
+    color: #292571;
+}
+.box-date {
+    padding: 25px 100px 0;
 }
 
-.msohide {
-    mso-hide: all;
+
+.Clear{
+    margin-right: 10px;
+}
+.box-article iframe{
+    display: block;
+    max-width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.img-coverform{
+    max-width: 100% !important;
+    margin: 0 auto !important;
+}
+.btn-join {
+    color: #0d6efd;
+    border-color: #0d6efd;
+    background-color: #fff;
+    width: 180px;
+    height: 55px;
+    font-size: 22px;
+    border-radius: 15px;
+}
+.box-date{
+    padding: 25px 100px 0;
+}
+.checked {
+  color: orange;
+}
+.box-sale-img{
+    display: block;
+    width: 125px;
+    height: 125px;
+    margin: 25px auto 15px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.sale-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.es-button img {
-    display: inline-block;
-    vertical-align: middle;
+.box-input-tt .control-btn{
+    margin: 0;
+    padding: 0;
+}
+.wrapper-sale-tt{
+    font-family: 'Prompt', sans-serif;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Prompt', sans-serif;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 18px;
+    
+}
+.box-sale-tt{
+    max-width: 75%;
+    background-color: #292571;
+    color: #fff;
+    padding: 25px ;
+    border-radius: 25px;
+margin: 0 auto;
+}
+.box-kk{
+    margin: 15px 0 0;
+}
+.badge-dark{
+    margin: 15px 0;
+    width: 100px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+}
+@media screen and (max-width: 767px) {
+    .form-template .container {
+    padding: 0 15px ;
+}
+.box-article iframe {
+    max-width: 100%;
+    height: 200px;
+}
+.layout-box-meet, .layout-box-course {
+    margin: 15px;
+}
+.box-card-meet {
+    max-width: 100%;
+}
+.box-date {
+    padding: 15px 25px 0;
+}
+.box-date ul li {
+    font-size: 14px;
+}
+.box-bg-2 {
+    color: #fff;
+    padding: 15px;
+}
 }
 
-/* RESPONSIVE STYLES Please do not delete and edit CSS styles below. If you don't need responsive layout, please delete this section. */
-@media only screen and (max-width: 600px) {
-
-    p,
-    ul li,
-    ol li,
-    a {
-        line-height: 150% !important;
-    }
-
-    h1,
-    h2,
-    h3,
-    h1 a,
-    h2 a,
-    h3 a {
-        line-height: 120% !important;
-    }
-
-    h1 {
-        font-size: 36px !important;
-        text-align: left;
-    }
-
-    h2 {
-        font-size: 26px !important;
-        text-align: left;
-    }
-
-    h3 {
-        font-size: 20px !important;
-        text-align: left;
-    }
-
-    .es-header-body h1 a,
-    .es-content-body h1 a,
-    .es-footer-body h1 a {
-        font-size: 36px !important;
-        text-align: left;
-    }
-
-    .es-header-body h2 a,
-    .es-content-body h2 a,
-    .es-footer-body h2 a {
-        font-size: 26px !important;
-        text-align: left;
-    }
-
-    .es-header-body h3 a,
-    .es-content-body h3 a,
-    .es-footer-body h3 a {
-        font-size: 20px !important;
-        text-align: left;
-    }
-
-    .es-menu td a {
-        font-size: 12px !important;
-    }
-
-    .es-header-body p,
-    .es-header-body ul li,
-    .es-header-body ol li,
-    .es-header-body a {
-        font-size: 14px !important;
-    }
-
-    .es-content-body p,
-    .es-content-body ul li,
-    .es-content-body ol li,
-    .es-content-body a {
-        font-size: 14px !important;
-    }
-
-    .es-footer-body p,
-    .es-footer-body ul li,
-    .es-footer-body ol li,
-    .es-footer-body a {
-        font-size: 14px !important;
-    }
-
-    .es-infoblock p,
-    .es-infoblock ul li,
-    .es-infoblock ol li,
-    .es-infoblock a {
-        font-size: 12px !important;
-    }
-
-    *[class="gmail-fix"] {
-        display: none !important;
-    }
-
-    .es-m-txt-c,
-    .es-m-txt-c h1,
-    .es-m-txt-c h2,
-    .es-m-txt-c h3 {
-        text-align: center !important;
-    }
-
-    .es-m-txt-r,
-    .es-m-txt-r h1,
-    .es-m-txt-r h2,
-    .es-m-txt-r h3 {
-        text-align: right !important;
-    }
-
-    .es-m-txt-l,
-    .es-m-txt-l h1,
-    .es-m-txt-l h2,
-    .es-m-txt-l h3 {
-        text-align: left !important;
-    }
-
-    .es-m-txt-r img,
-    .es-m-txt-c img,
-    .es-m-txt-l img {
-        display: inline !important;
-    }
-
-    .es-button-border {
-        display: inline-block !important;
-    }
-
-    a.es-button,
-    button.es-button {
-        font-size: 20px !important;
-        display: inline-block !important;
-    }
-
-    .es-adaptive table,
-    .es-left,
-    .es-right {
-        width: 100% !important;
-    }
-
-    .es-content table,
-    .es-header table,
-    .es-footer table,
-    .es-content,
-    .es-footer,
-    .es-header {
-        width: 100% !important;
-        max-width: 600px !important;
-    }
-
-    .es-adapt-td {
-        display: block !important;
-        width: 100% !important;
-    }
-
-    .adapt-img {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    .es-m-p0 {
-        padding: 0 !important;
-    }
-
-    .es-m-p0r {
-        padding-right: 0 !important;
-    }
-
-    .es-m-p0l {
-        padding-left: 0 !important;
-    }
-
-    .es-m-p0t {
-        padding-top: 0 !important;
-    }
-
-    .es-m-p0b {
-        padding-bottom: 0 !important;
-    }
-
-    .es-m-p20b {
-        padding-bottom: 20px !important;
-    }
-
-    .es-mobile-hidden,
-    .es-hidden {
-        display: none !important;
-    }
-
-    tr.es-desk-hidden,
-    td.es-desk-hidden,
-    table.es-desk-hidden {
-        width: auto !important;
-        overflow: visible !important;
-        float: none !important;
-        max-height: inherit !important;
-        line-height: inherit !important;
-    }
-
-    tr.es-desk-hidden {
-        display: table-row !important;
-    }
-
-    table.es-desk-hidden {
-        display: table !important;
-    }
-
-    td.es-desk-menu-hidden {
-        display: table-cell !important;
-    }
-
-    .es-menu td {
-        width: 1% !important;
-    }
-
-    table.es-table-not-adapt,
-    .esd-block-html table {
-        width: auto !important;
-    }
-
-    table.es-social {
-        display: inline-block !important;
-    }
-
-    table.es-social td {
-        display: inline-block !important;
-    }
-
-    .es-m-p5 {
-        padding: 5px !important;
-    }
-
-    .es-m-p5t {
-        padding-top: 5px !important;
-    }
-
-    .es-m-p5b {
-        padding-bottom: 5px !important;
-    }
-
-    .es-m-p5r {
-        padding-right: 5px !important;
-    }
-
-    .es-m-p5l {
-        padding-left: 5px !important;
-    }
-
-    .es-m-p10 {
-        padding: 10px !important;
-    }
-
-    .es-m-p10t {
-        padding-top: 10px !important;
-    }
-
-    .es-m-p10b {
-        padding-bottom: 10px !important;
-    }
-
-    .es-m-p10r {
-        padding-right: 10px !important;
-    }
-
-    .es-m-p10l {
-        padding-left: 10px !important;
-    }
-
-    .es-m-p15 {
-        padding: 15px !important;
-    }
-
-    .es-m-p15t {
-        padding-top: 15px !important;
-    }
-
-    .es-m-p15b {
-        padding-bottom: 15px !important;
-    }
-
-    .es-m-p15r {
-        padding-right: 15px !important;
-    }
-
-    .es-m-p15l {
-        padding-left: 15px !important;
-    }
-
-    .es-m-p20 {
-        padding: 20px !important;
-    }
-
-    .es-m-p20t {
-        padding-top: 20px !important;
-    }
-
-    .es-m-p20r {
-        padding-right: 20px !important;
-    }
-
-    .es-m-p20l {
-        padding-left: 20px !important;
-    }
-
-    .es-m-p25 {
-        padding: 25px !important;
-    }
-
-    .es-m-p25t {
-        padding-top: 25px !important;
-    }
-
-    .es-m-p25b {
-        padding-bottom: 25px !important;
-    }
-
-    .es-m-p25r {
-        padding-right: 25px !important;
-    }
-
-    .es-m-p25l {
-        padding-left: 25px !important;
-    }
-
-    .es-m-p30 {
-        padding: 30px !important;
-    }
-
-    .es-m-p30t {
-        padding-top: 30px !important;
-    }
-
-    .es-m-p30b {
-        padding-bottom: 30px !important;
-    }
-
-    .es-m-p30r {
-        padding-right: 30px !important;
-    }
-
-    .es-m-p30l {
-        padding-left: 30px !important;
-    }
-
-    .es-m-p35 {
-        padding: 35px !important;
-    }
-
-    .es-m-p35t {
-        padding-top: 35px !important;
-    }
-
-    .es-m-p35b {
-        padding-bottom: 35px !important;
-    }
-
-    .es-m-p35r {
-        padding-right: 35px !important;
-    }
-
-    .es-m-p35l {
-        padding-left: 35px !important;
-    }
-
-    .es-m-p40 {
-        padding: 40px !important;
-    }
-
-    .es-m-p40t {
-        padding-top: 40px !important;
-    }
-
-    .es-m-p40b {
-        padding-bottom: 40px !important;
-    }
-
-    .es-m-p40r {
-        padding-right: 40px !important;
-    }
-
-    .es-m-p40l {
-        padding-left: 40px !important;
-    }
-
-    .es-desk-hidden {
-        display: table-row !important;
-        width: auto !important;
-        overflow: visible !important;
-        max-height: inherit !important;
-    }
-
-    button.es-button {
-        width: 100%;
-    }
-
-    .h-auto {
-        height: auto !important;
-    }
-}
-
-/* END RESPONSIVE STYLES */
-html,
-body {
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-}
-
-input,
-textarea {
-    box-sizing: border-box;
-    resize: vertical;
-    -webkit-appearance: none;
-}
 </style>
-<body>
-    <div class="es-wrapper-color">
-        <!--[if gte mso 9]>
-			<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-				<v:fill type="tile" color="#fafafa"></v:fill>
-			</v:background>
-		<![endif]-->
-        <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0">
-            <tbody>
-                <tr>
-                    <td class="esd-email-paddings" valign="top">
-                        <table cellpadding="0" cellspacing="0" class="es-content esd-header-popover" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe esd-synchronizable-module" align="center">
-                                        <table class="es-content-body" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: transparent;" bgcolor="rgba(0, 0, 0, 0)">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure es-p20" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-text es-infoblock">
-                                                                                        <p><a target="_blank">View online version</a></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table cellpadding="0" cellspacing="0" class="es-header" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe esd-synchronizable-module" align="center">
-                                        <table bgcolor="#ffffff" class="es-header-body" align="center" cellpadding="0" cellspacing="0" width="600">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="600" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://wongdg.stripocdn.email/content/guids/CABINET_422a9c0d64ecdd18b92d91ef434d79f6/images/head.jpg" alt style="display: block;" width="600"></a></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="esd-structure es-p15" align="left" bgcolor="#ffffff" style="background-color: #ffffff;">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="es-m-p0r es-m-p20b esd-container-frame" width="570" align="center" esd-custom-block-id="310530" esdev-config="h1">
-                                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td
-                                                                                        class="esd-block-image"
-                                                                                        align="center"
-                                                                                        style="font-size:
-                                                                                        0px;"><a
-                                                                                            target="_blank"
-                                                                                            href="https://onezero.medium.com/apple-doesnt-need-a-monopoly-to-lock-you-into-your-iphone-53c676270c99"><img
-                                                                                                class="adapt-img"
-                                                                                                src="https://wongdg.stripocdn.email/content/guids/CABINET_1ef9ad311636f394a63200175337eedd/images/mewe1_1.jpg"
-                                                                                                alt
-                                                                                                style="display:
-                                                                                                block;"
-                                                                                                data-src="https://cdn-images-1.medium.com/max/1600/1*Qdv1B3hXOQQd8a1mhMVgxA.jpeg"
-                                                                                                width="570"></a></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td
-                                                                                        class="esd-block-text
-                                                                                        es-p10t
-                                                                                        es-p5b
-                                                                                        es-m-txt-c"
-                                                                                        align="left">
-                                                                                        <h3
-                                                                                            class="name">บทความ</h3>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                
-                                                                                <tr>
-                                                                                    <td
-                                                                                        class="esd-block-text
-                                                                                        es-m-txt-c
-                                                                                        es-p5t
-                                                                                        es-p20b"
-                                                                                        align="left">
-                                                                                        <p
-                                                                                            style="color:
-                                                                                            #333;
-                                                                                            font-size:
-                                                                                            12px;"
-                                                                                            class="title2">สวัสดีค่ะ
-                                                                                            คุณ
-                                                                                            .....</p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td
-                                                                                        class="esd-block-text
-                                                                                        es-p20b
-                                                                                        es-m-txt-c"
-                                                                                        align="left">
-                                                                                        <p
-                                                                                            style="color:
-                                                                                            #333;
-                                                                                            font-size:
-                                                                                            13px;"
-                                                                                            class="description">Facilitation
-                                                                                            for
-                                                                                            Modern
-                                                                                            Meeting
-                                                                                            สร้างการมีส่วนร่วมในที่ประชุม
-                                                                                            สำหรับองค์กรยุคใหม่
-                                                                                            เป็นหลักสูตรคุณภาพ
-                                                                                            เนื้อหากระชับ
-                                                                                            ได้ใจความ
-                                                                                            เพื่อการนำไปใช้ต่อยอดได้ทันที
-                                                                                            เน้นหลักการที่เป็นรูปธรรม
-                                                                                            อธิบายอย่างเห็นภาพ
-                                                                                            เพื่อให้คุณที่แม้ไม่เคยมีประสบการณ์ในการเป็นนักกระบวนกร
-                                                                                            ก็สามารถสร้างการมีส่วนร่วม
-                                                                                            เป็นผู้นำ
-                                                                                            ลดความขัดแย้ง
-                                                                                            และช่วยทำให้การตัดสินใจร่วมกันของทีมเป็นเรื่องที่ได้อย่างง่ายดาย
-                                                                                            <br><br>
-                                                                                            ประโยชน์ที่ผู้เรียนจะได้รับจากการเรียนคอร์สนี้<br>
-                                                                                            -
-                                                                                            ทักษะการเป็นนักกระบวนกร
-                                                                                            เพื่อสร้างการประชุมที่มีประสิทธิภาพ<br>
-                                                                                            -
-                                                                                            สร้างทักษะผู้นำ
-                                                                                            ทำให้ทุกเสียงในที่ประชุมมีส่วนร่วม
-                                                                                            และร่วมกันตัดสินใจได้ดี<br>
-                                                                                            -
-                                                                                            เสริมทักษะการแก้ปัญหาเรื่อง
-                                                                                            “คน”
-                                                                                            ลดการขัดแย้งในที่ประชุม
-                                                                                            ด้วยเทคนิคต่างๆ
-                                                                                            ที่ใช้ได้จริง<br><br>
-                                                                                            คอร์สนี้เหมาะกับใคร<br>
-                                                                                            -
-                                                                                            ผู้ประกอบการ
-                                                                                            เจ้าของธุรกิจ
-                                                                                            ผู้นำในองค์กร
-                                                                                            ที่ต้องการพัฒนาทักษะการสื่อสาร
-                                                                                            ผู้ที่ต้องทำหน้าที่ในการดำเนินการประชุม<br><br>
-                                                                                            ผู้เรียนต้องมีความรู้อะไรมาก่อนหรือไม่<br>
-                                                                                            -
-                                                                                            ผู้เรียนไม่ต้องมีความรู้เฉพาะด้าน
-                                                                                            ขอเพียงแค่มีความสนใจ
-                                                                                            ตั้งใจ
-                                                                                            อยากที่จะเพิ่มพูนทักษะการเป็นนักกระบวนกร
-                                                                                            และการสื่อสารของตนเองอย่างสร้างสรรค์ก็เพียงพอ<br></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td esd-links-underline="none" esd-links-color="#3FC1FE" class="esd-block-text es-p10t es-p20b es-m-txt-c" bgcolor="#ffffff" align="left">
-                                                                                        <p><a target="_blank" style="text-decoration: none;" href="https://onezero.medium.com/apple-doesnt-need-a-monopoly-to-lock-you-into-your-iphone-53c676270c99">Read More</a></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table cellpadding="0" cellspacing="0" class="es-content" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe" align="center">
-                                        <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0" cellspacing="0" width="600">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure es-p20t es-p10b es-p20r es-p20l" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://wongdg.stripocdn.email/content/guids/CABINET_422a9c0d64ecdd18b92d91ef434d79f6/images/mewe1_1.jpg" alt style="display: block;" width="560"></a></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-text es-p20t es-p5b es-m-txt-c">
-                                                                                        <h2>ONLINE MARKETING</h2>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="esd-structure es-p20t es-p5b es-p20r es-p20l esdev-adapt-off" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" align="left" class="esd-container-frame">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="left" class="esd-block-text es-p5b es-m-txt-l">
-                                                                                        <h3>Tuesday, January&nbsp;28 | 6:30 - 9:30 PM&nbsp;</h3>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="esd-structure es-p10t es-p5b es-p20r es-p20l esdev-adapt-off" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" align="left" class="esd-container-frame">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="left" class="esd-block-text es-p5b es-m-txt-l">
-                                                                                        <h3>Siam center point</h3>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="esd-structure es-p10t es-p5b es-p20r es-p20l esdev-adapt-off" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" align="left" class="esd-container-frame">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="left" class="esd-block-text es-p5b es-m-txt-l">
-                                                                                        <h3>ฟรี</h3>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="esd-structure es-p10b es-p20r es-p20l" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-button es-p15t es-p10b">
-                                                                                        <!--[if mso]><a href="" target="_blank" hidden>
-	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="" 
-                style="height:43px; v-text-anchor:middle; width:121px" arcsize="12%" strokecolor="#5c68e2" strokeweight="1px" fillcolor="#20258d">
-		<w:anchorlock></w:anchorlock>
-		<center style='color:#ffffff; font-family:arial, "helvetica neue", helvetica, sans-serif; font-size:17px; font-weight:400; line-height:17px;  mso-text-raise:1px'>เข้าร่วม</center>
-	</v:roundrect></a>
-<![endif]-->
-                                                                                        <!--[if !mso]><!-- --><span class="msohide es-button-border" style="border-width: 2px; background: #20258d; border-color: #5c68e2;"><a href class="es-button es-button-1621619122263 msohide" target="_blank" style="border-top-width: 10px; border-bottom-width: 10px; background: #20258d; border-color: #20258d;">เข้าร่วม</a></span>
-                                                                                        <!--<![endif]-->
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table cellpadding="0" cellspacing="0" class="es-content" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe" align="center">
-                                        <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff;">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="es-p20t es-p20r es-p20l esd-structure" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://wongdg.stripocdn.email/content/guids/CABINET_422a9c0d64ecdd18b92d91ef434d79f6/images/mewe1_1.jpg" alt style="display: block;" width="560"></a></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-text es-p15t es-p5b es-p20r es-p20l es-m-txt-c">
-                                                                                        <h2>โปรโมชั่น</h2>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="left" class="esd-block-text">
-                                                                                        <p>.<br>.<br>.<br>.<br><br></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-button es-p15t es-p10b">
-                                                                                        <!--[if mso]><a href="" target="_blank" hidden>
-	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="" 
-                style="height:43px; v-text-anchor:middle; width:130px" arcsize="12%" strokecolor="#5c68e2" strokeweight="1px" fillcolor="#20258d">
-		<w:anchorlock></w:anchorlock>
-		<center style='color:#ffffff; font-family:arial, "helvetica neue", helvetica, sans-serif; font-size:17px; font-weight:400; line-height:17px;  mso-text-raise:1px'>กดดูเลย</center>
-	</v:roundrect></a>
-<![endif]-->
-                                                                                        <!--[if !mso]><!-- --><span class="msohide es-button-border" style="border-width: 1px; border-color: #5c68e2; background: #20258d;"><a href class="es-button msohide es-button-1669211045752" target="_blank" style="border-top-width: 10px; border-bottom-width: 10px; background: #20258d; border-color: #20258d;">กดดูเลย</a></span>
-                                                                                        <!--<![endif]-->
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table cellpadding="0" cellspacing="0" class="es-content" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe" align="center">
-                                        <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0" cellspacing="0" width="600">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure es-p20r es-p20l" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="left">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://wongdg.stripocdn.email/content/guids/CABINET_422a9c0d64ecdd18b92d91ef434d79f6/images/mewe1_1.jpg" alt style="display: block;" width="560"></a></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="left" class="esd-block-text es-m-txt-l es-p10t">
-                                                                                        <p style="font-size: 12px;"><span style="background-color:#eeeeee;">&nbsp; September&nbsp;15, 2021&nbsp;&nbsp;</span></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="left" class="esd-block-text es-p5t es-p5b es-m-txt-l">
-                                                                                        <h3>สิทธิพิเศษ สำหรับคุณ</h3>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="left" class="esd-block-text es-p5t es-p5b es-m-txt-l">
-                                                                                        <h4 style="font-size: 16px;">รายละเอียดสิทธิพิเศษ</h4>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-button es-p10t es-p10b">
-                                                                                        <!--[if mso]><a href="" target="_blank" hidden>
-	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="" 
-                style="height:33px; v-text-anchor:middle; width:121px" arcsize="15%" strokecolor="#20258d" strokeweight="1px" fillcolor="#20258d">
-		<w:anchorlock></w:anchorlock>
-		<center style='color:#ffffff; font-family:arial, "helvetica neue", helvetica, sans-serif; font-size:13px; font-weight:400; line-height:13px;  mso-text-raise:1px'>รับสิทธิ์</center>
-	</v:roundrect></a>
-<![endif]-->
-                                                                                        <!--[if !mso]><!-- -->
-                                                                                        <button class="msohide es-button-border" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="border-width: 2px; background: #20258d; border-color: #20258d;">
-                                                                                            <a href class="es-button es-button-1621619122282" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2"  style="border-width: 5px 30px; background: #20258d; border-color: #20258d;">รับสิทธิ์</a></span>
-                                                                                        <!--<![endif]-->
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table cellpadding="0" cellspacing="0" class="es-footer" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe esd-synchronizable-module" align="center">
-                                        <table class="es-footer-body" align="center" cellpadding="0" cellspacing="0" width="640" style="background-color: transparent;">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure es-p20t es-p20b es-p20r es-p20l" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="600" class="esd-container-frame" align="left">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://wongdg.stripocdn.email/content/guids/CABINET_422a9c0d64ecdd18b92d91ef434d79f6/images/footer.jpg" alt style="display: block;" width="600"></a></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table cellpadding="0" cellspacing="0" class="es-content esd-footer-popover" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe esd-synchronizable-module" align="center">
-                                        <table class="es-content-body" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: transparent;" bgcolor="rgba(0, 0, 0, 0)">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure es-p20" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-text es-infoblock">
-                                                                                        <p><a target="_blank"></a>No longer want to receive these emails?&nbsp;<a href target="_blank">Unsubscribe</a>.<a target="_blank"></a></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="modal-choose">
-        <div class="modal fade" id="exampleModal2" tabindex="-1"
-          aria-labelledby="exampleModalLabel2" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                
-              </div>
-              <div class="modal-body">
-                
-              </div>
-              <div class="modal-footer">
-                
-              </div>
+    <body>
+        <article class="form-template">
+            <div class="wrapper-cover">
+                <div class="box-all-imgcover">
+                    <div class="box-img">
+                        <a href="">
+                            <img
+                                src="assets/images/99.png"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="box-article">
+                        <!-- <h1 class="title-form">หัวข้อ</h1> -->
+                        <img
+                            src="assets/images/98.png"
+                            alt="" class="img-coverform">
+                        <div class="box-tag">
+                            <span>
+                                Tags:
+                            </span>
+                            <a href="btn-tag">ครอบครัว</a>
+                            <a href="btn-tag">ความรัก</a>
+
+
+
+                        </div>
+                        <p>Facilitation for Modern Meeting
+                            สร้างการมีส่วนร่วมในที่ประชุม สำหรับองค์กรยุคใหม่
+                            เป็นหลักสูตรคุณภาพ เนื้อหากระชับ ได้ใจความ
+                            เพื่อการนำไปใช้ต่อยอดได้ทันที
+                            เน้นหลักการที่เป็นรูปธรรม อธิบายอย่างเห็นภาพ
+                            เพื่อให้คุณที่แม้ไม่เคยมีประสบการณ์ในการเป็นนักกระบวนกร
+                            ก็สามารถสร้างการมีส่วนร่วม เป็นผู้นำ ลดความขัดแย้ง
+                            และช่วยทำให้การตัดสินใจร่วมกันของทีมเป็นเรื่องที่ได้อย่างง่ายดาย
+                        </p>
+
+                        <p>ประโยชน์ที่ผู้เรียนจะได้รับจากการเรียนคอร์สนี้ <br>
+                            - ทักษะการเป็นนักกระบวนกร
+                            เพื่อสร้างการประชุมที่มีประสิทธิภาพ <br>
+                            - สร้างทักษะผู้นำ ทำให้ทุกเสียงในที่ประชุมมีส่วนร่วม
+                            และร่วมกันตัดสินใจได้ดี <br>
+                            - เสริมทักษะการแก้ปัญหาเรื่อง “คน”
+                            ลดการขัดแย้งในที่ประชุม ด้วยเทคนิคต่างๆ
+                            ที่ใช้ได้จริง </p>
+
+                        <iframe width="100%" height="366"
+                            src="https://www.youtube.com/embed/gOTrf8cnMso"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write;
+                            encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <!-- <img
+                            src="https://scontent.fbkk22-8.fna.fbcdn.net/v/t1.6435-9/165821096_287447519573482_7964360718334357396_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=625WssmzP-wAX_WY8F-&_nc_ht=scontent.fbkk22-8.fna&oh=00_AfBbXXvxdKYuJqDqJh4eb-vjk3iF7QKvUzzymUvfcANyhA&oe=63D3FE84"
+                            alt="">
+                        <p>คอร์สนี้เหมาะกับใคร <br>
+                            - ผู้ประกอบการ เจ้าของธุรกิจ ผู้นำในองค์กร
+                            ที่ต้องการพัฒนาทักษะการสื่อสาร
+                            ผู้ที่ต้องทำหน้าที่ในการดำเนินการประชุม </p> -->
+                    </div>
+
+
+
+                </div>
             </div>
-          </div>
 
-        </div>
-      </div>
-</body>
-<script>
+            <div class="wrapper-box-meet">
+                <div class="layout-box-meet">
+                    <h1 class="title-form">นัดหมาย</h1>
+                    <div class="box-card-meet">
+                        <div class="box-img-meet">
+                            <a href="">
+                                <img
+                                    src="https://scontent.fbkk22-6.fna.fbcdn.net/v/t39.30808-6/305492137_761885941564733_2087406170096700823_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=sAMbSOw7DLYAX_9DPUp&_nc_ht=scontent.fbkk22-6.fna&oh=00_AfDYE0F8iWRqf8ErZ_eUVE7q1erTI4c9DguyXTF-Z-hdzg&oe=63B0CC2F"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="box-date">
+                            <ul>
+                                <li><span class="title-meet">whole brain</span>
+                                </li>
+                                <li>Workshop สมองบอกความถนัด</li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-6">
+                                            <span class="fe fe-calendar fe-20
+                                                mr-2 Clear"></span>
+                                            29 ธันวาคม 2565
+                                        </div>
+                                        <div class=" col-sm-6 col-6"><span class="fe
+                                                fe-clock fe-20 mr-2 Clear"></span>
+                                            11.00 น.</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-6">
+                                            <span class="fe fe-user fe-20
+                                                mr-2 Clear"></span>
+                                            วรินดา
+                                        </div>
+                                        <div class="col-sm-6 col-6"><span class="fe
+                                                fe-phone fe-20 mr-2 Clear"></span>
+                                            099-999-9999</div>
+                                    </div>
+                                </li>
+
+
+                                <li><span class="fe
+                                        fe-map-pin fe-12 mr-2 Clear"></span>สตาร์บัค</li>
+                                <li><a href="">https://goo.gl/maps/1BgyTHXyiHdejsqi7</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="control-btn">
+                            <button class="btn
+                                btn-join" data-toggle="modal"
+                                data-target="#myModal">เข้าร่วม</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="box-bg-2">
+                <div class="container">
+                    <div class="box-input-tt">
+                        <h3>ข้อมูลส่วนตัว</h3>
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type="file" id="imageUpload"
+                                    accept=".png,
+                                    .jpg, .jpeg">
+                                <label for="imageUpload"></label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreview" style="background-image:
+                                    url(http://i.pravatar.cc/500?img=7);">
+                                </div>
+                            </div>
+                            <div class="lds-ring">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+
+                            </div>
+                        </div>
+                        <form action="/action_page.php"
+                            class="form-vote-sunmit">
+                            <div class=" form-group">
+
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <!-- <label for="exampleInputName1">ชื่อ</label> -->
+                                            <input type="text"
+                                                class="form-control"
+                                                id="exampleInputName1"
+                                                placeholder="ชื่อ">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <!-- <label for="exampleInputName1">นามสกุล</label> -->
+                                            <input type="text"
+                                                class="form-control"
+                                                id="exampleInputName1"
+                                                placeholder="นามสกุล">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <!-- <label for="exampleInputEmail3">ที่อยู่</label> -->
+                                            <textarea name="" id="" cols="30"
+                                                rows="5" class="form-control"
+                                                placeholder="ที่อยู่"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+
+                                        <div class="form-group">
+                                            <!-- <label for="exampleInputEmail3">วัน/เดือน/ปีเกิด</label> -->
+                                            <input type="password"
+                                                class="form-control"
+                                                id="exampleInputPassword4"
+                                                placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <!-- <label for="exampleSelectGender">เพศ</label> -->
+                                            <select class="form-control"
+                                                id="exampleSelectGender">
+                                                <option>ชาย</option>
+                                                <option>ชาย</option>
+                                                <option>หญิง</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+
+                                        <div class="form-group">
+                                            <!-- <label for="exampleInputEmail3">เบอร์โทร</label> -->
+                                            <input type="password"
+                                                class="form-control"
+                                                id="exampleInputPassword4"
+                                                placeholder="เบอร์โทร">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <!-- <label for="exampleInputPassword4">Facebook</label> -->
+                                            <input type="password"
+                                                class="form-control"
+                                                id="exampleInputPassword4"
+                                                placeholder="Facebook">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <!-- <label for="exampleInputPassword4">Line</label> -->
+                                            <input type="password"
+                                                class="form-control"
+                                                id="exampleInputPassword4"
+                                                placeholder="Line">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="email-consent">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox5"
+                                        value="option5">
+                                    ข้าพเจ้ายินยอมให้ใช้ข้อมูลนี้
+                                    เพื่อรับของรางวัล ข้อมูลทางไปรษณีย์
+                                    และสิทธิพิเศษใดๆ จากระบบ MEWE Analytic
+                                    เท่านั้น
+                                </label>
+                            </div>
+                            <div class="control-btn">
+                                <button class="btn-join2" data-toggle="modal"
+                                    data-target="#myModal">ส่ง</button>
+                                <!-- <button class="btn-share-coupon" data-toggle="modal"
+                                    data-target="#myModal">แชร์รางวัล</button> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="wrapper-sale-tt">
+                    <div class="layout-sale-tt">
+                        <div class="box-sale-tt">
+                            <h4>คุณประทับใจการดูแลของเราแค่ไหน</h4>
+                            <div class="box-sale-img">
+                                <img class="sale-img"
+                                    src="https://images.squarespace-cdn.com/content/v1/5a79b97a1f318db5be607f92/1601740265466-GZ66J8U72FDEJOGIR590/andrea.png?format=300w"
+                                    alt="">
+
+                            </div>
+                            <span >มนัส นาจันทร์</span> <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="box-kk">
+                                <span>โปรดบอกเราหากมีสิ่งที่คุณต้องการ</span><br>
+                                <span class="badge
+                                badge-dark">ลดราคา </span>
+                                <span class="badge
+                                badge-dark">โปรโมชั่น</span>
+                                <span class="badge
+                                badge-dark">สิทธิพิเศษ</span>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </article>
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
     var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </html>

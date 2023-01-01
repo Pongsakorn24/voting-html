@@ -195,12 +195,12 @@
               <ul class="collapse list-unstyled pl-4 w-100" id="mkt">
                 <a class="nav-link pl-3" href="./setting-article.html"><span
                     class="ml-1">เนื้อหาที่น่าสนใจ</span></a>
-                <a class="nav-link pl-3" href="./setting-activity.html"><span
+                <!-- <a class="nav-link pl-3" href="./setting-activity.html"><span
                     class="ml-1">กิจกรรม</span></a>
                 <a class="nav-link pl-3" href="./setting-promotion.html"><span
                     class="ml-1">โปรโมชั่น</span></a>
                 <a class="nav-link pl-3" href="./setting-special.html"><span
-                    class="ml-1">สิทธิพิเศษ</span></a>
+                    class="ml-1">สิทธิพิเศษ</span></a> -->
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -252,304 +252,505 @@
                 <a class="nav-link pl-3" href="./setting-score.html"><span
                     class="ml-1">ความพึงพอใจ</span></a>
               </ul>
-              <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+              <!-- <ul class="collapse list-unstyled pl-4 w-100" id="setting">
                 <a class="nav-link pl-3"
                   href="./setting-recommend-cheklist.html"><span
                     class="ml-1">สิ่งที่แนะให้ทำ</span></a>
-              </ul>
+              </ul> -->
             </li>
           </ul>
         </nav>
       </aside>
-      <main role="main" class="main-content">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <div class="row align-items-center my-4">
-                <div class="col">
-                  <h2 class="page-title">บทความ</h2>
-                  <p class="text-muted">โปรดสร้างบทความต่างๆ</p>
+        <main role="main" class="main-content">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="row align-items-center my-4">
+                  <div class="col">
+                    <h2 class="page-title">สร้างความสัมพันธ์</h2>
+                    <p class="text-muted">โปรดสร้างความสัมพันธ์</p>
+                  </div>
                 </div>
-                <!-- <div class="col-auto">
-                  <button type="button" class="btn btn-secondary"><span
-                      class="fe fe-trash fe-12 mr-2"></span>ลบ</button>
-                  <button type="button" class="btn btn-primary"
-                    data-toggle="modal" data-target="#exampleModal"><span
-                      class="fe fe-plus fe-12 mr-2"></span>สร้าง</button>
-                </div> -->
-              </div>
-              <div class="row">
-                <!-- Striped rows -->
-                <div class="">
-                  <div class="card shadow">
-                    <div class="card-body">
-                      <div class="form-group sm-6">
-                        <p class="mb-2"><strong>รูปปก</strong></p>
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input"
-                            id="customFile">
-                          <label class="custom-file-label" for="customFile">เลือกรูปปก</label>
-                        </div>
-                    </div>
-                      <div class="form-group sm-6">
-                        <p class="mb-2"><strong>ชื่อบทความ</strong></p>
-                        <input type="text" id="simpleinput" class="form-control"
-                          placeholder="โปรดสร้างชื่อบทความ">
-                      </div>
-                      <div class="form-group sm-6">
-                        <p class="mb-2"><strong>รายละเอียด</strong></p>
-                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="col-md-12 mx-auto mb-3 reset-m">
+                      <div class="box-choose-relationship">
+                        <ul class="set-toggle">
+                        <li><p class="mb-3 ">เลือกกิจกรรม</p></li>
+                        <li>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox"
+                              id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label"
+                              for="inlineCheckbox2">เนื้อหา</label>
+                          </div>
+  
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox"
+                              id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label"
+                              for="inlineCheckbox2">การนัดหมาย</label>
+                          </div>
+                          
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox"
+                              id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label"
+                              for="inlineCheckbox3">ข้อมูลส่วนตัว</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox"
+                              id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label"
+                              for="inlineCheckbox3">หลักสูตร</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox"
+                              id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label"
+                              for="inlineCheckbox3">แบบทดสอบ</label>
+                          </div>
+                          
+                          
+                        </li>
+                      </ul>
                       </div>
                       
-                      <div class="form-group sm-6">
-                          <p class="mb-2"><strong>บทความ</strong></p>
-                        <!-- Create the editor container -->
-                        <div id="editor" style="min-height:auto;">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nunc lobortis convallis efficitur. Cras nisi
-                            felis, luctus nec nibh quis, consequat maximus
-                            velit. Ut iaculis at lacus sed pellentesque.</p>
-                          <p>Maecenas luctus nisl quis leo porta, quis elementum
-                            mi tempus. Morbi blandit metus ut nulla scelerisque,
-                            sed ornare purus elementum. Vivamus sed augue in
-                            tortor commodo malesuada sed et nulla. Nullam cursus
-                            erat eget tellus maximus, ut placerat lorem
-                            fringilla.</p>
+                        
+                    </div>
+                    <div class="col-md-3 mx-auto mb-3 reset-m">
+                      <ul class="set-toggle">
+                        <li>
+                          <p class="mb-3 tt-toggle">เริ่มต้น</p>
+                          <p class="text-muted">โปรดระบุรูปแบบของกิจกรรม</p>
+                        </li>
+                        
+                      </ul>
+                      
+                    </div>
+
+                    <div class="card shadow">
+                      <div class="card-body">
+                        <div class="form-group sm-6">
+                          <p class="mb-2"><strong>รูปปก</strong></p>
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input"
+                              id="customFile">
+                            <label class="custom-file-label" for="customFile">เลือกรูปปก</label>
+                          </div>
+                        </div>
+                        <div class="form-group sm-6">
+                          <p class="mb-2"><strong>ชื่อความสัมพันธ์</strong></p>
+                          <input type="text" id="simpleinput"
+                            class="form-control"
+                            placeholder="โปรดสร้างชื่อความสัมพันธ์">
+                        </div>
+                        <div class="form-group sm-6">
+                          <p class="mb-2"><strong>รายละเอียด</strong></p>
+                          <input type="text" id="simpleinput"
+                            class="form-control"
+                            placeholder="โปรดใส่รายละเอียด">
                         </div>
                       </div>
-                      <div class="form-group sm-6">
-                          <p class="mb-2"><strong>แท็กความสนใจ</strong></p>
-                      </div>
-                      <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="checkbox"
-                            id="inlineCheckbox1" value="option1">
-                          <label class="form-check-label" for="inlineCheckbox1">ครอบครัว</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="checkbox"
-                            id="inlineCheckbox2" value="option2">
-                          <label class="form-check-label" for="inlineCheckbox2">ผู้บริหาร</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="checkbox"
-                            id="inlineCheckbox3" value="option3" >
-                          <label class="form-check-label" for="inlineCheckbox3">อารมณ์ดี</label>
-                      </div>
-                      <div class="box" style="display: block; margin: 25px; text-align: center;" >
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">ดูตัวอย่าง</button>
-                          <button type="button" class="btn btn-danger" data-dismiss="modal">ยกเลิก</button>
-                          <button type="button" class="btn btn-primary">บันทึก</button>
+                    </div>
+                    <div class="col-md-12 mx-auto mb-3 reset-m">
+                      <ul class="set-toggle">
+                        <li>
+                          <p class="mb-3 tt-toggle">เนื้อหา</p>
+                          <p class="text-muted">คุณสามารถสร้างเนื้อหาที่น่าสนใจ รูปโปรโมชั่น รูปสิทธิพิเศษ ได้ในส่วนนี้</p>
+                        </li>
+                        
+                      </ul>
+                      
+                    </div>
+                    <div class="card shadow">
+                      <div class="card-body">
+
+                        <div class="form-group sm-6">
+                          <p class="mb-2"><strong>รายละเอียด</strong></p>
+                          <div id="editor" style="min-height:100px;" class="ql-container ql-snow"><div class="ql-editor" data-gramm="false" contenteditable="true"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis convallis efficitur. Cras nisi felis, luctus nec nibh quis, consequat maximus velit. Ut iaculis at lacus sed pellentesque.</p><p>Maecenas luctus nisl quis leo porta, quis elementum mi tempus. Morbi blandit metus ut nulla scelerisque, sed ornare purus elementum. Vivamus sed augue in tortor commodo malesuada sed et nulla. Nullam cursus erat eget tellus maximus, ut placerat lorem fringilla.</p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+                        </div>
                       </div>
                     </div>
+                    
+                    <div class="col-md-12 mx-auto mb-3 reset-m">
+                      <ul class="set-toggle">
+                        <li>
+                          <p class="mb-3 tt-toggle">การนัดหมาย</p>
+                          <p class="text-muted">โปรดระบุกิจกรรม การนัดหมาย และผู้ดูแลลูกค้าของคุณ</p>
+                        </li>
+                        
+                      </ul>
+                      
+                    </div>
+                    <div class="card shadow">
+                      <div class="card-body">
+
+                        <div class="form-group sm-6">
+                          <p class="mb-2"><strong>รูปปก</strong> (ขนาด 1200X630 พิกเซล)</p>
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input"
+                              id="customFile">
+                            <label class="custom-file-label" for="customFile">เลือกรูปปก</label>
+                          </div>
+                        </div>
+                        <div class="form-group md-4">
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label for="date-input1">ชื่องาน</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control time-input" id="time-input2" placeholder="" aria-describedby="button-addon2">
+                              </div>
+                            </div>
+                            <div class="form-group col-md-8">
+                              <label for="date-input1">รายละเอียดงาน</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control time-input" id="time-input2" placeholder="" aria-describedby="button-addon2">
+                              </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="date-input1">ชื่อทีมขาย</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control time-input" id="time-input2" placeholder="" aria-describedby="button-addon2">
+                              </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="date-input1">เบอร์ทีมขาย</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control time-input" id="time-input2" placeholder="" aria-describedby="button-addon2">
+                              </div>
+                            </div>
+                            <div class="form-group col-md-8">
+                              <label for="date-input1">วันจัดงาน</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control drgpicker" id="date-input1" value="04/24/2020" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                  <div class="input-group-text" id="button-addon-date"><span class="fe fe-calendar fe-16"></span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="time-input2">เวลาจัดงาน</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control time-input" id="time-input2" placeholder="" aria-describedby="button-addon2">
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class="form-group mb-6">
+                          <label for="simpleinput">สถานที่</label>
+                          <input type="text" id="simpleinput" class="form-control" placeholder="โปรดใส่ link จาก Google maps">
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.9198004277837!2d100.54119271474868!3d13.723305190365826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f2528b8e523%3A0x87c0e71dca123021!2sGlowe%20Enterprise%20Co.%2CLtd.!5e0!3m2!1sth!2sth!4v1669257186090!5m2!1sth!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mx-auto mb-3 reset-m">
+                      <ul class="set-toggle">
+                        <li>
+                          <p class="mb-3 tt-toggle" >แท็กความสนใจ</p>
+                          <p class="text-muted">โปรดระบุความสนใจที่สอดคล้องกับกิจกรรมนี้</p>
+                        </li>
+                        
+                      </ul>
+                      
+                    </div>
+                    <div class="card shadow">
+                      <div class="card-body">
+
+                        <div class="form-group sm-6">
+                          <p class="mb-2"><strong>แท็ก</strong></p>
+                          <input type="text" id="simpleinput"
+                            class="form-control"
+                            placeholder="ความสนใจ">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-3 mx-auto mb-3 reset-m">
+                      <ul class="set-toggle">
+                        <li>
+                          <p class="mb-3 tt-toggle">ข้อมูลส่วนตัว</p>
+                        </li>
+                        
+                      </ul>
+                      
+                    </div>
+                    <div class="card shadow">
+                      <div class="card-body">
+
+                        <div class="form-group sm-6">
+                          <p class="mb-2"><strong>ข้อมูลเพิ่มเติม</strong></p>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox"
+                              id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label"
+                              for="inlineCheckbox1">ชื่อ-นามสกุล</label>
+
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox"
+                                id="inlineCheckbox2" value="option2">
+                              <label class="form-check-label"
+                                for="inlineCheckbox2">วัน/เดือน/ปีเกิด</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox"
+                                id="inlineCheckbox3" value="option3">
+                              <label class="form-check-label"
+                                for="inlineCheckbox3">อายุ</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox"
+                                id="inlineCheckbox3" value="option3">
+                              <label class="form-check-label"
+                                for="inlineCheckbox3">เพศ</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox"
+                                id="inlineCheckbox3" value="option3">
+                              <label class="form-check-label"
+                                for="inlineCheckbox3">เบอร์โทร</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox"
+                                id="inlineCheckbox3" value="option3">
+                              <label class="form-check-label"
+                                for="inlineCheckbox3">ที่อยู่</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box" style="display: block; margin: 25px;
+                      text-align: center;">
+                      <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">ดูตัวอย่าง</button>
+                      <button type="button" class="btn btn-danger"
+                        data-dismiss="modal">ยกเลิก</button>
+                      <button type="button" class="btn btn-primary">บันทึก</button>
+                    </div>
+
+
                   </div>
                 </div> <!-- end section -->
               </div>
             </div> <!-- .col-12 -->
-          </div> <!-- .row -->
-        </div> <!-- .container-fluid -->
-        <div class="modal fade modal-notif modal-slide" tabindex="-1"
-          role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="defaultModalLabel">Notifications</h5>
-                <button type="button" class="close" data-dismiss="modal"
-                  aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="list-group list-group-flush my-n3">
-                  <div class="list-group-item bg-transparent">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        <span class="fe fe-box fe-24"></span>
-                      </div>
-                      <div class="col">
-                        <small><strong>Package has uploaded successfull</strong></small>
-                        <div class="my-0 text-muted small">Package is zipped and
-                          uploaded</div>
-                        <small class="badge badge-pill badge-light text-muted">1m
-                          ago</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item bg-transparent">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        <span class="fe fe-download fe-24"></span>
-                      </div>
-                      <div class="col">
-                        <small><strong>Widgets are updated successfull</strong></small>
-                        <div class="my-0 text-muted small">Just create new
-                          layout Index, form, table</div>
-                        <small class="badge badge-pill badge-light text-muted">2m
-                          ago</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item bg-transparent">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        <span class="fe fe-inbox fe-24"></span>
-                      </div>
-                      <div class="col">
-                        <small><strong>Notifications have been sent</strong></small>
-                        <div class="my-0 text-muted small">Fusce dapibus, tellus
-                          ac cursus commodo</div>
-                        <small class="badge badge-pill badge-light text-muted">30m
-                          ago</small>
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item bg-transparent">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        <span class="fe fe-link fe-24"></span>
-                      </div>
-                      <div class="col">
-                        <small><strong>Link was attached to menu</strong></small>
-                        <div class="my-0 text-muted small">New layout has been
-                          attached to the menu</div>
-                        <small class="badge badge-pill badge-light text-muted">1h
-                          ago</small>
-                      </div>
-                    </div>
-                  </div> <!-- / .row -->
-                </div> <!-- / .list-group -->
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-block"
-                  data-dismiss="modal">Clear All</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade modal-shortcut modal-slide" tabindex="-1"
-          role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="defaultModalLabel">Shortcuts</h5>
-                <button type="button" class="close" data-dismiss="modal"
-                  aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body px-5">
-                <div class="row align-items-center">
-                  <div class="col-6 text-center">
-                    <div class="squircle bg-success justify-content-center">
-                      <i class="fe fe-cpu fe-32 align-self-center text-white"></i>
-                    </div>
-                    <p>Control area</p>
-                  </div>
-                  <div class="col-6 text-center">
-                    <div class="squircle bg-primary justify-content-center">
-                      <i class="fe fe-activity fe-32 align-self-center
-                        text-white"></i>
-                    </div>
-                    <p>Activity</p>
-                  </div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col-6 text-center">
-                    <div class="squircle bg-primary justify-content-center">
-                      <i class="fe fe-droplet fe-32 align-self-center
-                        text-white"></i>
-                    </div>
-                    <p>Droplet</p>
-                  </div>
-                  <div class="col-6 text-center">
-                    <div class="squircle bg-primary justify-content-center">
-                      <i class="fe fe-upload-cloud fe-32 align-self-center
-                        text-white"></i>
-                    </div>
-                    <p>Upload</p>
-                  </div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col-6 text-center">
-                    <div class="squircle bg-primary justify-content-center">
-                      <i class="fe fe-users fe-32 align-self-center text-white"></i>
-                    </div>
-                    <p>Users</p>
-                  </div>
-                  <div class="col-6 text-center">
-                    <div class="squircle bg-primary justify-content-center">
-                      <i class="fe fe-settings fe-32 align-self-center
-                        text-white"></i>
-                    </div>
-                    <p>Settings</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-creat-tag">
-          <div class="modal fade" id="exampleModal" tabindex="-1"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <!-- .row -->
+          </div> <!-- .container-fluid -->
+          <div class="modal fade modal-notif modal-slide" tabindex="-1"
+            role="dialog" aria-labelledby="defaultModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">สร้างบทความ</h5>
+                  <h5 class="modal-title" id="defaultModalLabel">Notifications</h5>
                   <button type="button" class="close" data-dismiss="modal"
                     aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group mb-6">
-                        <label for="simpleinput">ชื่อบทความ</label>
-                        <input type="text" id="simpleinput" class="form-control"
-                          placeholder="โปรดสร้างชื่อบทความ">
+                  <div class="list-group list-group-flush my-n3">
+                    <div class="list-group-item bg-transparent">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <span class="fe fe-box fe-24"></span>
+                        </div>
+                        <div class="col">
+                          <small><strong>Package has uploaded successfull</strong></small>
+                          <div class="my-0 text-muted small">Package is zipped
+                            and
+                            uploaded</div>
+                          <small class="badge badge-pill badge-light
+                            text-muted">1m
+                            ago</small>
+                        </div>
                       </div>
-                      <div class="form-group mb-6">
-                        <label for="example-email">รายละเอียด</label>
-                        <input type="email" id="example-email"
-                          name="example-email" class="form-control"
-                          placeholder="รายละเอียดของกิจกรรม">
+                    </div>
+                    <div class="list-group-item bg-transparent">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <span class="fe fe-download fe-24"></span>
+                        </div>
+                        <div class="col">
+                          <small><strong>Widgets are updated successfull</strong></small>
+                          <div class="my-0 text-muted small">Just create new
+                            layout Index, form, table</div>
+                          <small class="badge badge-pill badge-light
+                            text-muted">2m
+                            ago</small>
+                        </div>
                       </div>
-
-                    </div> <!-- /.col -->
-
-                  </div>
+                    </div>
+                    <div class="list-group-item bg-transparent">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <span class="fe fe-inbox fe-24"></span>
+                        </div>
+                        <div class="col">
+                          <small><strong>Notifications have been sent</strong></small>
+                          <div class="my-0 text-muted small">Fusce dapibus,
+                            tellus
+                            ac cursus commodo</div>
+                          <small class="badge badge-pill badge-light
+                            text-muted">30m
+                            ago</small>
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                    <div class="list-group-item bg-transparent">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <span class="fe fe-link fe-24"></span>
+                        </div>
+                        <div class="col">
+                          <small><strong>Link was attached to menu</strong></small>
+                          <div class="my-0 text-muted small">New layout has been
+                            attached to the menu</div>
+                          <small class="badge badge-pill badge-light
+                            text-muted">1h
+                            ago</small>
+                        </div>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div> <!-- / .list-group -->
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary"
-                    data-dismiss="modal">ยกเลิก</button>
-                  <button type="button" class="btn btn-primary">บันทึก</button>
+                  <button type="button" class="btn btn-secondary btn-block"
+                    data-dismiss="modal">Clear All</button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </main> <!-- main -->
-    </div> <!-- .wrapper -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/simplebar.min.js"></script>
-    <script src='js/daterangepicker.js'></script>
-    <script src='js/jquery.stickOnScroll.js'></script>
-    <script src="js/tinycolor-min.js"></script>
-    <script src="js/config.js"></script>
-    <script src='js/jquery.mask.min.js'></script>
-    <script src='js/select2.min.js'></script>
-    <script src='js/jquery.steps.min.js'></script>
-    <script src='js/jquery.validate.min.js'></script>
-    <script src='js/jquery.timepicker.js'></script>
-    <script src='js/dropzone.min.js'></script>
-    <script src='js/uppy.min.js'></script>
-    <script src='js/quill.min.js'></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
-    <script>
+          <div class="modal fade modal-shortcut modal-slide" tabindex="-1"
+            role="dialog" aria-labelledby="defaultModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="defaultModalLabel">Shortcuts</h5>
+                  <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body px-5">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-success justify-content-center">
+                        <i class="fe fe-cpu fe-32 align-self-center text-white"></i>
+                      </div>
+                      <p>Control area</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-primary justify-content-center">
+                        <i class="fe fe-activity fe-32 align-self-center
+                          text-white"></i>
+                      </div>
+                      <p>Activity</p>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-primary justify-content-center">
+                        <i class="fe fe-droplet fe-32 align-self-center
+                          text-white"></i>
+                      </div>
+                      <p>Droplet</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-primary justify-content-center">
+                        <i class="fe fe-upload-cloud fe-32 align-self-center
+                          text-white"></i>
+                      </div>
+                      <p>Upload</p>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-primary justify-content-center">
+                        <i class="fe fe-users fe-32 align-self-center
+                          text-white"></i>
+                      </div>
+                      <p>Users</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <div class="squircle bg-primary justify-content-center">
+                        <i class="fe fe-settings fe-32 align-self-center
+                          text-white"></i>
+                      </div>
+                      <p>Settings</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-creat-tag">
+            <div class="modal fade" id="exampleModal" tabindex="-1"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">สร้างบทความ</h5>
+                    <button type="button" class="close" data-dismiss="modal"
+                      aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group mb-6">
+                          <label for="simpleinput">ชื่อบทความ</label>
+                          <input type="text" id="simpleinput"
+                            class="form-control"
+                            placeholder="โปรดสร้างชื่อบทความ">
+                        </div>
+                        <div class="form-group mb-6">
+                          <label for="example-email">รายละเอียด</label>
+                          <input type="email" id="example-email"
+                            name="example-email" class="form-control"
+                            placeholder="รายละเอียดของกิจกรรม">
+                        </div>
+
+                      </div> <!-- /.col -->
+
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                      data-dismiss="modal">ยกเลิก</button>
+                    <button type="button" class="btn btn-primary">บันทึก</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main> <!-- main -->
+      </div> <!-- .wrapper -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/moment.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/simplebar.min.js"></script>
+      <script src='js/daterangepicker.js'></script>
+      <script src='js/jquery.stickOnScroll.js'></script>
+      <script src="js/tinycolor-min.js"></script>
+      <script src="js/config.js"></script>
+      <script src='js/jquery.mask.min.js'></script>
+      <script src='js/select2.min.js'></script>
+      <script src='js/jquery.steps.min.js'></script>
+      <script src='js/jquery.validate.min.js'></script>
+      <script src='js/jquery.timepicker.js'></script>
+      <script src='js/dropzone.min.js'></script>
+      <script src='js/uppy.min.js'></script>
+      <script src='js/quill.min.js'></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+      <script>
       window.dataLayer = window.dataLayer || [];
 
       function gtag()
@@ -559,7 +760,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-56159088-1');
     </script>
-    <script>
+      <script>
       $('.select2').select2(
       {
         theme: 'bootstrap4',
@@ -739,5 +940,5 @@
         }, false);
       })();
     </script>
-  </body>
-</html>
+    </body>
+  </html>
