@@ -1716,12 +1716,12 @@ body {
 .wrapper-home-o2o .line-cover-l{
     float: left;
     left: -280px;
-    bottom: 100px;
+    bottom: 0px;
 }
 .wrapper-home-o2o .line-cover-r{
     float: right;
     right: -210px;
-    bottom: 100px;
+    bottom: 0px;
 }
 }
 
