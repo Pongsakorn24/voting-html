@@ -1723,6 +1723,11 @@ body {
     right: -210px;
     bottom: 0px;
 }
+.capital-btn {
+    width: 240px;
+    font-size: 20px;
+    font-weight: normal;
+}
 }
 
 @media (max-width: 480px) {}
