@@ -13128,6 +13128,33 @@ form.was-validated select:valid~.select2-container--bootstrap4 .select2-selectio
 .simplebar-wrapper2 .simplebar-content-wrapper{
   background-color: #fff !important;
 }
+.custom-control-label .ans-mb{
+  width: 700px;
+  margin-bottom: 15px !important;
+}
+.wrapper-exam-all .my-4{
+  margin-bottom: 0 !important; 
+}
+.btn-exam{
+  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #001a4e; 
+  color: #fff; 
+  padding: 3px 0;
+}
+.btn-exam:hover{
+ color: #fff;
+  background-color: #333; 
+}
+.card-body .clear-tb{
+  max-width: 150px;
+  margin: 0 auto;
+  padding: 0 !important;
+}
+.card-body .radialbar{
+  width: 100%;
+}
 
 /*
  * The MIT License

@@ -237,11 +237,11 @@
                   <span class="ml-3 item-text">แบบทดสอบ</span>
                 </a>
                 <ul class="collapse list-unstyled pl-4 w-100" id="learning">
-                  <a class="nav-link pl-3" href="./setting-all-learning.html"><span
+                  <a class="nav-link pl-3" href="./setting-edit-exam all.html"><span
                       class="ml-1">รวมบททดสอบ</span></a>
                 </ul>
                 <ul class="collapse list-unstyled pl-4 w-100" id="learning">
-                  <a class="nav-link pl-3" href="./setting-learning.html"><span
+                  <a class="nav-link pl-3" href="./setting-edit-exam.html"><span
                       class="ml-1">สร้างบททดสอบ</span></a>
                 </ul>
 
@@ -279,143 +279,189 @@
               <div class="col-12">
                 <div class="row align-items-center my">
                   <div class="col">
-                    <h2 class="page-title">สร้างแบบทดสอบ</h2>
-                    <p class="text-muted">โปรดสร้างแบบทดสอบ</p>
+                    <h2 class="page-title">แบบทดสอบทั้งหมด</h2>
+                    <p class="text-muted">รายการแบบทดสอบทั้งหมด</p>
                   </div>
-                  <!-- <div class="col-auto">
+                  <div class="col-auto">
                   <button type="button" class="btn btn-secondary"><span
                       class="fe fe-trash fe-12 mr-2"></span>ลบ</button>
-                  <button type="button" class="btn btn-primary"
-                    data-toggle="modal" data-target="#exampleModal"><span
-                      class="fe fe-plus fe-12 mr-2"></span>สร้าง</button>
-                </div> -->
+                      <a href="setting-edit-exam.html">
+                        <button type="button" class="btn btn-primary"
+                          data-toggle="modal" data-target="#exampleModal">
+                          <span class="fe fe-plus fe-12 mr-2"></span>สร้าง</button></a>
                 </div>
-                <div class="">
+                </div>
+                <div class="wrapper-exam-all">
                   <!-- Striped rows -->
                   <div class="">
-                    <div class="card shadow">
-                      <div class="card-body">
-                        <div class="form-group col-sm-12">
-                          <input type="email" id="example-email"
-                            name="example-email" class="form-control ans-mb"
-                            placeholder="ชื่อแบบทดสอบ">
+
+                    <div class="row my-4 pb-4">
+                      <div class="col-md-3">
+                        <div class="card shadow text-center mb-4">
+                          <div class="card-body file">
+                            <div class="file-action">
+                              <button type="button" class="btn btn-link dropdown-toggle more-vertical p-0 text-muted mx-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="text-muted sr-only">Action</span>
+                              </button>
+                              <div class="dropdown-menu m-2">
+                                <a class="dropdown-item" href="#"><i class="fe fe-chevrons-right fe-12 mr-4"></i>Move</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-copy fe-12 mr-4"></i>Copy</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-edit-3 fe-12 mr-4"></i>Rename</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-delete fe-12 mr-4"></i>Delete</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-share fe-12 mr-4"></i>Share</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-download fe-12 mr-4"></i>Download</a>
+                              </div>
+                            </div>
+                            
+                            <div class="circle circle-lg bg-light my-4">
+                              <span class="fe fe-file-text fe-24 text-success"></span>
+                            </div>
+                            
+                            <div class="card-footer bg-transparent border-0 fname">
+                              <strong>แบบทดสอบชุดที่ 1</strong>
+                            </div>
+                            <div class="box" style="display: block; margin: 10px;
+                            text-align: center;">
+                            
+                            <button type="button" class="btn btn-exam">ทดสอบ</button>
+                          </div>
+                            
+                          </div> <!-- .card-body -->
+                           <!-- .card-footer -->
+                        </div> <!-- .card -->
+                      </div> <!-- .col -->
+                      
+                      <div class="col-md-3">
+                        <div class="card shadow text-center mb-4">
+                          <div class="card-body file">
+                            <div class="file-action">
+                              <button type="button" class="btn btn-link dropdown-toggle more-vertical p-0 text-muted mx-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="text-muted sr-only">Action</span>
+                              </button>
+                              <div class="dropdown-menu m-2">
+                                <a class="dropdown-item" href="#"><i class="fe fe-chevrons-right fe-12 mr-4"></i>Move</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-copy fe-12 mr-4"></i>Copy</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-edit-3 fe-12 mr-4"></i>Rename</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-delete fe-12 mr-4"></i>Delete</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-share fe-12 mr-4"></i>Share</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-download fe-12 mr-4"></i>Download</a>
+                              </div>
+                            </div>
+                            <div class="circle circle-lg bg-light my-4">
+                              <span class="fe fe-file-text fe-24 text-success"></span>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 fname">
+                              <strong>แบบทดสอบชุดที่ 2</strong>
+                            </div>
+                            <div class="box" style="display: block; margin: 10px;
+                            text-align: center;">
+                            
+                            <button type="button" class="btn btn-exam">ทดสอบ</button>
+                          </div>
+                            
+                          </div> <!-- .card-body -->
+                           <!-- .card-footer -->
+                        </div> <!-- .card -->
+                      </div> <!-- .col -->
+                      <div class="col-md-3">
+                        <div class="card shadow text-center mb-4">
+                          <div class="card-body file">
+                            <div class="file-action">
+                              <button type="button" class="btn btn-link dropdown-toggle more-vertical p-0 text-muted mx-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="text-muted sr-only">Action</span>
+                              </button>
+                              <div class="dropdown-menu m-2">
+                                <a class="dropdown-item" href="#"><i class="fe fe-chevrons-right fe-12 mr-4"></i>Move</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-copy fe-12 mr-4"></i>Copy</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-edit-3 fe-12 mr-4"></i>Rename</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-delete fe-12 mr-4"></i>Delete</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-share fe-12 mr-4"></i>Share</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-download fe-12 mr-4"></i>Download</a>
+                              </div>
+                            </div>
+                            <div class="circle circle-lg bg-light my-4">
+                              <span class="fe fe-file-text fe-24 text-success"></span>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 fname">
+                              <strong>แบบทดสอบชุดที่ 3</strong>
+                            </div>
+                            <div class="box" style="display: block; margin: 10px;
+                            text-align: center;">
+                            
+                            <button type="button" class="btn btn-exam">ทดสอบ</button>
+                          </div>
+                            
+                          </div> <!-- .card-body -->
+                           <!-- .card-footer -->
+                        </div> <!-- .card -->
+                      </div> <!-- .col -->
+                      <div class="col-md-3">
+                        <div class="card shadow text-center mb-4">
+                          <div class="card-body file">
+                            <div class="file-action">
+                              <button type="button" class="btn btn-link dropdown-toggle more-vertical p-0 text-muted mx-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="text-muted sr-only">Action</span>
+                              </button>
+                              <div class="dropdown-menu m-2">
+                                <a class="dropdown-item" href="#"><i class="fe fe-chevrons-right fe-12 mr-4"></i>Move</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-copy fe-12 mr-4"></i>Copy</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-edit-3 fe-12 mr-4"></i>Rename</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-delete fe-12 mr-4"></i>Delete</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-share fe-12 mr-4"></i>Share</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-download fe-12 mr-4"></i>Download</a>
+                              </div>
+                            </div>
+                            <div class="circle circle-lg bg-light my-4">
+                              <span class="fe fe-file-text fe-24 text-success"></span>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 fname">
+                              <strong>แบบทดสอบชุดที่ 4</strong>
+                            </div>
+                            <div class="box" style="display: block; margin: 10px;
+                            text-align: center;">
+                            
+                            <button type="button" class="btn btn-exam">ทดสอบ</button>
+                          </div>
+                            
+                          </div> <!-- .card-body -->
+                           <!-- .card-footer -->
+                        </div> <!-- .card -->
+                      </div> <!-- .col -->
+                      <!-- <div class="col-md-3">
+                        <div class="card shadow text-center mb-4">
+                          <div class="card-body file">
+                            <div class="file-action">
+                              <button type="button" class="btn btn-link dropdown-toggle more-vertical p-0 text-muted mx-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="text-muted sr-only">Action</span>
+                              </button>
+                              <div class="dropdown-menu m-2">
+                                <a class="dropdown-item" href="#"><i class="fe fe-chevrons-right fe-12 mr-4"></i>Move</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-copy fe-12 mr-4"></i>Copy</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-edit-3 fe-12 mr-4"></i>Rename</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-delete fe-12 mr-4"></i>Delete</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-share fe-12 mr-4"></i>Share</a>
+                                <a class="dropdown-item" href="#"><i class="fe fe-download fe-12 mr-4"></i>Download</a>
+                              </div>
+                            </div>
+                            <div class="card-body text-center clear-tb">
+                              <div id="radialbar"></div>
+                            </div> 
+                            
+                            <div class="card-footer bg-transparent border-0 fname">
+                              <strong>แบบทดสอบชุดที่ 1</strong>
+                            </div>
+                            <div class="box" style="display: block; margin: 10px;
+                            text-align: center;">
+                            
+                            <button type="button" class="btn btn-exam">ทดสอบ</button>
+                          </div>
+                            
+                          </div> 
+                           
                         </div>
-                      </div>
+                      </div>  -->
                     </div>
-                    <div class="card shadow">
-                      <div class="card-body">
-                        <div class="form-group col-sm-12">
-                          <input type="email" id="example-email"
-                            name="example-email" class="form-control ans-mb"
-                            placeholder="คำถาม"><br>
-                          <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2"
-                              name="customRadio" class="custom-control-input"
-                              checked="">
-                            <label class="custom-control-label"
-                              for="customRadio2">
-                              <input type="email" id="example-email"
-                                name="example-email" class="form-control ans-mb"
-                                placeholder="คำตอบ"></label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2"
-                              name="customRadio" class="custom-control-input"
-                              checked="">
-                            <label class="custom-control-label"
-                              for="customRadio2">
-                              <input type="email" id="example-email"
-                                name="example-email" class="form-control ans-mb"
-                                placeholder="คำตอบ"></label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2"
-                              name="customRadio" class="custom-control-input"
-                              checked="">
-                            <label class="custom-control-label"
-                              for="customRadio2">
-                              <input type="email" id="example-email"
-                                name="example-email" class="form-control ans-mb"
-                                placeholder="คำตอบ"></label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2"
-                              name="customRadio" class="custom-control-input"
-                              checked="">
-                            <label class="custom-control-label"
-                              for="customRadio2">
-                              <input type="email" id="example-email"
-                                name="example-email" class="form-control ans-mb"
-                                placeholder="คำตอบ"></label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow">
-                      <div class="card-body">
-                        <div class="form-group col-sm-12">
-                          <input type="email" id="example-email"
-                            name="example-email" class="form-control ans-mb"
-                            placeholder="คำถาม"><br>
-                          <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2"
-                              name="customRadio" class="custom-control-input"
-                              checked="">
-                            <label class="custom-control-label"
-                              for="customRadio2">
-                              <input type="email" id="example-email"
-                                name="example-email" class="form-control ans-mb"
-                                placeholder="คำตอบ"></label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2"
-                              name="customRadio" class="custom-control-input"
-                              checked="">
-                            <label class="custom-control-label"
-                              for="customRadio2">
-                              <input type="email" id="example-email"
-                                name="example-email" class="form-control ans-mb"
-                                placeholder="คำตอบ"></label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2"
-                              name="customRadio" class="custom-control-input"
-                              checked="">
-                            <label class="custom-control-label"
-                              for="customRadio2">
-                              <input type="email" id="example-email"
-                                name="example-email" class="form-control ans-mb"
-                                placeholder="คำตอบ"></label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2"
-                              name="customRadio" class="custom-control-input"
-                              checked="">
-                            <label class="custom-control-label"
-                              for="customRadio2">
-                              <input type="email" id="example-email"
-                                name="example-email" class="form-control"
-                                placeholder="คำตอบ"></label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow">
-                      <div class="card-body">
-                        
-                          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" style="display: block; margin: 0 auto;">
-                            <span class="fe fe-plus fe-12 mr-2"></span>เพิ่มคำถาม</button>
-                      </div>
-                    </div>
-                    <div class="box" style="display: block; margin: 25px;
-                      text-align: center;">
-                      <a href="setting-exam-page.html">
-                      <button type="button" class="btn btn-secondary"
-                        data-dismiss="modal">ดูตัวอย่าง</button></a>
-                      <button type="button" class="btn btn-danger"
-                        data-dismiss="modal">ยกเลิก</button>
-                      <button type="button" class="btn btn-primary">บันทึก</button>
-                    </div>
+                    
                   </div>
                 </div> <!-- end section -->
               </div>
@@ -446,6 +492,11 @@
     <script src='js/uppy.min.js'></script>
     <script src='js/quill.min.js'></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="js/gauge.min.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/apexcharts.min.js"></script>
+    <script src="js/apexcharts.custom.js"></script>
+    <script src="js/apps.js"></script>
     <script async
       src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
     <script>

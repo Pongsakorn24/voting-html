@@ -1325,9 +1325,9 @@ body {
 }
 
 @media (min-width: 1201px) {
-    .container{
+    /* .container{
         width: 100% !important;
-    }
+    } */
 }
 @media (max-width: 991px) {
     .layout-boxshow-influencer {
@@ -1726,6 +1726,7 @@ body {
 .capital-btn {
     width: 240px;
     font-size: 20px;
+    height: 50px;
     font-weight: normal;
 }
 }
