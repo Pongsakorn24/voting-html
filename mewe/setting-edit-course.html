@@ -128,12 +128,12 @@
           </p>
           <ul class="navbar-nav flex-fill w-100 mb-2">
             <li class="nav-item dropdown">
-              <a href="#sale" data-toggle="collapse" aria-expanded="false"
+              <a href="#business" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle nav-link">
                 <i class="fe fe-briefcase fe-16"></i>
                 <span class="ml-3 item-text">ธุรกิจ</span>
               </a>
-              <ul class="collapse list-unstyled pl-4 w-100" id="sale">
+              <ul class="collapse list-unstyled pl-4 w-100" id="business">
                 <a class="nav-link pl-3" href="./contacts-list business.html"><span
                     class="ml-1">ธุรกิจทั้งหมด</span></a>
                 <!-- <a class="nav-link pl-3" href="./contacts-grid sale.html"><span
@@ -195,12 +195,12 @@
               <ul class="collapse list-unstyled pl-4 w-100" id="mkt">
                 <a class="nav-link pl-3" href="./setting-article.html"><span
                     class="ml-1">เนื้อหาที่น่าสนใจ</span></a>
-                <a class="nav-link pl-3" href="./setting-activity.html"><span
+                <!-- <a class="nav-link pl-3" href="./setting-activity.html"><span
                     class="ml-1">กิจกรรม</span></a>
                 <a class="nav-link pl-3" href="./setting-promotion.html"><span
                     class="ml-1">โปรโมชั่น</span></a>
                 <a class="nav-link pl-3" href="./setting-special.html"><span
-                    class="ml-1">สิทธิพิเศษ</span></a>
+                    class="ml-1">สิทธิพิเศษ</span></a> -->
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -252,11 +252,11 @@
                 <a class="nav-link pl-3" href="./setting-score.html"><span
                     class="ml-1">ความพึงพอใจ</span></a>
               </ul>
-              <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+              <!-- <ul class="collapse list-unstyled pl-4 w-100" id="setting">
                 <a class="nav-link pl-3"
                   href="./setting-recommend-cheklist.html"><span
                     class="ml-1">สิ่งที่แนะให้ทำ</span></a>
-              </ul>
+              </ul> -->
             </li>
           </ul>
         </nav>
@@ -317,17 +317,6 @@
                           
                         </div>
                         
-                        <div class="form-group sm-6">
-                          <label for="example-email">รายละเอียด</label>
-                          <input type="email" id="example-email"
-                            name="example-email" class="form-control"
-                            placeholder="รายละเอียดของหลักสูตร">
-                        </div>
-                        <div class="form-group sm-6">
-                          <label for="simpleinput">ลิงค์สำหรับเข้าเรียนรู้</label>
-                          <input type="text" id="simpleinput" class="form-control"
-                            placeholder="โปรดใส่ลิงค์ Youtube ที่ต้องการใช้งาน">
-                        </div>
                         <label for="example-email">เนื้อหาหลักสูตร</label>
                         
                         <!-- Create the editor container -->
@@ -342,7 +331,63 @@
                             tortor commodo malesuada sed et nulla. Nullam cursus
                             erat eget tellus maximus, ut placerat lorem
                             fringilla.</p>
+                        </div> <br>
+                        <div class="form-group sm-6">
+                          <label for="simpleinput">ลิงค์สำหรับเข้าเรียนรู้ (ไม่เกิน 20 คลิป)</label> 
+                          <button type="button" class="btn " data-toggle="modal" data-target="#exampleModal" style="display: inline-block; margin: 0 auto ; float: right;">
+                            <span class="fe fe-plus fe-12 mr-2"></span>เพิ่มเนื้อหา</button><br>
+                          <input type="text" id="simpleinput" class="form-control "
+                            placeholder="โปรดใส่ลิงค์ Youtube ที่ต้องการใช้งาน เนื้อหาที่ 1"><br>
+                            <input type="text" id="simpleinput" class="form-control"
+                            placeholder="โปรดใส่ลิงค์ Youtube ที่ต้องการใช้งาน เนื้อหาที่ 2"><br>
+                            <input type="text" id="simpleinput" class="form-control"
+                            placeholder="โปรดใส่ลิงค์ Youtube ที่ต้องการใช้งาน เนื้อหาที่ 3"><br>
+                            <input type="text" id="simpleinput" class="form-control"
+                            placeholder="โปรดใส่ลิงค์ Youtube ที่ต้องการใช้งาน เนื้อหาที่ 4"><br>
+                            <input type="text" id="simpleinput" class="form-control"
+                            placeholder="โปรดใส่ลิงค์ Youtube ที่ต้องการใช้งาน เนื้อหาที่ 5"><br>
+                            
+                            
                         </div>
+                        <div class="form-group sm-6">
+                          <label for="simpleinput">แบบทดสอบ (เลือก 4 แบบทดสอบ รวม 20 ข้อ)</label> 
+                          <button type="button" class="btn " data-toggle="modal" data-target="#exampleModal" style="display: inline-block; margin: 0 auto ; float: right;">
+                            <!-- <span class="fe fe-plus fe-12 mr-2"></span>เพิ่มเนื้อหา<br> --></button>
+                            <select name="" id="" id="simpleinput" class="form-control ">
+                              <option value="">แบบทดสอบ 1</option>
+                              <option value="">แบบทดสอบ 2</option>
+                              <option value="">แบบทดสอบ 3</option>
+                              <option value="">แบบทดสอบ 4</option>
+
+                            </select><br>
+                            <select name="" id="" id="simpleinput" class="form-control ">
+                              <option value="">แบบทดสอบ 1</option>
+                              <option value="">แบบทดสอบ 2</option>
+                              <option value="">แบบทดสอบ 3</option>
+                              <option value="">แบบทดสอบ 4</option>
+
+                            </select><br>
+                            <select name="" id="" id="simpleinput" class="form-control ">
+                              <option value="">แบบทดสอบ 1</option>
+                              <option value="">แบบทดสอบ 2</option>
+                              <option value="">แบบทดสอบ 3</option>
+                              <option value="">แบบทดสอบ 4</option>
+
+                            </select><br>
+                            <select name="" id="" id="simpleinput" class="form-control ">
+                              <option value="">แบบทดสอบ 1</option>
+                              <option value="">แบบทดสอบ 2</option>
+                              <option value="">แบบทดสอบ 3</option>
+                              <option value="">แบบทดสอบ 4</option>
+
+                            </select><br>
+                          
+
+                            
+                            
+                            
+                        </div>
+                        
                         
                         <div class="box" style="display: block; margin: 25px; text-align: center;" >
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
