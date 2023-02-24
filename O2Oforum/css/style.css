@@ -848,13 +848,7 @@ body {
     font-weight: bold;
 }
 
-.nopaddingright {
-    padding-right: 0;
-}
 
-.nopaddingleft {
-    padding-left: 0;
-}
 
 .panel-title>.small,
 .panel-title>.small>a,

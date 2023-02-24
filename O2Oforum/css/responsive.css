@@ -851,9 +851,19 @@
         font-size: 15px;
         line-height: 20px;
     }
+    .o2o-b {
+        font-size: 18px !important;
+    }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 440px) {
+    .btn-invest, .btn-shopee {
+        width: 145px;
+    }
+    .o2o-b {
+        font-size: 18px !important;
+    }
+}
 
 @media (max-width: 360px) {
     .wrapper-rate .layout-card-rate .box-card {

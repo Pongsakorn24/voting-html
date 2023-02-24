@@ -1,3 +1,8 @@
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
 .box-edit-salepage {
     margin-top: 50px;
 }
@@ -211,7 +216,7 @@
 }
 
 .nopaddingleft {
-    padding-right: 0;
+    padding-left: 0;
 }
 
 .nopaddingright {
@@ -1877,81 +1882,6 @@ margin-bottom: 5px;
     overflow: hidden;
     /* background-color: #e1e1e1; */
 }
-.wrapper-rank .box-ic-name span{
-    color: #3aef8f;
-}
-.layout-bg-award{
-    margin-bottom: 50px;
-    
-}
-.btn-present{
-    display: block;
-    width: 200px;
-    height: 70px;
-    color: #fff;
-    background-color: #051565;
-    border-radius: 10px;
-    border: transparent;
-    margin: 0 auto 100px ;
-}
-.layout-rank2{
-    margin-bottom: 25px;
-    background-color: #eee;
-}
-/* .box-director{
-    background-color: #051565;
-} */
-.box-card-director{
-    display: block;
-    border-radius: 10px;
-    background-color: #051565;
-}
-.box-director-img{
-    display: block;
-    width: 40%;
-    height: auto;
-    border: transparent;
-    overflow: hidden;
-    border-radius: 100%;
-    margin: 0 auto 10px;
-}
-
-.box-director-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-.box-director{
-    margin: 20px 0;
-}
-.box-card-director{
-    padding: 60px 15px ;
-    margin-bottom: 15px;
-}
-.box-detail-director{
-    color: #fff;
-    text-align: center;
-}
-.box-detail-director span{
-    display: block;
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 0 ;
-}
-.box-detail-director label,
-.box-detail-director p{
-    font-size: 14px;
-    line-height: 1.4;
-    margin: 0 0 10px;
-}
-
-.box-director h2{
-    text-align: center;
-    color: #051565;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 25px 0 50px;
-}
 .box-comment-all{
    
     border-radius: 0 0 10px 10px;
@@ -2044,7 +1974,8 @@ margin-bottom: 5px;
     transform: translate(0%, 45%);
     text-align: center;
   }
-  .wrapper-rank .slick-prev, .wrapper-rank .slick-next {
+  .wrapper-rank .slick-prev, .wrapper-rank .slick-next,
+  .wrapper-activity .slick-prev, .wrapper-activity .slick-next {
     width: 50px;
     height: 50px;
     border: transparent;
@@ -2058,16 +1989,20 @@ margin-bottom: 5px;
     background-size: 20px;
 }
   .wrapper-rank .slide-popular .slick-next, 
-    .wrapper-rank .slide-popular .slick-prev{
+    .wrapper-rank .slide-popular .slick-prev,
+    .wrapper-activity .slide-popular .slick-next, 
+    .wrapper-activity .slide-popular .slick-prev{
         display: none !important;
     }
-    .wrapper-rank .slide-popular:hover .slick-next{
+    .wrapper-rank .slide-popular:hover .slick-next,
+    .wrapper-activity .slide-popular:hover .slick-next{
         background-image: url(../images/arrow-right.png);
         background-position: center center;
         right: 15px;
         display: block !important;
     }
-    .wrapper-rank .slide-popular:hover .slick-prev{
+    .wrapper-rank .slide-popular:hover .slick-prev
+    ,.wrapper-activity .slide-popular:hover .slick-prev{
         background-image: url(../images/arrow-left.png);
     background-position: center center;
     left: 15px;
@@ -2133,6 +2068,7 @@ margin-bottom: 5px;
     }
     .o2o-b{
         font-weight: bold !important;
+        font-size: 22px !important;
     }
     .capital-btn{
         border-radius: 10px;
@@ -2189,7 +2125,72 @@ margin-bottom: 5px;
         margin: 0 0 15px;
         line-height: 2;
     }
+    .wrapper-rank,.wrapper-activity{
+        font-family: 'Prompt', sans-serif;
+    }
+    .box-director {
+        margin: 20px 0;
+    }
+    .box-director h2 {
+        text-align: center;
+        color: #051565;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 25px 0 50px;
+    }
+    .box-card-director {
+        display: block;
+        border-radius: 10px;
+        background-color: #051565;
+    }
+    .box-card-director {
+        padding: 25px 15px;
+        margin: 15px 0;
+    }
+    .box-director-img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        border: transparent;
+        overflow: hidden;
+        border-radius: 100%;
+        margin: 0 auto 10px;
+    }
+    .box-director-img a{
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .box-director-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .box-detail-director {
+        color: #fff;
+        text-align: center;
+    }
     
+    .box-detail-director span {
+        display: block;
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0;
+    }
+    .box-detail-director label,.wrapper-rank .box-tt-director p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0 0 10px;
+        color: #fff;
+        text-align: center;
+    }
+   
+    .wrapper-rank p:first-child:after {
+        display: none;
+    }
+
 @media (max-width: 1920px) {
         .layout-conclude {
         margin: 0px 30px 0 100px !important;
@@ -2270,6 +2271,13 @@ margin-bottom: 5px;
     .header-2nd-mb .box-logo {
         padding: 0;
     }
+    .wrapper-rank .box-tt-director p {
+        display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 }
 
 @media (max-width: 800px) {
@@ -2337,6 +2345,25 @@ margin-bottom: 5px;
     .layout-footer-salepage .ft-bottom-right span {
         font-size: 12px;
     }
+    .box-detail-director span {
+        font-size: 13px;
+    }
+    .wrapper-rank .box-tt-director p {
+        font-size: 13px;
+        display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.box-director-img{
+    width: 120px;
+    height: 120px;
+}
+.box-card-director{
+    height: 310px;
+}
+    
 }
 
 @media (max-width: 767px) {
@@ -2532,17 +2559,21 @@ margin-bottom: 5px;
         /* padding: 0 15px; */
     }
     .wrapper-rank .slide-popular .slick-next, 
-    .wrapper-rank .slide-popular .slick-prev{
+    .wrapper-rank .slide-popular .slick-prev,
+    .wrapper-activity .slide-popular .slick-next, 
+    .wrapper-activity .slide-popular .slick-prev{
         display: none !important;
     }
-    .wrapper-rank .slide-popular:hover .slick-next{
+    .wrapper-rank .slide-popular:hover .slick-next
+    ,.wrapper-activity .slide-popular:hover .slick-next{
         background-image: url(../images/arrow-right.png);
         background-position: center center;
         right: 15px;
         display: block !important;
 
     }
-    .wrapper-rank .slide-popular:hover .slick-prev{
+    .wrapper-rank .slide-popular:hover .slick-prev,
+    .wrapper-activity .slide-popular:hover .slick-next{
         background-image: url(../images/arrow-left.png);
     background-position: center center;
     left: 15px;
@@ -2550,7 +2581,8 @@ margin-bottom: 5px;
     display: block !important;
 
     }
-    .wrapper-rank .slick-prev, .wrapper-rank .slick-next {
+    .wrapper-rank .slick-prev, .wrapper-rank .slick-next,
+    .wrapper-activity .slick-prev, .wrapper-activity .slick-next {
         top: 35%;
     }
     .wrapper-rank .box-ic-name{
@@ -2580,9 +2612,7 @@ margin-bottom: 5px;
     .detail-coin{
         margin-bottom: 150px;
     }
-    .box-director-img{
-        width: 50%;
-    }
+    
     .title-article {
         font-size: 35px !important;
         color: #fff;
@@ -2611,5 +2641,37 @@ margin-bottom: 5px;
         margin: 0 0 15px;
         
     }
+    .box-director-img {
+        width: 120px;
+        height: 120px;
+    }
+    .wrapper-rank .container,
+    .wrapper-activity .container{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .wrapper-rank .container .row,
+    .wrapper-activity .container .row{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .wrapper-activity .container .row .nopaddingright{
+        padding-left: 0;
+        
+    }
+    .box-videoWrapper{
+        margin-bottom: 25px;
+    }
+    .wrapper-activity{
+
+    }
+    .box-director{
+        margin: 5px auto;
+    }
+    .box-card-director {
+        margin: 5px 0 15px;
+        height: 280px;
+    }
+    
     
 }
