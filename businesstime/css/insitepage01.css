@@ -1,0 +1,214 @@
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
+
+.wrapper-box-main{
+    margin-bottom: 50px;
+}
+.box-main-1,.box-main {
+    display: block;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.box-main{
+    background-color: transparent;
+}
+
+.lu-main-1 ,.lu-main {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+}
+
+
+.lu-main-1 a ,.lu-main a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.lu-main-1 a img,
+.lu-main a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-detail-main-1,
+.box-detail-main {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px ;
+}
+.box-detail-main{
+    background-color: transparent !important;
+}
+.box-detail-main-1 label,
+.box-detail-main label{
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.box-detail-main-1 span
+,.box-detail-main span{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+
+}
+.box-detail-main label{
+    font-size: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.box-detail-main span{
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.box-detail-main label,
+.box-detail-main span{
+    color: #000;
+}
+
+
+.nopaddingleft{
+    padding-left: 0;
+}
+.nopaddingright{
+    padding-right: 0;
+}
+.box-most-read h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.most-popular-feed{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 1.75rem;
+}
+.most-popular-feed-index{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 36px;
+    margin: 0 1rem 0 0;
+    position: relative;
+    text-align: center;
+}
+.most-popular-feed-index::after{
+    border-bottom: 3px solid #e90606;
+    bottom: 4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 14px;
+}
+.most-popular-feed-section{
+    color: #e90606;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.most-popular-feed-headline{
+   -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    color: rgba(0,0,0,.95);
+    display: -webkit-box;
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.33;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.title-tbt{
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+.box-know{
+    display: block;
+    position: relative;
+}
+.box-img-know{
+    height: 450px;
+}
+.box-img-know a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.box-img-know a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-detail-know{
+    position: absolute;
+    bottom: 0;
+    padding: 15px ;
+    color: #fff;
+    z-index: 2;
+}
+.bg-know{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg,#000,transparent 50%);
+    height: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.box-detail-know .tag-know{
+    background-color: #fe0005;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 12px;
+}
+.box-detail-know h3{
+    margin: 15px 0;
+}
+.box-detail-know .nail{
+    font-size: 12px;
+}
+.slide-know{
+    padding: 0 25px ;
+    margin: 50px 0;
+}
+.slide-know .slick-prev, .slide-know .slick-next {
+    display: none !important;
+}
+.box-line-article{
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.wrapper-article .title-tbt{
+    text-align: left;
+}
