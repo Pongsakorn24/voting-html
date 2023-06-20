@@ -6361,8 +6361,8 @@ a.close.disabled {
   height: 30px;
   border-radius: 50px;
   color: #fff;
-  background-color: #292571;
-  border: 1px solid #292571;
+  background-color: #1e8552;
+  border: 1px solid #1e8552;
   text-align: center;
   margin: 0 auto;
   font-size: 14px;
@@ -13097,7 +13097,7 @@ form.was-validated select:valid~.select2-container--bootstrap4 .select2-selectio
 }
 .btn-primary2{
   color: #fff;
-  background-color: #292571;
+  background-color: #1e8552;
 }
 .text-muted1 {
   color: #000 !important;
@@ -13123,7 +13123,7 @@ form.was-validated select:valid~.select2-container--bootstrap4 .select2-selectio
 .badge-sale{
   padding: 5px;
   color: #fff !important;
-  background-color: #292571;
+  background-color: #1e8552;
 }
 .simplebar-wrapper2 .simplebar-content-wrapper{
   background-color: #fff !important;

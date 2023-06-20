@@ -1,0 +1,122 @@
+/* 
+header
+สีหลัก */
+.navbar .navbar-brand-wrapper {
+    background: #7f3f97 !important;
+}
+
+.navbar .navbar-menu-wrapper {
+    background: #7f3f97 !important;
+}
+
+.sidebar .nav:not(.sub-menu)>.nav-item.active {
+    background: #7f3f97;
+}
+
+.sidebar .nav .nav-item.active>.nav-link {
+    background: #fff !important;
+    color: #7f3f97 !important;
+    position: relative;
+}
+
+/* stat
+สีหลัก 2 ปุ่มบน */
+.card.card-tale {
+    background: #7f3f97 !important;
+    color: #ffffff !important;
+}
+
+/* 
+สีรอง 2 ปุ่มล่าง 
+*/
+.card.card-tale2 {
+    background: #858585 !important;
+    color: #ffffff !important;
+}
+
+
+
+/* 
+ปุ่มหน้าฟอร์ม
+สีหลัก สีรอง 
+*/
+.btn-primary,
+.wizard>.actions a {
+    /* สีรอง */
+    color: #fff !important;
+    /* สีหลัก  */
+    background-color: #7f3f97 !important;
+    /* สีหลัก  */
+    border-color: #7f3f97 !important;
+}
+/*โลโก้ตัวอักษร*/
+.navbar .navbar-brand-wrapper .navbar-brand {
+    color: #ffffff !important;
+    font-size: 30px;
+    margin-right: 0 !important;
+    padding: 0.5rem;
+}
+/* hover logo */
+.navbar .navbar-brand-wrapper .navbar-brand:active, 
+.navbar .navbar-brand-wrapper .navbar-brand:focus, .navbar .navbar-brand-wrapper .navbar-brand:hover {
+    color: #ffffff !important;
+}
+
+/*พื้นหลังแทบเมนูซ้าย*/
+.sidebar{
+    background-color: #7f3f97 !important;
+}
+.sidebar .nav:not(.sub-menu)>.nav-item.active {
+    background: #fff !important;
+    
+}
+.sidebar .nav .nav-item .nav-link {
+    color: #fff !important;
+}
+
+.sidebar .nav .nav-item .nav-link i.menu-icon {
+    color: #fff !important;
+}
+.sidebar .nav .nav-item.active>.nav-link i, .sidebar .nav .nav-item.active>.nav-link .menu-title, .sidebar .nav .nav-item.active>.nav-link .menu-arrow{
+    color: #7f3f97 !important;
+}
+
+/*hover ปุ่มเมนู*/
+.sidebar .nav:not(.sub-menu)>.nav-item:hover>.nav-link, .sidebar .nav:not(.sub-menu)>.nav-item:hover[aria-expanded="true"] {
+    background: #fff !important;
+    color: #7f3f97 !important;
+}
+.sidebar .nav .nav-item .nav-link i.menu-icon {
+    color: #fff !important;
+}
+.sidebar .nav .nav-item:hover .nav-link i.menu-icon {
+    color: #7f3f97 !important;
+}
+.sidebar .nav .nav-item.active>.nav-link i{
+    color: #7f3f97 !important;
+}
+.sidebar .nav .nav-item:hover>.nav-link .menu-title{
+    color: #7f3f97 !important;
+}
+
+
+/*ส่วน LOGO*/
+.navbar .navbar-brand-wrapper .navbar-brand {
+    color: #fff !important;
+    font-size: 16px;
+    margin-right: 0 !important;
+    padding: 0rem;
+    position: relative;
+    top: 0px;
+    font-weight: bold;
+}
+.navbar .navbar-brand-wrapper .navbar-brand img {
+    max-width: 100%;
+    height: 35px;
+    /* margin: auto; */
+    position: relative;
+    top: -3 !important;
+    /* vertical-align: middle; */
+}
+
+

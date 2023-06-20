@@ -2211,7 +2211,7 @@ input[type="radio"] {
 
 .box-card-director {
     display: block;
-    border-radius: 10px;
+    border-radius: 0px;
     background-color: #051565;
 }
 

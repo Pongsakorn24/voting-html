@@ -1,0 +1,25 @@
+body{
+    font-family: 'Prompt', sans-serif;
+}
+.bg-mewe {
+    background-color: #7E3F93;
+    color: #fff !important;
+}
+
+.header-mewe .navbar-light .navbar-nav .active>.nav-link,
+ .navbar-light .navbar-nav .nav-link.active, 
+ .navbar-light .navbar-nav .nav-link.show, 
+ .navbar-light .navbar-nav .show>.nav-link{
+    color: #fff !important;
+ }
+ .header-mewe .nav-item,
+ .header-mewe .navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+ }
+ .img-logo{
+    width: 42px;
+ }
+ .welcome{
+    text-align: center;
+    margin: 15px 0;
+ }
