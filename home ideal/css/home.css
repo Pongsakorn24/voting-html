@@ -1323,7 +1323,7 @@ h1{
 }
   
 .btn-build , .btn-see{
-  /* width: 150px; */
+  width: 220px;
   margin-bottom: 15px;
 }
 .lead {
@@ -1371,7 +1371,9 @@ h1{
 .card-img-top{
   margin-bottom: 15px;
 }
-
+.aos-init .fade-up , .aos-animate .fade-up{
+  display: none;
+}
 }
 
 @media (max-width: 480px) {}
