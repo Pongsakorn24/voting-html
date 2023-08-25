@@ -1359,8 +1359,8 @@ h1{
   padding: 15px !important; 
 }
 .imglogo-ft{
-  width: 150px;
-  margin: 15px;
+  width: 120px;
+  margin: 5px;
 }
 .technique .card-body {
   bottom: 35px;
@@ -1368,11 +1368,17 @@ h1{
 .img-thumbnail .card-img-top{
   margin-bottom: 0 !important;
 }
-.card-img-top{
+/* .card-img-top{
   margin-bottom: 15px;
-}
+} */
 .aos-init .fade-up , .aos-animate .fade-up{
   display: none;
+}
+.text-technique{
+  font-size: 25px;
+}
+.text-detail{
+  font-size: 18px;
 }
 }
 
